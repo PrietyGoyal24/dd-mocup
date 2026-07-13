@@ -506,10 +506,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
     <>
       <header className={`fixed top-0 left-0 w-full z-40 ${theme === 'light' ? 'bg-[#fffbf8]' : 'bg-[var(--background)]'} py-0 transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'shadow-lg border-b border-black/5' : ''}`}>
         {/* Main Navbar (Always Compact Single-Row) */}
-        <div className={`w-full px-[30px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[72px]' : 'h-[96px] pb-[16px]'}`}>
+        <div className={`w-full pl-[35px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[60px]' : 'h-[61.6px]'}`}>
 
           {/* Left/Middle Group: Navigation links, Support and Consultation button */}
-          <div className="flex items-center gap-[25px] h-full">
+          <div className="pl-[25px] flex items-center h-full">
+            <div className="flex items-center gap-[25px] h-full">
             {/* Hamburger Menu trigger (hidden on desktop) */}
             <div className="flex lg:hidden items-center">
               <button
@@ -521,13 +522,12 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
               </button>
             </div>
 
-            {/* Navigation Links and Support/Consultation */}
             <ul
               className={`desk-menu navbar px-0 hidden lg:flex items-center gap-[25px] h-full ${isScrolled ? '!hidden' : ''}`}
               style={{
                 color: '#1A1A1A',
                 fontFamily: 'GTWalsheimPro-Bold, sans-serif',
-                fontSize: '12px',
+                fontSize: '13px',
                 fontWeight: 'bold',
                 padding: '8px 0px',
                 listStyle: 'none'
@@ -566,7 +566,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     alt="Support Icon"
                     className={`w-[34px] h-[34px] ${theme === 'light' ? 'invert' : ''}`}
                   />
-                  <span className="whitespace-nowrap font-bold text-[12px]">+91 9873282812 / +1 4694410125</span>
+                  <span className="whitespace-nowrap font-normal text-[14px]" style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif" }}>+91 9873282812 / +1 4694410125</span>
                 </div>
 
                 {/* Orange consultation button */}
@@ -577,13 +577,15 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                       (window as any).cycleTheme(e.clientX, e.clientY);
                     }
                   }}
-                  className="bg-[#f58331] text-white w-auto h-[36px] rounded-[4px] uppercase cursor-pointer flex items-center justify-center whitespace-nowrap px-[20px] focus:outline-none focus-visible:outline-none font-bold text-[12px]"
+                  className="bg-[#f58331] text-white w-auto h-[34px] rounded-[6px] uppercase cursor-pointer flex items-center justify-center whitespace-nowrap px-[12px] focus:outline-none focus-visible:outline-none font-bold text-[13px]"
+                  style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif" }}
                 >
                   FREE CONSULTATION
                 </button>
               </li>
             </ul>
           </div>
+        </div>
 
           {/* Right Logo */}
           <div className="flex items-center pl-6 select-none shrink-0">
@@ -654,11 +656,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                           className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
                           style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
                         >
-                          <span className={`px-[16px] py-[8px] rounded-[4px] ${
-                            activeExpertiseCategory === cat
+                          <span className={`px-[16px] py-[8px] rounded-[4px] ${activeExpertiseCategory === cat
                               ? 'bg-[#00539c] text-white'
                               : 'text-[#00539c] hover:bg-slate-50'
-                          }`}>
+                            }`}>
                             {cat}
                           </span>
                           <span className="text-[7px] text-[#00539c] pr-[16px]">
@@ -704,7 +705,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 </div>
 
                 {/* Full-width bottom banner */}
-                <div 
+                <div
                   className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
                   style={{
                     background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
@@ -811,11 +812,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                           className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
                           style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
                         >
-                          <span className={`px-[16px] py-[8px] rounded-[4px] ${
-                            activeAICategory === cat
+                          <span className={`px-[16px] py-[8px] rounded-[4px] ${activeAICategory === cat
                               ? 'bg-[#00539c] text-white'
                               : 'text-[#00539c] hover:bg-slate-50'
-                          }`}>
+                            }`}>
                             {cat}
                           </span>
                           <span className="text-[7px] text-[#00539c] pr-[16px]">
@@ -860,7 +860,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                   </div>
                 </div>
                 {/* Full-width bottom banner */}
-                <div 
+                <div
                   className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
                   style={{
                     background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
@@ -967,11 +967,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                           className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
                           style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
                         >
-                          <span className={`px-[16px] py-[8px] rounded-[4px] ${
-                            activeTechCategory === cat
+                          <span className={`px-[16px] py-[8px] rounded-[4px] ${activeTechCategory === cat
                               ? 'bg-[#00539c] text-white'
                               : 'text-[#00539c] hover:bg-slate-50'
-                          }`}>
+                            }`}>
                             {cat}
                           </span>
                           <span className="text-[7px] text-[#00539c] pr-[16px]">
@@ -1016,7 +1015,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                   </div>
                 </div>
                 {/* Full-width bottom banner */}
-                <div 
+                <div
                   className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
                   style={{
                     background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
@@ -1121,7 +1120,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                   </div>
                 </div>
                 {/* Full-width bottom banner */}
-                <div 
+                <div
                   className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
                   style={{
                     background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',

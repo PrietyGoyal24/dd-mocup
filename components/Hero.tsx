@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const SLIDES = [
   {
-    heading: 'DESIGN.DEVELOPMENT.TECHNOLOGY',
+    heading: 'DESIGN. DEVELOPMENT. TECHNOLOGY',
     paragraph: ''
   },
   {
@@ -78,48 +78,53 @@ export default function Hero() {
       <section
         ref={containerRef}
         data-cursor="paint"
-        className="relative w-full flex flex-col items-center justify-center pt-[150px] pb-[220px] md:pt-[200px] md:pb-[320px] lg:pt-[240px] lg:pb-[420px] overflow-hidden bg-transparent select-none animate-in fade-in duration-500 cursor-none"
+        className="showcase relative w-full flex flex-col items-center justify-center overflow-hidden bg-transparent select-none animate-in fade-in duration-500 cursor-none pt-[120px] px-[30px] pb-[160px] md:pb-[240px] lg:pb-[340px]"
       >
-        {/* Centered content */}
-        <div className="max-w-[1100px] w-full px-6 flex flex-col items-center text-center z-10">
+        <div className="caption w-full h-full flex flex-col justify-center items-center" style={{ padding: '120px 0', minHeight: '356px' }}>
+          <div className="container-box w-full pl-[38px] pr-[46px]">
+            <div className="type-wrap w-full flex flex-col items-center text-center">
+              {/* Heading */}
+              <h1
+                id="typed"
+                className="font-black text-[26px] md:text-[36px] lg:text-[44px] xl:text-[52px] [@media(min-width:1600px)]:text-[65px] leading-[1.08] tracking-tight text-white uppercase select-none mb-[20px] w-full"
+                style={{ fontFamily: "'GT-Walsheim-Pro-Bold', sans-serif" }}
+              >
+                {typedHeading}
+              </h1>
 
-          {/* Heading */}
-          <h1
-            className="font-walsheim-black font-black text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] xl:text-[52px] leading-[1.08] tracking-tight text-white uppercase select-none mb-4 w-full"
-          >
-            {typedHeading}
-          </h1>
-
-          {/* Paragraph */}
-          {typedParagraph.length > 0 && (
-            <p
-              className="text-[16px] font-sans tracking-wide text-white/90 max-w-none leading-[1.5] select-none mt-2"
-            >
-              {typedParagraph}
-            </p>
-          )}
-
+              {/* Paragraph */}
+              {typedParagraph.length > 0 && (
+                <p
+                  className="text-[16px] font-sans tracking-wide text-white/90 max-w-none leading-[36px] md:leading-[30px] select-none mt-2"
+                  style={{ fontFamily: "'GTWalsheimPro-Regular', sans-serif" }}
+                >
+                  {typedParagraph}
+                </p>
+              )}
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Video Mockup Section (Recreating the original website portfolio player with split background) */}
       <div
         data-cursor="paint"
-        className="w-full bg-[#fcf9f6] relative pb-12 md:pb-16 z-20 cursor-none select-none flow-root"
+        className="clip w-full bg-[#fcf5f5] relative z-20 cursor-none select-none pt-0 pb-[80px] lg:py-[20px]"
       >
-        <div className="w-full max-w-[1400px] mx-auto px-4 md:px-[40px] lg:px-[85px] -mt-[160px] md:-mt-[240px] lg:-mt-[330px] z-30 relative animate-in fade-in slide-in-from-bottom-6 duration-1000">
-          <div 
-            className="bg-[#333333] border border-white/10 rounded-none shadow-[0_30px_60px_rgba(0,0,0,0.4)]"
-            style={{ padding: '10px' }}
+        <div className="container-box w-full px-[15px] lg:pl-[38px] lg:pr-[46px] -mt-[140px] md:-mt-[200px] lg:-mt-[280px] z-30 relative">
+          <div
+            className="clip-box bg-[#333333] p-[10px] mx-0 lg:mx-[85px] border border-white/10 rounded-none shadow-[0_30px_60px_rgba(0,0,0,0.4)] flex"
           >
             <div className="relative w-full overflow-hidden rounded-none bg-white">
               <video
+                id="bgvideo"
                 src="https://dd.mocup.in/assets/web/images/video/designdot.mp4"
                 className="w-full h-auto block"
                 playsInline
                 autoPlay
                 loop
                 muted
+                style={{ width: '100% !important', height: 'auto !important' } as any}
               />
             </div>
           </div>
