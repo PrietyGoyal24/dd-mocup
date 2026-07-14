@@ -526,7 +526,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 className={`desk-menu navbar px-0 hidden lg:flex items-center gap-[25px] h-full ${isScrolled ? '!hidden' : ''}`}
                 style={{
                   color: '#1A1A1A',
-                  fontFamily: 'GTWalsheimPro-Bold, sans-serif',
+                  fontFamily: 'GTWalsheimPro-Bold',
                   fontSize: '13px',
                   fontWeight: 'bold',
                   padding: '8px 0px',
@@ -566,7 +566,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                       alt="Support Icon"
                       className={`w-[34px] h-[34px] ${theme === 'light' ? 'invert' : ''}`}
                     />
-                    <span className="whitespace-nowrap font-normal text-[14px]" style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif" }}>+91 9873282812 / +1 4694410125</span>
+                    <span className="whitespace-nowrap font-normal text-[14px]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>+91 9873282812 / +1 4694410125</span>
                   </div>
 
                   {/* Orange consultation button */}
@@ -578,7 +578,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                       }
                     }}
                     className="bg-[#f58331] text-white w-auto h-[34px] rounded-[6px] uppercase cursor-pointer flex items-center justify-center whitespace-nowrap px-[12px] focus:outline-none focus-visible:outline-none font-bold text-[13px]"
-                    style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif" }}
+                    style={{ fontFamily: "'GTWalsheimPro-Bold'" }}
                   >
                     FREE CONSULTATION
                   </button>
@@ -625,11 +625,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     alt="Expertise Development"
                     className="w-full h-[220px] object-cover mb-[20px]"
                   />
-                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                     ENGAGEMENT MODELS
                   </h3>
                   <p className="text-[13px] mb-[30px]">
-                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
+                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Hiring Software Developers.</span>
                     <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
                   </p>
 
@@ -638,7 +638,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                       <div key={item.title} className="flex items-start gap-[16px]">
                         <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
                         <div className="flex flex-col">
-                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                             {item.title}
                           </span>
                           <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
@@ -658,7 +658,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                         key={cat}
                         onClick={() => setActiveExpertiseCategory(cat)}
                         className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
-                        style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                        style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                       >
                         <span className={`px-[16px] py-[8px] rounded-[4px] ${activeExpertiseCategory === cat
                           ? 'bg-[#00539c] text-white'
@@ -679,7 +679,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     <a
                       onClick={triggerModal}
                       className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
-                      style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                      style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                     >
                       All Services
                     </a>
@@ -689,7 +689,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Right Column */}
                 <div className="pl-[30px]">
                   <div className="flex items-center gap-[16px] mb-[20px]">
-                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                       {activeExpertiseCategory}
                     </h4>
                     <div className="flex-1 h-[1.5px] bg-[#00539c]" />
@@ -718,15 +718,15 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Left: Stats */}
                 <div className="flex items-center gap-[60px] pl-[10px]">
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>20 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>5000 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>1700 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
                   </div>
                 </div>
@@ -734,7 +734,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Right: Text and Button */}
                 <div className="flex items-center gap-[24px]">
                   <div className="flex flex-col text-right max-w-[540px]">
-                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
+                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
                     <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
                   </div>
                   {/* Empty spacer to reserve space for the global floating WhatsApp button */}
@@ -763,11 +763,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     alt="AI Innovation Models"
                     className="w-full h-[220px] object-cover mb-[20px]"
                   />
-                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                     {AI_MENU.left.title}
                   </h3>
                   <p className="text-[13px] mb-[30px]">
-                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
+                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Hiring Software Developers.</span>
                     <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
                   </p>
 
@@ -780,7 +780,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                           <div className="w-[30px] h-[30px] shrink-0" />
                         )}
                         <div className="flex flex-col">
-                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                             {item.title}
                           </span>
                           {item.desc && (
@@ -815,7 +815,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                         key={cat}
                         onClick={() => setActiveAICategory(cat)}
                         className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
-                        style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                        style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                       >
                         <span className={`px-[16px] py-[8px] rounded-[4px] ${activeAICategory === cat
                           ? 'bg-[#00539c] text-white'
@@ -836,7 +836,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     <a
                       onClick={triggerModal}
                       className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
-                      style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                      style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                     >
                       All Services
                     </a>
@@ -846,7 +846,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Right Column */}
                 <div className="pl-[30px]">
                   <div className="flex items-center gap-[16px] mb-[20px]">
-                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                       {activeAICategory}
                     </h4>
                     <div className="flex-1 h-[1.5px] bg-[#00539c]" />
@@ -874,15 +874,15 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Left: Stats */}
                 <div className="flex items-center gap-[60px] pl-[10px]">
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>20 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>5000 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>1700 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
                   </div>
                 </div>
@@ -890,7 +890,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Right: Text and Button */}
                 <div className="flex items-center gap-[24px]">
                   <div className="flex flex-col text-right max-w-[540px]">
-                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
+                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
                     <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
                   </div>
                   {/* Empty spacer to reserve space for the global floating WhatsApp button */}
@@ -919,11 +919,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     alt="Technologies"
                     className="w-full h-[220px] object-cover mb-[20px]"
                   />
-                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                     {TECH_MENU.left.title}
                   </h3>
                   <p className="text-[13px] mb-[30px]">
-                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
+                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Hiring Software Developers.</span>
                     <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
                   </p>
 
@@ -936,7 +936,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                           <div className="w-[30px] h-[30px] shrink-0" />
                         )}
                         <div className="flex flex-col">
-                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                             {item.title}
                           </span>
                           {item.desc && (
@@ -971,7 +971,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                         key={cat}
                         onClick={() => setActiveTechCategory(cat)}
                         className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
-                        style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                        style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                       >
                         <span className={`px-[16px] py-[8px] rounded-[4px] ${activeTechCategory === cat
                           ? 'bg-[#00539c] text-white'
@@ -992,7 +992,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     <a
                       onClick={triggerModal}
                       className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
-                      style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                      style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                     >
                       All Services
                     </a>
@@ -1002,7 +1002,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Right Column */}
                 <div className="pl-[30px]">
                   <div className="flex items-center gap-[16px] mb-[20px]">
-                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                       {activeTechCategory}
                     </h4>
                     <div className="flex-1 h-[1.5px] bg-[#00539c]" />
@@ -1030,15 +1030,15 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Left: Stats */}
                 <div className="flex items-center gap-[60px] pl-[10px]">
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>20 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>5000 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>1700 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
                   </div>
                 </div>
@@ -1046,7 +1046,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Right: Text and Button */}
                 <div className="flex items-center gap-[24px]">
                   <div className="flex flex-col text-right max-w-[540px]">
-                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
+                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
                     <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
                   </div>
                   {/* Empty spacer to reserve space for the global floating WhatsApp button */}
@@ -1075,11 +1075,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     alt="Corporate Models"
                     className="w-full h-[220px] object-cover mb-[20px]"
                   />
-                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                     {CORPORATE_MENU.left.title}
                   </h3>
                   <p className="text-[13px] mb-[30px]">
-                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
+                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Hiring Software Developers.</span>
                     <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
                   </p>
 
@@ -1094,7 +1094,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                           </div>
                         )}
                         <div className="flex flex-col">
-                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                             {item.title}
                           </span>
                           {item.desc && (
@@ -1116,7 +1116,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                       href={col.href}
                       className="flex flex-col border-b-[1.5px] border-[#00539c] pb-[16px] cursor-pointer"
                     >
-                      <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase mb-[8px]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                      <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase mb-[8px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                         {col.title}
                       </h4>
                       <p className="text-slate-500 text-[13.5px] font-medium leading-[1.6]">
@@ -1136,15 +1136,15 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Left: Stats */}
                 <div className="flex items-center gap-[60px] pl-[10px]">
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>20 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>5000 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>1700 +</span>
                     <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
                   </div>
                 </div>
@@ -1152,7 +1152,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 {/* Right: Text and Button */}
                 <div className="flex items-center gap-[24px]">
                   <div className="flex flex-col text-right max-w-[540px]">
-                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
+                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
                     <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
                   </div>
                   {/* Empty spacer to reserve space for the global floating WhatsApp button */}

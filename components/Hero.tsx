@@ -87,7 +87,7 @@ export default function Hero() {
               <h1
                 id="typed"
                 className="font-black text-[26px] md:text-[36px] lg:text-[46px] xl:text-[60px] [@media(min-width:1600px)]:text-[95px] leading-[1.08] tracking-tight text-white uppercase select-none mb-[20px] w-full"
-                style={{ fontFamily: "'GT-Walsheim-Pro-black', 'GT-Walsheim-Pro-Black', sans-serif", fontWeight: 900 }}
+                style={{ fontFamily: "'GT-Walsheim-Pro-black', 'GT-Walsheim-Pro-Black'", fontWeight: 900 }}
               >
                 {(() => {
                   if (!typedHeading) return null;
@@ -110,7 +110,7 @@ export default function Hero() {
               {typedParagraph.length > 0 && (
                 <p
                   className="font-black text-[13px] md:text-[14px] lg:text-[16px] tracking-wider text-white max-w-none leading-[36px] md:leading-[30px] select-none mt-2 uppercase"
-                  style={{ fontFamily: "'GT-Walsheim-Pro-black', 'GT-Walsheim-Pro-Black', sans-serif", fontWeight: 900 }}
+                  style={{ fontFamily: "'GT-Walsheim-Pro-black', 'GT-Walsheim-Pro-Black'", fontWeight: 900 }}
                 >
                   {typedParagraph}
                 </p>
