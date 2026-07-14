@@ -44,7 +44,7 @@ export default function Hero() {
       } else if (typedParagraph.length < currentSlide.paragraph.length) {
         timer = setTimeout(() => {
           setTypedParagraph(currentSlide.paragraph.slice(0, typedParagraph.length + 1));
-        }, 50); // Paragraph typing speed (reduced)
+        }, 70); // Paragraph typing speed (reduced)
       } else {
         // Pause once fully typed
         timer = setTimeout(() => {
@@ -56,7 +56,7 @@ export default function Hero() {
       if (typedParagraph.length > 0) {
         timer = setTimeout(() => {
           setTypedParagraph(typedParagraph.slice(0, -1));
-        }, 15); // Paragraph deleting speed
+        }, 20); // Paragraph deleting speed
       } else if (typedHeading.length > 0) {
         timer = setTimeout(() => {
           setTypedHeading(typedHeading.slice(0, -1));
@@ -86,17 +86,31 @@ export default function Hero() {
               {/* Heading */}
               <h1
                 id="typed"
-                className="font-black text-[26px] md:text-[36px] lg:text-[44px] xl:text-[52px] [@media(min-width:1600px)]:text-[65px] leading-[1.08] tracking-tight text-white uppercase select-none mb-[20px] w-full"
-                style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif", fontWeight: 700 }}
+                className="font-black text-[26px] md:text-[36px] lg:text-[46px] xl:text-[60px] [@media(min-width:1600px)]:text-[95px] leading-[1.08] tracking-tight text-white uppercase select-none mb-[20px] w-full"
+                style={{ fontFamily: "'GT-Walsheim-Pro-black', 'GT-Walsheim-Pro-Black', sans-serif", fontWeight: 900 }}
               >
-                {typedHeading}
+                {(() => {
+                  if (!typedHeading) return null;
+                  const parts = typedHeading.split('.');
+                  return parts.map((part, index) => {
+                    if (index === parts.length - 1) {
+                      return <span key={index}>{part}</span>;
+                    }
+                    return (
+                      <span key={index}>
+                        {part}
+                        <span className="inline-block w-[0.20em] h-[0.20em] rounded-full bg-current ml-[0.08em] align-baseline" />
+                      </span>
+                    );
+                  });
+                })()}
               </h1>
 
               {/* Paragraph */}
               {typedParagraph.length > 0 && (
                 <p
-                  className="text-[16px] font-sans tracking-wide text-white/90 max-w-none leading-[36px] md:leading-[30px] select-none mt-2"
-                  style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro', sans-serif" }}
+                  className="font-black text-[13px] md:text-[14px] lg:text-[16px] tracking-wider text-white max-w-none leading-[36px] md:leading-[30px] select-none mt-2 uppercase"
+                  style={{ fontFamily: "'GT-Walsheim-Pro-black', 'GT-Walsheim-Pro-Black', sans-serif", fontWeight: 900 }}
                 >
                   {typedParagraph}
                 </p>
