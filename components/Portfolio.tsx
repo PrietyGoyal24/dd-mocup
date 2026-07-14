@@ -41,7 +41,7 @@ export default function Portfolio() {
   return (
     <section 
       className="relative bg-[#191919] text-[#FFFFFF] overflow-hidden select-none w-full"
-      style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}
+      style={{ fontFamily: "'GT-Walsheim-Pro'" }}
     >
       <div className="w-full flex flex-col z-10 relative">
         
@@ -58,7 +58,7 @@ export default function Portfolio() {
             {/* Hanging Prefix */}
             <div className="w-[120px] lg:w-[160px] flex items-center shrink-0">
               <div className="flex items-baseline">
-                <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'SocialGothic', sans-serif" }}>04</span>
+                <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>04</span>
                 <div className="w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-[#F58331] rounded-full ml-[4px]" />
               </div>
               <div className="flex-grow h-[1px] bg-[#FFFFFF]/40 mx-[15px]" />
@@ -67,7 +67,7 @@ export default function Portfolio() {
             {/* Content */}
             <div className="flex items-center">
               <div className="flex items-baseline">
-                <h2 className="font-bold text-[24px] lg:text-[32px] leading-none tracking-tight text-[#FFFFFF] m-0 p-0" style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}>
+                <h2 className="font-bold text-[24px] lg:text-[32px] leading-none tracking-tight text-[#FFFFFF] m-0 p-0" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>
                   What's Good
                 </h2>
                 <div className="w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-white rounded-full ml-[6px]" />
@@ -120,7 +120,7 @@ export default function Portfolio() {
                       <div className="flex justify-between items-center w-full mb-[15px]">
                         <h3 
                           className="font-bold text-[24px] md:text-[28px] tracking-wide m-0 p-0"
-                          style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}
+                          style={{ fontFamily: "'GT-Walsheim-Pro'" }}
                         >
                           {project.title}
                         </h3>
@@ -135,7 +135,7 @@ export default function Portfolio() {
                       </div>
                       <p 
                         className="text-[14px] md:text-[16px] text-[#FFFFFF]/80 font-normal leading-[1.5] m-0 p-0"
-                        style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}
+                        style={{ fontFamily: "'GT-Walsheim-Pro'" }}
                       >
                         {project.description}
                       </p>

@@ -14,13 +14,13 @@ export default function Testimonials() {
           <div className="flex items-center flex-1">
             {/* Hanging Prefix Column */}
             <div className="w-[120px] lg:w-[160px] flex items-center shrink-0">
-              <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'SocialGothic', sans-serif" }}>05.</span>
+              <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>05.</span>
               <div className="flex-grow h-[1px] bg-[#111111]/30 mx-[15px] mr-[15px]" />
             </div>
             
             {/* Content Column Start */}
             <div className="flex items-baseline">
-              <h2 className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-black" style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}>
+              <h2 className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-black" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>
                 What Are Client Says<span className="inline-block w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-black rounded-full ml-[4px]"></span>
               </h2>
             </div>
@@ -39,8 +39,8 @@ export default function Testimonials() {
         <div className="w-full pl-0 md:pl-[120px] lg:pl-[160px]">
 
         <div className="flex flex-col text-left mb-[60px] max-w-lg">
-          <p className="text-[18px] lg:text-[22px] leading-[1.6] text-black" style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}>
-            <strong className="font-black" style={{ fontFamily: "'GT-Walsheim-Pro-Black', sans-serif" }}>
+          <p className="text-[18px] lg:text-[22px] leading-[1.6] text-black" style={{ fontFamily: "'GTWalsheimPro-Regular'" }}>
+            <strong className="font-black" style={{ fontFamily: "'GTWalsheimPro-Regular'" }}>
               Over 1500+ Happy Clients, we turn Ideas into reality for a living
             </strong>
             {' '}We are in the business of digital transformation. We help our clients see what they cannot.
@@ -69,10 +69,10 @@ export default function Testimonials() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <h6 className="text-[13px] font-black text-black uppercase" style={{ fontFamily: "'GT-Walsheim-Pro-Black', sans-serif" }}>
+                  <h6 className="text-[13px] font-black text-black uppercase" style={{ fontFamily: "'GT-Walsheim-Pro-Black'" }}>
                     {testi.name}
                   </h6>
-                  <span className="text-[11px] text-black uppercase tracking-wide leading-snug mt-[2px]" style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}>
+                  <span className="text-[11px] text-black uppercase tracking-wide leading-snug mt-[2px]" style={{ fontFamily: "'GT-Walsheim-Pro'" }}>
                     {testi.role}
                   </span>
 
@@ -86,7 +86,7 @@ export default function Testimonials() {
               </div>
 
               {/* Review paragraph */}
-              <p className="text-[14px] lg:text-[16px] leading-[1.7] font-normal text-black text-justify" style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}>
+              <p className="text-[14px] lg:text-[16px] leading-[1.7] font-normal text-black text-justify" style={{ fontFamily: "'GT-Walsheim-Pro'" }}>
                 {testi.text}
               </p>
             </motion.div>

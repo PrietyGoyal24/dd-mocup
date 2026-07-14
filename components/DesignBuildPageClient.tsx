@@ -39,7 +39,7 @@ export default function DesignBuildPageClient() {
           <div className="bg-[#003666] px-[30px] md:px-[50px] py-[14px] md:py-[18px] inline-flex items-center justify-center">
             <h5 
               className="text-[16px] md:text-[22px] font-extrabold text-white uppercase tracking-[0.06em]"
-              style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+              style={{ fontFamily: 'GTWalsheimPro-Bold' }}
             >
               Rapid delivery. Total team coordination.
             </h5>
@@ -75,13 +75,13 @@ export default function DesignBuildPageClient() {
             <div className="absolute left-[30px] md:left-[60px] lg:left-[80px] top-[45%] md:top-[50%] -translate-y-1/2 text-left z-10 w-full max-w-[90%]">
               <h1 
                 className="text-[60px] md:text-[140px] lg:text-[180px] xl:text-[200px] leading-[0.8] font-bold tracking-normal text-white uppercase mb-0 drop-shadow-lg"
-                style={{ fontFamily: 'Impact, GT-Walsheim-Pro-Black, sans-serif' }}
+                style={{ fontFamily: 'Impact, GT-Walsheim-Pro-Black' }}
               >
                 DESIGN-BUILD.
               </h1>
               <p
                 className="text-[18px] md:text-[24px] lg:text-[30px] text-white lowercase mt-[60px] md:mt-[90px] lg:mt-[120px] tracking-wide drop-shadow-md flex items-center"
-                style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                style={{ fontFamily: 'GTWalsheimPro-Bold' }}
               >
                 total turnkey solutions<span className="inline-block w-[6px] h-[6px] md:w-[8px] md:h-[8px] lg:w-[10px] lg:h-[10px] rounded-full bg-white ml-2 mb-[2px]"></span>
               </p>
@@ -92,7 +92,7 @@ export default function DesignBuildPageClient() {
           <div className="mt-12 max-w-[900px] text-left mx-auto px-6">
             <h2 
               className="text-[28px] md:text-[40px] font-bold text-[#2a255e] uppercase tracking-wide mb-4 leading-[1.25]"
-              style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+              style={{ fontFamily: 'GTWalsheimPro-Bold' }}
             >
               DESIGN-BUILD. YOU MIGHT SAY IT’S A SIMPLE APPROACH TO 
               <br />
@@ -100,7 +100,7 @@ export default function DesignBuildPageClient() {
             </h2>
             <p 
               className="text-[16px] md:text-[18px] text-[#4a4a4a] leading-[1.8] font-normal mt-6"
-              style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+              style={{ fontFamily: 'GTWalsheimPro-Regular' }}
             >
               A team working together from start to finish in open communication and purposeful collaboration to deliver otherwise unachievable results. It’s the notion that when owners sit at the same table with architects, builders, engineers and estimators, great ideas — the best ideas — are born.
             </p>
@@ -132,7 +132,7 @@ export default function DesignBuildPageClient() {
                       {/* Header title */}
                       <h4 
                         className="text-[18px] font-bold text-black group-hover:text-white transition-colors uppercase tracking-wider"
-                        style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                        style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                       >
                         {b.title}
                       </h4>
@@ -141,7 +141,7 @@ export default function DesignBuildPageClient() {
                     {/* Desc Paragraph */}
                     <p 
                       className="text-[14px] text-[#555] group-hover:text-white/90 transition-colors mt-3 leading-[1.6]"
-                      style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                      style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                     >
                       {b.desc}
                     </p>

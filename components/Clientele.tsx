@@ -19,13 +19,13 @@ export default function Clientele() {
           <div className="flex items-center flex-1">
             {/* Hanging Prefix Column */}
             <div className="w-[120px] lg:w-[160px] flex items-center shrink-0">
-              <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'SocialGothic', sans-serif" }}>06.</span>
+              <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>06.</span>
               <div className="flex-grow h-[1px] bg-[#111111]/30 mx-[15px] mr-[15px]" />
             </div>
             
             {/* Content Column Start */}
             <div className="flex items-baseline">
-              <h2 className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-black" style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}>
+              <h2 className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-black" style={{ fontFamily: "'GT-Walsheim-Pro'" }}>
                 Clientele<span className="inline-block w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-black rounded-full ml-[4px]"></span>
               </h2>
             </div>
@@ -44,14 +44,14 @@ export default function Clientele() {
         <div className="w-full pl-0 md:pl-[120px] lg:pl-[160px]">
 
         <div className="flex flex-col text-left mb-[60px] lg:mb-[100px]">
-          <p className="text-[16px] lg:text-[18px] leading-[1.8] text-black" style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}>
-            <strong className="font-black" style={{ fontFamily: "'GT-Walsheim-Pro-Black', sans-serif" }}>
+          <p className="text-[16px] lg:text-[18px] leading-[1.8] text-black" style={{ fontFamily: "'GT-Walsheim-Pro'" }}>
+            <strong className="font-black" style={{ fontFamily: "'GT-Walsheim-Pro-Black'" }}>
               Inspired design, bold solutions & bottom<br className="hidden sm:block" />
               line results
             </strong>
             {' '}We turn information into<br className="hidden sm:block" />
             experiences people care about{' '}
-            <strong className="font-black" style={{ fontFamily: "'GT-Walsheim-Pro-Black', sans-serif" }}>
+            <strong className="font-black" style={{ fontFamily: "'GT-Walsheim-Pro-Black'" }}>
               Strategic<br className="hidden sm:block" />
               Thinking Compelling Design
             </strong>

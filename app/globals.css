@@ -98,10 +98,10 @@
   --color-bg-dark: #131126;
   --color-brand-orange: #f27820;
 
-  --font-sans: 'GTWalsheimPro-Regular', 'GT-Walsheim-Pro', sans-serif;
-  --font-bold: 'GTWalsheimPro-Bold', 'GT-Walsheim-Pro', sans-serif;
-  --font-display: 'GT-Walsheim-Pro-Black', sans-serif;
-  --font-walsheim-black: 'GT-Walsheim-Pro-Black', sans-serif;
+  --font-sans: 'GTWalsheimPro-Regular', 'GT-Walsheim-Pro';
+  --font-bold: 'GTWalsheimPro-Bold', 'GT-Walsheim-Pro';
+  --font-display: 'GT-Walsheim-Pro-Black';
+  --font-walsheim-black: 'GT-Walsheim-Pro-Black';
 }
 
 :root {

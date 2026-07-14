@@ -71,7 +71,7 @@ export default function Footer() {
               <div className="w-[60px] md:w-[80px] h-[2px] bg-[#111]/30 shrink-0 mt-[16px] hidden sm:block" />
               <h2 
                 className="text-[26px] md:text-[30px] leading-[1.2] font-extrabold text-[#111111] lowercase"
-                style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 900 }}
+                style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
               >
                 let&apos;s build something<br/>awesome
               </h2>
@@ -85,13 +85,13 @@ export default function Footer() {
                 <div className="flex flex-col gap-[6px]">
                   <span 
                     className="text-[13px] font-[500] text-[#8e8e8e] uppercase tracking-wider"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Phone number
                   </span>
                   <div 
                     className="text-[15px] md:text-[17px] font-extrabold tracking-wide flex flex-col gap-[6px] text-[#111111]"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 800 }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
                   >
                     <a href="tel:+919873282812" className="hover:text-[#f27820] transition-colors">+91-9873.282.812</a>
                     <a href="tel:+14694410125" className="hover:text-[#f27820] transition-colors">+1 469-441-0125</a>
@@ -105,13 +105,13 @@ export default function Footer() {
                 <div className="flex flex-col gap-[6px]">
                   <span 
                     className="text-[13px] font-[500] text-[#8e8e8e] uppercase tracking-wider"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Mail at
                   </span>
                   <div 
                     className="text-[15px] md:text-[17px] font-extrabold tracking-wide text-[#111111]"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 800 }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
                   >
                     <a href="mailto:info@designdot.co" className="hover:text-[#f27820] transition-colors font-extrabold">info@designdot.co</a>
                   </div>
@@ -124,13 +124,13 @@ export default function Footer() {
                 <div className="flex flex-col gap-[6px]">
                   <span 
                     className="text-[13px] font-[500] text-[#8e8e8e] uppercase tracking-wider"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Direct Chat
                   </span>
                   <div 
                     className="text-[15px] md:text-[17px] font-extrabold tracking-wide text-[#111111] flex items-center gap-[8px]"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 800 }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
                   >
                     <i className="fab fa-whatsapp text-[18px] text-[#111111]" />
                     <a href="https://api.whatsapp.com/send?phone=+919873282812&text=Hii" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">
@@ -146,7 +146,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-[8px]">
                   <span 
                     className="text-[13px] font-[500] text-[#8e8e8e] uppercase tracking-wider"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Connect with us
                   </span>
@@ -176,7 +176,7 @@ export default function Footer() {
           <div className="flex flex-col text-left font-sans w-full">
             <h3 
               className="text-[20px] md:text-[24px] font-extrabold text-[#111111] mb-[24px] mt-0 md:mt-[4px]"
-              style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 900 }}
+              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
             >
               Feel Free To Write Us
               <span className="inline-block w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-[#111] ml-[4px] md:ml-[6px] align-baseline" />
@@ -187,8 +187,8 @@ export default function Footer() {
                 <div className="w-[56px] h-[56px] rounded-full bg-green-500/20 text-green-400 flex items-center justify-center mb-4">
                   <Check size={28} />
                 </div>
-                <h4 className="text-[20px] font-bold text-white mb-2" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Proposal Request Received</h4>
-                <p className="text-white/70 text-[14px]" style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}>Our team will get back to you shortly.</p>
+                <h4 className="text-[20px] font-bold text-white mb-2" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Proposal Request Received</h4>
+                <p className="text-white/70 text-[14px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>Our team will get back to you shortly.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-[#2a2753] p-8 md:p-[38px] rounded-[16px] shadow-xl flex flex-col gap-[22px] w-full">
@@ -201,7 +201,7 @@ export default function Footer() {
                         ? 'top-[-4px] text-[11px] text-white/60'
                         : 'top-[22px] text-[15px] text-white'
                     }`}
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Full Name <span className="text-[#ff4b4b]">*</span>
                   </label>
@@ -213,7 +213,7 @@ export default function Footer() {
                     onBlur={() => setNameFocused(false)}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full bg-transparent border-0 py-[6px] px-0 text-white focus:outline-none text-[15px] font-[500] rounded-none"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   />
                 </div>
                 
@@ -225,7 +225,7 @@ export default function Footer() {
                         ? 'top-[-4px] text-[11px] text-white/60'
                         : 'top-[22px] text-[15px] text-white'
                     }`}
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     E-mail ID <span className="text-[#ff4b4b]">*</span>
                   </label>
@@ -237,7 +237,7 @@ export default function Footer() {
                     onBlur={() => setEmailFocused(false)}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full bg-transparent border-0 py-[6px] px-0 text-white focus:outline-none text-[15px] font-[500] rounded-none"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   />
                 </div>
                 
@@ -249,7 +249,7 @@ export default function Footer() {
                         ? 'top-[-4px] text-[11px] text-white/60'
                         : 'top-[22px] text-[15px] text-white'
                     }`}
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Contact Number <span className="text-[#ff4b4b]">*</span>
                   </label>
@@ -261,7 +261,7 @@ export default function Footer() {
                     onBlur={() => setPhoneFocused(false)}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full bg-transparent border-0 py-[6px] px-0 text-white focus:outline-none text-[15px] font-[500] rounded-none"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   />
                 </div>
 
@@ -269,7 +269,7 @@ export default function Footer() {
                 <div className="pt-2 border-b border-white/20 pb-1">
                   <label 
                     className="text-[12px] font-[500] text-white/80 block mb-[4px]"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Select a Budget Range <span className="text-[#ff4b4b]">*</span>
                   </label>
@@ -279,7 +279,7 @@ export default function Footer() {
                       value={formData.budget}
                       onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                       className="w-full bg-transparent border-0 py-[6px] px-0 text-white focus:outline-none text-[14px] font-[500] appearance-none"
-                      style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                      style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                     >
                       <option value="" disabled className="text-slate-900 bg-white">-- Please select --</option>
                       <option value="Still Evaluating" className="text-slate-900 bg-white">Still Evaluating</option>
@@ -296,7 +296,7 @@ export default function Footer() {
                 <div className="pt-2 border-b border-white/20 pb-2">
                   <label 
                     className="text-[12px] font-[500] text-white/80 block mb-[4px] leading-[1.6]"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Describe Your Project/Idea In Brief (Helps Us Come Back Better Prepared)<span className="text-[#ff4b4b]">*</span>
                   </label>
@@ -306,7 +306,7 @@ export default function Footer() {
                     value={formData.idea}
                     onChange={(e) => setFormData({ ...formData, idea: e.target.value })}
                     className="w-full bg-transparent border-0 py-[6px] px-0 text-white focus:outline-none text-[14px] font-[500] resize-none"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   />
                 </div>
 
@@ -319,24 +319,24 @@ export default function Footer() {
                       onChange={(e) => setFormData({ ...formData, nda: e.target.checked })}
                       className="rounded-sm border-0 bg-white text-[#f27820] focus:ring-0 w-[14px] h-[14px] cursor-pointer"
                     />
-                    <span style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}>Include Copy of a Non-Disclosure Agreement</span>
+                    <span style={{ fontFamily: 'GTWalsheimPro-Regular' }}>Include Copy of a Non-Disclosure Agreement</span>
                   </label>
 
                   <div className="flex items-center gap-[10px]">
-                    <span className="text-white font-[500] text-[13px]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>3 + 7 =</span>
+                    <span className="text-white font-[500] text-[13px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>3 + 7 =</span>
                     <input
                       type="text"
                       required
                       value={captchaAnswer}
                       onChange={(e) => setCaptchaAnswer(e.target.value)}
                       className="w-[54px] h-[36px] bg-white/10 border border-white/25 rounded-[4px] text-center text-white focus:outline-none focus:border-white/50 text-[14px] font-[600]"
-                      style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                      style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                     />
                   </div>
                 </div>
 
                 {captchaError && (
-                  <p className="text-[#ff4b4b] text-[12px] font-[600]" style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}>Incorrect Captcha Answer. Please try again.</p>
+                  <p className="text-[#ff4b4b] text-[12px] font-[600]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>Incorrect Captcha Answer. Please try again.</p>
                 )}
 
                 {/* Submit Button */}
@@ -344,7 +344,7 @@ export default function Footer() {
                   <button
                     type="submit"
                     className="w-full bg-[#bdc0cb] hover:bg-[#aab0bf] text-[#111] transition-colors h-[42px] rounded-[6px] font-bold text-[12px] tracking-[0.08em] uppercase cursor-pointer focus:outline-none"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 800 }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
                   >
                     REQUEST PROPOSAL
                   </button>
@@ -367,13 +367,13 @@ export default function Footer() {
           <div className="flex justify-between items-center w-full mb-[6px] hidden sm:flex">
             <span 
               className="text-[#8e8e8e] text-[13px] font-[500] uppercase tracking-wider" 
-              style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+              style={{ fontFamily: 'GTWalsheimPro-Regular' }}
             >
               Working Hours
             </span>
             <span 
               className="text-[#8e8e8e] text-[13px] font-[500] uppercase tracking-wider" 
-              style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+              style={{ fontFamily: 'GTWalsheimPro-Regular' }}
             >
               Local Time
             </span>
@@ -385,7 +385,7 @@ export default function Footer() {
             <div className="flex items-center gap-[24px] md:gap-[40px] flex-wrap">
               <span 
                 className="text-[#111] text-[14px] font-bold tracking-wide" 
-                style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 800 }}
+                style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
               >
                 / MON - FRI, 9AM TO 6PM /
               </span>
@@ -393,7 +393,7 @@ export default function Footer() {
               {/* Policies Links */}
               <div 
                 className="flex flex-wrap text-[13px] font-medium text-[#111] items-center gap-[4px] py-1" 
-                style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                style={{ fontFamily: 'GTWalsheimPro-Regular' }}
               >
                 <a href="https://dd.mocup.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Privacy Policy</a>
                 <span className="text-[#8e8e8e] font-normal mx-[10px]">|</span>
@@ -407,7 +407,7 @@ export default function Footer() {
 
             <span 
               className="text-[#111] text-[14px] font-bold tracking-wide" 
-              style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 800 }}
+              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
             >
               {localTime}
             </span>
@@ -431,13 +431,13 @@ export default function Footer() {
             <div className="flex flex-col gap-[10px] pt-[4px]">
               <h5 
                 className="text-[14px] font-extrabold tracking-wide text-[#111111]"
-                style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 900 }}
+                style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
               >
                 Happiness guarantee
               </h5>
               <p 
                 className="text-[12px] text-[#4a4a4a] font-[500] leading-[2.1] max-w-[240px]"
-                style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                style={{ fontFamily: 'GTWalsheimPro-Regular' }}
               >
                 If you&apos;re not happy, we&apos;re not happy. We work tirelessly to make sure your Designdot experience is delightful. That&apos;s why we offer the DesignDot Happiness Guarantee.
               </p>
@@ -448,7 +448,7 @@ export default function Footer() {
           <div className="flex flex-col gap-[20px] items-start pt-[4px]">
             <h5 
               className="text-[18px] md:text-[20px] leading-[1.1] font-extrabold tracking-wide text-[#111111] uppercase"
-              style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 900 }}
+              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
             >
               OUR<br/>ACHIEVEMENT.
             </h5>
@@ -465,13 +465,13 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#f27820] hover:text-black font-extrabold text-[14px] tracking-wide transition-colors cursor-pointer"
-              style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 800 }}
+              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
             >
               Download Brochure
             </a>
             <p 
               className="text-[11px] text-[#8e8e8e] font-extrabold tracking-widest uppercase mt-[16px]"
-              style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 800 }}
+              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
             >
               © ALL RIGHTS RESERVED 2026, DESIGNDOT
             </p>

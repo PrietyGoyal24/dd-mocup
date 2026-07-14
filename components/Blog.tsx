@@ -13,13 +13,13 @@ export default function Blog() {
           <div className="flex items-center flex-1">
             {/* Hanging Prefix Column */}
             <div className="w-[120px] lg:w-[160px] flex items-center shrink-0">
-              <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'SocialGothic', sans-serif" }}>07.</span>
+              <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>07.</span>
               <div className="flex-grow h-[1px] bg-[#111111]/30 mx-[15px] mr-[15px]" />
             </div>
 
             {/* Content Column Start */}
             <div className="flex items-baseline">
-              <h2 className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-black" style={{ fontFamily: "'GT-Walsheim-Pro', sans-serif" }}>
+              <h2 className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-black" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>
                 Blog<span className="inline-block w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-black rounded-full ml-[4px]"></span>
               </h2>
             </div>
@@ -38,8 +38,8 @@ export default function Blog() {
         <div className="w-full pl-0 md:pl-[120px] lg:pl-[160px]">
 
           <div className="flex flex-col text-left mb-[30px] lg:mb-[40px]">
-            <p className="text-[16px] lg:text-[18px] leading-[1.8] text-black" style={{ fontFamily: "'GT-Walsheim-Pro-Regular', sans-serif" }}>
-              <strong className="tracking-wide font-bold" style={{ fontFamily: "'GT-Walsheim-Pro-Bold', sans-serif" }}>
+            <p className="text-[16px] lg:text-[18px] leading-[1.8] text-black" style={{ fontFamily: "'GT-Walsheim-Pro-Regular'" }}>
+              <strong className="tracking-wide font-bold" style={{ fontFamily: "'GT-Walsheim-Pro-Bold'" }}>
                 Ideas <span className="inline-block w-[6px] h-[6px] bg-black rounded-full mb-[1px]"></span> Innovation <span className="inline-block w-[6px] h-[6px] bg-black rounded-full mb-[1px]"></span> Influence <span className="inline-block w-[6px] h-[6px] bg-black rounded-full mb-[1px]"></span>
               </strong>
               <br className="hidden sm:block" />
@@ -73,17 +73,17 @@ export default function Blog() {
 
                   {/* Top Content (Date) */}
                   <div className="relative z-10 p-6 lg:p-8">
-                    <div className="text-[32px] lg:text-[40px] leading-none text-white/80" style={{ fontFamily: "'GT-Walsheim-Pro-Regular', sans-serif" }}>
+                    <div className="text-[32px] lg:text-[40px] leading-none text-white/80" style={{ fontFamily: "'GT-Walsheim-Pro-Regular'" }}>
                       {day}
                     </div>
-                    <div className="text-[12px] lg:text-[14px] text-white/60 tracking-wide mt-2" style={{ fontFamily: "'GT-Walsheim-Pro-Regular', sans-serif" }}>
+                    <div className="text-[12px] lg:text-[14px] text-white/60 tracking-wide mt-2" style={{ fontFamily: "'GT-Walsheim-Pro-Regular'" }}>
                       {monthYear}
                     </div>
                   </div>
 
                   {/* Bottom Content (Title & Arrow) */}
                   <div className="relative z-10 p-6 lg:p-8 flex flex-col gap-4">
-                    <h3 className="text-[18px] lg:text-[20px] leading-[1.4] text-white/90" style={{ fontFamily: "'GT-Walsheim-Pro-Regular', sans-serif" }}>
+                    <h3 className="text-[18px] lg:text-[20px] leading-[1.4] text-white/90" style={{ fontFamily: "'GT-Walsheim-Pro-Regular'" }}>
                       {post.title}
                     </h3>
                     <div className="text-white">

@@ -25,14 +25,14 @@ export default function Solutions() {
             <div className="flex items-center flex-wrap">
               <p
                 className="text-[18px] md:text-[24px] leading-[30px] m-0 shrink-0 text-[#f58331]"
-                style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                style={{ fontFamily: 'GTWalsheimPro-Bold' }}
               >
                 02.
               </p>
               <span className="block w-[96px] md:w-[130px] h-[2px] bg-[#727272] mx-[15px] relative -top-[1.5px] md:-top-[2.5px]" />
               <span
                 className="text-[18px] md:text-[24px] leading-[30px] text-white font-extrabold"
-                style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 1200 }}
+                style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 1200 }}
               >
                 We Build Smarter, Faster Solutions
                 <span className="inline-block w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-white ml-[4px] md:ml-[6px] align-baseline" />
@@ -45,20 +45,20 @@ export default function Solutions() {
               </div>
               <h5
                 className="text-[22px] md:text-[24px] leading-[30px] text-white mb-3 tracking-[1px] font-extrabold"
-                style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 900 }}
+                style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
               >
                 Fuel Your Digital-First Idea
               </h5>
               <p
                 className="text-[15px] md:text-[16px] leading-[1.6] text-[#adadad] mb-8"
-                style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                style={{ fontFamily: 'GTWalsheimPro-Regular' }}
               >
                 With 1600+ Transformation Experts
               </p>
               <a
                 href="#"
                 className="inline-block px-6 py-3 bg-[#f58331] text-white text-[14px] tracking-[1px] rounded-[21px] transition-opacity hover:opacity-80 uppercase font-extrabold"
-                style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                style={{ fontFamily: 'GTWalsheimPro-Bold' }}
               >
                 Innovate With Us
               </a>
@@ -83,7 +83,7 @@ export default function Solutions() {
                       <div className="flex items-start justify-between gap-4 mb-4">
                         <h5
                           className="text-[20px] md:text-[24px] leading-[30px] text-white m-0 font-extrabold tracking-[0.5px]"
-                          style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif', fontWeight: 900 }}
+                          style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
                         >
                           {item.title}
                         </h5>
@@ -98,7 +98,7 @@ export default function Solutions() {
                       </div>
                       <p
                         className="text-[15px] md:text-[16px] leading-[1.65] text-[#adadad] m-0"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular, sans-serif' }}
+                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                       >
                         {item.description}
                       </p>

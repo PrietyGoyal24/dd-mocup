@@ -16,14 +16,21 @@ export default function WhyUs() {
                   className="font-extrabold"
                   style={{ fontFamily: "'GTWalsheimPro-Bold'", fontSize: '24px', letterSpacing: '1px' }}
                 >00.</span>
-                <span className="block w-[50px] md:w-[70px] lg:w-[80px] xl:w-[100px] h-[1.5px] bg-[#111] mx-[16px] md:mx-[20px]" />
+                <span
+                  className="block h-[1.5px]"
+                  style={{
+                    width: '80px',
+                    backgroundColor: '#727272',
+                    margin: '0px 15px 0px 7px',
+                  }}
+                />
               </div>
               <span
                 className="font-extrabold"
                 style={{ fontFamily: "'GTWalsheimPro-Bold'", fontSize: '24px', letterSpacing: '1px' }}
               >
                 Why Us
-                <span className="inline-block w-[6px] h-[6px] rounded-full bg-[#111] ml-[6px] shrink-0 relative -bottom-[2px]" />
+                <span className="inline-block w-[8px] h-[8px] rounded-full bg-[#111] ml-[6px] shrink-0 relative -bottom-[1px]" />
               </span>
             </div>
 
@@ -44,11 +51,20 @@ export default function WhyUs() {
                   <span className="inline-block w-[8px] h-[8px] md:w-[10px] md:h-[10px] rounded-full bg-[#111] ml-[8px] shrink-0 relative -bottom-[2px] md:-bottom-[3px]" />
                 </h2>
 
-                <span className="block w-[60px] md:w-[80px] h-[1px] bg-[#111] mt-[16px] mb-[24px] md:mb-[34px]" />
+                <span
+                  className="block h-[1px]"
+                  style={{
+                    width: '90px',
+                    backgroundColor: '#727272',
+                    marginTop: '16px',
+                    marginBottom: '34px',
+                  }}
+                />
 
                 <p
-                  className="text-[#111] m-0 w-full md:max-w-[450px] lg:max-w-[480px] xl:max-w-[500px]"
+                  className="text-[#111] m-0 w-full"
                   style={{
+                    maxWidth: '465px',
                     fontFamily: "'GTWalsheimPro-Regular'",
                     fontWeight: 400,
                     fontSize: '18px',
@@ -74,11 +90,21 @@ export default function WhyUs() {
                 </p>
 
                 <div className="flex items-center mt-[40px] md:mt-[50px]">
-                  <span className="inline-block w-[60px] md:w-[80px] h-[1px] bg-[#111]" />
+                  <span className="inline-block w-[80px] h-[1px]" style={{ backgroundColor: '#727272' }} />
                   <a
                     href="https://dd.mocup.in/about-us"
-                    className="inline-block ml-[18px] px-[24px] py-[10px] bg-[#f27820] text-black text-[14px] uppercase tracking-wide font-extrabold transition-opacity hover:opacity-90"
-                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
+                    className="inline-block transition-opacity hover:opacity-90 uppercase"
+                    style={{
+                      fontFamily: "'GTWalsheimPro-Regular'",
+                      fontWeight: 400,
+                      fontSize: '11px',
+                      letterSpacing: '1px',
+                      padding: '5px 7px',
+                      marginLeft: '18px',
+                      backgroundColor: '#F3812F',
+                      color: '#23527C',
+                      lineHeight: '11px',
+                    }}
                   >
                     EXPLORE
                   </a>
