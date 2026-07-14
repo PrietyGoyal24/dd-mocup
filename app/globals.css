@@ -1,60 +1,84 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'GTWalsheimPro-Bold';
-    src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.ttf") format("ttf");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'GTWalsheimPro-Bold';
+  src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'GTWalsheimPro-Regular';
-    src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.ttf") format("ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'GT-Walsheim-Pro-Bold';
+  src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'GT-Walsheim-Pro-Black';
-    src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Black.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Black.ttf") format("ttf");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'GTWalsheimPro-Regular';
+  src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'GT-Walsheim-Pro';
-    src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.ttf") format("ttf");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'GT-Walsheim-Pro-Regular';
+  src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'GT-Walsheim-Pro';
-    src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.ttf") format("ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'GT-Walsheim-Pro-Black';
+  src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Black.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'GT-Walsheim-Pro';
-    src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Light.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Light.ttf") format("ttf");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'GT-Walsheim-Pro';
+  src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'SocialGothic';
-    src: url("https://dd.mocup.in/assets/web/fonts/SocialGothic-Bold.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/SocialGothic-Bold.ttf") format("ttf");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'GT-Walsheim-Pro';
+  src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'SocialGothic';
-    src: url("https://dd.mocup.in/assets/web/fonts/SocialGothic.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/SocialGothic-Bold.ttf") format("ttf"); /* According to their CSS */
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'GT-Walsheim-Pro';
+  src: url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Light.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/GTWalsheimPro-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SocialGothic';
+  src: url("https://dd.mocup.in/assets/web/fonts/SocialGothic-Bold.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/SocialGothic-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SocialGothic';
+  src: url("https://dd.mocup.in/assets/web/fonts/SocialGothic.woff") format("woff"), url("https://dd.mocup.in/assets/web/fonts/SocialGothic-Bold.ttf") format("ttf");
+  /* According to their CSS */
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme {
@@ -65,7 +89,7 @@
   --color-accent-purple: #9f2de4;
   --color-bg-dark: #131126;
   --color-brand-orange: #f27820;
-  
+
   --font-sans: 'GTWalsheimPro-Regular', 'GT-Walsheim-Pro', sans-serif;
   --font-bold: 'GTWalsheimPro-Bold', 'GT-Walsheim-Pro', sans-serif;
   --font-display: 'SocialGothic', sans-serif;
@@ -75,7 +99,8 @@
 :root {
   --background: #131226;
   --foreground: #ffffff;
-  --accent: #f58331; /* Default accent color, dynamically switched */
+  --accent: #f58331;
+  /* Default accent color, dynamically switched */
   --brand-orange: #f27820;
 }
 
@@ -84,13 +109,16 @@
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
+
 ::-webkit-scrollbar-thumb {
   background: #2b2e73;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent);
 }
@@ -108,6 +136,12 @@ body {
 ::selection {
   background-color: var(--accent);
   color: #14122b;
+}
+
+/* Global Heading Font — GTWalsheimPro-Bold across all components */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'GTWalsheimPro-Bold', 'GT-Walsheim-Pro', sans-serif;
+  font-weight: 700;
 }
 
 /* Custom Cursor styling (optimized for performance) */
@@ -145,7 +179,8 @@ body {
 .cursor-hover #pointer-ring {
   width: 50px;
   height: 50px;
-  background-color: rgba(29, 205, 255, 0.05); /* matches theme */
+  background-color: rgba(29, 205, 255, 0.05);
+  /* matches theme */
 }
 
 /* Theme accent transitions */
@@ -164,6 +199,7 @@ body {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -183,9 +219,11 @@ body {
   0% {
     transform: translateY(-100%);
   }
+
   80% {
     transform: translateY(300%);
   }
+
   100% {
     transform: translateY(300%);
   }
@@ -196,9 +234,12 @@ body {
 }
 
 @keyframes floatCircle {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }

@@ -42,7 +42,7 @@ export default function Home() {
         {/* Section 07: Blog Article slider */}
         <Blog />
       </main>
-      
+
       {/* Footer & Estimate Request form */}
       <Footer />
     </>

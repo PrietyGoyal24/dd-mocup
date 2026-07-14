@@ -87,7 +87,7 @@ export default function Hero() {
               <h1
                 id="typed"
                 className="font-black text-[26px] md:text-[36px] lg:text-[44px] xl:text-[52px] [@media(min-width:1600px)]:text-[65px] leading-[1.08] tracking-tight text-white uppercase select-none mb-[20px] w-full"
-                style={{ fontFamily: "'GT-Walsheim-Pro-Bold', sans-serif" }}
+                style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif", fontWeight: 700 }}
               >
                 {typedHeading}
               </h1>
@@ -96,7 +96,7 @@ export default function Hero() {
               {typedParagraph.length > 0 && (
                 <p
                   className="text-[16px] font-sans tracking-wide text-white/90 max-w-none leading-[36px] md:leading-[30px] select-none mt-2"
-                  style={{ fontFamily: "'GTWalsheimPro-Regular', sans-serif" }}
+                  style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro', sans-serif" }}
                 >
                   {typedParagraph}
                 </p>
