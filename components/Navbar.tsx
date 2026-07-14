@@ -511,81 +511,81 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
           {/* Left/Middle Group: Navigation links, Support and Consultation button */}
           <div className="pl-[25px] flex items-center h-full">
             <div className="flex items-center gap-[25px] h-full">
-            {/* Hamburger Menu trigger (hidden on desktop) */}
-            <div className="flex lg:hidden items-center">
-              <button
-                onClick={() => setIsMobileMenuOpen(true)}
-                className={`flex items-center gap-2 ${theme === 'light' ? 'text-[#111111]' : 'text-white'} hover:text-[#f58331] font-bold text-xs tracking-wider cursor-pointer focus:outline-none focus-visible:outline-none font-display`}
-              >
-                <Menu size={16} />
-                <span>MENU</span>
-              </button>
-            </div>
-
-            <ul
-              className={`desk-menu navbar px-0 hidden lg:flex items-center gap-[25px] h-full ${isScrolled ? '!hidden' : ''}`}
-              style={{
-                color: '#1A1A1A',
-                fontFamily: 'GTWalsheimPro-Bold, sans-serif',
-                fontSize: '13px',
-                fontWeight: 'bold',
-                padding: '8px 0px',
-                listStyle: 'none'
-              }}
-            >
-              {NAVIGATION_LINKS.map((link) => {
-                return (
-                  <li
-                    key={link.label}
-                    className="h-full flex items-center"
-                    onMouseEnter={() => handleMouseEnter(link.key)}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    {link.hasMegaMenu ? (
-                      <button className="group flex items-center gap-0.5 transition-colors cursor-pointer h-full border-b-2 border-transparent focus:outline-none focus-visible:outline-none">
-                        {renderLinkLabel(link.label, true, link.key)}
-                      </button>
-                    ) : (
-                      <a
-                        href={link.href}
-                        onClick={() => setActiveMenu(link.key)}
-                        className="group transition-colors h-full flex items-center border-b-2 border-transparent focus:outline-none focus-visible:outline-none"
-                      >
-                        {renderLinkLabel(link.label, true, link.key)}
-                      </a>
-                    )}
-                  </li>
-                );
-              })}
-
-              <li className="flex items-center gap-[25px] select-none h-full">
-                {/* support numbers with 24 hours support icon */}
-                <div className={`flex items-center gap-2.5 h-[34px] ${theme === 'light' ? 'text-[#111111]' : 'text-white'}`}>
-                  <img
-                    src="https://dd.mocup.in/assets/web/images/all/support-icon.svg"
-                    alt="Support Icon"
-                    className={`w-[34px] h-[34px] ${theme === 'light' ? 'invert' : ''}`}
-                  />
-                  <span className="whitespace-nowrap font-normal text-[14px]" style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif" }}>+91 9873282812 / +1 4694410125</span>
-                </div>
-
-                {/* Orange consultation button */}
+              {/* Hamburger Menu trigger (hidden on desktop) */}
+              <div className="flex lg:hidden items-center">
                 <button
-                  onClick={(e) => {
-                    triggerModal();
-                    if (typeof window !== 'undefined' && (window as any).cycleTheme) {
-                      (window as any).cycleTheme(e.clientX, e.clientY);
-                    }
-                  }}
-                  className="bg-[#f58331] text-white w-auto h-[34px] rounded-[6px] uppercase cursor-pointer flex items-center justify-center whitespace-nowrap px-[12px] focus:outline-none focus-visible:outline-none font-bold text-[13px]"
-                  style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif" }}
+                  onClick={() => setIsMobileMenuOpen(true)}
+                  className={`flex items-center gap-2 ${theme === 'light' ? 'text-[#111111]' : 'text-white'} hover:text-[#f58331] font-bold text-xs tracking-wider cursor-pointer focus:outline-none focus-visible:outline-none font-display`}
                 >
-                  FREE CONSULTATION
+                  <Menu size={16} />
+                  <span>MENU</span>
                 </button>
-              </li>
-            </ul>
+              </div>
+
+              <ul
+                className={`desk-menu navbar px-0 hidden lg:flex items-center gap-[25px] h-full ${isScrolled ? '!hidden' : ''}`}
+                style={{
+                  color: '#1A1A1A',
+                  fontFamily: 'GTWalsheimPro-Bold, sans-serif',
+                  fontSize: '13px',
+                  fontWeight: 'bold',
+                  padding: '8px 0px',
+                  listStyle: 'none'
+                }}
+              >
+                {NAVIGATION_LINKS.map((link) => {
+                  return (
+                    <li
+                      key={link.label}
+                      className="h-full flex items-center"
+                      onMouseEnter={() => handleMouseEnter(link.key)}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      {link.hasMegaMenu ? (
+                        <button className="group flex items-center gap-0.5 transition-colors cursor-pointer h-full border-b-2 border-transparent focus:outline-none focus-visible:outline-none">
+                          {renderLinkLabel(link.label, true, link.key)}
+                        </button>
+                      ) : (
+                        <a
+                          href={link.href}
+                          onClick={() => setActiveMenu(link.key)}
+                          className="group transition-colors h-full flex items-center border-b-2 border-transparent focus:outline-none focus-visible:outline-none"
+                        >
+                          {renderLinkLabel(link.label, true, link.key)}
+                        </a>
+                      )}
+                    </li>
+                  );
+                })}
+
+                <li className="flex items-center gap-[25px] select-none h-full">
+                  {/* support numbers with 24 hours support icon */}
+                  <div className={`flex items-center gap-2.5 h-[34px] ${theme === 'light' ? 'text-[#111111]' : 'text-white'}`}>
+                    <img
+                      src="https://dd.mocup.in/assets/web/images/all/support-icon.svg"
+                      alt="Support Icon"
+                      className={`w-[34px] h-[34px] ${theme === 'light' ? 'invert' : ''}`}
+                    />
+                    <span className="whitespace-nowrap font-normal text-[14px]" style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif" }}>+91 9873282812 / +1 4694410125</span>
+                  </div>
+
+                  {/* Orange consultation button */}
+                  <button
+                    onClick={(e) => {
+                      triggerModal();
+                      if (typeof window !== 'undefined' && (window as any).cycleTheme) {
+                        (window as any).cycleTheme(e.clientX, e.clientY);
+                      }
+                    }}
+                    className="bg-[#f58331] text-white w-auto h-[34px] rounded-[6px] uppercase cursor-pointer flex items-center justify-center whitespace-nowrap px-[12px] focus:outline-none focus-visible:outline-none font-bold text-[13px]"
+                    style={{ fontFamily: "'GTWalsheimPro-Bold', sans-serif" }}
+                  >
+                    FREE CONSULTATION
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
 
           {/* Right Logo */}
           <div className="flex items-center pl-6 select-none shrink-0">
@@ -602,561 +602,567 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             </a>
           </div>
 
-          {/* --- HIGH-FIDELITY MEGA MENU OVERLAYS --- */}
 
-          {/* 1. Expertise Mega Menu */}
-          {hoveredMenu === 'expertise' && (
-            <div
-              onMouseEnter={() => handleMouseEnter('expertise')}
-              onMouseLeave={handleMouseLeave}
-              onMouseDown={(e) => handleMegaTabClick(e, 'expertise')}
-              className="fixed left-0 w-screen bg-[var(--background)] px-[30px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 top-[72px]"
-            >
-              <div className="w-full flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
-                <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
-                  {/* Left Column */}
-                  <div className="pr-[40px]">
-                    <img
-                      src={EXPERTISE_MENU.left.image}
-                      alt="Expertise Development"
-                      className="w-full h-[220px] object-cover mb-[20px]"
-                    />
-                    <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                      ENGAGEMENT MODELS
-                    </h3>
-                    <p className="text-[13px] mb-[30px]">
-                      <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
-                      <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
-                    </p>
+        </div>
 
-                    <div className="flex flex-col gap-[24px]">
-                      {EXPERTISE_MENU.left.items.map((item: any) => (
-                        <div key={item.title} className="flex items-start gap-[16px]">
-                          <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
-                          <div className="flex flex-col">
-                            <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                              {item.title}
-                            </span>
-                            <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
-                              {item.desc}
-                            </span>
-                          </div>
+        {/* --- HIGH-FIDELITY MEGA MENU OVERLAYS --- */}
+
+        {/* 1. Expertise Mega Menu */}
+        {hoveredMenu === 'expertise' && (
+          <div
+            onMouseEnter={() => handleMouseEnter('expertise')}
+            onMouseLeave={handleMouseLeave}
+            onMouseDown={(e) => handleMegaTabClick(e, 'expertise')}
+            className="fixed left-0 right-0 w-full bg-[var(--background)] px-[35px] lg:px-[44px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
+            style={{ top: isScrolled ? '60px' : '61.6px' }}
+          >
+            <div className="w-full max-w-[1320px] flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
+                {/* Left Column */}
+                <div className="pr-[40px]">
+                  <img
+                    src={EXPERTISE_MENU.left.image}
+                    alt="Expertise Development"
+                    className="w-full h-[220px] object-cover mb-[20px]"
+                  />
+                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                    ENGAGEMENT MODELS
+                  </h3>
+                  <p className="text-[13px] mb-[30px]">
+                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
+                    <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
+                  </p>
+
+                  <div className="flex flex-col gap-[24px]">
+                    {EXPERTISE_MENU.left.items.map((item: any) => (
+                      <div key={item.title} className="flex items-start gap-[16px]">
+                        <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
+                        <div className="flex flex-col">
+                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                            {item.title}
+                          </span>
+                          <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
+                            {item.desc}
+                          </span>
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
+                </div>
 
-                  {/* Center Column */}
-                  <div className="border-r-[1.5px] border-[#00539c] pr-[24px] flex flex-col justify-between">
-                    <div className="flex flex-col gap-[2px]">
-                      {EXPERTISE_MENU.center.categories.map((cat) => (
-                        <button
-                          key={cat}
-                          onClick={() => setActiveExpertiseCategory(cat)}
-                          className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
-                          style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
-                        >
-                          <span className={`px-[16px] py-[8px] rounded-[4px] ${activeExpertiseCategory === cat
-                              ? 'bg-[#00539c] text-white'
-                              : 'text-[#00539c] hover:bg-slate-50'
-                            }`}>
-                            {cat}
-                          </span>
-                          <span className="text-[7px] text-[#00539c] pr-[16px]">
-                            ▶
-                          </span>
-                        </button>
-                      ))}
-                    </div>
-
-                    {/* Bottom line and All Services Button */}
-                    <div className="flex items-center mt-[30px] pl-[16px]">
-                      <div className="w-[80px] h-[1.5px] bg-slate-300 mr-[12px]" />
-                      <a
-                        onClick={triggerModal}
-                        className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
+                {/* Center Column */}
+                <div className="border-r-[1.5px] border-[#00539c] pr-[24px] flex flex-col justify-between">
+                  <div className="flex flex-col gap-[2px]">
+                    {EXPERTISE_MENU.center.categories.map((cat) => (
+                      <button
+                        key={cat}
+                        onClick={() => setActiveExpertiseCategory(cat)}
+                        className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
                         style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
                       >
-                        All Services
-                      </a>
-                    </div>
+                        <span className={`px-[16px] py-[8px] rounded-[4px] ${activeExpertiseCategory === cat
+                          ? 'bg-[#00539c] text-white'
+                          : 'text-[#00539c] hover:bg-slate-50'
+                          }`}>
+                          {cat}
+                        </span>
+                        <span className="text-[7px] text-[#00539c] pr-[16px]">
+                          ▶
+                        </span>
+                      </button>
+                    ))}
                   </div>
 
-                  {/* Right Column */}
-                  <div className="pl-[30px]">
-                    <div className="flex items-center gap-[16px] mb-[20px]">
-                      <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                        {activeExpertiseCategory}
-                      </h4>
-                      <div className="flex-1 h-[1.5px] bg-[#00539c]" />
-                    </div>
-                    <div className={['SOLUTIONS', 'EMERGING TECHNOLOGIES'].includes(activeExpertiseCategory) ? "grid grid-cols-2 gap-x-[30px] gap-y-[16px]" : "flex flex-col gap-[16px]"}>
-                      {(EXPERTISE_MENU.center.subServices[activeExpertiseCategory as keyof typeof EXPERTISE_MENU.center.subServices] || []).map((serv) => (
-                        <a
-                          key={serv}
-                          href="#"
-                          className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
-                        >
-                          {serv}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Full-width bottom banner */}
-                <div
-                  className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
-                  style={{
-                    background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
-                  }}
-                >
-                  {/* Left: Stats */}
-                  <div className="flex items-center gap-[60px] pl-[10px]">
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
-                    </div>
-                  </div>
-
-                  {/* Right: Text and Button */}
-                  <div className="flex items-center gap-[24px]">
-                    <div className="flex flex-col text-right max-w-[540px]">
-                      <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
-                      <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
-                    </div>
-                    {/* Empty spacer to reserve space for the global floating WhatsApp button */}
-                    <div className="w-[48px] h-[48px] shrink-0" />
+                  {/* Bottom line and All Services Button */}
+                  <div className="flex items-center mt-[30px] pl-[16px]">
+                    <div className="w-[80px] h-[1.5px] bg-slate-300 mr-[12px]" />
+                    <a
+                      onClick={triggerModal}
+                      className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
+                      style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                    >
+                      All Services
+                    </a>
                   </div>
                 </div>
-              </div>
-            </div>
-          )}
 
-          {/* 2. AI Ingenuity Mega Menu */}
-          {hoveredMenu === 'ai-ingenuity' && (
-            <div
-              onMouseEnter={() => handleMouseEnter('ai-ingenuity')}
-              onMouseLeave={handleMouseLeave}
-              onMouseDown={(e) => handleMegaTabClick(e, 'ai-ingenuity')}
-              className="fixed left-0 w-screen bg-[var(--background)] px-[30px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 top-[72px]"
-            >
-              <div className="w-full flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
-                <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
-                  {/* Left Column */}
-                  <div className="pr-[40px]">
-                    <img
-                      src={AI_MENU.left.image}
-                      alt="AI Innovation Models"
-                      className="w-full h-[220px] object-cover mb-[20px]"
-                    />
-                    <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                      {AI_MENU.left.title}
-                    </h3>
-                    <p className="text-[13px] mb-[30px]">
-                      <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
-                      <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
-                    </p>
-
-                    <div className="flex flex-col gap-[24px]">
-                      {AI_MENU.left.items.map((item: any) => (
-                        <div key={item.title} className="flex items-start gap-[16px]">
-                          {item.icon ? (
-                            <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
-                          ) : (
-                            <div className="w-[30px] h-[30px] shrink-0" />
-                          )}
-                          <div className="flex flex-col">
-                            <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                              {item.title}
-                            </span>
-                            {item.desc && (
-                              <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
-                                {item.desc}
-                              </span>
-                            )}
-                            {item.links && (
-                              <div className="flex flex-col gap-[6px] mt-[8px]">
-                                {item.links.map((lnk: any) => (
-                                  <a
-                                    key={lnk.label}
-                                    href={lnk.href}
-                                    className="text-slate-500 hover:text-[#f58331] text-[13px] font-medium transition-colors"
-                                  >
-                                    {lnk.label}
-                                  </a>
-                                ))}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                {/* Right Column */}
+                <div className="pl-[30px]">
+                  <div className="flex items-center gap-[16px] mb-[20px]">
+                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                      {activeExpertiseCategory}
+                    </h4>
+                    <div className="flex-1 h-[1.5px] bg-[#00539c]" />
                   </div>
-
-                  {/* Center Column */}
-                  <div className="border-r-[1.5px] border-[#00539c] pr-[24px] flex flex-col justify-between">
-                    <div className="flex flex-col gap-[2px]">
-                      {AI_MENU.center.categories.map((cat) => (
-                        <button
-                          key={cat}
-                          onClick={() => setActiveAICategory(cat)}
-                          className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
-                          style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
-                        >
-                          <span className={`px-[16px] py-[8px] rounded-[4px] ${activeAICategory === cat
-                              ? 'bg-[#00539c] text-white'
-                              : 'text-[#00539c] hover:bg-slate-50'
-                            }`}>
-                            {cat}
-                          </span>
-                          <span className="text-[7px] text-[#00539c] pr-[16px]">
-                            ▶
-                          </span>
-                        </button>
-                      ))}
-                    </div>
-
-                    {/* Bottom line and All Services Button */}
-                    <div className="flex items-center mt-[30px] pl-[16px]">
-                      <div className="w-[80px] h-[1.5px] bg-slate-300 mr-[12px]" />
+                  <div className={['SOLUTIONS', 'EMERGING TECHNOLOGIES'].includes(activeExpertiseCategory) ? "grid grid-cols-2 gap-x-[30px] gap-y-[16px]" : "flex flex-col gap-[16px]"}>
+                    {(EXPERTISE_MENU.center.subServices[activeExpertiseCategory as keyof typeof EXPERTISE_MENU.center.subServices] || []).map((serv) => (
                       <a
-                        onClick={triggerModal}
-                        className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
-                        style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                        key={serv}
+                        href="#"
+                        className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
                       >
-                        All Services
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Right Column */}
-                  <div className="pl-[30px]">
-                    <div className="flex items-center gap-[16px] mb-[20px]">
-                      <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                        {activeAICategory}
-                      </h4>
-                      <div className="flex-1 h-[1.5px] bg-[#00539c]" />
-                    </div>
-                    <div className="flex flex-col gap-[16px]">
-                      {(AI_MENU.center.subServices[activeAICategory as keyof typeof AI_MENU.center.subServices] || []).map((serv) => (
-                        <a
-                          key={serv}
-                          href="#"
-                          className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
-                        >
-                          {serv}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                {/* Full-width bottom banner */}
-                <div
-                  className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
-                  style={{
-                    background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
-                  }}
-                >
-                  {/* Left: Stats */}
-                  <div className="flex items-center gap-[60px] pl-[10px]">
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
-                    </div>
-                  </div>
-
-                  {/* Right: Text and Button */}
-                  <div className="flex items-center gap-[24px]">
-                    <div className="flex flex-col text-right max-w-[540px]">
-                      <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
-                      <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
-                    </div>
-                    {/* Empty spacer to reserve space for the global floating WhatsApp button */}
-                    <div className="w-[48px] h-[48px] shrink-0" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* 3. Technology Mega Menu */}
-          {hoveredMenu === 'technology' && (
-            <div
-              onMouseEnter={() => handleMouseEnter('technology')}
-              onMouseLeave={handleMouseLeave}
-              onMouseDown={(e) => handleMegaTabClick(e, 'technology')}
-              className="fixed left-0 w-screen bg-[var(--background)] px-[30px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 top-[72px]"
-            >
-              <div className="w-full flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
-                <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
-                  {/* Left Column */}
-                  <div className="pr-[40px]">
-                    <img
-                      src={TECH_MENU.left.image}
-                      alt="Technologies"
-                      className="w-full h-[220px] object-cover mb-[20px]"
-                    />
-                    <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                      {TECH_MENU.left.title}
-                    </h3>
-                    <p className="text-[13px] mb-[30px]">
-                      <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
-                      <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
-                    </p>
-
-                    <div className="flex flex-col gap-[24px]">
-                      {TECH_MENU.left.items.map((item: any) => (
-                        <div key={item.title} className="flex items-start gap-[16px]">
-                          {item.icon ? (
-                            <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
-                          ) : (
-                            <div className="w-[30px] h-[30px] shrink-0" />
-                          )}
-                          <div className="flex flex-col">
-                            <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                              {item.title}
-                            </span>
-                            {item.desc && (
-                              <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
-                                {item.desc}
-                              </span>
-                            )}
-                            {item.links && (
-                              <div className="flex flex-col gap-[6px] mt-[8px]">
-                                {item.links.map((lnk: any) => (
-                                  <a
-                                    key={lnk.label}
-                                    href={lnk.href}
-                                    className="text-slate-500 hover:text-[#f58331] text-[13px] font-medium transition-colors"
-                                  >
-                                    {lnk.label}
-                                  </a>
-                                ))}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Center Column */}
-                  <div className="border-r-[1.5px] border-[#00539c] pr-[24px] flex flex-col justify-between">
-                    <div className="flex flex-col gap-[2px]">
-                      {TECH_MENU.center.categories.map((cat) => (
-                        <button
-                          key={cat}
-                          onClick={() => setActiveTechCategory(cat)}
-                          className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
-                          style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
-                        >
-                          <span className={`px-[16px] py-[8px] rounded-[4px] ${activeTechCategory === cat
-                              ? 'bg-[#00539c] text-white'
-                              : 'text-[#00539c] hover:bg-slate-50'
-                            }`}>
-                            {cat}
-                          </span>
-                          <span className="text-[7px] text-[#00539c] pr-[16px]">
-                            ▶
-                          </span>
-                        </button>
-                      ))}
-                    </div>
-
-                    {/* Bottom line and All Services Button */}
-                    <div className="flex items-center mt-[30px] pl-[16px]">
-                      <div className="w-[80px] h-[1.5px] bg-slate-300 mr-[12px]" />
-                      <a
-                        onClick={triggerModal}
-                        className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
-                        style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
-                      >
-                        All Services
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Right Column */}
-                  <div className="pl-[30px]">
-                    <div className="flex items-center gap-[16px] mb-[20px]">
-                      <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                        {activeTechCategory}
-                      </h4>
-                      <div className="flex-1 h-[1.5px] bg-[#00539c]" />
-                    </div>
-                    <div className="flex flex-col gap-[16px]">
-                      {(TECH_MENU.center.subServices[activeTechCategory as keyof typeof TECH_MENU.center.subServices] || []).map((serv) => (
-                        <a
-                          key={serv}
-                          href="#"
-                          className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
-                        >
-                          {serv}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                {/* Full-width bottom banner */}
-                <div
-                  className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
-                  style={{
-                    background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
-                  }}
-                >
-                  {/* Left: Stats */}
-                  <div className="flex items-center gap-[60px] pl-[10px]">
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
-                    </div>
-                  </div>
-
-                  {/* Right: Text and Button */}
-                  <div className="flex items-center gap-[24px]">
-                    <div className="flex flex-col text-right max-w-[540px]">
-                      <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
-                      <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
-                    </div>
-                    {/* Empty spacer to reserve space for the global floating WhatsApp button */}
-                    <div className="w-[48px] h-[48px] shrink-0" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* 4. Corporate Mega Menu */}
-          {hoveredMenu === 'corporate' && (
-            <div
-              onMouseEnter={() => handleMouseEnter('corporate')}
-              onMouseLeave={handleMouseLeave}
-              onMouseDown={(e) => handleMegaTabClick(e, 'corporate')}
-              className="fixed left-0 w-screen bg-[var(--background)] px-[30px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 top-[72px]"
-            >
-              <div className="w-full flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
-                <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 px-[40px] py-[40px]">
-                  {/* Left Column */}
-                  <div className="pr-[40px]">
-                    <img
-                      src={CORPORATE_MENU.left.image}
-                      alt="Corporate Models"
-                      className="w-full h-[220px] object-cover mb-[20px]"
-                    />
-                    <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                      {CORPORATE_MENU.left.title}
-                    </h3>
-                    <p className="text-[13px] mb-[30px]">
-                      <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
-                      <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
-                    </p>
-
-                    <div className="flex flex-col gap-[24px]">
-                      {CORPORATE_MENU.left.items.map((item: any) => (
-                        <div key={item.title} className="flex items-start gap-[16px]">
-                          {item.icon ? (
-                            <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
-                          ) : (
-                            <div className="w-[30px] h-[30px] bg-slate-100 flex items-center justify-center text-[#f58331] font-bold text-[10px] shrink-0 border border-slate-200 rounded-full">
-                              C
-                            </div>
-                          )}
-                          <div className="flex flex-col">
-                            <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                              {item.title}
-                            </span>
-                            {item.desc && (
-                              <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
-                                {item.desc}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Right Column */}
-                  <div className="pl-[20px] grid grid-cols-2 gap-x-[60px] gap-y-[30px] content-start">
-                    {CORPORATE_MENU.columns.map((col) => (
-                      <a
-                        key={col.title}
-                        href={col.href}
-                        className="flex flex-col border-b-[1.5px] border-[#00539c] pb-[16px] cursor-pointer"
-                      >
-                        <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase mb-[8px]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
-                          {col.title}
-                        </h4>
-                        <p className="text-slate-500 text-[13.5px] font-medium leading-[1.6]">
-                          {col.desc}
-                        </p>
+                        {serv}
                       </a>
                     ))}
                   </div>
                 </div>
-                {/* Full-width bottom banner */}
-                <div
-                  className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
-                  style={{
-                    background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
-                  }}
-                >
-                  {/* Left: Stats */}
-                  <div className="flex items-center gap-[60px] pl-[10px]">
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
-                      <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
-                    </div>
-                  </div>
+              </div>
 
-                  {/* Right: Text and Button */}
-                  <div className="flex items-center gap-[24px]">
-                    <div className="flex flex-col text-right max-w-[540px]">
-                      <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
-                      <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
-                    </div>
-                    {/* Empty spacer to reserve space for the global floating WhatsApp button */}
-                    <div className="w-[48px] h-[48px] shrink-0" />
+              {/* Full-width bottom banner */}
+              <div
+                className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
+                style={{
+                  background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
+                }}
+              >
+                {/* Left: Stats */}
+                <div className="flex items-center gap-[60px] pl-[10px]">
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
                   </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
+                  </div>
+                </div>
+
+                {/* Right: Text and Button */}
+                <div className="flex items-center gap-[24px]">
+                  <div className="flex flex-col text-right max-w-[540px]">
+                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
+                    <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
+                  </div>
+                  {/* Empty spacer to reserve space for the global floating WhatsApp button */}
+                  <div className="w-[48px] h-[48px] shrink-0" />
                 </div>
               </div>
             </div>
-          )}
+          </div>
+        )}
 
-        </div>
+        {/* 2. AI Ingenuity Mega Menu */}
+        {hoveredMenu === 'ai-ingenuity' && (
+          <div
+            onMouseEnter={() => handleMouseEnter('ai-ingenuity')}
+            onMouseLeave={handleMouseLeave}
+            onMouseDown={(e) => handleMegaTabClick(e, 'ai-ingenuity')}
+            className="fixed left-0 right-0 w-full bg-[var(--background)] px-[35px] lg:px-[44px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
+            style={{ top: isScrolled ? '60px' : '61.6px' }}
+          >
+            <div className="w-full max-w-[1320px] flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
+                {/* Left Column */}
+                <div className="pr-[40px]">
+                  <img
+                    src={AI_MENU.left.image}
+                    alt="AI Innovation Models"
+                    className="w-full h-[220px] object-cover mb-[20px]"
+                  />
+                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                    {AI_MENU.left.title}
+                  </h3>
+                  <p className="text-[13px] mb-[30px]">
+                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
+                    <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
+                  </p>
+
+                  <div className="flex flex-col gap-[24px]">
+                    {AI_MENU.left.items.map((item: any) => (
+                      <div key={item.title} className="flex items-start gap-[16px]">
+                        {item.icon ? (
+                          <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
+                        ) : (
+                          <div className="w-[30px] h-[30px] shrink-0" />
+                        )}
+                        <div className="flex flex-col">
+                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                            {item.title}
+                          </span>
+                          {item.desc && (
+                            <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
+                              {item.desc}
+                            </span>
+                          )}
+                          {item.links && (
+                            <div className="flex flex-col gap-[6px] mt-[8px]">
+                              {item.links.map((lnk: any) => (
+                                <a
+                                  key={lnk.label}
+                                  href={lnk.href}
+                                  className="text-slate-500 hover:text-[#f58331] text-[13px] font-medium transition-colors"
+                                >
+                                  {lnk.label}
+                                </a>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Center Column */}
+                <div className="border-r-[1.5px] border-[#00539c] pr-[24px] flex flex-col justify-between">
+                  <div className="flex flex-col gap-[2px]">
+                    {AI_MENU.center.categories.map((cat) => (
+                      <button
+                        key={cat}
+                        onClick={() => setActiveAICategory(cat)}
+                        className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
+                        style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                      >
+                        <span className={`px-[16px] py-[8px] rounded-[4px] ${activeAICategory === cat
+                          ? 'bg-[#00539c] text-white'
+                          : 'text-[#00539c] hover:bg-slate-50'
+                          }`}>
+                          {cat}
+                        </span>
+                        <span className="text-[7px] text-[#00539c] pr-[16px]">
+                          ▶
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Bottom line and All Services Button */}
+                  <div className="flex items-center mt-[30px] pl-[16px]">
+                    <div className="w-[80px] h-[1.5px] bg-slate-300 mr-[12px]" />
+                    <a
+                      onClick={triggerModal}
+                      className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
+                      style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                    >
+                      All Services
+                    </a>
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="pl-[30px]">
+                  <div className="flex items-center gap-[16px] mb-[20px]">
+                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                      {activeAICategory}
+                    </h4>
+                    <div className="flex-1 h-[1.5px] bg-[#00539c]" />
+                  </div>
+                  <div className="flex flex-col gap-[16px]">
+                    {(AI_MENU.center.subServices[activeAICategory as keyof typeof AI_MENU.center.subServices] || []).map((serv) => (
+                      <a
+                        key={serv}
+                        href="#"
+                        className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
+                      >
+                        {serv}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              {/* Full-width bottom banner */}
+              <div
+                className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
+                style={{
+                  background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
+                }}
+              >
+                {/* Left: Stats */}
+                <div className="flex items-center gap-[60px] pl-[10px]">
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
+                  </div>
+                </div>
+
+                {/* Right: Text and Button */}
+                <div className="flex items-center gap-[24px]">
+                  <div className="flex flex-col text-right max-w-[540px]">
+                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
+                    <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
+                  </div>
+                  {/* Empty spacer to reserve space for the global floating WhatsApp button */}
+                  <div className="w-[48px] h-[48px] shrink-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 3. Technology Mega Menu */}
+        {hoveredMenu === 'technology' && (
+          <div
+            onMouseEnter={() => handleMouseEnter('technology')}
+            onMouseLeave={handleMouseLeave}
+            onMouseDown={(e) => handleMegaTabClick(e, 'technology')}
+            className="fixed left-0 right-0 w-full bg-[var(--background)] px-[35px] lg:px-[44px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
+            style={{ top: isScrolled ? '60px' : '61.6px' }}
+          >
+            <div className="w-full max-w-[1320px] flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
+                {/* Left Column */}
+                <div className="pr-[40px]">
+                  <img
+                    src={TECH_MENU.left.image}
+                    alt="Technologies"
+                    className="w-full h-[220px] object-cover mb-[20px]"
+                  />
+                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                    {TECH_MENU.left.title}
+                  </h3>
+                  <p className="text-[13px] mb-[30px]">
+                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
+                    <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
+                  </p>
+
+                  <div className="flex flex-col gap-[24px]">
+                    {TECH_MENU.left.items.map((item: any) => (
+                      <div key={item.title} className="flex items-start gap-[16px]">
+                        {item.icon ? (
+                          <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
+                        ) : (
+                          <div className="w-[30px] h-[30px] shrink-0" />
+                        )}
+                        <div className="flex flex-col">
+                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                            {item.title}
+                          </span>
+                          {item.desc && (
+                            <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
+                              {item.desc}
+                            </span>
+                          )}
+                          {item.links && (
+                            <div className="flex flex-col gap-[6px] mt-[8px]">
+                              {item.links.map((lnk: any) => (
+                                <a
+                                  key={lnk.label}
+                                  href={lnk.href}
+                                  className="text-slate-500 hover:text-[#f58331] text-[13px] font-medium transition-colors"
+                                >
+                                  {lnk.label}
+                                </a>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Center Column */}
+                <div className="border-r-[1.5px] border-[#00539c] pr-[24px] flex flex-col justify-between">
+                  <div className="flex flex-col gap-[2px]">
+                    {TECH_MENU.center.categories.map((cat) => (
+                      <button
+                        key={cat}
+                        onClick={() => setActiveTechCategory(cat)}
+                        className="flex items-center justify-between w-full text-left font-extrabold text-[12px] tracking-widest uppercase transition-colors cursor-pointer"
+                        style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                      >
+                        <span className={`px-[16px] py-[8px] rounded-[4px] ${activeTechCategory === cat
+                          ? 'bg-[#00539c] text-white'
+                          : 'text-[#00539c] hover:bg-slate-50'
+                          }`}>
+                          {cat}
+                        </span>
+                        <span className="text-[7px] text-[#00539c] pr-[16px]">
+                          ▶
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Bottom line and All Services Button */}
+                  <div className="flex items-center mt-[30px] pl-[16px]">
+                    <div className="w-[80px] h-[1.5px] bg-slate-300 mr-[12px]" />
+                    <a
+                      onClick={triggerModal}
+                      className="bg-[#f58331] text-white hover:bg-black transition-colors px-[12px] py-[4px] font-bold tracking-wider text-[9px] uppercase select-none cursor-pointer"
+                      style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}
+                    >
+                      All Services
+                    </a>
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="pl-[30px]">
+                  <div className="flex items-center gap-[16px] mb-[20px]">
+                    <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                      {activeTechCategory}
+                    </h4>
+                    <div className="flex-1 h-[1.5px] bg-[#00539c]" />
+                  </div>
+                  <div className="flex flex-col gap-[16px]">
+                    {(TECH_MENU.center.subServices[activeTechCategory as keyof typeof TECH_MENU.center.subServices] || []).map((serv) => (
+                      <a
+                        key={serv}
+                        href="#"
+                        className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
+                      >
+                        {serv}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              {/* Full-width bottom banner */}
+              <div
+                className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
+                style={{
+                  background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
+                }}
+              >
+                {/* Left: Stats */}
+                <div className="flex items-center gap-[60px] pl-[10px]">
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
+                  </div>
+                </div>
+
+                {/* Right: Text and Button */}
+                <div className="flex items-center gap-[24px]">
+                  <div className="flex flex-col text-right max-w-[540px]">
+                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
+                    <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
+                  </div>
+                  {/* Empty spacer to reserve space for the global floating WhatsApp button */}
+                  <div className="w-[48px] h-[48px] shrink-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 4. Corporate Mega Menu */}
+        {hoveredMenu === 'corporate' && (
+          <div
+            onMouseEnter={() => handleMouseEnter('corporate')}
+            onMouseLeave={handleMouseLeave}
+            onMouseDown={(e) => handleMegaTabClick(e, 'corporate')}
+            className="fixed left-0 right-0 w-full bg-[var(--background)] px-[35px] lg:px-[44px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
+            style={{ top: isScrolled ? '60px' : '61.6px' }}
+          >
+            <div className="w-full max-w-[1320px] flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
+              <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 px-[40px] py-[40px]">
+                {/* Left Column */}
+                <div className="pr-[40px]">
+                  <img
+                    src={CORPORATE_MENU.left.image}
+                    alt="Corporate Models"
+                    className="w-full h-[220px] object-cover mb-[20px]"
+                  />
+                  <h3 className="font-extrabold text-[20px] tracking-wide text-[#111] mb-[4px] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                    {CORPORATE_MENU.left.title}
+                  </h3>
+                  <p className="text-[13px] mb-[30px]">
+                    <span className="font-extrabold text-[#111]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Hiring Software Developers.</span>
+                    <span className="text-slate-500 font-medium"> It Only Takes A Few Clicks</span>
+                  </p>
+
+                  <div className="flex flex-col gap-[24px]">
+                    {CORPORATE_MENU.left.items.map((item: any) => (
+                      <div key={item.title} className="flex items-start gap-[16px]">
+                        {item.icon ? (
+                          <img src={item.icon} alt={item.title} className="w-[30px] h-[30px] shrink-0" />
+                        ) : (
+                          <div className="w-[30px] h-[30px] bg-slate-100 flex items-center justify-center text-[#f58331] font-bold text-[10px] shrink-0 border border-slate-200 rounded-full">
+                            C
+                          </div>
+                        )}
+                        <div className="flex flex-col">
+                          <span className="text-[13px] font-extrabold tracking-wide text-[#111] uppercase" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                            {item.title}
+                          </span>
+                          {item.desc && (
+                            <span className="text-[13px] text-slate-500 font-medium mt-[4px] capitalize">
+                              {item.desc}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="pl-[20px] grid grid-cols-2 gap-x-[60px] gap-y-[30px] content-start">
+                  {CORPORATE_MENU.columns.map((col) => (
+                    <a
+                      key={col.title}
+                      href={col.href}
+                      className="flex flex-col border-b-[1.5px] border-[#00539c] pb-[16px] cursor-pointer"
+                    >
+                      <h4 className="font-extrabold text-[15px] tracking-wide text-[#00539c] uppercase mb-[8px]" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>
+                        {col.title}
+                      </h4>
+                      <p className="text-slate-500 text-[13.5px] font-medium leading-[1.6]">
+                        {col.desc}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+              {/* Full-width bottom banner */}
+              <div
+                className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
+                style={{
+                  background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
+                }}
+              >
+                {/* Left: Stats */}
+                <div className="flex items-center gap-[60px] pl-[10px]">
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>20 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">YEARS IN BUSINESS</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>5000 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">CLIENTS WORLDWIDE</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="text-[28px] font-extrabold leading-none mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>1700 +</span>
+                    <span className="text-[10px] font-bold tracking-widest uppercase">PROJECT EXECUTED</span>
+                  </div>
+                </div>
+
+                {/* Right: Text and Button */}
+                <div className="flex items-center gap-[24px]">
+                  <div className="flex flex-col text-right max-w-[540px]">
+                    <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold, sans-serif' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
+                    <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
+                  </div>
+                  {/* Empty spacer to reserve space for the global floating WhatsApp button */}
+                  <div className="w-[48px] h-[48px] shrink-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
       </header>
 
       {/* Mobile drawer canvas menu */}
