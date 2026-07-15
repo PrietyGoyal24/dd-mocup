@@ -1,7 +1,7 @@
 'use client';
 
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '@/components/layout/Navbar/Navbar';
+import Footer from '@/components/layout/Footer/Footer';
 import { Check } from 'lucide-react';
 
 export default function DesignBuildPageClient() {

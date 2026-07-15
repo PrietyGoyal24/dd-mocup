@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '@/components/layout/Navbar/Navbar';
+import Footer from '@/components/layout/Footer/Footer';
 
 export default function ContactUsPageClient() {
   // Capture local time dynamic rendering

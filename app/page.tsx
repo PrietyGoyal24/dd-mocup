@@ -1,14 +1,14 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import WhyUs from "@/components/WhyUs";
-import Services from "@/components/Services";
-import Solutions from "@/components/Solutions";
-import TechStack from "@/components/TechStack";
-import Portfolio from "@/components/Portfolio";
-import Testimonials from "@/components/Testimonials";
-import Clientele from "@/components/Clientele";
-import Blog from "@/components/Blog";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layout/Navbar/Navbar";
+import Hero from "@/components/sections/Hero/Hero";
+import WhyUs from "@/components/sections/WhyUs/WhyUs";
+import Services from "@/components/sections/Services/Services";
+import Solutions from "@/components/sections/Solutions/Solutions";
+import TechStack from "@/components/sections/TechStack/TechStack";
+import Portfolio from "@/components/sections/Portfolio/Portfolio";
+import Testimonials from "@/components/sections/Testimonials/Testimonials";
+import Clientele from "@/components/sections/Clientele/Clientele";
+import Blog from "@/components/sections/Blog/Blog";
+import Footer from "@/components/layout/Footer/Footer";
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import ContactUsPageClient from '@/components/ContactUsPageClient';
+import ContactUsPageClient from '@/components/pages/ContactUs/ContactUsPageClient';
 
 export const metadata: Metadata = {
   title: 'CONTACT : WEBSITE, MOBILE, APPLICATION, ECOMMERCE, ERP, CRM, BRAND CREATION & STRATEGY, DIGITAL MEDIA MARKETING... | DesignDot',

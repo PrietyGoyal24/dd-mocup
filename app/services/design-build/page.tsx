@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import DesignBuildPageClient from '@/components/DesignBuildPageClient';
+import DesignBuildPageClient from '@/components/pages/DesignBuild/DesignBuildPageClient';
 
 export const metadata: Metadata = {
   title: 'DESIGN-BUILD : turnkey solutions | DesignDot',

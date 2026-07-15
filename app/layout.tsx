@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
-import ScrollProvider from "@/components/ScrollProvider";
-import CustomCursor from "@/components/CustomCursor";
-import PaintSwitcher from "@/components/PaintSwitcher";
+import ScrollProvider from "@/components/layout/ScrollProvider/ScrollProvider";
+import CustomCursor from "@/components/layout/CustomCursor/CustomCursor";
+import PaintSwitcher from "@/components/layout/PaintSwitcher/PaintSwitcher";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
