@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { Menu, X, Phone, ArrowRight, ChevronDown } from 'lucide-react';
-import ConsultationModal from '@/components/features/ConsultationModal/ConsultationModal';
+import ConsultationModal from './ConsultationModal';
 
 // --- DATA STRUCTURES FOR HIGH-FIDELITY MEGA MENUS ---
 

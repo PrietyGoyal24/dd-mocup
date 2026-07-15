@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Navbar from '@/components/layout/Navbar/Navbar';
+import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/layout/Footer/Footer';
 
 export default function ContactUsPageClient() {
