@@ -50,7 +50,7 @@ export default function Solutions() {
                 Fuel Your Digital-First Idea
               </h5>
               <p
-                className="text-[15px] md:text-[16px] leading-[1.6] text-[#adadad] mb-8"
+                className="text-[16px] md:text-[16px] leading-[1.6] text-[#adadad] mb-8"
                 style={{ fontFamily: 'GTWalsheimPro-Regular' }}
               >
                 With 1600+ Transformation Experts
@@ -97,7 +97,7 @@ export default function Solutions() {
                         />
                       </div>
                       <p
-                        className="text-[15px] md:text-[16px] leading-[1.65] text-[#adadad] m-0"
+                        className="text-[18px] md:text-[18px] leading-[1.65] text-[#adadad] m-0"
                         style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                       >
                         {item.description}

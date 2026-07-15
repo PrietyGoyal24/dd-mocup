@@ -504,7 +504,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-40 ${theme === 'light' ? 'bg-[#fffbf8]' : 'bg-[var(--background)]'} py-0 transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'shadow-lg border-b border-black/5' : ''}`}>
+      <header
+        className={`fixed top-0 left-0 w-full z-40 ${theme === 'light' ? 'bg-[#fffbf8]' : 'bg-[var(--background)]'} transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'shadow-lg border-b border-black/5' : ''}`}
+        style={{ padding: '8px 0px' }}
+      >
         {/* Main Navbar (Always Compact Single-Row) */}
         <div className={`w-full pl-[35px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[60px]' : 'h-[61.6px]'}`}>
 
