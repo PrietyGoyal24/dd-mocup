@@ -79,17 +79,57 @@ export default function ContactUsPageClient() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-white text-[#111111] overflow-x-hidden selection:bg-[#f27820] selection:text-white">
+    <div className="w-full min-h-screen bg-[#fffbf8] text-[#111111] overflow-x-hidden selection:bg-[#f27820] selection:text-white">
+      <style>{`
+        .custom-sec-left {
+          width: 125px;
+          flex-shrink: 0;
+          display: block;
+        }
+        .custom-line-span {
+          width: 100px;
+          height: 1.5px;
+          background-color: #707070;
+          display: inline-block;
+        }
+        .guideline-sec-left {
+          display: block;
+          flex-shrink: 0;
+        }
+        .guideline-line-span {
+          width: 100px;
+          height: 1.5px;
+          background-color: #707070;
+          display: inline-block;
+          margin-right: 25px;
+          margin-top: 12px;
+          vertical-align: top;
+        }
+        @media (max-width: 1023px) {
+          .custom-sec-left {
+            display: none;
+          }
+          .guideline-line-span {
+            display: none;
+          }
+        }
+      `}</style>
       {/* Navigation Header */}
-      <Navbar />
+      <Navbar theme="light" />
 
-      <main className="w-full pt-[96px] lg:pt-[120px]">
+      <main className="w-full" style={{ paddingTop: '130px' }}>
         {/* Banner Top Strip Message */}
-        <div className="w-full bg-[#fcf5f5] py-5 border-b border-gray-200">
-          <div className="max-w-[1240px] mx-auto px-6 md:px-12 text-center">
-            <h5 
-              className="text-[13px] md:text-[15px] font-bold text-[#111111] uppercase tracking-wider"
-              style={{ fontFamily: 'GTWalsheimPro-Bold' }}
+        <div className="w-full flex justify-center bg-[#fffbf8]" style={{ paddingTop: '90px', paddingBottom: '70px' }}>
+          <div className="bg-[#083169] inline-flex items-center justify-center text-center" style={{ padding: '10px' }}>
+            <h5
+              className="text-white uppercase"
+              style={{
+                fontFamily: 'GTWalsheimPro-Bold',
+                fontSize: '24px',
+                lineHeight: '30px',
+                letterSpacing: '2px',
+                fontWeight: 700
+              }}
             >
               Looking for something special? Contact us now and let your ideas become reality!
             </h5>
@@ -97,368 +137,415 @@ export default function ContactUsPageClient() {
         </div>
 
         {/* Video & Banner Text Section */}
-        <div className="max-w-[1240px] mx-auto px-6 md:px-12 py-10">
-          <div className="relative w-full h-[320px] md:h-[450px] overflow-hidden rounded-2xl bg-black">
-            {/* Desktop Video background */}
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline 
-              className="absolute inset-0 w-full h-full object-cover opacity-85 hidden md:block"
-            >
-              <source src="https://dd.mocup.in/assets/web/images/video/contact-video.mp4" type="video/mp4" />
-            </video>
+        <div className="about-us-video w-full px-[20px] md:px-[50px] pb-0 bg-[#fffbf8]">
+          <div className="section-container w-full max-w-[1320px] mx-auto">
+            <div className="video-outer w-full">
+              <div className="video-inner relative w-full overflow-hidden bg-black">
+                {/* Desktop Video background */}
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width="1920"
+                  height="240"
+                  className="w-full h-auto hidden md:block"
+                >
+                  <source src="https://dd.mocup.in/assets/web/images/video/contact-video.mp4" type="video/mp4" />
+                </video>
 
-            {/* Mobile Video background */}
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline 
-              className="absolute inset-0 w-full h-full object-cover opacity-85 block md:hidden"
-            >
-              <source src="https://dd.mocup.in/assets/web/images/video/contact-mobile.mp4" type="video/mp4" />
-            </video>
+                {/* Mobile Video background */}
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width="1920"
+                  height="240"
+                  className="w-full h-auto block md:hidden"
+                >
+                  <source src="https://dd.mocup.in/assets/web/images/video/contact-mobile.mp4" type="video/mp4" />
+                </video>
 
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/35" />
-
-            {/* Video overlay texts */}
-            <div className="absolute left-[30px] md:left-[60px] bottom-[40px] md:bottom-[60px] text-left z-10">
-              <h1 
-                className="text-[42px] md:text-[70px] leading-none font-extrabold tracking-widest text-[#f58331] uppercase mb-1"
-                style={{ fontFamily: 'GT-Walsheim-Pro-Black' }}
-              >
-                CONTACT US<span className="inline-block w-4 h-4 rounded-full bg-white ml-2"></span>
-              </h1>
-              <p 
-                className="text-[18px] md:text-[24px] uppercase text-[#f58331] tracking-wide"
-                style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
-              >
-                timing is everything<span className="inline-block w-2.5 h-2.5 rounded-full bg-[#f58331] ml-2"></span>
-              </p>
+                {/* Video overlay texts */}
+                <div className="absolute left-[20px] md:left-[50px] lg:left-[100px] top-[50%] -translate-y-1/2 text-left z-10 w-full max-w-[90%]">
+                  <h1
+                    className="text-[#f58331] uppercase mb-0 drop-shadow-lg"
+                    style={{
+                      fontFamily: "'SocialGothic-Bold', 'GT-Walsheim-Pro'",
+                      fontSize: '75px',
+                      lineHeight: '110px',
+                      letterSpacing: '1px',
+                      fontWeight: 700
+                    }}
+                  >
+                    CONTACT US<span className="inline-block w-[6px] h-[6px] md:w-[8px] md:h-[8px] lg:w-[10px] lg:h-[10px] rounded-full bg-white ml-2 mb-[2px]"></span>
+                  </h1>
+                  <p
+                    className="text-[#f58331] drop-shadow-md flex items-center mt-[30px]"
+                    style={{
+                      fontFamily: 'GTWalsheimPro-Regular',
+                      fontSize: '22px',
+                      lineHeight: '22px',
+                      letterSpacing: '1px',
+                      fontWeight: 400
+                    }}
+                  >
+                    timing is everything<span className="inline-block w-[6px] h-[6px] md:w-[8px] md:h-[8px] lg:w-[10px] lg:h-[10px] rounded-full bg-[#f58331] ml-2 mb-[2px]"></span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
 
-          {/* Let's talk description paragraph */}
-          <div className="mt-12 max-w-[900px] text-left">
-            <h2 
-              className="text-[32px] md:text-[48px] font-extrabold text-[#111] uppercase tracking-wide mb-4"
-              style={{ fontFamily: 'GTWalsheimPro-Bold' }}
+        {/* Let's talk description paragraph */}
+        <div className="w-full px-[20px] md:px-[50px] pb-12 bg-[#fffbf8]">
+          <div className="w-full max-w-[1320px] mx-auto text-left">
+            <h2
+              className="text-[#2a255e] uppercase"
+              style={{
+                fontFamily: 'GTWalsheimPro-Regular',
+                fontSize: '40px',
+                lineHeight: '60px',
+                letterSpacing: '3px',
+                fontWeight: 400,
+                marginTop: '50px',
+                marginBottom: '20px',
+              }}
             >
               Let’s talk<span className="inline-block w-2 h-2 rounded-full bg-black ml-1.5 align-baseline"></span>
             </h2>
-            <p 
-              className="text-[16px] md:text-[18px] text-[#4a4a4a] leading-[1.8] font-normal"
-              style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+            <p
+              className="text-black font-normal"
+              style={{
+                fontFamily: 'GTWalsheimPro-Regular',
+                fontSize: '20px',
+                lineHeight: '30px',
+                letterSpacing: '1px',
+                marginTop: '0px',
+                marginBottom: '10px',
+              }}
             >
-              No matter what your ask—big or small—we’re ready to talk. We’re all about working together to solve your gnarliest. Just send us your questions or concerns by sending a proposal and we will give you the help you need.
+              No matter what your ask—big or small—we’re ready to talk. We’re all about working together to solve your gnarliest, Just send us your questions or concerns by sending a proposal and we will give you the help you need.
             </p>
           </div>
         </div>
 
         {/* Section One: Form and Guidelines */}
-        <section className="bg-white border-t border-gray-150 py-16">
-          <div className="max-w-[1240px] mx-auto px-6 md:px-12">
-            
-            {/* Divider styling line above section content */}
-            <div className="flex justify-between items-center w-full mb-12">
-              <div className="w-[120px] md:w-[160px] h-[1.5px] bg-[#d2d2d2] shrink-0" />
-              <div 
-                className="text-[18px] md:text-[20px] font-bold text-[#111111] tracking-wide uppercase"
-                style={{ fontFamily: 'GTWalsheimPro-Bold' }}
-              >
-                Contact Form<span className="inline-block w-1.5 h-1.5 bg-black rounded-full ml-1"></span>
+        <section className="bg-[#fffbf8] py-16">
+          <div className="max-w-[1320px] mx-auto px-[20px] md:px-[50px]">
+
+            {/* Divider styling line next to Contact Form header */}
+            <div className="flex items-center w-full mb-12">
+              {/* sec-left (line) */}
+              <div className="custom-sec-left">
+                <span className="custom-line-span"></span>
+              </div>
+              {/* sec-right (text) */}
+              <div className="flex-1 text-left">
+                <h3
+                  className="text-[32px] font-bold text-[#111111] tracking-wide"
+                  style={{ fontFamily: 'GTWalsheimPro-Bold' }}
+                >
+                  Contact Form<span className="inline-block w-1.5 h-1.5 bg-black rounded-full ml-1 align-baseline"></span>
+                </h3>
               </div>
             </div>
 
-            {/* Grid wrapper */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-              
-              {/* Left Column: Interactive Form */}
-              <div className="lg:col-span-6 w-full lg:pr-10">
-                {formSubmitted ? (
-                  <div className="thank-you-contact-page bg-[#fcf5f5] border border-gray-100 p-8 rounded-xl text-left">
-                    <h3 className="text-[#f27820] text-[28px] font-extrabold uppercase mb-4" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
-                      Thank You!
-                    </h3>
-                    <p className="text-[#111] text-[18px] leading-[1.7]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
-                      Your request has been successfully submitted. Our business development team will review details and contact you shortly in the next 24 hours.
-                    </p>
-                    <button 
-                      onClick={() => setFormSubmitted(false)}
-                      className="mt-6 bg-[#083169] text-white font-bold px-6 py-3 text-[14px] uppercase tracking-wider hover:bg-black transition-colors"
-                    >
-                      Send Another Message
-                    </button>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left">
-                    {errorMessage && (
-                      <div className="bg-red-50 text-red-600 border border-red-150 p-4 rounded text-[14px] font-bold">
-                        {errorMessage}
-                      </div>
-                    )}
+            {/* Grid wrapper with matching columns layout */}
+            <div className="flex w-full flex-col lg:flex-row">
+              {/* sec-left (invisible spacer to align with form inputs) */}
+              <div className="custom-sec-left" />
 
-                    <div className="flex flex-col gap-1">
-                      <input 
-                        type="text" 
-                        name="name" 
-                        required 
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        placeholder="name *" 
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[52px] text-[18px] text-[#222] placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-                      />
-                    </div>
+              {/* sec-right (content columns) */}
+              <div className="flex-1 w-full flex flex-col lg:flex-row items-start">
 
-                    <div className="flex flex-col gap-1">
-                      <input 
-                        type="number" 
-                        name="phone" 
-                        required 
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        placeholder="phone *" 
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[52px] text-[18px] text-[#222] placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-                      />
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                      <input 
-                        type="email" 
-                        name="email" 
-                        required 
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        placeholder="email *" 
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[52px] text-[18px] text-[#222] placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-                      />
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                      <input 
-                        type="text" 
-                        name="organisation" 
-                        value={formData.organisation}
-                        onChange={handleInputChange}
-                        placeholder="organisation" 
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[52px] text-[18px] text-[#222] placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-                      />
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                      <input 
-                        type="text" 
-                        name="location" 
-                        required
-                        value={formData.location}
-                        onChange={handleInputChange}
-                        placeholder="location *" 
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[52px] text-[18px] text-[#222] placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-                      />
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                      <select 
-                        name="projectBudget" 
-                        value={formData.projectBudget}
-                        onChange={handleInputChange}
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[52px] text-[18px] text-[#666] px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                {/* Left Column: Interactive Form */}
+                <div className="w-full lg:w-[46%] lg:pr-[180px] flex flex-col text-left">
+                  {formSubmitted ? (
+                    <div className="thank-you-contact-page bg-[#fcf5f5] border border-gray-100 p-8 rounded-xl text-left">
+                      <h3 className="text-[#f27820] text-[28px] font-extrabold uppercase mb-4" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                        Thank You!
+                      </h3>
+                      <p className="text-[#111] text-[18px] leading-[1.7]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                        Your request has been successfully submitted. Our business development team will review details and contact you shortly in the next 24 hours.
+                      </p>
+                      <button
+                        onClick={() => setFormSubmitted(false)}
+                        className="mt-6 bg-[#083169] text-white font-bold px-6 py-3 text-[14px] uppercase tracking-wider hover:bg-black transition-colors"
                       >
-                        <option value="">Project Budget...</option>
-                        <option value="Not Sure">Not Sure</option>
-                        <option value="$3000 to $10000">$3000 to $10000</option>
-                        <option value="$10000 to $20000">$10000 to $20000</option>
-                        <option value="$20000 to $30000">$20000 to $30000</option>
-                        <option value="$30000 to $50000">$30000 to $50000</option>
-                        <option value="$50000 to $100000">$50000 to $100000</option>
-                        <option value="$100000 and above">$100000 and above</option>
-                      </select>
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                      <input 
-                        type="text" 
-                        name="service" 
-                        required 
-                        value={formData.service}
-                        onChange={handleInputChange}
-                        placeholder="services *" 
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[52px] text-[18px] text-[#222] placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-                      />
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                      <input 
-                        type="file" 
-                        name="file_data"
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[52px] text-[15px] text-gray-500 pt-[12px] px-[20px] focus:outline-none rounded-sm"
-                      />
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                      <textarea 
-                        name="description" 
-                        value={formData.description}
-                        onChange={handleInputChange}
-                        placeholder="Description" 
-                        className="w-full border border-gray-300 bg-[#fcf5f5] h-[160px] text-[18px] text-[#222] placeholder:text-gray-400 px-[20px] py-[12px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase resize-none"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-                      />
-                    </div>
-
-                    {/* Interactive Captcha Section */}
-                    <div className="flex items-center gap-[10px] mt-2">
-                      <input 
-                        type="text" 
-                        name="captchaInput" 
-                        required 
-                        value={formData.captchaInput}
-                        onChange={handleInputChange}
-                        placeholder="Enter Security Code → *" 
-                        className="flex-1 border border-gray-300 bg-[#fcf5f5] h-[52px] text-[16px] text-[#222] px-[15px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm"
-                        style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-                      />
-                      <div className="flex items-center justify-center bg-[#f58331] text-white text-[20px] font-bold tracking-widest px-6 h-[52px] rounded-sm select-none">
-                        {captchaCode}
-                      </div>
-                      <button 
-                        type="button" 
-                        onClick={regenerateCaptcha}
-                        className="text-gray-500 hover:text-black font-semibold text-[13px] px-2 select-none tracking-wide"
-                      >
-                        REFRESH
+                        Send Another Message
                       </button>
                     </div>
+                  ) : (
+                    <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left w-full">
+                      {errorMessage && (
+                        <div className="bg-red-50 text-red-600 border border-red-150 p-4 rounded text-[14px] font-bold">
+                          {errorMessage}
+                        </div>
+                      )}
 
-                    {/* Submit Button */}
-                    <button 
-                      type="submit" 
-                      className="w-full bg-[#083169] text-white hover:bg-black text-[20px] font-bold h-[68px] border border-[#d3d3d3] transition-colors tracking-wide mt-5"
-                      style={{ fontFamily: 'GTWalsheimPro-Bold' }}
-                    >
-                      SUBMIT
-                    </button>
-                  </form>
-                )}
+                      <div className="flex flex-col gap-1">
+                        <input
+                          type="text"
+                          name="name"
+                          required
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          placeholder="name *"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        />
+                      </div>
+
+                      <div className="flex flex-col gap-1">
+                        <input
+                          type="number"
+                          name="phone"
+                          required
+                          value={formData.phone}
+                          onChange={handleInputChange}
+                          placeholder="phone *"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        />
+                      </div>
+
+                      <div className="flex flex-col gap-1">
+                        <input
+                          type="email"
+                          name="email"
+                          required
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          placeholder="email *"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        />
+                      </div>
+
+                      <div className="flex flex-col gap-1">
+                        <input
+                          type="text"
+                          name="organisation"
+                          value={formData.organisation}
+                          onChange={handleInputChange}
+                          placeholder="organisation"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        />
+                      </div>
+
+                      <div className="flex flex-col gap-1">
+                        <input
+                          type="text"
+                          name="location"
+                          required
+                          value={formData.location}
+                          onChange={handleInputChange}
+                          placeholder="location *"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        />
+                      </div>
+
+                      <div className="flex flex-col gap-1">
+                        <select
+                          name="projectBudget"
+                          value={formData.projectBudget}
+                          onChange={handleInputChange}
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        >
+                          <option value="">project budget...</option>
+                          <option value="Not Sure">Not Sure</option>
+                          <option value="$3000 to $10000">$3000 to $10000</option>
+                          <option value="$10000 to $20000">$10000 to $20000</option>
+                          <option value="$20000 to $30000">$20000 to $30000</option>
+                          <option value="$30000 to $50000">$30000 to $50000</option>
+                          <option value="$50000 to $100000">$50000 to $100000</option>
+                          <option value="$100000 and above">$100000 and above</option>
+                        </select>
+                      </div>
+
+                      <div className="flex flex-col gap-1">
+                        <input
+                          type="text"
+                          name="service"
+                          required
+                          value={formData.service}
+                          onChange={handleInputChange}
+                          placeholder="services *"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 placeholder:text-gray-400 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        />
+                      </div>
+
+                      <div className="flex flex-col gap-1">
+                        <input
+                          type="file"
+                          name="file_data"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[16px] text-gray-500 pt-[15px] px-[20px] focus:outline-none rounded-sm"
+                        />
+                      </div>
+
+                      <div className="flex flex-col gap-1">
+                        <textarea
+                          name="description"
+                          value={formData.description}
+                          onChange={handleInputChange}
+                          placeholder="description"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[185px] text-[24px] font-light text-gray-500 placeholder:text-gray-400 px-[20px] py-[10px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase resize-none"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        />
+                      </div>
+
+                      {/* Interactive Captcha Section */}
+                      <div className="flex items-center gap-[10px] mt-2 w-full">
+                        <input
+                          type="text"
+                          name="captchaInput"
+                          required
+                          value={formData.captchaInput}
+                          onChange={handleInputChange}
+                          placeholder="enter security code → *"
+                          className="flex-1 border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 px-[15px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                        />
+                        <div className="flex items-center justify-center bg-[#f58331] text-white text-[24px] font-normal px-6 h-[50px] rounded-sm select-none">
+                          {captchaCode}
+                        </div>
+                      </div>
+
+                      {/* Submit Button */}
+                      <button
+                        type="submit"
+                        className="w-full bg-[#083169] text-white hover:bg-black text-[24px] font-bold h-[68px] border border-[#d3d3d3] transition-colors tracking-wide mt-5 cursor-pointer"
+                        style={{ fontFamily: 'GTWalsheimPro-Bold' }}
+                      >
+                        SUBMIT
+                      </button>
+                    </form>
+                  )}
+                </div>
+
+                {/* Right Column: Guidelines */}
+                <div className="w-full lg:w-[54%] flex flex-col gap-10 mt-12 lg:mt-0 text-left">
+
+                  {/* Rule 1 */}
+                  <div className="flex items-start mb-[50px]">
+                    <div className="guideline-sec-left">
+                      <span className="guideline-line-span"></span>
+                    </div>
+                    <div className="flex flex-col">
+                      <b className="text-[18px] text-[#000000] font-bold uppercase tracking-[1px] mb-[15px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                        Put Forward Your Requirement
+                      </b>
+                      <p className="text-[18px] text-[#000000] font-normal leading-[30px] tracking-[1px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                        Fill up the form given on the right side of this page, and within 24 hours, one of our business development executive will reach you for further communication.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Rule 2 */}
+                  <div className="flex items-start mb-[50px]">
+                    <div className="guideline-sec-left">
+                      <span className="guideline-line-span"></span>
+                    </div>
+                    <div className="flex flex-col">
+                      <b className="text-[18px] text-[#000000] font-bold uppercase tracking-[1px] mb-[15px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                        Sign Non-Disclosure Agreement:
+                      </b>
+                      <p className="text-[18px] text-[#000000] font-normal leading-[30px] tracking-[1px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                        Through NDA, we make you feel secure. Your idea will be yours. Signing up an NDA assures you the privacy of your idea and project.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Rule 3 */}
+                  <div className="flex items-start mb-[50px]">
+                    <div className="guideline-sec-left">
+                      <span className="guideline-line-span"></span>
+                    </div>
+                    <div className="flex flex-col">
+                      <b className="text-[18px] text-[#000000] font-bold uppercase tracking-[1px] mb-[15px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                        Analyzing Your Requirement:
+                      </b>
+                      <p className="text-[18px] text-[#000000] font-normal leading-[30px] tracking-[1px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                        As soon as you signed up the NDA, we shall analyze the requirements put forward by you. Our team of experts will read and analyze the same, and will get back to you within few hours.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Rule 4 */}
+                  <div className="flex items-start mb-[50px]">
+                    <div className="guideline-sec-left">
+                      <span className="guideline-line-span"></span>
+                    </div>
+                    <div className="flex flex-col">
+                      <b className="text-[18px] text-[#000000] font-bold uppercase tracking-[1px] mb-[15px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                        Estimated Budget:
+                      </b>
+                      <p className="text-[18px] text-[#000000] font-normal leading-[30px] tracking-[1px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                        Once our team of <span className="font-extrabold text-[#111]">experts</span> and business development managers are done with analyzing the project and compilation of necessary resources required for the project, <span className="font-extrabold text-[#111]">we shall send you</span> with estimated budget or cost and estimated time required for completion of project successfully.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
-
-              {/* Right Column: Guidelines */}
-              <div className="lg:col-span-6 flex flex-col gap-10 mt-6 lg:mt-0 text-left lg:pl-[40px]">
-                
-                {/* Rule 1 */}
-                <div className="flex items-start gap-4">
-                  <div className="w-[100px] h-[1.5px] bg-[#d2d2d2] mt-3 shrink-0" />
-                  <div className="flex flex-col">
-                    <b className="text-[17px] text-black font-bold uppercase tracking-wide mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
-                      Put Forward Your Requirement
-                    </b>
-                    <p className="text-[14px] text-[#555] leading-[1.7]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
-                      Fill up the form given on the right side of this page, and within 24 hours, one of our business development executive will reach you for further communication.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Rule 2 */}
-                <div className="flex items-start gap-4">
-                  <div className="w-[100px] h-[1.5px] bg-[#d2d2d2] mt-3 shrink-0" />
-                  <div className="flex flex-col">
-                    <b className="text-[17px] text-black font-bold uppercase tracking-wide mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
-                      Sign Non-Disclosure Agreement:
-                    </b>
-                    <p className="text-[14px] text-[#555] leading-[1.7]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
-                      Through NDA, we make you feel secure. Your idea will be yours. Signing up an NDA assures you the privacy of your idea and project.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Rule 3 */}
-                <div className="flex items-start gap-4">
-                  <div className="w-[100px] h-[1.5px] bg-[#d2d2d2] mt-3 shrink-0" />
-                  <div className="flex flex-col">
-                    <b className="text-[17px] text-black font-bold uppercase tracking-wide mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
-                      Analyzing Your Requirement:
-                    </b>
-                    <p className="text-[14px] text-[#555] leading-[1.7]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
-                      As soon as you signed up the NDA, we shall analyze the requirements put forward by you. Our team of experts will read and analyze the same, and will get back to you within few hours.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Rule 4 */}
-                <div className="flex items-start gap-4">
-                  <div className="w-[100px] h-[1.5px] bg-[#d2d2d2] mt-3 shrink-0" />
-                  <div className="flex flex-col">
-                    <b className="text-[17px] text-black font-bold uppercase tracking-wide mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
-                      Estimated Budget:
-                    </b>
-                    <p className="text-[14px] text-[#555] leading-[1.7]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
-                      Once our team of <span className="font-extrabold text-[#111]">experts</span> and business development managers are done with analyzing the project and compilation of necessary resources required for the project, <span className="font-extrabold text-[#111]">we shall send you</span> with estimated budget or cost and estimated time required for completion of project successfully.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-
             </div>
 
           </div>
         </section>
 
         {/* Section Two: Address Cards */}
-        <section className="bg-white border-t border-gray-150 py-16">
-          <div className="max-w-[1240px] mx-auto px-6 md:px-12">
+        <section className="bg-[#fffbf8] py-16">
+          <div className="max-w-[1320px] mx-auto px-[20px] md:px-[50px]">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              
+
               {/* Card 1: India */}
-              <div 
+              <div
                 className="group flex flex-col justify-between items-start h-[560px] p-9 bg-[#fcf5f5] hover:bg-[#f47820] hover:text-white transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none"
               >
-                <img 
-                  src="https://dd.mocup.in/assets/web/images/indian-flag.png" 
-                  alt="India Flag" 
+                <img
+                  src="https://dd.mocup.in/assets/web/images/indian-flag.png"
+                  alt="India Flag"
                   className="w-[71px] object-contain"
                 />
-                
+
                 <div className="text-left font-sans select-none text-[#111] group-hover:text-white transition-colors duration-500">
-                  <b 
+                  <b
                     className="text-[18px] tracking-widest block uppercase mb-6"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     INDIA
                   </b>
-                  <b 
+                  <b
                     className="text-[17px] tracking-wide block uppercase leading-[1.66] mb-8 font-normal"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
-                    <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br/>PVT LTD
+                    <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br />PVT LTD
                   </b>
-                  
-                  <p 
+
+                  <p
                     className="text-[14px] md:text-[15px] leading-[1.8] lowercase tracking-wide block mb-8"
                     style={{ fontFamily: 'GTWalsheimPro-Regularf' }}
                   >
-                    RZ 1/3, 3RD FLOOR, <br/>RAJNAGAR 1, DWARKA,<br/>
+                    RZ 1/3, 3RD FLOOR, <br />RAJNAGAR 1, DWARKA,<br />
                     NEW DELHI - 110077
                   </p>
-                  
-                  <a 
-                    href="tel:+91-9873282812" 
+
+                  <a
+                    href="tel:+91-9873282812"
                     className="text-[17px] font-bold uppercase tracking-wide block mb-8 hover:underline text-[#f27820] group-hover:text-white transition-colors"
                   >
                     +91 9873-282-812
                   </a>
 
-                  <p 
+                  <p
                     className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-40 group-hover:opacity-100 transition-opacity duration-300"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
@@ -468,40 +555,40 @@ export default function ContactUsPageClient() {
               </div>
 
               {/* Card 2: Canada */}
-              <div 
+              <div
                 className="group flex flex-col justify-between items-start h-[560px] p-9 bg-[#fcf5f5] hover:bg-[#418fce] hover:text-white transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none"
               >
-                <img 
-                  src="https://dd.mocup.in/assets/web/images/canada-flag.png" 
-                  alt="Canada Flag" 
+                <img
+                  src="https://dd.mocup.in/assets/web/images/canada-flag.png"
+                  alt="Canada Flag"
                   className="w-[71px] object-contain"
                 />
-                
+
                 <div className="text-left font-sans select-none text-[#111] group-hover:text-white transition-colors duration-500">
-                  <b 
+                  <b
                     className="text-[18px] tracking-widest block uppercase mb-6"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     CANADA
                   </b>
-                  <b 
+                  <b
                     className="text-[17px] tracking-wide block uppercase leading-[1.66] mb-8 font-normal"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
-                    <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br/>PVT LTD
+                    <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br />PVT LTD
                   </b>
-                  
-                  <p 
+
+                  <p
                     className="text-[14px] md:text-[15px] leading-[1.8] lowercase tracking-wide block mb-8"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
-                    54 Hanbury <br/>Crescent L6X5N7, <br/>Brampton Ontario
+                    54 Hanbury <br />Crescent L6X5N7, <br />Brampton Ontario
                   </p>
-                  
+
                   {/* Empty text row replacement to match height */}
                   <div className="h-[26px] mb-8" />
 
-                  <p 
+                  <p
                     className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-40 group-hover:opacity-100 transition-opacity duration-300"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
@@ -511,45 +598,45 @@ export default function ContactUsPageClient() {
               </div>
 
               {/* Card 3: US */}
-              <div 
+              <div
                 className="group flex flex-col justify-between items-start h-[560px] p-9 bg-[#fcf5f5] hover:bg-[#fcf5f5] transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none"
               >
-                <img 
-                  src="https://dd.mocup.in/assets/web/images/usa-icon-c.png" 
-                  alt="US Flag" 
+                <img
+                  src="https://dd.mocup.in/assets/web/images/usa-icon-c.png"
+                  alt="US Flag"
                   className="w-[71px] object-contain"
                 />
-                
+
                 <div className="text-left font-sans select-none text-[#111]">
-                  <b 
+                  <b
                     className="text-[18px] tracking-widest block uppercase mb-6"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     US
                   </b>
-                  <b 
+                  <b
                     className="text-[17px] tracking-wide block uppercase leading-[1.66] mb-8 font-normal"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
-                    <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br/>PVT LTD
+                    <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br />PVT LTD
                   </b>
-                  
-                  <p 
+
+                  <p
                     className="text-[14px] md:text-[15px] leading-[1.8] lowercase tracking-wide block mb-8"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
-                    13151 Emily Rd, <br/>Suite- 135,<br/>
+                    13151 Emily Rd, <br />Suite- 135,<br />
                     Dallas, TX - 75240
                   </p>
-                  
-                  <a 
-                    href="tel:+1-4694410125" 
+
+                  <a
+                    href="tel:+1-4694410125"
                     className="text-[17px] font-bold uppercase tracking-wide block mb-8 hover:underline text-[#f27820] transition-colors"
                   >
                     +1 469-441-0125
                   </a>
 
-                  <p 
+                  <p
                     className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-40"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
