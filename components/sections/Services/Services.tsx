@@ -23,13 +23,13 @@ export default function Services() {
         <div className="flex items-center pb-[50px] lg:pl-[65px] px-6 md:px-12 lg:px-0 w-full">
           {/* Hanging Prefix Column */}
           <div className="w-[120px] lg:w-[140px] flex items-center shrink-0">
-            <span className="font-sans font-bold text-[20px] lg:text-[24px] leading-none tracking-tight text-[#1A1A1A]">01.</span>
-            <div className="flex-grow h-[1px] bg-[#1A1A1A]/30 mx-[16px] lg:mx-[20px]" />
+            <span className=" font-bold text-[20px] lg:text-[24px] leading-none tracking-tight text-[#1A1A1A]">01.</span>
+            <div className="flex-grow h-[1px] bg-[#1A1A1A] mx-[16px] lg:mx-[8px]" />
           </div>
 
           {/* Content Column Start */}
           <div className="flex items-baseline">
-            <h2 className="font-bold text-[20px] md:text-[24px] lg:text-[28px] xl:text-[30px] leading-none font-sans capitalize tracking-tight text-[#1A1A1A] flex items-baseline">
+            <h2 className="font-bold text-[18px] md:text-[24px] lg:text-[24px] xl:text-[30px] leading-none font-sans capitalize tracking-tight text-[#1A1A1A] flex items-baseline">
               Navigate The Digital Frontier With Our Engineering Excellence
             </h2>
             <div className="w-[8px] h-[8px] lg:w-[10px] lg:h-[10px] bg-[#1A1A1A] rounded-full ml-[8px]" />
@@ -37,7 +37,7 @@ export default function Services() {
         </div>
 
         {/* Card Grid */}
-        <div className="good-container w-full px-6 md:px-12 lg:px-0 lg:pl-[256px] lg:pr-[78px]">
+        <div className="good-container w-full px-8 md:px-14 lg:px-0 lg:pl-[256px] lg:pr-[54px]">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
             {SERVICE_CARDS.map((card, index) => {
               const iconClass = ICON_MAP[card.icon] || "fas fa-code";
@@ -57,10 +57,10 @@ export default function Services() {
 
                   {/* Content */}
                   <div className="flex flex-col flex-grow">
-                    <h3 className="text-[24px] font-sans font-bold text-white leading-[32.5px] mb-[28px]">
+                    <h3 className="text-[25px]  text-white leading-[28px] mb-[28px]">
                       {card.title}
                     </h3>
-                    <p className="text-white/90 text-[14px] leading-[26px] font-normal font-sans flex-grow">
+                    <p className="text-white/90 text-[20px] leading-[30px] font-normal  flex-grow">
                       {card.description}
                     </p>
                   </div>

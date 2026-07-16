@@ -44,7 +44,7 @@ export default function Solutions() {
                 <i className="fas fa-paper-plane text-white text-[24px]" />
               </div>
               <h5
-                className="text-[22px] md:text-[24px] leading-[30px] text-white mb-3 tracking-[1px] font-extrabold"
+                className="text-[24px] md:text-[22px] leading-[30px] text-white mb-4 tracking-[1px] font-extrabold"
                 style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
               >
                 Fuel Your Digital-First Idea
@@ -74,8 +74,8 @@ export default function Solutions() {
                   key={item.title}
                   className="industry-item border-b border-white/10 last:border-b-0"
                 >
-                  <div className="industry-item-inner group flex gap-6 md:gap-8 items-start py-6 md:py-8 px-0 cursor-pointer transition-all duration-300 ease-linear hover:bg-[#232323] hover:pl-4 hover:pr-4">
-                    <div className="w-[30px] shrink-0 text-center pt-1">
+                  <div className="industry-item-inner group flex gap-6 md:gap-8 items-start py-8 md:py-8 px-0 cursor-pointer transition-all duration-300 ease-linear hover:bg-[#232323] hover:pl-4 hover:pr-4">
+                    <div className="w-[20px] shrink-0 text-center pt-1">
                       <i className={`${iconClass} text-white text-[22px] md:text-[24px]`} />
                     </div>
 
