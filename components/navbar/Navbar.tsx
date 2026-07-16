@@ -617,11 +617,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('expertise')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'expertise')}
-            className="fixed left-0 right-0 w-full border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
-            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
+            className="fixed left-0 right-0 w-full border-b border-black/10 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 bg-[#fffbf8]"
+            style={{ top: isScrolled ? '60px' : '61.6px' }}
           >
-            <div className="flex flex-col select-none text-left bg-[#fffbf8] shadow-xl" style={{ width: '80vw', maxWidth: '1600px' }}>
-              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
+            <div className="flex flex-col select-none text-left w-full">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[60px] pr-[44px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -703,7 +703,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                       <a
                         key={serv}
                         href={getServiceHref(serv)}
-                        className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
+                        className="text-[#00539c] text-[13.5px] font-medium tracking-wide"
                       >
                         {serv}
                       </a>
@@ -714,7 +714,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
 
               {/* Full-width bottom banner */}
               <div
-                className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
+                className="w-full text-white flex items-center justify-between pl-[60px] pr-[44px] py-[16px]"
                 style={{
                   background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
                 }}
@@ -737,10 +737,21 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
 
                 {/* Right: Text and Button */}
                 <div className="flex items-center gap-[24px]">
-                  <div className="flex flex-col text-right max-w-[540px]">
+                  <div className="flex flex-col text-left max-w-[760px]">
                     <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
                     <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
                   </div>
+                  {/* Orange Arrow Circle Button */}
+                  <button
+                    onClick={triggerModal}
+                    className="w-[44px] h-[44px] shrink-0 cursor-pointer hover:scale-105 transition-transform"
+                  >
+                    <img
+                      src="https://dd.mocup.in/assets/web/images/icon/arrow-right-orange.svg"
+                      alt="Consultation Arrow"
+                      className="w-full h-full object-contain"
+                    />
+                  </button>
                   {/* Empty spacer to reserve space for the global floating WhatsApp button */}
                   <div className="w-[48px] h-[48px] shrink-0" />
                 </div>
@@ -755,11 +766,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('ai-ingenuity')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'ai-ingenuity')}
-            className="fixed left-0 right-0 w-full border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
-            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
+            className="fixed left-0 right-0 w-full border-b border-black/10 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 bg-[#fffbf8]"
+            style={{ top: isScrolled ? '60px' : '61.6px' }}
           >
-            <div className="flex flex-col select-none text-left bg-[#fffbf8] shadow-xl" style={{ width: '80vw', maxWidth: '1600px' }}>
-              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
+            <div className="flex flex-col select-none text-left w-full">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[60px] pr-[44px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -860,7 +871,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                       <a
                         key={serv}
                         href={getServiceHref(serv)}
-                        className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
+                        className="text-[#00539c] text-[13.5px] font-medium tracking-wide"
                       >
                         {serv}
                       </a>
@@ -870,7 +881,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
               </div>
               {/* Full-width bottom banner */}
               <div
-                className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
+                className="w-full text-white flex items-center justify-between pl-[60px] pr-[44px] py-[16px]"
                 style={{
                   background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
                 }}
@@ -893,10 +904,21 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
 
                 {/* Right: Text and Button */}
                 <div className="flex items-center gap-[24px]">
-                  <div className="flex flex-col text-right max-w-[540px]">
+                  <div className="flex flex-col text-left max-w-[760px]">
                     <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
                     <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
                   </div>
+                  {/* Orange Arrow Circle Button */}
+                  <button
+                    onClick={triggerModal}
+                    className="w-[44px] h-[44px] shrink-0 cursor-pointer hover:scale-105 transition-transform"
+                  >
+                    <img
+                      src="https://dd.mocup.in/assets/web/images/icon/arrow-right-orange.svg"
+                      alt="Consultation Arrow"
+                      className="w-full h-full object-contain"
+                    />
+                  </button>
                   {/* Empty spacer to reserve space for the global floating WhatsApp button */}
                   <div className="w-[48px] h-[48px] shrink-0" />
                 </div>
@@ -911,11 +933,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('technology')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'technology')}
-            className="fixed left-0 right-0 w-full border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
-            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
+            className="fixed left-0 right-0 w-full border-b border-black/10 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 bg-[#fffbf8]"
+            style={{ top: isScrolled ? '60px' : '61.6px' }}
           >
-            <div className="flex flex-col select-none text-left bg-[#fffbf8] shadow-xl" style={{ width: '80vw', maxWidth: '1600px' }}>
-              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
+            <div className="flex flex-col select-none text-left w-full">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[60px] pr-[44px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -1016,7 +1038,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                       <a
                         key={serv}
                         href={getServiceHref(serv)}
-                        className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
+                        className="text-[#00539c] text-[13.5px] font-medium tracking-wide"
                       >
                         {serv}
                       </a>
@@ -1026,7 +1048,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
               </div>
               {/* Full-width bottom banner */}
               <div
-                className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
+                className="w-full text-white flex items-center justify-between pl-[60px] pr-[44px] py-[16px]"
                 style={{
                   background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
                 }}
@@ -1049,10 +1071,21 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
 
                 {/* Right: Text and Button */}
                 <div className="flex items-center gap-[24px]">
-                  <div className="flex flex-col text-right max-w-[540px]">
+                  <div className="flex flex-col text-left max-w-[760px]">
                     <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
                     <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
                   </div>
+                  {/* Orange Arrow Circle Button */}
+                  <button
+                    onClick={triggerModal}
+                    className="w-[44px] h-[44px] shrink-0 cursor-pointer hover:scale-105 transition-transform"
+                  >
+                    <img
+                      src="https://dd.mocup.in/assets/web/images/icon/arrow-right-orange.svg"
+                      alt="Consultation Arrow"
+                      className="w-full h-full object-contain"
+                    />
+                  </button>
                   {/* Empty spacer to reserve space for the global floating WhatsApp button */}
                   <div className="w-[48px] h-[48px] shrink-0" />
                 </div>
@@ -1067,11 +1100,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('corporate')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'corporate')}
-            className="fixed left-0 right-0 w-full border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
-            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
+            className="fixed left-0 right-0 w-full border-b border-black/10 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 bg-[#fffbf8]"
+            style={{ top: isScrolled ? '60px' : '61.6px' }}
           >
-            <div className="flex flex-col select-none text-left bg-[#fffbf8] shadow-xl" style={{ width: '80vw', maxWidth: '1600px' }}>
-              <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 px-[40px] py-[40px]">
+            <div className="flex flex-col select-none text-left w-full">
+              <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 pl-[60px] pr-[44px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -1132,7 +1165,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
               </div>
               {/* Full-width bottom banner */}
               <div
-                className="w-full text-white flex items-center justify-between px-[40px] py-[16px]"
+                className="w-full text-white flex items-center justify-between pl-[60px] pr-[44px] py-[16px]"
                 style={{
                   background: 'linear-gradient(90deg, #0e2038 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
                 }}
@@ -1155,10 +1188,21 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
 
                 {/* Right: Text and Button */}
                 <div className="flex items-center gap-[24px]">
-                  <div className="flex flex-col text-right max-w-[540px]">
+                  <div className="flex flex-col text-left max-w-[760px]">
                     <span className="text-[14px] font-extrabold mb-1" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>Want to consult with us on a project but need a quote? For an estimate, click this button.</span>
                     <span className="text-[11px] text-slate-100 font-medium">Start with a free exploratory call—we'll listen to your needs and suggest tailored strategies, obligation-free.</span>
                   </div>
+                  {/* Orange Arrow Circle Button */}
+                  <button
+                    onClick={triggerModal}
+                    className="w-[44px] h-[44px] shrink-0 cursor-pointer hover:scale-105 transition-transform"
+                  >
+                    <img
+                      src="https://dd.mocup.in/assets/web/images/icon/arrow-right-orange.svg"
+                      alt="Consultation Arrow"
+                      className="w-full h-full object-contain"
+                    />
+                  </button>
                   {/* Empty spacer to reserve space for the global floating WhatsApp button */}
                   <div className="w-[48px] h-[48px] shrink-0" />
                 </div>
