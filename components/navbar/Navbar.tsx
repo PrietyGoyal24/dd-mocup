@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Menu, X, Phone, ArrowRight, ChevronDown } from 'lucide-react';
 import ConsultationModal from './ConsultationModal';
+import { getServiceHref } from '@/constants/serviceData';
 
 // --- DATA STRUCTURES FOR HIGH-FIDELITY MEGA MENUS ---
 
@@ -616,10 +617,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('expertise')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'expertise')}
-            className="fixed left-0 right-0 w-full bg-[var(--background)] px-[35px] lg:px-[44px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
-            style={{ top: isScrolled ? '60px' : '61.6px' }}
+            className="fixed left-0 right-0 w-full border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
+            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full max-w-[1320px] flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
+            <div className="flex flex-col select-none text-left bg-[#fffbf8] shadow-xl" style={{ width: '80vw', maxWidth: '1600px' }}>
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
@@ -697,11 +698,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     </h4>
                     <div className="flex-1 h-[1.5px] bg-[#00539c]" />
                   </div>
-                  <div className={['SOLUTIONS', 'EMERGING TECHNOLOGIES'].includes(activeExpertiseCategory) ? "grid grid-cols-2 gap-x-[30px] gap-y-[16px]" : "flex flex-col gap-[16px]"}>
+                  <div className="grid grid-cols-2 gap-x-[30px] gap-y-[16px]">
                     {(EXPERTISE_MENU.center.subServices[activeExpertiseCategory as keyof typeof EXPERTISE_MENU.center.subServices] || []).map((serv) => (
                       <a
                         key={serv}
-                        href="#"
+                        href={getServiceHref(serv)}
                         className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
                       >
                         {serv}
@@ -754,10 +755,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('ai-ingenuity')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'ai-ingenuity')}
-            className="fixed left-0 right-0 w-full bg-[var(--background)] px-[35px] lg:px-[44px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
-            style={{ top: isScrolled ? '60px' : '61.6px' }}
+            className="fixed left-0 right-0 w-full border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
+            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full max-w-[1320px] flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
+            <div className="flex flex-col select-none text-left bg-[#fffbf8] shadow-xl" style={{ width: '80vw', maxWidth: '1600px' }}>
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
@@ -854,11 +855,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     </h4>
                     <div className="flex-1 h-[1.5px] bg-[#00539c]" />
                   </div>
-                  <div className="flex flex-col gap-[16px]">
+                  <div className="grid grid-cols-2 gap-x-[30px] gap-y-[16px]">
                     {(AI_MENU.center.subServices[activeAICategory as keyof typeof AI_MENU.center.subServices] || []).map((serv) => (
                       <a
                         key={serv}
-                        href="#"
+                        href={getServiceHref(serv)}
                         className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
                       >
                         {serv}
@@ -910,10 +911,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('technology')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'technology')}
-            className="fixed left-0 right-0 w-full bg-[var(--background)] px-[35px] lg:px-[44px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
-            style={{ top: isScrolled ? '60px' : '61.6px' }}
+            className="fixed left-0 right-0 w-full border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
+            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full max-w-[1320px] flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
+            <div className="flex flex-col select-none text-left bg-[#fffbf8] shadow-xl" style={{ width: '80vw', maxWidth: '1600px' }}>
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 px-[40px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
@@ -1010,11 +1011,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     </h4>
                     <div className="flex-1 h-[1.5px] bg-[#00539c]" />
                   </div>
-                  <div className="flex flex-col gap-[16px]">
+                  <div className="grid grid-cols-2 gap-x-[30px] gap-y-[16px]">
                     {(TECH_MENU.center.subServices[activeTechCategory as keyof typeof TECH_MENU.center.subServices] || []).map((serv) => (
                       <a
                         key={serv}
-                        href="#"
+                        href={getServiceHref(serv)}
                         className="text-[#00539c] hover:underline text-[13.5px] font-medium tracking-wide"
                       >
                         {serv}
@@ -1066,10 +1067,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('corporate')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'corporate')}
-            className="fixed left-0 right-0 w-full bg-[var(--background)] px-[35px] lg:px-[44px] border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
-            style={{ top: isScrolled ? '60px' : '61.6px' }}
+            className="fixed left-0 right-0 w-full border-b border-white/5 shadow-2xl z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 flex justify-center"
+            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full max-w-[1320px] flex flex-col select-none text-left bg-[#fffbf8] shadow-xl">
+            <div className="flex flex-col select-none text-left bg-[#fffbf8] shadow-xl" style={{ width: '80vw', maxWidth: '1600px' }}>
               <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 px-[40px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
@@ -1229,7 +1230,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                                 {mobileOpenSubSection === cat && (
                                   <div className="pl-4 space-y-2 text-[11px] text-slate-400 uppercase tracking-wider font-semibold animate-in fade-in duration-150">
                                     {((((link.key === 'expertise' ? EXPERTISE_MENU : link.key === 'ai-ingenuity' ? AI_MENU : TECH_MENU).center.subServices) as Record<string, string[]>)[cat] || []).map((sub: string) => (
-                                      <a key={sub} href="#" className="block py-1 hover:text-white">{sub}</a>
+                                      <a key={sub} href={getServiceHref(sub)} className="block py-1 hover:text-white">{sub}</a>
                                     ))}
                                   </div>
                                 )}
