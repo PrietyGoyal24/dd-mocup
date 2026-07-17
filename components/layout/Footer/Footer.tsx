@@ -55,7 +55,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative w-full overflow-hidden select-none bg-white text-[#111] pt-[80px] md:pt-[100px] pb-12">
+    <footer className="relative w-full overflow-hidden select-none bg-white text-[#111] pt-[80px] md:pt-[100px] pb-[40px] md:pb-[50px]">
       <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px]">
         <div className="grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-12 md:gap-8 lg:gap-[100px] items-start">
 
@@ -82,13 +82,13 @@ export default function Footer() {
                 <div className="relative w-full">
                   <div className="absolute left-[-152px] md:left-[-152px] top-[9px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
                   <div className="flex flex-col">
-                    <span 
+                    <span
                       className="text-[18px] leading-[18px] font-[400] text-[#B8B7B7] mb-[17px] tracking-[1px] block"
                       style={{ fontFamily: 'GTWalsheimPro-Regular', textTransform: 'none' }}
                     >
                       Phone number
                     </span>
-                    <div 
+                    <div
                       className="text-[18px] leading-[26px] tracking-wide flex flex-col gap-[6px] text-[#111111] font-[400]"
                       style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                     >
@@ -102,13 +102,13 @@ export default function Footer() {
                 <div className="relative w-full">
                   <div className="absolute left-[-152px] md:left-[-152px] top-[9px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
                   <div className="flex flex-col">
-                    <span 
+                    <span
                       className="text-[18px] leading-[18px] font-[400] text-[#B8B7B7] mb-[17px] tracking-[1px] block"
                       style={{ fontFamily: 'GTWalsheimPro-Regular', textTransform: 'none' }}
                     >
                       Mail at
                     </span>
-                    <div 
+                    <div
                       className="text-[18px] leading-[26px] tracking-wide text-[#111111] font-[400]"
                       style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                     >
@@ -121,19 +121,24 @@ export default function Footer() {
                 <div className="relative w-full">
                   <div className="absolute left-[-152px] md:left-[-152px] top-[9px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
                   <div className="flex flex-col">
-                    <span 
+                    <span
                       className="text-[18px] leading-[18px] font-[400] text-[#B8B7B7] mb-[17px] tracking-[1px] block"
                       style={{ fontFamily: 'GTWalsheimPro-Regular', textTransform: 'none' }}
                     >
                       Direct Chat
                     </span>
-                    <div 
-                      className="text-[18px] leading-[26px] tracking-wide text-[#111111] flex items-center gap-[8px] font-[400]"
+                    <div
+                      className="text-[18px] leading-[26px] tracking-wide text-[#111111] font-[400]"
                       style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                     >
-                      <i className="fab fa-whatsapp text-[18px] text-[#111111]" />
-                      <a href="https://api.whatsapp.com/send?phone=+919873282812&text=Hii" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors text-[#111111]">
-                        Whats app
+                      <a
+                        href="https://api.whatsapp.com/send?phone=+919873282812&text=Hii"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-[#f27820] transition-colors text-[#111111] flex items-center gap-[8px]"
+                      >
+                        <i className="fab fa-whatsapp text-[18px]" />
+                        <span>Whats app</span>
                       </a>
                     </div>
                   </div>
@@ -143,7 +148,7 @@ export default function Footer() {
                 <div className="relative w-full">
                   <div className="absolute left-[-152px] md:left-[-152px] top-[9px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
                   <div className="flex flex-col">
-                    <span 
+                    <span
                       className="text-[18px] leading-[18px] font-[400] text-[#B8B7B7] mb-[17px] tracking-[1px] block"
                       style={{ fontFamily: 'GTWalsheimPro-Regular', textTransform: 'none' }}
                     >
@@ -175,15 +180,14 @@ export default function Footer() {
           {/* Right Column: Write us Proposal Form */}
           <div className="flex flex-col text-left font-sans w-full">
             <h3
-              className="text-[22px] md:text-[26px] font-extrabold text-[#111111] mb-[28px] mt-0 md:mt-[4px]"
+              className="text-[22px] md:text-[26px] font-extrabold text-[#111111] mb-[48px] mt-0 md:mt-[4px]"
               style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
             >
-              Feel Free To Write Us
-              <span className="inline-block w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-black ml-[4px] relative -top-[2px]" />
+              Feel Free To Write Us.
             </h3>
 
             {isSubmitted ? (
-              <div className="bg-[#2a2753] p-[40px] rounded-[16px] text-center flex flex-col items-center justify-center min-h-[420px] shadow-lg">
+              <div className="bg-[#363266] p-[40px] rounded-[20px] text-center flex flex-col items-center justify-center min-h-[420px] shadow-lg">
                 <div className="w-[56px] h-[56px] rounded-full bg-green-500/20 text-green-400 flex items-center justify-center mb-4">
                   <Check size={28} />
                 </div>
@@ -191,12 +195,12 @@ export default function Footer() {
                 <p className="text-white/70 text-[14px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>Our team will get back to you shortly.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="bg-[#2a2753] p-8 md:p-[38px] rounded-[8px] shadow-xl flex flex-col gap-[22px] w-full">
+              <form onSubmit={handleSubmit} className="bg-[#363266] p-[30px] rounded-[20px] shadow-xl flex flex-col gap-[28px] w-full">
 
                 {/* Full Name */}
-                <div className="flex flex-col border-b border-white/20 pb-1">
+                <div className="flex flex-col border-b border-white/20 pb-[6px]">
                   <label
-                    className="text-[13px] text-white/70 mb-1"
+                    className="text-[18px] leading-[24px] text-white tracking-[1px] mb-[5px] block"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Full Name <span className="text-[#ff4b4b]">*</span>
@@ -212,9 +216,9 @@ export default function Footer() {
                 </div>
 
                 {/* Email */}
-                <div className="flex flex-col border-b border-white/20 pb-1">
+                <div className="flex flex-col border-b border-white/20 pb-[6px]">
                   <label
-                    className="text-[13px] text-white/70 mb-1"
+                    className="text-[18px] leading-[24px] text-white tracking-[1px] mb-[5px] block"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     E-mail ID <span className="text-[#ff4b4b]">*</span>
@@ -230,9 +234,9 @@ export default function Footer() {
                 </div>
 
                 {/* Contact Number */}
-                <div className="flex flex-col border-b border-white/20 pb-1">
+                <div className="flex flex-col border-b border-white/20 pb-[6px]">
                   <label
-                    className="text-[13px] text-white/70 mb-1"
+                    className="text-[18px] leading-[24px] text-white tracking-[1px] mb-[5px] block"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Contact Number <span className="text-[#ff4b4b]">*</span>
@@ -248,9 +252,9 @@ export default function Footer() {
                 </div>
 
                 {/* Budget Range */}
-                <div className="flex flex-col border-b border-white/20 pb-1">
+                <div className="flex flex-col border-b border-white/20 pb-[6px]">
                   <label
-                    className="text-[13px] text-white/70 mb-1"
+                    className="text-[18px] leading-[24px] text-white tracking-[1px] mb-[5px] block"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Select a Budget Range <span className="text-[#ff4b4b]">*</span>
@@ -260,7 +264,7 @@ export default function Footer() {
                       required
                       value={formData.budget}
                       onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                      className="w-full bg-transparent border-0 py-1 px-0 text-white focus:outline-none text-[14px] font-[400] appearance-none"
+                      className="w-full bg-transparent border-0 py-1 px-0 text-white focus:outline-none text-[14px] font-[400] appearance-none cursor-pointer"
                       style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                     >
                       <option value="" disabled className="text-slate-900 bg-white">-- Please select --</option>
@@ -270,14 +274,18 @@ export default function Footer() {
                       <option value="$100 - $250K" className="text-slate-900 bg-white">$100 - $250K</option>
                       <option value="More than $250K" className="text-slate-900 bg-white">More than $250K</option>
                     </select>
-                    <div className="absolute right-[4px] top-[6px] pointer-events-none text-white/70 text-[10px]">▼</div>
+                    <div className="absolute right-[4px] top-[6px] pointer-events-none text-white/70">
+                      <svg className="w-4 h-4 fill-current inline-block" viewBox="0 0 20 20">
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                      </svg>
+                    </div>
                   </div>
                 </div>
 
                 {/* Project Idea */}
-                <div className="flex flex-col border-b border-white/20 pb-2">
+                <div className="flex flex-col border-b border-white/20 pb-[6px]">
                   <label
-                    className="text-[13px] text-white/70 mb-1 leading-[1.6]"
+                    className="text-[18px] leading-[24px] text-white tracking-[1px] mb-[5px] block"
                     style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                   >
                     Describe Your Project/Idea In Brief (Helps Us Come Back Better Prepared)<span className="text-[#ff4b4b]">*</span>
@@ -294,7 +302,7 @@ export default function Footer() {
 
                 {/* NDA & Captcha Row */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-[16px] pt-[12px]">
-                  <label className="flex items-center gap-[10px] text-white text-[12px] font-[500] cursor-pointer">
+                  <label className="flex items-center gap-[10px] text-white text-[14px] font-[500] cursor-pointer">
                     <input
                       type="checkbox"
                       checked={formData.nda}
@@ -305,7 +313,7 @@ export default function Footer() {
                   </label>
 
                   <div className="flex items-center gap-[10px]">
-                    <span className="text-white font-[500] text-[13px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>3 + 7 =</span>
+                    <span className="text-white font-[500] text-[18px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>3 + 7 =</span>
                     <input
                       type="text"
                       required
@@ -325,7 +333,7 @@ export default function Footer() {
                 <div className="pt-[10px]">
                   <button
                     type="submit"
-                    className="w-full bg-[#bdc0cb] hover:bg-[#aab0bf] text-[#111] transition-colors h-[42px] rounded-[6px] font-bold text-[12px] tracking-[0.08em] uppercase cursor-pointer focus:outline-none"
+                    className="w-full bg-[#bdc0cb] hover:bg-[#aab0bf] text-[#111] transition-colors h-[42px] rounded-[6px] font-bold text-[14px] tracking-[0.08em] uppercase cursor-pointer focus:outline-none"
                     style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
                   >
                     REQUEST PROPOSAL
@@ -337,16 +345,16 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px] flex flex-col mt-[64px]">
+      <div className="w-full max-w-[1840px] mx-auto px-5 pl-0 sm:pl-[140px] md:pl-[200px] lg:pl-[240px] pr-5 md:pr-[64px] flex flex-col mt-[64px]">
         {/* Top Divider Line */}
         <div className="w-full mb-[24px] relative flex items-center">
-          <div className="w-full h-[1px] bg-[#111]/15" />
+          <div className="w-full h-[1.2px] bg-[#111111]" />
         </div>
 
         {/* Working Hours, Policies & Local Time Strip */}
         <div className="flex flex-col w-full pb-[30px]">
           {/* Row 1: Labels */}
-          <div className="flex justify-between items-center w-full mb-[6px] hidden sm:flex">
+          <div className="flex justify-between items-center w-full">
             <span
               className="text-[#8e8e8e] text-[13px] font-[500] uppercase tracking-wider"
               style={{ fontFamily: 'GTWalsheimPro-Regular' }}
@@ -361,106 +369,113 @@ export default function Footer() {
             </span>
           </div>
 
-          {/* Row 2: Values & Center Links */}
-          <div className="flex flex-row justify-between items-center w-full flex-wrap gap-4 sm:gap-0">
-            {/* Left aligned values and links */}
-            <div className="flex items-center gap-[24px] md:gap-[40px] flex-wrap">
-              <span
-                className="text-[#111] text-[14px] font-bold tracking-wide"
-                style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
-              >
-                / MON - FRI, 9AM TO 6PM /
-              </span>
-
-              {/* Policies Links */}
-              <div
-                className="flex flex-wrap text-[13px] font-medium text-[#111] items-center gap-[4px] py-1"
-                style={{ fontFamily: 'GTWalsheimPro-Regular' }}
-              >
-                <a href="https://dd.mocup.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Privacy Policy</a>
-                <span className="text-[#8e8e8e] font-normal mx-[10px]">|</span>
-                <a href="https://dd.mocup.in/cookies-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Cookies Policy</a>
-                <span className="text-[#8e8e8e] font-normal mx-[10px]">|</span>
-                <a href="https://dd.mocup.in/terms-conditions" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Terms & Conditions</a>
-                <span className="text-[#8e8e8e] font-normal mx-[10px]">|</span>
-                <a href="https://dd.mocup.in/refund-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Refund Policy</a>
-              </div>
-            </div>
-
+          {/* Row 2: Values */}
+          <div className="flex justify-between items-center w-full mt-[12px]">
             <span
-              className="text-[#111] text-[14px] font-bold tracking-wide"
-              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
+              className="text-[#111111] text-[15px] font-[400] tracking-wide"
+              style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+            >
+              / MON - FRI, 9AM TO 6PM /
+            </span>
+            <span
+              className="text-[#111111] text-[15px] font-[400] tracking-wide"
+              style={{ fontFamily: 'GTWalsheimPro-Regular' }}
             >
               {localTime}
             </span>
           </div>
+
+          {/* Row 3: Policies Links */}
+          <div className="flex justify-start items-center w-full mt-[14px]">
+            <div
+              className="flex flex-wrap text-[14px] font-[400] text-[#111111] items-center gap-[4px]"
+              style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+            >
+              <a href="https://dd.mocup.in/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Privacy Policy</a>
+              <span className="text-[#8e8e8e] font-normal mx-[10px]">|</span>
+              <a href="https://dd.mocup.in/cookies-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Cookies Policy</a>
+              <span className="text-[#8e8e8e] font-normal mx-[10px]">|</span>
+              <a href="https://dd.mocup.in/terms-conditions" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Terms & Conditions</a>
+              <span className="text-[#8e8e8e] font-normal mx-[10px]">|</span>
+              <a href="https://dd.mocup.in/refund-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#f27820] transition-colors">Refund Policy</a>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Divider Line */}
-        <div className="w-full h-[1px] bg-[#111]/15 mb-[40px]" />
+        <div className="w-full h-[1.2px] bg-[#111111] mb-[40px]" />
 
         {/* Happiness, Achievements, Brochure & Copyright Column block */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-0 w-full pb-[40px]">
+        <div className="flex flex-col lg:flex-row justify-start items-start gap-10 lg:gap-[60px] w-full pb-0">
 
           {/* Happiness Guarantee */}
           <div className="flex items-start gap-[24px] text-left">
             <img
               src="https://dd.mocup.in/assets/web/images/design-wheel.png"
               alt="Happiness guarantee"
-              className="w-[110px] h-[110px] object-contain flex-shrink-0"
+              className="w-[160px] h-[160px] object-contain flex-shrink-0 mt-[30px]"
               loading="lazy"
             />
-            <div className="flex flex-col gap-[10px] pt-[4px]">
+            <div className="flex flex-col gap-[8px] pt-0 -mt-[4px]">
               <h5
-                className="text-[14px] font-extrabold tracking-wide text-[#111111]"
+                className="text-[16px] font-extrabold tracking-wide text-[#111111]"
                 style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
               >
                 Happiness guarantee
               </h5>
               <p
-                className="text-[12px] text-[#4a4a4a] font-[500] leading-[2.1] max-w-[240px]"
+                className="text-[15px] text-black font-[400] leading-[2.1] max-w-[280px]"
                 style={{ fontFamily: 'GTWalsheimPro-Regular' }}
               >
-                If you&apos;re not happy, we&apos;re not happy. We work tirelessly to make sure your Designdot experience is delightful. That&apos;s why we offer the DesignDot Happiness Guarantee.
+                If you&apos;re not happy, we&apos;re not<br />
+                happy. We work tirelessly to<br />
+                make sure your Designdot<br />
+                experience is delightful.<br />
+                That&apos;s why we offer the<br />
+                DesignDot Happiness<br />
+                Guarantee.
               </p>
             </div>
           </div>
 
           {/* Achievement */}
-          <div className="flex flex-col gap-[20px] items-start pt-[4px]">
+          <div className="flex flex-col items-start pt-[4px]">
             <h5
-              className="text-[18px] md:text-[20px] leading-[1.1] font-extrabold tracking-wide text-[#111111] uppercase"
-              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
+              className="text-[19px] leading-[21px] font-[700] tracking-[1px] text-[#000000] uppercase mb-[20px]"
+              style={{ fontFamily: "'SocialGothic-Bold', 'GT-Walsheim-Pro'", fontWeight: 700 }}
             >
               OUR<br />ACHIEVEMENT.
             </h5>
-            <div className="flex gap-[20px]">
-              <img src="https://dd.mocup.in/assets/web/images/footer-award-2.png" alt="Award 2" className="h-[96px] object-contain" loading="lazy" />
-              <img src="https://dd.mocup.in/assets/web/images/footer-award-1.png" alt="Award 1" className="h-[96px] border-[1.5px] border-yellow-400 p-[4px] object-contain" loading="lazy" />
+            <div className="flex gap-[20px] items-center">
+              <img src="https://dd.mocup.in/assets/web/images/footer-award-2.png" alt="Award 2" className="h-[130px] object-contain" loading="lazy" />
+              <img src="https://dd.mocup.in/assets/web/images/footer-award-1.png" alt="Award 1" className="h-[130px] object-contain" loading="lazy" />
             </div>
           </div>
 
           {/* Brochure & Copyright Column */}
-          <div className="flex flex-col gap-[8px] text-left lg:text-right items-start lg:items-end pt-[4px]">
+          <div className="flex flex-col gap-[10px] text-left lg:text-right items-start lg:items-end pt-[4px] lg:ml-auto">
             <a
               href="https://drive.google.com/file/d/1m0wCjfT7xhCWghgZBxrkRXdDrwZkpaue/view"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#f27820] hover:text-black font-extrabold text-[14px] tracking-wide transition-colors cursor-pointer"
-              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
+              className="text-[#f27820] hover:text-[#23527C] font-[900] text-[16px] tracking-wide transition-colors cursor-pointer"
+              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
             >
               Download Brochure
             </a>
             <p
-              className="text-[11px] text-[#8e8e8e] font-extrabold tracking-widest uppercase mt-[16px]"
-              style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 800 }}
+              className="text-[12px] text-[#111111] font-[400] tracking-wide uppercase"
+              style={{ fontFamily: 'GTWalsheimPro-Regular' }}
             >
-              © ALL RIGHTS RESERVED 2026, DESIGNDOT
+              © ALL RIGHTS RESERVED 2026,DESIGNDOT
             </p>
           </div>
         </div>
 
       </div>
+
+      {/* Spacer to guarantee bottom white space */}
+      <div className="w-full h-[30px] md:h-[40px]" />
 
       {/* Floating WhatsApp Button */}
       <a
