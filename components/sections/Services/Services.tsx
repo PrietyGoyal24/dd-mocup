@@ -28,11 +28,11 @@ export default function Services() {
           </div>
 
           {/* Content Column Start */}
-          <div className="flex items-baseline">
+          <div className="flex items-baseline ml-[20px] lg:ml-[20px]">
             <h2 className="font-bold text-[14px] md:text-[22px] lg:text-[22px] xl:text-[28px] leading-none  capitalize tracking-tight text-[#1A1A1A] ">
-               Navigate The Digital Frontier With Our Engineering Excellence
+             Navigate The Digital Frontier With Our Engineering Excellence
             </h2>
-            <div className="w-[8px] h-[8px] lg:w-[10px] lg:h-[10px] bg-[#1A1A1A] rounded-full ml-[8px]" />
+            <div className="w-[8px] h-[8px] lg:w-[10px] lg:h-[10px] bg-[#1A1A1A] rounded-full ml-[20px]" />
           </div>
         </div>
 
@@ -90,7 +90,7 @@ export default function Services() {
                 <a
                   href="https://designdot.quicsy.com/services"
                   target="_blank"
-                  className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-[#111] px-8 py-4 rounded-[40px] text-[15px] font-bold font-sans tracking-wide transition-colors"
+                  className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-[#111] px-8 py-4 rounded-[40px] text-[15px] font-bold  tracking-wide transition-colors"
                 >
                   <span className="pt-[2px]">OUR SERVICES</span>
                   <ArrowRight size={18} strokeWidth={3} />
