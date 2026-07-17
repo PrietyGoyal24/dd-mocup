@@ -24,12 +24,12 @@ export default function Services() {
           {/* Hanging Prefix Column */}
           <div className="w-[120px] lg:w-[140px] flex items-center shrink-0">
             <span className=" font-bold text-[20px] lg:text-[24px] leading-none tracking-tight text-[#1A1A1A]">01.</span>
-            <div className="flex-grow h-[1px] bg-[#727272] mx-[14px] lg:mx-[6px]" />
+            <div className="flex-grow h-[1.5px] bg-[#727272] mx-[14px] lg:mx-[4px]" />
           </div>
 
           {/* Content Column Start */}
           <div className="flex items-baseline">
-            <h2 className="font-bold text-[14px] md:text-[22px] lg:text-[22px] xl:text-[30px] leading-none  capitalize tracking-tight text-[#1A1A1A] flex items-baseline">
+            <h2 className="font-bold text-[14px] md:text-[22px] lg:text-[22px] xl:text-[28px] leading-none  capitalize tracking-tight text-[#1A1A1A] ">
                Navigate The Digital Frontier With Our Engineering Excellence
             </h2>
             <div className="w-[8px] h-[8px] lg:w-[10px] lg:h-[10px] bg-[#1A1A1A] rounded-full ml-[8px]" />
