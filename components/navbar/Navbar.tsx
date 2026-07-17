@@ -617,11 +617,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('expertise')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'expertise')}
-            className="fixed left-0 right-0 w-full z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
+            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full bg-[#fffbf8] shadow-2xl flex flex-col select-none text-left">
-              <div className="w-full max-w-[1880px] mx-auto grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
+            <div className="w-full max-w-[1700px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -716,9 +716,8 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                 </div>
               </div>
 
-              {/* Full-width bottom banner */}
               <div
-                className="w-full text-white flex items-center justify-between pl-[48px] pr-[32px] py-[16px]"
+                className="w-full text-white flex items-center justify-between pl-[48px] pr-[32px] py-[14px]"
                 style={{
                   background: 'linear-gradient(90deg, #112945ff 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
                 }}
@@ -770,11 +769,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('ai-ingenuity')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'ai-ingenuity')}
-            className="fixed left-0 right-0 w-full z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
+            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full bg-[#fffbf8] shadow-2xl flex flex-col select-none text-left">
-              <div className="w-full max-w-[1880px] mx-auto grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
+            <div className="w-full max-w-[1700px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -883,9 +882,8 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                   </div>
                 </div>
               </div>
-              {/* Full-width bottom banner */}
               <div
-                className="w-full text-white flex items-center justify-between pl-[48px] pr-[32px] py-[16px]"
+                className="w-full text-white flex items-center justify-between pl-[48px] pr-[32px] py-[14px]"
                 style={{
                   background: 'linear-gradient(90deg, #112945ff 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
                 }}
@@ -937,11 +935,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('technology')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'technology')}
-            className="fixed left-0 right-0 w-full z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
+            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full bg-[#fffbf8] shadow-2xl flex flex-col select-none text-left">
-              <div className="w-full max-w-[1880px] mx-auto grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
+            <div className="w-full max-w-[1700px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
+              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -1050,9 +1048,8 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                   </div>
                 </div>
               </div>
-              {/* Full-width bottom banner */}
               <div
-                className="w-full text-white flex items-center justify-between pl-[48px] pr-[32px] py-[16px]"
+                className="w-full text-white flex items-center justify-between pl-[48px] pr-[32px] py-[14px]"
                 style={{
                   background: 'linear-gradient(90deg, #112945ff 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
                 }}
@@ -1104,11 +1101,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('corporate')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'corporate')}
-            className="fixed left-0 right-0 w-full z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
+            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full bg-[#fffbf8] shadow-2xl flex flex-col select-none text-left">
-              <div className="w-full max-w-[1880px] mx-auto grid grid-cols-[1.3fr_2.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
+            <div className="w-full max-w-[1700px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
+              <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -1169,7 +1166,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
               </div>
               {/* Full-width bottom banner */}
               <div
-                className="w-full text-white flex items-center justify-between pl-[48px] pr-[32px] py-[16px]"
+                className="w-full text-white flex items-center justify-between pl-[48px] pr-[32px] py-[14px]"
                 style={{
                   background: 'linear-gradient(90deg, #112945ff 0%, #d87019 45%, #e27a1e 55%, #423d38 100%)',
                 }}

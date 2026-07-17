@@ -29,7 +29,7 @@ export default function Solutions() {
               >
                 02.
               </p>
-              <span className="block w-[96px] md:w-[130px] h-[2px] bg-[#727272] mx-[15px] relative -top-[1.5px] md:-top-[2.5px]" />
+              <span className="block w-[96px] md:w-[100px] h-[2px] bg-[#727272] mx-[15px] relative -top-[1.5px] md:-top-[2.5px]" />
               <span
                 className="text-[18px] md:text-[24px] leading-[30px] text-white font-extrabold"
                 style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 1200 }}

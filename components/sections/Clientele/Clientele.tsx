@@ -19,13 +19,13 @@ export default function Clientele() {
           <div className="flex items-center flex-1">
             {/* Hanging Prefix Column */}
             <div className="w-[120px] lg:w-[160px] flex items-center shrink-0">
-              <span className="text-[24px] lg:text-[28px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>06.</span>
+              <span className="text-[24px] lg:text-[28px] font-bold leading-[1px] tracking-tight text-[#F58331]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>06.</span>
               <div className="flex-grow h-[1px] bg-[#111111]/30 mx-[15px] mr-[15px]" />
             </div>
             
             {/* Content Column Start */}
             <div className="flex items-baseline">
-              <h2 className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-black" style={{ fontFamily: "'GT-Walsheim-Pro'" }}>
+              <h2 className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-black" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>
                 Clientele<span className="inline-block w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-black rounded-full ml-[4px]"></span>
               </h2>
             </div>
@@ -33,8 +33,8 @@ export default function Clientele() {
           
           {/* Explore Button */}
           <div className="hidden md:flex items-center gap-[24px] shrink-0">
-            <div className="w-[60px] lg:w-[100px] h-[1px] bg-[#1A1A1A]/40" />
-            <a href="https://dd.mocup.in/clientele" className="bg-[#F58331] text-[#1A1A1A] px-[14px] py-[6px] rounded-sm text-[10px] font-bold font-sans tracking-[2px] uppercase transition-colors">
+            <div className="w-[60px] lg:w-[100px] h-[1.5px] bg-[#1A1A1A]/40" />
+            <a href="https://dd.mocup.in/clientele" className="bg-[#F58331] text-[#1A1A1A] px-[12px] py-[4px] rounded-sm text-[10px]   tracking-[2px] uppercase transition-colors">
               EXPLORE
             </a>
           </div>
@@ -44,14 +44,14 @@ export default function Clientele() {
         <div className="w-full pl-0 md:pl-[120px] lg:pl-[160px]">
 
         <div className="flex flex-col text-left mb-[60px] lg:mb-[100px]">
-          <p className="text-[16px] lg:text-[18px] leading-[1.8] text-black" style={{ fontFamily: "'GT-Walsheim-Pro'" }}>
-            <strong className="font-black" style={{ fontFamily: "'GT-Walsheim-Pro-Black'" }}>
+          <p className="text-[18px] lg:text-[18px] leading-[1.8] text-black" style={{ fontFamily: "'GT-Walsheim-Pro'" }}>
+            <strong className="font-black" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>
               Inspired design, bold solutions & bottom<br className="hidden sm:block" />
               line results
             </strong>
             {' '}We turn information into<br className="hidden sm:block" />
             experiences people care about{' '}
-            <strong className="font-black" style={{ fontFamily: "'GT-Walsheim-Pro-Black'" }}>
+            <strong className="font-black" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>
               Strategic<br className="hidden sm:block" />
               Thinking Compelling Design
             </strong>
