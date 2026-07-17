@@ -161,7 +161,7 @@ export default function TechStack() {
           background-color: #7b75b8;
         }
       `}</style>
-      <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[44px] flex flex-col z-10 relative">
+      <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px] flex flex-col z-10 relative">
 
         {/* Row 1: Heading with Hanging Indent */}
         <motion.div

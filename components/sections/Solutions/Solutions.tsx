@@ -15,7 +15,7 @@ const ICON_MAP: Record<string, string> = {
 export default function Solutions() {
   return (
     <section className="relative bg-[#191919] text-white select-none py-[60px] md:py-[80px]">
-      <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[44px]">
+      <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px]">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6 items-start">
 

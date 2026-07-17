@@ -17,27 +17,27 @@ const ICON_MAP: Record<string, string> = {
 export default function Services() {
   return (
     <section className="relative pt-[50px] md:pt-[70px] lg:pt-[85px] pb-[96px] bg-[#ffffff] text-slate-900 overflow-hidden select-none">
-      <div className="w-full max-w-[1920px] mx-auto relative z-10 flex flex-col">
+      <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px] relative z-10 flex flex-col">
 
         {/* Row 1: Heading with Hanging Indent */}
-        <div className="flex items-center pb-[50px] lg:pl-[65px] px-6 md:px-12 lg:px-0 w-full">
+        <div className="flex items-center pb-[50px] w-full">
           {/* Hanging Prefix Column */}
-          <div className="w-[120px] lg:w-[140px] flex items-center shrink-0">
+          <div className="w-[120px] lg:w-[160px] flex items-center shrink-0">
             <span className=" font-bold text-[20px] lg:text-[24px] leading-none tracking-tight text-[#1A1A1A]">01.</span>
-            <div className="flex-grow h-[1.5px] bg-[#727272] mx-[14px] lg:mx-[4px]" />
+            <div className="flex-grow h-[1.5px] bg-[#727272] mx-[14px] lg:mx-[15px]" />
           </div>
 
           {/* Content Column Start */}
-          <div className="flex items-baseline ml-[20px] lg:ml-[20px]">
+          <div className="flex items-baseline">
             <h2 className="font-bold text-[14px] md:text-[22px] lg:text-[22px] xl:text-[28px] leading-none  capitalize tracking-tight text-[#1A1A1A] ">
              Navigate The Digital Frontier With Our Engineering Excellence
             </h2>
-            <div className="w-[8px] h-[8px] lg:w-[10px] lg:h-[10px] bg-[#1A1A1A] rounded-full ml-[20px]" />
+            <div className="w-[8px] h-[8px] lg:w-[10px] lg:h-[10px] bg-[#1A1A1A] rounded-full ml-[6px]" />
           </div>
         </div>
 
         {/* Card Grid */}
-        <div className="good-container w-full px-8 md:px-14 lg:px-0 lg:pl-[256px] lg:pr-[54px]">
+        <div className="good-container w-full pl-0 md:pl-[120px] lg:pl-[160px]">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
             {SERVICE_CARDS.map((card, index) => {
               const iconClass = ICON_MAP[card.icon] || "fas fa-code";
@@ -90,7 +90,7 @@ export default function Services() {
                 <a
                   href="https://designdot.quicsy.com/services"
                   target="_blank"
-                  className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-[#111] px-8 py-4 rounded-[40px] text-[15px] font-bold  tracking-wide transition-colors"
+                  className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-[#111] px-8 py-4 rounded-[40px] text-[15px] font-bold   tracking-wide transition-colors"
                 >
                   <span className="pt-[2px]">OUR SERVICES</span>
                   <ArrowRight size={18} strokeWidth={3} />

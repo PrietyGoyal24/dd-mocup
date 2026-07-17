@@ -592,7 +592,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
           </div>
 
           {/* Right Logo */}
-          <div className="flex items-center pl-6 select-none shrink-0">
+          <div className="flex items-center pl-6 lg:pr-[20px] select-none shrink-0">
             <a
               href="/"
               onClick={handleLogoClick}
