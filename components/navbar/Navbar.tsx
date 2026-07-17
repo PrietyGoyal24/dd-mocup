@@ -483,11 +483,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
     if (label.toLowerCase() === 'ai ingenuity') {
       return (
         <span className="relative flex items-center h-full focus:outline-none focus-visible:outline-none select-none">
-          <span className="relative">
+          <span className="relative flex items-center">
             <span className={isActive ? (theme === 'light' ? 'text-[#f58331]' : 'text-white') : (theme === 'light' ? 'text-[#111111]' : 'text-[#B2C5D4] transition-colors')}>AI&nbsp;</span>
             <span className="bg-gradient-to-r from-[#D1C0AE] to-[#F67E29] text-transparent bg-clip-text transition-colors inline-block">INGENUITY</span>
-            <span className={`absolute -bottom-1.5 left-0 w-full h-[2px] ${theme === 'light' ? 'bg-[#f58331]' : 'bg-white'} transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`} />
           </span>
+          <span className={`absolute bottom-[10px] left-0 w-full h-[2px] ${theme === 'light' ? 'bg-[#f58331]' : 'bg-white'} transition-transform duration-300 ease-out origin-left transform ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
         </span>
       );
     }
@@ -495,10 +495,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
     const displayLabel = label.toUpperCase();
     return (
       <span className="relative flex items-center h-full focus:outline-none focus-visible:outline-none select-none">
-        <span className={`relative ${theme === 'light' ? (isActive ? 'text-[#f58331]' : 'text-[#111111] hover:text-[#f58331]') : 'text-white'}`}>
+        <span className={`${theme === 'light' ? (isActive ? 'text-[#f58331]' : 'text-[#111111] hover:text-[#f58331]') : 'text-white'}`}>
           {displayLabel}
-          <span className={`absolute -bottom-1.5 left-0 w-full h-[2px] ${theme === 'light' ? 'bg-[#f58331]' : 'bg-white'} transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`} />
         </span>
+        <span className={`absolute bottom-[10px] left-0 w-full h-[2px] ${theme === 'light' ? 'bg-[#f58331]' : 'bg-white'} transition-transform duration-300 ease-out origin-left transform ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
       </span>
     );
   };
@@ -507,10 +507,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
     <>
       <header
         className={`fixed top-0 left-0 w-full z-40 ${theme === 'light' ? 'bg-[#fffbf8]' : 'bg-[var(--background)]'} transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'shadow-lg border-b border-black/5' : ''}`}
-        style={{ padding: '8px 0px' }}
+        style={{ padding: '0px' }}
       >
         {/* Main Navbar (Always Compact Single-Row) */}
-        <div className={`w-full pl-[35px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[60px]' : 'h-[61.6px]'}`}>
+        <div className={`w-full pl-[40px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[60px]' : 'h-[60.6px]'}`}>
 
           {/* Left/Middle Group: Navigation links, Support and Consultation button */}
           <div className="pl-[25px] flex items-center h-full">
@@ -533,7 +533,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                   fontFamily: 'GTWalsheimPro-Bold',
                   fontSize: '13px',
                   fontWeight: 'bold',
-                  padding: '8px 0px',
+                  padding: '0px',
                   listStyle: 'none'
                 }}
               >
@@ -620,8 +620,8 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             className="fixed left-0 right-0 w-full z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-[calc(100%-24px)] max-w-[1880px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
-              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
+            <div className="w-full bg-[#fffbf8] shadow-2xl flex flex-col select-none text-left">
+              <div className="w-full max-w-[1880px] mx-auto grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -698,7 +698,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     </h4>
                     <div className="flex-1 h-[1.5px] bg-[#00539c]" />
                   </div>
-                  <div className="grid grid-cols-2 gap-x-[30px] gap-y-[16px]">
+                  <div className={
+                    ['ENGINEERING', 'EMERGING TECHNOLOGIES', 'SOLUTIONS'].includes(activeExpertiseCategory)
+                      ? "grid grid-cols-2 gap-x-[30px] gap-y-[16px]"
+                      : "flex flex-col gap-y-[16px]"
+                  }>
                     {(EXPERTISE_MENU.center.subServices[activeExpertiseCategory as keyof typeof EXPERTISE_MENU.center.subServices] || []).map((serv) => (
                       <a
                         key={serv}
@@ -769,8 +773,8 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             className="fixed left-0 right-0 w-full z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-[calc(100%-24px)] max-w-[1880px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
-              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
+            <div className="w-full bg-[#fffbf8] shadow-2xl flex flex-col select-none text-left">
+              <div className="w-full max-w-[1880px] mx-auto grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -936,8 +940,8 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             className="fixed left-0 right-0 w-full z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-[calc(100%-24px)] max-w-[1880px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
-              <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
+            <div className="w-full bg-[#fffbf8] shadow-2xl flex flex-col select-none text-left">
+              <div className="w-full max-w-[1880px] mx-auto grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img
@@ -1103,8 +1107,8 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             className="fixed left-0 right-0 w-full z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-[calc(100%-24px)] max-w-[1880px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
-              <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
+            <div className="w-full bg-[#fffbf8] shadow-2xl flex flex-col select-none text-left">
+              <div className="w-full max-w-[1880px] mx-auto grid grid-cols-[1.3fr_2.7fr] gap-0 pl-[48px] pr-[32px] py-[40px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
                   <img

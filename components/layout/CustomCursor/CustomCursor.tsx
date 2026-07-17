@@ -37,10 +37,10 @@ export default function CustomCursor() {
         target.getAttribute('data-hover') !== null;
 
       if (inPaintArea) {
-        gsap.to(ring, { scale: 1.4, duration: 0.25 });
+        gsap.to(ring, { scale: 1.2, duration: 0.25 });
         gsap.to(dot, { scale: 0, opacity: 0, duration: 0.2 });
       } else if (isInteractive) {
-        gsap.to(ring, { scale: 1.6, duration: 0.25 });
+        gsap.to(ring, { scale: 1.3, duration: 0.25 });
         gsap.to(dot, { scale: 0.5, opacity: 0.5, duration: 0.25 });
       } else {
         gsap.to(ring, { scale: 1.0, duration: 0.25 });
@@ -92,8 +92,8 @@ export default function CustomCursor() {
       />
       <div 
         ref={ringRef} 
-        className={`fixed left-0 top-0 w-9 h-9 border rounded-full pointer-events-none z-[9999] will-change-transform transition-[border-color,transform] duration-300 flex items-center justify-center ${
-          isPaintHover ? 'border-slate-500/80 bg-transparent' : 'border-[var(--accent)]'
+        className={`fixed left-0 top-0 w-[28px] h-[28px] border rounded-full pointer-events-none z-[9999] will-change-transform transition-[border-color,transform] duration-300 flex items-center justify-center ${
+          isPaintHover ? 'border-slate-500/80 bg-transparent' : 'border-slate-400/80'
         }`}
         style={{ transform: 'translate(-50%, -50%)' }}
       >
