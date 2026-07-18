@@ -21,7 +21,7 @@ export default function WhyUs() {
                 />
               </div>
               <span
-                className="font-extrabold"
+                className="font-extrabold md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]"
                 style={{ fontFamily: "'GTWalsheimPro-Bold'", fontSize: '24px', letterSpacing: '1px' }}
               >
                 Why Us
@@ -29,10 +29,10 @@ export default function WhyUs() {
               </span>
             </div>
 
-            {/* Heading and Content */}
-            <div className="w-full">
-              <div className="w-full">
-                <h2
+             {/* Heading and Content */}
+             <div className="w-full">
+               <div className="w-full md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]">
+                 <h2
                   className="m-0 font-extrabold text-[#111] uppercase whitespace-nowrap"
                   style={{
                     fontFamily: "'GTWalsheimPro-Bold'",

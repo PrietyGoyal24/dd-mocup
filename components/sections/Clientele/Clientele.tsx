@@ -14,17 +14,17 @@ export default function Clientele() {
     <section className="relative py-24 bg-[#ffffff] text-slate-900 overflow-hidden select-none border-b border-slate-100">
       <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px] flex flex-col z-10 relative">
         
-        {/* Row 1: Index --- Heading */}
+         {/* Row 1: Index --- Heading */}
         <div className="flex items-center mb-[40px] lg:mb-[60px] w-full justify-between">
           <div className="flex items-center flex-1">
             {/* Hanging Prefix Column */}
-            <div className="w-[120px] md:w-[140px] lg:w-[170px] xl:w-[220px] flex items-center shrink-0">
+            <div className="w-[120px] md:w-[95px] lg:w-[135px] xl:w-[195px] flex items-center shrink-0">
               <span className="text-[22px] lg:text-[26px] font-bold leading-none tracking-tight text-[#F58331] inline-block md:w-[49px]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>06.</span>
               <div className="block h-[1.5px] bg-[#111111]/40 w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
             </div>
             
             {/* Content Column Start */}
-            <div className="flex items-baseline">
+            <div className="flex items-baseline md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]">
               <h2 className="font-bold text-[22px] lg:text-[26px] leading-none tracking-tight text-black m-0 p-0" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>
                 Clientele<span className="inline-block w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-black rounded-full ml-[4px] relative -top-[2px]"></span>
               </h2>
@@ -32,7 +32,7 @@ export default function Clientele() {
           </div>
           
           {/* Explore Button */}
-          <div className="hidden md:flex items-center gap-[24px] shrink-0">
+          <div className="hidden md:flex items-center gap-[24px] shrink-0 md:mr-[4px] lg:mr-[10px] xl:mr-[5px]">
             <div className="w-[80px] lg:w-[100px] h-[1.5px] bg-[#111111]/40" />
             <a 
               href="https://dd.mocup.in/clientele" 
@@ -45,7 +45,7 @@ export default function Clientele() {
         </div>
  
         {/* Indented Content Block */}
-        <div className="w-full pl-0 md:pl-[140px] lg:pl-[170px] xl:pl-[220px]">
+        <div className="pl-0 md:pl-[95px] lg:pl-[135px] xl:pl-[195px] md:ml-[-4px] md:mr-[4px] lg:ml-[-10px] lg:mr-[10px] xl:ml-[-24px] xl:mr-[5px]">
 
         <div className="flex flex-col text-left mb-[60px] lg:mb-[100px]">
           <p className="text-[18px] lg:text-[18px] leading-[1.8] text-black" style={{ fontFamily: "'GTWalsheimPro-Regular'" }}>

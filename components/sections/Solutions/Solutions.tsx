@@ -24,13 +24,13 @@ export default function Solutions() {
 
             <div className="flex items-center pt-0 lg:pt-[44px] w-full">
               {/* Hanging Prefix Column */}
-              <div className="w-[120px] md:w-[140px] lg:w-[170px] xl:w-[220px] flex items-center shrink-0">
+              <div className="w-[120px] md:w-[95px] lg:w-[135px] xl:w-[195px] flex items-center shrink-0">
                 <span className="text-[20px] lg:text-[24px] font-bold leading-none tracking-tight text-[#f58331] inline-block md:w-[49px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>02.</span>
                 <span className="block h-[1.5px] bg-[#727272] w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
               </div>
 
               <span
-                className="text-[20px] md:text-[26px] leading-[30px] text-white font-extrabold flex items-baseline"
+                className="text-[20px] md:text-[26px] leading-[30px] text-white font-extrabold flex items-baseline md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]"
                 style={{ fontFamily: 'GTWalsheimPro-Bold' }}
               >
                 We Build Smarter, Faster Solutions
@@ -38,7 +38,7 @@ export default function Solutions() {
               </span>
             </div>
 
-            <div className="mt-[40px] md:mt-[70px] ml-0 md:ml-[140px] lg:ml-[170px] xl:ml-[220px] w-full md:w-[62%] p-8 md:p-10 rounded-[8px] bg-[#2c2c2c4f] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
+            <div className="mt-[40px] md:mt-[70px] ml-0 md:ml-[91px] lg:ml-[125px] xl:ml-[171px] w-full md:w-[62%] p-8 md:p-10 rounded-[8px] bg-[#2c2c2c4f] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
               <div className="mb-6">
                 <i className="fas fa-paper-plane text-white text-[30px]" />
               </div>
@@ -65,7 +65,7 @@ export default function Solutions() {
           </div>
 
           {/* Right sidebar list */}
-          <div className="pt-0 lg:pt-0 mt-10 lg:mt-0">
+          <div className="pt-0 lg:pt-0 mt-10 lg:mt-0 md:mr-[4px] lg:mr-[10px] xl:mr-[5px]">
             {INDUSTRY_ITEMS.map((item) => {
               const iconClass = ICON_MAP[item.icon] || 'fas fa-cogs';
               return (

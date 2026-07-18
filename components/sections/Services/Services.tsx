@@ -22,13 +22,13 @@ export default function Services() {
         {/* Row 1: Heading with Hanging Indent */}
         <div className="flex items-center pb-[50px] w-full">
           {/* Hanging Prefix Column */}
-          <div className="w-[120px] md:w-[140px] lg:w-[170px] xl:w-[220px] flex items-center shrink-0">
+          <div className="w-[120px] md:w-[95px] lg:w-[135px] xl:w-[195px] flex items-center shrink-0">
             <span className="font-bold text-[20px] lg:text-[26px] leading-none tracking-tight text-[#1A1A1A] inline-block md:w-[49px]">01.</span>
             <div className="block h-[1.5px] bg-[#727272] w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
           </div>
 
           {/* Content Column Start */}
-          <div className="flex items-baseline">
+          <div className="flex items-baseline md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]">
             <h2 className="font-bold text-[14px] md:text-[22px] lg:text-[22px] xl:text-[28px] leading-none  capitalize tracking-tight text-[#1A1A1A] ">
              Navigate The Digital Frontier With Our Engineering Excellence
             </h2>
@@ -37,7 +37,7 @@ export default function Services() {
         </div>
 
         {/* Card Grid */}
-        <div className="good-container w-full pl-0 md:pl-[140px] lg:pl-[170px] xl:pl-[220px]">
+        <div className="good-container pl-0 md:pl-[95px] lg:pl-[135px] xl:pl-[195px] md:ml-[-4px] md:mr-[4px] lg:ml-[-10px] lg:mr-[10px] xl:ml-[-24px] xl:mr-[5px]">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
             {SERVICE_CARDS.map((card, index) => {
               const iconClass = ICON_MAP[card.icon] || "fas fa-code";

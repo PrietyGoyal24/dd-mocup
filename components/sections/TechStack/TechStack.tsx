@@ -172,7 +172,7 @@ export default function TechStack() {
           className="flex items-center mb-[50px] w-full"
         >
           {/* Hanging Prefix Column */}
-          <div className="w-[120px] md:w-[140px] lg:w-[170px] xl:w-[220px] flex items-center shrink-0">
+          <div className="w-[120px] md:w-[95px] lg:w-[135px] xl:w-[195px] flex items-center shrink-0">
             <span
               className="font-black text-[20px] lg:text-[24px] leading-none tracking-tight text-[#111111] inline-block md:w-[49px]"
               style={{ fontFamily: 'GTWalsheimPro-Bold' }}
@@ -183,7 +183,7 @@ export default function TechStack() {
           </div>
 
           {/* Content Column Start */}
-          <div className="flex items-baseline">
+          <div className="flex items-baseline md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]">
             <h2
               className="font-bold text-[20px] lg:text-[24px] leading-none capitalize tracking-tight text-[#111111]"
               style={{ fontFamily: 'GTWalsheimPro-Bold' }}
@@ -195,7 +195,7 @@ export default function TechStack() {
         </motion.div>
 
         {/* Indented Content Block */}
-        <div className="w-full pl-0 md:pl-[140px] lg:pl-[170px] xl:pl-[220px]">
+        <div className="pl-0 md:pl-[95px] lg:pl-[135px] xl:pl-[195px] md:ml-[-4px] md:mr-[4px] lg:ml-[-10px] lg:mr-[10px] xl:ml-[-24px] xl:mr-[5px]">
 
           {/* Desktop Layout */}
           <div className="hidden lg:flex h-[515px] w-full overflow-hidden rounded-[2px]">

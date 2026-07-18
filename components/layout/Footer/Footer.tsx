@@ -7,6 +7,14 @@ export default function Footer() {
   const [localTime, setLocalTime] = useState('');
   const [captchaAnswer, setCaptchaAnswer] = useState('');
   const [captchaError, setCaptchaError] = useState(false);
+  const [captchaNums, setCaptchaNums] = useState({ num1: 3, num2: 7 });
+
+  const generateCaptcha = () => {
+    const n1 = Math.floor(Math.random() * 9) + 1; // 1 to 9
+    const n2 = Math.floor(Math.random() * 9) + 1; // 1 to 9
+    setCaptchaNums({ num1: n1, num2: n2 });
+  };
+
   // State variables for form inputs
   const [formData, setFormData] = useState({
     name: '',
@@ -19,6 +27,7 @@ export default function Footer() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
+    generateCaptcha();
     const updateTime = () => {
       const today = new Date();
       const daylist = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -40,8 +49,11 @@ export default function Footer() {
     if (!formData.name || !formData.email || !formData.phone) return;
 
     // Captcha validation
-    if (captchaAnswer.trim() !== '10') {
+    const expectedAnswer = (captchaNums.num1 + captchaNums.num2).toString();
+    if (captchaAnswer.trim() !== expectedAnswer) {
       setCaptchaError(true);
+      generateCaptcha();
+      setCaptchaAnswer('');
       return;
     }
 
@@ -51,6 +63,7 @@ export default function Footer() {
       setIsSubmitted(false);
       setFormData({ name: '', email: '', phone: '', budget: '', idea: '', nda: false });
       setCaptchaAnswer('');
+      generateCaptcha();
     }, 2500);
   };
 
@@ -63,11 +76,11 @@ export default function Footer() {
           <div className="flex flex-col text-left justify-start w-full">
 
             {/* Content wrapper with margin-left so that text inspect outline starts at let's */}
-            <div className="flex-grow ml-0 sm:ml-[110px] md:ml-[160px] relative">
+            <div className="flex-grow ml-0 sm:ml-[110px] md:ml-[91px] lg:ml-[125px] xl:ml-[171px] relative">
 
               {/* Heading */}
               <div className="relative w-full">
-                <div className="absolute left-[-152px] md:left-[-135px] top-[16px] md:top-[22px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
+                <div className="absolute left-[-152px] md:left-[-42px] lg:left-[-76px] xl:left-[-122px] top-[16px] md:top-[22px] w-[120px] md:w-[30px] lg:w-[64px] xl:w-[110px] h-[1.2px] bg-[#727272] hidden sm:block" />
                 <h2
                   className="text-[26px] md:text-[38px] leading-[1.5] text-[#111111] lowercase"
                   style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
@@ -76,11 +89,11 @@ export default function Footer() {
                 </h2>
               </div>
 
-              <div className="flex flex-col gap-[80px] mt-[54px] w-full pl-0 sm:pl-[90px] md:pl-[160px]">
+              <div className="flex flex-col gap-[80px] mt-[54px] pl-0 sm:pl-[90px] md:pl-[91px] lg:pl-[125px] xl:pl-[171px]">
 
                 {/* Phone number */}
                 <div className="relative w-full">
-                  <div className="absolute left-[-152px] md:left-[-152px] top-[9px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
+                  <div className="absolute left-[-152px] md:left-[-91px] lg:left-[-125px] xl:left-[-171px] top-[9px] w-[120px] md:w-[59px] lg:w-[93px] xl:w-[139px] h-[1.2px] bg-[#727272] hidden sm:block" />
                   <div className="flex flex-col">
                     <span
                       className="text-[18px] leading-[18px] font-[400] text-[#B8B7B7] mb-[17px] tracking-[1px] block"
@@ -100,7 +113,7 @@ export default function Footer() {
 
                 {/* Mail at */}
                 <div className="relative w-full">
-                  <div className="absolute left-[-152px] md:left-[-152px] top-[9px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
+                  <div className="absolute left-[-152px] md:left-[-91px] lg:left-[-125px] xl:left-[-171px] top-[9px] w-[120px] md:w-[59px] lg:w-[93px] xl:w-[139px] h-[1.2px] bg-[#727272] hidden sm:block" />
                   <div className="flex flex-col">
                     <span
                       className="text-[18px] leading-[18px] font-[400] text-[#B8B7B7] mb-[17px] tracking-[1px] block"
@@ -119,7 +132,7 @@ export default function Footer() {
 
                 {/* Direct Chat */}
                 <div className="relative w-full">
-                  <div className="absolute left-[-152px] md:left-[-152px] top-[9px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
+                  <div className="absolute left-[-152px] md:left-[-91px] lg:left-[-125px] xl:left-[-171px] top-[9px] w-[120px] md:w-[59px] lg:w-[93px] xl:w-[139px] h-[1.2px] bg-[#727272] hidden sm:block" />
                   <div className="flex flex-col">
                     <span
                       className="text-[18px] leading-[18px] font-[400] text-[#B8B7B7] mb-[17px] tracking-[1px] block"
@@ -146,7 +159,7 @@ export default function Footer() {
 
                 {/* Connect */}
                 <div className="relative w-full">
-                  <div className="absolute left-[-152px] md:left-[-152px] top-[9px] w-[120px] md:w-[120px] h-[1.2px] bg-[#727272] hidden sm:block" />
+                  <div className="absolute left-[-152px] md:left-[-91px] lg:left-[-125px] xl:left-[-171px] top-[9px] w-[120px] md:w-[59px] lg:w-[93px] xl:w-[139px] h-[1.2px] bg-[#727272] hidden sm:block" />
                   <div className="flex flex-col">
                     <span
                       className="text-[18px] leading-[18px] font-[400] text-[#B8B7B7] mb-[17px] tracking-[1px] block"
@@ -178,7 +191,7 @@ export default function Footer() {
           </div>
 
           {/* Right Column: Write us Proposal Form */}
-          <div className="flex flex-col text-left font-sans w-full">
+          <div className="flex flex-col text-left font-sans md:mr-[4px] lg:mr-[10px] xl:mr-[5px]">
             <h3
               className="text-[22px] md:text-[26px] font-extrabold text-[#111111] mb-[48px] mt-0 md:mt-[4px]"
               style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
@@ -313,7 +326,7 @@ export default function Footer() {
                   </label>
 
                   <div className="flex items-center gap-[10px]">
-                    <span className="text-white font-[500] text-[18px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>3 + 7 =</span>
+                    <span className="text-white font-[500] text-[18px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>{captchaNums.num1} + {captchaNums.num2} =</span>
                     <input
                       type="text"
                       required
@@ -345,7 +358,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full max-w-[1840px] mx-auto px-5 pl-0 sm:pl-[140px] md:pl-[200px] lg:pl-[240px] pr-5 md:pr-[64px] flex flex-col mt-[64px]">
+      <div className="max-w-[1840px] mx-auto px-5 pl-0 sm:pl-[140px] md:pl-[156px] lg:pl-[190px] xl:pl-[236px] pr-5 md:pr-[64px] md:mr-[4px] lg:mr-[10px] xl:mr-[5px] flex flex-col mt-[64px]">
         {/* Top Divider Line */}
         <div className="w-full mb-[24px] relative flex items-center">
           <div className="w-full h-[1.2px] bg-[#111111]" />
@@ -356,13 +369,13 @@ export default function Footer() {
           {/* Row 1: Labels */}
           <div className="flex justify-between items-center w-full">
             <span
-              className="text-[#8e8e8e] text-[13px] font-[500] uppercase tracking-wider"
+              className="text-[#8e8e8e] text-[18px] font-[500]  tracking-wider"
               style={{ fontFamily: 'GTWalsheimPro-Regular' }}
             >
               Working Hours
             </span>
             <span
-              className="text-[#8e8e8e] text-[13px] font-[500] uppercase tracking-wider"
+              className="text-[#8e8e8e] text-[18px] font-[500]  tracking-wider"
               style={{ fontFamily: 'GTWalsheimPro-Regular' }}
             >
               Local Time
@@ -453,7 +466,7 @@ export default function Footer() {
           </div>
 
           {/* Brochure & Copyright Column */}
-          <div className="flex flex-col gap-[10px] text-left lg:text-right items-start lg:items-end pt-[4px] lg:ml-auto">
+          <div className="flex flex-col gap-[10px] text-left lg:text-right items-start lg:items-end pt-[4px] lg:pt-[30px] lg:ml-auto">
             <a
               href="https://drive.google.com/file/d/1m0wCjfT7xhCWghgZBxrkRXdDrwZkpaue/view"
               target="_blank"

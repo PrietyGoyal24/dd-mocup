@@ -56,13 +56,13 @@ export default function Portfolio() {
             className="flex items-center w-full"
           >
             {/* Hanging Prefix Column */}
-            <div className="w-[120px] md:w-[140px] lg:w-[170px] xl:w-[220px] flex items-center shrink-0">
+            <div className="w-[120px] md:w-[95px] lg:w-[135px] xl:w-[195px] flex items-center shrink-0">
               <span className="text-[22px] lg:text-[26px] font-bold leading-none tracking-tight text-[#F58331] inline-block md:w-[49px]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>04.</span>
               <div className="block h-[1px] bg-[#FFFFFF]/40 w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
             </div>
             
             {/* Content */}
-            <div className="flex items-center">
+            <div className="flex items-center md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]">
               <div className="flex items-baseline">
                 <h2 className="font-bold text-[20px] lg:text-[26px] leading-none tracking-tight text-[#FFFFFF] m-0 p-0" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>
                   What&apos;s Good
@@ -73,7 +73,7 @@ export default function Portfolio() {
           </motion.div>
 
           {/* Slider Arrow Buttons */}
-          <div className="flex gap-4 shrink-0 text-white/80">
+          <div className="flex gap-4 shrink-0 text-white/80 md:mr-[4px] lg:mr-[10px] xl:mr-[5px]">
             <button
               onClick={handlePrev}
               className="hover:text-white transition-colors cursor-pointer"
@@ -92,7 +92,7 @@ export default function Portfolio() {
         </div>
 
         {/* Indented Content Block */}
-        <div className="sliderContainer what-good-container w-full pl-0 md:pl-[140px] lg:pl-[170px] xl:pl-[220px]">
+        <div className="sliderContainer what-good-container pl-0 md:pl-[95px] lg:pl-[135px] xl:pl-[195px] md:ml-[-4px] md:mr-[4px] lg:ml-[-10px] lg:mr-[10px] xl:ml-[-24px] xl:mr-[5px]">
           {/* Carousel Slider */}
           <div className="w-full overflow-hidden">
             <div className="-mx-[15px] lg:-mx-[35px]">
