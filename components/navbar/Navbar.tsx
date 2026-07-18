@@ -620,7 +620,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full max-w-[1840px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
+            <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[12px] pr-[20px] pt-[20px] pb-[58px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
@@ -772,7 +772,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full max-w-[1840px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
+            <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[12px] pr-[20px] pt-[20px] pb-[68px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
@@ -938,7 +938,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full max-w-[1840px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
+            <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[12px] pr-[20px] pt-[20px] pb-[68px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
@@ -1104,7 +1104,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
             style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
           >
-            <div className="w-full max-w-[1840px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
+            <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
               <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 pl-[12px] pr-[20px] pt-[20px] pb-[58px]">
                 {/* Left Column */}
                 <div className="pr-[40px]">
