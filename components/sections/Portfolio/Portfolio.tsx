@@ -55,13 +55,10 @@ export default function Portfolio() {
             transition={{ duration: 0.8 }}
             className="flex items-center w-full"
           >
-            {/* Hanging Prefix */}
-            <div className="w-[120px] lg:w-[160px] flex items-center shrink-0">
-              <div className="flex items-baseline">
-                <span className="text-[22px] lg:text-[26px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>04</span>
-                <div className="w-[6px] h-[6px] lg:w-[8px] lg:h-[8px] bg-[#F58331] rounded-full ml-[4px]" />
-              </div>
-              <div className="flex-grow h-[1px] bg-[#FFFFFF]/40 mx-[15px]" />
+            {/* Hanging Prefix Column */}
+            <div className="w-[120px] md:w-[140px] lg:w-[170px] xl:w-[220px] flex items-center shrink-0">
+              <span className="text-[22px] lg:text-[26px] font-bold leading-none tracking-tight text-[#F58331] inline-block md:w-[49px]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>04.</span>
+              <div className="block h-[1px] bg-[#FFFFFF]/40 w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
             </div>
             
             {/* Content */}
@@ -95,7 +92,7 @@ export default function Portfolio() {
         </div>
 
         {/* Indented Content Block */}
-        <div className="sliderContainer what-good-container w-full pl-0 md:pl-[120px] lg:pl-[160px]">
+        <div className="sliderContainer what-good-container w-full pl-0 md:pl-[140px] lg:pl-[170px] xl:pl-[220px]">
           {/* Carousel Slider */}
           <div className="w-full overflow-hidden">
             <div className="-mx-[15px] lg:-mx-[35px]">

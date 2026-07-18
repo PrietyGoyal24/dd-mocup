@@ -11,18 +11,13 @@ export default function WhyUs() {
 
             {/* Row 1: 00. + separator + 'Why Us' */}
             <div className="flex items-center text-[#111] md:relative mb-[30px] md:mb-[50px]">
-              <div className="flex items-center md:absolute md:right-full md:top-1/2 md:-translate-y-1/2">
+              <div className="flex items-center md:absolute md:top-1/2 md:-translate-y-1/2 md:left-[-100px] lg:left-[-150px] xl:left-[-195px]">
                 <span
-                  className="font-extrabold"
+                  className="font-extrabold inline-block md:w-[49px]"
                   style={{ fontFamily: "'GTWalsheimPro-Bold'", fontSize: '24px', letterSpacing: '1px' }}
                 >00.</span>
                 <span
-                  className="block h-[1.5px]"
-                  style={{
-                    width: '80px',
-                    backgroundColor: '#727272',
-                    margin: '0px 15px 0px 7px',
-                  }}
+                  className="block h-[1.5px] bg-[#727272] w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0"
                 />
               </div>
               <span

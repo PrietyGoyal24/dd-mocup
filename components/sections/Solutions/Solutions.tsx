@@ -22,24 +22,23 @@ export default function Solutions() {
           {/* Left sticky column */}
           <div className="lg:sticky lg:top-[120px] self-start">
 
-            <div className="flex items-center flex-wrap pt-0 lg:pt-[44px]">
-              <p
-                className="text-[20px] md:text-[24px] leading-[30px] m-0 shrink-0 text-[#f58331]"
-                style={{ fontFamily: 'GTWalsheimPro-Bold' }}
-              >
-                02.
-              </p>
-              <span className="block w-[96px] md:w-[100px] h-[2px] bg-[#727272] mx-[15px] relative -top-[1.5px] md:-top-[2.5px]" />
+            <div className="flex items-center pt-0 lg:pt-[44px] w-full">
+              {/* Hanging Prefix Column */}
+              <div className="w-[120px] md:w-[140px] lg:w-[170px] xl:w-[220px] flex items-center shrink-0">
+                <span className="text-[20px] lg:text-[24px] font-bold leading-none tracking-tight text-[#f58331] inline-block md:w-[49px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>02.</span>
+                <span className="block h-[1.5px] bg-[#727272] w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
+              </div>
+
               <span
-                className="text-[20px] md:text-[26px] leading-[30px] text-white font-extrabold"
-                style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 1200 }}
+                className="text-[20px] md:text-[26px] leading-[30px] text-white font-extrabold flex items-baseline"
+                style={{ fontFamily: 'GTWalsheimPro-Bold' }}
               >
                 We Build Smarter, Faster Solutions
                 <span className="inline-block w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-white ml-[4px] md:ml-[6px] align-baseline" />
               </span>
             </div>
 
-            <div className="mt-[40px] md:mt-[70px] ml-0 md:ml-[11.8rem] w-full md:w-[62%] p-8 md:p-10 rounded-[8px] bg-[#2c2c2c4f] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
+            <div className="mt-[40px] md:mt-[70px] ml-0 md:ml-[140px] lg:ml-[170px] xl:ml-[220px] w-full md:w-[62%] p-8 md:p-10 rounded-[8px] bg-[#2c2c2c4f] shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
               <div className="mb-6">
                 <i className="fas fa-paper-plane text-white text-[30px]" />
               </div>

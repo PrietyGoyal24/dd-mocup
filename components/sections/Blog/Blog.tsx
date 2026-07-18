@@ -12,9 +12,9 @@ export default function Blog() {
         <div className="flex items-center mb-[40px] lg:mb-[60px] w-full justify-between">
           <div className="flex items-center flex-1">
             {/* Hanging Prefix Column */}
-            <div className="w-[120px] lg:w-[160px] flex items-center shrink-0">
-              <span className="text-[22px] lg:text-[26px] font-bold leading-none tracking-tight text-[#F58331]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>07.</span>
-              <div className="flex-grow h-[1.8px] bg-[#111111]/40 ml-[15px] mr-[15px]" />
+            <div className="w-[120px] md:w-[140px] lg:w-[170px] xl:w-[220px] flex items-center shrink-0">
+              <span className="text-[22px] lg:text-[26px] font-bold leading-none tracking-tight text-[#F58331] inline-block md:w-[49px]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>07.</span>
+              <div className="block h-[1.5px] bg-[#111111]/40 w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
             </div>
 
             {/* Content Column Start */}
@@ -39,7 +39,7 @@ export default function Blog() {
         </div>
 
         {/* Indented Content Block */}
-        <div className="w-full pl-0 md:pl-[120px] lg:pl-[160px]">
+        <div className="w-full pl-0 md:pl-[140px] lg:pl-[170px] xl:pl-[220px]">
 
           <div className="flex flex-col text-left mb-[30px] lg:mb-[40px]">
             <p className="text-[16px] lg:text-[18px] leading-[1.8] text-black" style={{ fontFamily: "'GTWalsheimPro-Regular'" }}>
