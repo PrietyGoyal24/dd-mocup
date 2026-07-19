@@ -483,11 +483,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
     if (label.toLowerCase() === 'ai ingenuity') {
       return (
         <span className="relative flex items-center h-full focus:outline-none focus-visible:outline-none select-none">
-          <span className="relative flex items-center">
+          <span className="relative flex items-center tracking-[0.6px]">
             <span className={isActive ? (theme === 'light' ? 'text-[#f58331]' : 'text-white') : (theme === 'light' ? 'text-[#111111]' : 'text-[#B2C5D4] transition-colors')}>AI&nbsp;</span>
             <span className="bg-gradient-to-r from-[#D1C0AE] to-[#F67E29] text-transparent bg-clip-text transition-colors inline-block">INGENUITY</span>
           </span>
-          <span className={`absolute bottom-[10px] left-0 w-full h-[2px] ${theme === 'light' ? 'bg-[#f58331]' : 'bg-white'} transition-transform duration-300 ease-out origin-left transform ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
+          <span className={`absolute bottom-[17px] left-0 w-full h-[2px] ${theme === 'light' ? 'bg-[#f58331]' : 'bg-white'} transition-transform duration-300 ease-out origin-left transform ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
         </span>
       );
     }
@@ -495,10 +495,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
     const displayLabel = label.toUpperCase();
     return (
       <span className="relative flex items-center h-full focus:outline-none focus-visible:outline-none select-none">
-        <span className={`${theme === 'light' ? (isActive ? 'text-[#f58331]' : 'text-[#111111] hover:text-[#f58331]') : 'text-white'}`}>
+        <span className={`tracking-[0.6px] ${theme === 'light' ? (isActive ? 'text-[#f58331]' : 'text-[#111111] hover:text-[#f58331]') : 'text-white'}`}>
           {displayLabel}
         </span>
-        <span className={`absolute bottom-[10px] left-0 w-full h-[2px] ${theme === 'light' ? 'bg-[#f58331]' : 'bg-white'} transition-transform duration-300 ease-out origin-left transform ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
+        <span className={`absolute bottom-[17px] left-0 w-full h-[2px] ${theme === 'light' ? 'bg-[#f58331]' : 'bg-white'} transition-transform duration-300 ease-out origin-left transform ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
       </span>
     );
   };
@@ -510,7 +510,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
         style={{ padding: '0px' }}
       >
         {/* Main Navbar (Always Compact Single-Row) */}
-        <div className={`w-full pl-[40px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[60px]' : 'h-[60.6px]'}`}>
+        <div className={`w-full pl-[40px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[74px]' : 'h-[74.6px]'}`}>
 
           {/* Left/Middle Group: Navigation links, Support and Consultation button */}
           <div className="pl-[25px] flex items-center h-full">
@@ -618,7 +618,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'expertise')}
             className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
-            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
+            style={{ top: isScrolled ? '74px' : '74.6px', background: 'transparent' }}
           >
             <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[12px] pr-[20px] pt-[20px] pb-[58px]">
@@ -770,7 +770,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'ai-ingenuity')}
             className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
-            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
+            style={{ top: isScrolled ? '74px' : '74.6px', background: 'transparent' }}
           >
             <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[12px] pr-[20px] pt-[20px] pb-[68px]">
@@ -936,7 +936,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'technology')}
             className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
-            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
+            style={{ top: isScrolled ? '74px' : '74.6px', background: 'transparent' }}
           >
             <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
               <div className="w-full grid grid-cols-[1.3fr_1fr_1.7fr] gap-0 pl-[12px] pr-[20px] pt-[20px] pb-[68px]">
@@ -1102,7 +1102,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'corporate')}
             className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
-            style={{ top: isScrolled ? '60px' : '61.6px', background: 'transparent' }}
+            style={{ top: isScrolled ? '74px' : '74.6px', background: 'transparent' }}
           >
             <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
               <div className="w-full grid grid-cols-[1.3fr_2.7fr] gap-0 pl-[12px] pr-[20px] pt-[20px] pb-[58px]">
