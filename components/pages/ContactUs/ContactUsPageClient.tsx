@@ -237,13 +237,12 @@ export default function ContactUsPageClient() {
           <div className="max-w-[1320px] mx-auto px-[20px] md:px-[50px]">
 
             {/* Divider styling line next to Contact Form header */}
-            <div className="flex items-center w-full mb-12">
-              {/* sec-left (line) */}
-              <div className="custom-sec-left">
-                <span className="custom-line-span"></span>
-              </div>
+            <div className="flex items-center w-full mb-12 relative">
+              {/* Horizontal Line */}
+              <div className="absolute -left-[20px] lg:-left-[55px] w-[60px] lg:w-[128px] h-[1.5px] bg-gray-500"></div>
+              
               {/* sec-right (text) */}
-              <div className="flex-1 text-left">
+              <div className="flex-1 text-left pl-[60px] lg:pl-[114px]">
                 <h3
                   className="text-[32px] font-bold text-[#111111] tracking-wide"
                   style={{ fontFamily: 'GTWalsheimPro-Bold' }}
@@ -255,14 +254,11 @@ export default function ContactUsPageClient() {
 
             {/* Grid wrapper with matching columns layout */}
             <div className="flex w-full flex-col lg:flex-row">
-              {/* sec-left (invisible spacer to align with form inputs) */}
-              <div className="custom-sec-left" />
-
               {/* sec-right (content columns) */}
-              <div className="flex-1 w-full flex flex-col lg:flex-row items-start">
+              <div className="flex-1 w-full flex flex-col lg:flex-row items-start pl-[40px] lg:pl-[114px]">
 
                 {/* Left Column: Interactive Form */}
-                <div className="w-full lg:w-[46%] lg:pr-[180px] flex flex-col text-left">
+                <div className="w-full lg:w-[49%] flex flex-col text-left">
                   {formSubmitted ? (
                     <div className="thank-you-contact-page bg-[#fcf5f5] border border-gray-100 p-8 rounded-xl text-left">
                       <h3 className="text-[#f27820] text-[28px] font-extrabold uppercase mb-4" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
@@ -386,7 +382,7 @@ export default function ContactUsPageClient() {
                         <input
                           type="file"
                           name="file_data"
-                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[16px] text-gray-500 pt-[15px] px-[20px] focus:outline-none rounded-sm"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[16px] text-gray-500 pt-[10px] px-[20px] focus:outline-none rounded-sm file:mr-3 file:py-[2px] file:px-2 file:border file:border-[#767676] file:bg-[#efefef] file:text-black file:rounded-[2px] file:cursor-pointer hover:file:bg-[#e5e5e5]"
                         />
                       </div>
 
@@ -431,18 +427,18 @@ export default function ContactUsPageClient() {
                 </div>
 
                 {/* Right Column: Guidelines */}
-                <div className="w-full lg:w-[54%] flex flex-col gap-10 mt-12 lg:mt-0 text-left">
+                <div className="w-full lg:w-[54%] relative lg:left-[110px] flex flex-col gap-10 mt-12 lg:mt-0 text-left">
 
                   {/* Rule 1 */}
                   <div className="flex items-start mb-[50px]">
                     <div className="guideline-sec-left">
                       <span className="guideline-line-span"></span>
                     </div>
-                    <div className="flex flex-col">
-                      <b className="text-[18px] text-[#000000] font-bold uppercase tracking-[1px] mb-[15px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                    <div className="flex-1 flex flex-col pr-[10px] lg:pr-[20px]">
+                      <b className="text-[22px] text-[#000000] font-bold mb-[15px] whitespace-nowrap" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                         Put Forward Your Requirement
                       </b>
-                      <p className="text-[18px] text-[#000000] font-normal leading-[30px] tracking-[1px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                      <p className="text-[18px] text-[#000000] font-normal leading-[30px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
                         Fill up the form given on the right side of this page, and within 24 hours, one of our business development executive will reach you for further communication.
                       </p>
                     </div>
@@ -453,11 +449,11 @@ export default function ContactUsPageClient() {
                     <div className="guideline-sec-left">
                       <span className="guideline-line-span"></span>
                     </div>
-                    <div className="flex flex-col">
-                      <b className="text-[18px] text-[#000000] font-bold uppercase tracking-[1px] mb-[15px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                    <div className="flex-1 flex flex-col pr-[10px] lg:pr-[20px]">
+                      <b className="text-[22px] text-[#000000] font-bold mb-[15px] whitespace-nowrap" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                         Sign Non-Disclosure Agreement:
                       </b>
-                      <p className="text-[18px] text-[#000000] font-normal leading-[30px] tracking-[1px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                      <p className="text-[18px] text-[#000000] font-normal leading-[30px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
                         Through NDA, we make you feel secure. Your idea will be yours. Signing up an NDA assures you the privacy of your idea and project.
                       </p>
                     </div>
@@ -468,11 +464,11 @@ export default function ContactUsPageClient() {
                     <div className="guideline-sec-left">
                       <span className="guideline-line-span"></span>
                     </div>
-                    <div className="flex flex-col">
-                      <b className="text-[18px] text-[#000000] font-bold uppercase tracking-[1px] mb-[15px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                    <div className="flex-1 flex flex-col pr-[10px] lg:pr-[20px]">
+                      <b className="text-[22px] text-[#000000] font-bold mb-[15px] whitespace-nowrap" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                         Analyzing Your Requirement:
                       </b>
-                      <p className="text-[18px] text-[#000000] font-normal leading-[30px] tracking-[1px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                      <p className="text-[18px] text-[#000000] font-normal leading-[30px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
                         As soon as you signed up the NDA, we shall analyze the requirements put forward by you. Our team of experts will read and analyze the same, and will get back to you within few hours.
                       </p>
                     </div>
@@ -483,11 +479,11 @@ export default function ContactUsPageClient() {
                     <div className="guideline-sec-left">
                       <span className="guideline-line-span"></span>
                     </div>
-                    <div className="flex flex-col">
-                      <b className="text-[18px] text-[#000000] font-bold uppercase tracking-[1px] mb-[15px]" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
+                    <div className="flex-1 flex flex-col pr-[10px] lg:pr-[20px]">
+                      <b className="text-[22px] text-[#000000] font-bold mb-[15px] whitespace-nowrap" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                         Estimated Budget:
                       </b>
-                      <p className="text-[18px] text-[#000000] font-normal leading-[30px] tracking-[1px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
+                      <p className="text-[18px] text-[#000000] font-normal leading-[30px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>
                         Once our team of <span className="font-extrabold text-[#111]">experts</span> and business development managers are done with analyzing the project and compilation of necessary resources required for the project, <span className="font-extrabold text-[#111]">we shall send you</span> with estimated budget or cost and estimated time required for completion of project successfully.
                       </p>
                     </div>
@@ -525,14 +521,14 @@ export default function ContactUsPageClient() {
                   </b>
                   <b
                     className="text-[17px] tracking-wide block uppercase leading-[1.66] mb-8 font-normal"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br />PVT LTD
                   </b>
 
                   <p
-                    className="text-[14px] md:text-[15px] leading-[1.8] lowercase tracking-wide block mb-8"
-                    style={{ fontFamily: 'GTWalsheimPro-Regularf' }}
+                    className="text-[14px] md:text-[15px] leading-[1.8] uppercase tracking-wide block mb-8"
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     RZ 1/3, 3RD FLOOR, <br />RAJNAGAR 1, DWARKA,<br />
                     NEW DELHI - 110077
@@ -546,7 +542,7 @@ export default function ContactUsPageClient() {
                   </a>
 
                   <p
-                    className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+                    className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-100 group-hover:opacity-100 transition-opacity duration-300"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     INDIA
@@ -573,14 +569,14 @@ export default function ContactUsPageClient() {
                   </b>
                   <b
                     className="text-[17px] tracking-wide block uppercase leading-[1.66] mb-8 font-normal"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br />PVT LTD
                   </b>
 
                   <p
-                    className="text-[14px] md:text-[15px] leading-[1.8] lowercase tracking-wide block mb-8"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                    className="text-[14px] md:text-[15px] leading-[1.8] uppercase tracking-wide block mb-8"
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     54 Hanbury <br />Crescent L6X5N7, <br />Brampton Ontario
                   </p>
@@ -589,7 +585,7 @@ export default function ContactUsPageClient() {
                   <div className="h-[26px] mb-8" />
 
                   <p
-                    className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+                    className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-100 group-hover:opacity-100 transition-opacity duration-300"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     Canada
@@ -616,14 +612,14 @@ export default function ContactUsPageClient() {
                   </b>
                   <b
                     className="text-[17px] tracking-wide block uppercase leading-[1.66] mb-8 font-normal"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     <span style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}>DESIGNDOT TECHNOLOGIES</span> <br />PVT LTD
                   </b>
 
                   <p
-                    className="text-[14px] md:text-[15px] leading-[1.8] lowercase tracking-wide block mb-8"
-                    style={{ fontFamily: 'GTWalsheimPro-Regular' }}
+                    className="text-[14px] md:text-[15px] leading-[1.8] uppercase tracking-wide block mb-8"
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     13151 Emily Rd, <br />Suite- 135,<br />
                     Dallas, TX - 75240
@@ -637,7 +633,7 @@ export default function ContactUsPageClient() {
                   </a>
 
                   <p
-                    className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-40"
+                    className="text-[15px] font-bold uppercase tracking-widest block mb-0 opacity-100"
                     style={{ fontFamily: 'GTWalsheimPro-Bold' }}
                   >
                     US

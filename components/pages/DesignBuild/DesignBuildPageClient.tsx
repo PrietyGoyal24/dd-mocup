@@ -34,9 +34,9 @@ export default function DesignBuildPageClient() {
 
       <main className="w-full pt-[96px] lg:pt-[120px]">
         {/* Banner Top Strip Message */}
-        <div className="w-full flex justify-center py-[40px] md:py-[60px] bg-[#fffbf8]">
+        <div className="w-full flex justify-center pt-[120px] pb-100px] md:pt-[120px] md:pb-[80px] bg-[#fffbf8]">
           <div className="bg-[#083169] inline-flex items-center justify-center" style={{ padding: '10px' }}>
-            <h5 
+            <h5
               className="text-white uppercase"
               style={{
                 fontFamily: 'GTWalsheimPro-Bold',
@@ -57,11 +57,11 @@ export default function DesignBuildPageClient() {
             <div className="video-outer w-full">
               <div className="video-inner relative w-full overflow-hidden bg-black">
                 {/* Desktop Video background */}
-                <video 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline 
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   width="1920"
                   height="240"
                   className="w-full h-auto hidden md:block"
@@ -70,11 +70,11 @@ export default function DesignBuildPageClient() {
                 </video>
 
                 {/* Mobile Video background */}
-                <video 
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline 
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   width="1920"
                   height="240"
                   className="w-full h-auto block md:hidden"
@@ -84,7 +84,7 @@ export default function DesignBuildPageClient() {
 
                 {/* Video overlay texts */}
                 <div className="absolute left-[20px] md:left-[50px] lg:left-[100px] top-[50%] -translate-y-1/2 text-left z-10 w-full max-w-[90%]">
-                  <h1 
+                  <h1
                     className="text-white uppercase mb-0 drop-shadow-lg"
                     style={{
                       fontFamily: "'SocialGothic-Bold', 'GT-Walsheim-Pro'",
@@ -113,11 +113,11 @@ export default function DesignBuildPageClient() {
             </div>
           </div>
 
-            </div>
+        </div>
         {/* Let's talk description paragraph */}
         <div className="w-full px-[20px] md:px-[50px] pb-12 bg-[#fffbf8]">
           <div className="w-full max-w-[1320px] mx-auto text-left">
-            <h2 
+            <h2
               className="text-[#2a255e] uppercase"
               style={{
                 fontFamily: 'GTWalsheimPro-Regular',
@@ -129,11 +129,11 @@ export default function DesignBuildPageClient() {
                 marginBottom: '20px',
               }}
             >
-              DESIGN-BUILD. YOU MIGHT SAY IT’S A SIMPLE APPROACH TO 
+              DESIGN-BUILD. YOU MIGHT SAY IT’S A SIMPLE APPROACH TO
               <br />
               <span className="text-[#f58331]">CONSTRUCTION.</span>
             </h2>
-            <p 
+            <p
               className="text-black font-normal"
               style={{
                 fontFamily: 'GTWalsheimPro-Regular',
@@ -153,27 +153,27 @@ export default function DesignBuildPageClient() {
         <section className="w-full px-[20px] md:px-[50px] py-16 bg-[#fffbf8]">
           <div className="w-full max-w-[1320px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              
+
               {benefits.map((b) => (
-                <a 
-                  key={b.title} 
+                <a
+                  key={b.title}
                   href={b.href}
                   className="group block relative select-none cursor-pointer"
                 >
-                  <div 
+                  <div
                     className="transform flex flex-col justify-start items-start h-full w-full pt-[40px] pb-[40px] px-[24px] md:pt-[50px] md:pb-[50px] md:px-[40px] bg-white border-l-[6px] border-[#f58331] rounded-[10px] shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:bg-[#f58331] hover:text-white hover:-translate-y-[10px] hover:shadow-[0_15px_35px_rgba(245,131,49,0.2)] transition-all duration-[350ms] ease-out text-left group"
                   >
                     {/* CheckCircle Badge Icon */}
-                    <div 
+                    <div
                       className="w-[50px] h-[50px] rounded-md bg-[#f58331]/10 group-hover:bg-white flex items-center justify-center transition-colors duration-300 mb-[24px]"
                     >
-                      <svg 
-                        className="w-[24px] h-[24px] text-[#f58331] transition-colors duration-300" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        strokeWidth="2.5" 
-                        strokeLinecap="round" 
+                      <svg
+                        className="w-[24px] h-[24px] text-[#f58331] transition-colors duration-300"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                       >
                         <circle cx="12" cy="12" r="10" />
@@ -182,9 +182,9 @@ export default function DesignBuildPageClient() {
                     </div>
 
                     {/* Header title */}
-                    <h4 
+                    <h4
                       className="text-[18px] font-bold text-black group-hover:text-white transition-colors mb-[16px] tracking-wide"
-                      style={{ 
+                      style={{
                         fontFamily: 'GTWalsheimPro-Bold',
                         fontSize: '18px',
                         lineHeight: '18px'
@@ -194,9 +194,9 @@ export default function DesignBuildPageClient() {
                     </h4>
 
                     {/* Desc Paragraph */}
-                    <p 
+                    <p
                       className="text-[18px] text-[#2c2c2c] group-hover:text-white/95 transition-colors font-normal"
-                      style={{ 
+                      style={{
                         fontFamily: 'GTWalsheimPro-Regular',
                         fontSize: '18px',
                         lineHeight: '26px'
