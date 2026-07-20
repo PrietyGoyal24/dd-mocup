@@ -239,8 +239,7 @@ export default function ContactUsPageClient() {
             {/* Divider styling line next to Contact Form header */}
             <div className="flex items-center w-full mb-12 relative">
               {/* Horizontal Line */}
-              <div className="absolute -left-[20px] lg:-left-[55px] w-[60px] lg:w-[12px] h-[1.5px] bg-gray-500"></div>
-              <div className="absolute -left-[20px] lg:-left-[55px] w-[60px] lg:w-[12px] h-[1.5px] bg-gray-500"></div>
+              <div className="absolute -left-[20px] lg:-left-[55px] w-[60px] lg:w-[130px] h-[1.5px] bg-gray-500"></div>
               
               {/* sec-right (text) */}
               <div className="flex-1 text-left pl-[60px] lg:pl-[114px]">
