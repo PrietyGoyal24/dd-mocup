@@ -97,7 +97,7 @@ export default function ContactUsPageClient() {
           flex-shrink: 0;
         }
         .guideline-line-span {
-          width: 100px;
+          width: 140px;
           height: 1.5px;
           background-color: #707070;
           display: inline-block;
@@ -137,8 +137,8 @@ export default function ContactUsPageClient() {
         </div>
 
         {/* Video & Banner Text Section */}
-        <div className="about-us-video w-full px-[20px] md:px-[50px] pb-0 bg-[#fffbf8]">
-          <div className="section-container w-full max-w-[1320px] mx-auto">
+        <div className="about-us-video w-full pb-0 bg-[#fffbf8]">
+          <div className="section-container w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px]">
             <div className="video-outer w-full">
               <div className="video-inner relative w-full overflow-hidden bg-black">
                 {/* Desktop Video background */}
@@ -200,8 +200,8 @@ export default function ContactUsPageClient() {
         </div>
 
         {/* Let's talk description paragraph */}
-        <div className="w-full px-[20px] md:px-[50px] pb-12 bg-[#fffbf8]">
-          <div className="w-full max-w-[1320px] mx-auto text-left">
+        <div className="w-full pb-12 bg-[#fffbf8]">
+          <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px] text-left">
             <h2
               className="text-[#2a255e] uppercase"
               style={{
@@ -234,31 +234,34 @@ export default function ContactUsPageClient() {
 
         {/* Section One: Form and Guidelines */}
         <section className="bg-[#fffbf8] py-16">
-          <div className="max-w-[1320px] mx-auto px-[20px] md:px-[50px]">
+          <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[98px] md:pr-[64px]">
 
             {/* Divider styling line next to Contact Form header */}
-            <div className="flex items-center w-full mb-12 relative">
-              {/* Horizontal Line */}
-              <div className="absolute -left-[20px] lg:-left-[55px] w-[60px] lg:w-[130px] h-[1.5px] bg-gray-500"></div>
-              
-              {/* sec-right (text) */}
-              <div className="flex-1 text-left pl-[60px] lg:pl-[114px]">
-                <h3
-                  className="text-[32px] font-bold text-[#111111] tracking-wide"
-                  style={{ fontFamily: 'GTWalsheimPro-Bold' }}
-                >
-                  Contact Form<span className="inline-block w-1.5 h-1.5 bg-black rounded-full ml-1 align-baseline"></span>
-                </h3>
+            <div className="flex items-center mb-12 w-full justify-between">
+              <div className="flex items-center flex-1 pl-[30px] lg:pl-[1px]">
+                {/* Left Gutter / Prefix Column with line */}
+                <div className="w-[120px] md:w-[95px] lg:w-[135px] xl:w-[195px] flex items-center shrink-0">
+                  <div className="block h-[1.5px] bg-gray-500 w-[80px] ml-[7px] mr-[12px] md:mx-0 md:w-[65px] md:ml-0 lg:w-[100px] lg:ml-0 xl:w-[130px] xl:ml-0" />
+                </div>
+                
+                {/* Heading Column */}
+                <div className="flex items-baseline md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]">
+                  <h3
+                    className="text-[32px] font-bold text-[#111111] tracking-wide"
+                    style={{ fontFamily: 'GTWalsheimPro-Bold' }}
+                  >
+                    Contact Form<span className="inline-block w-1.5 h-1.5 bg-black rounded-full ml-1 align-baseline"></span>
+                  </h3>
+                </div>
               </div>
             </div>
 
             {/* Grid wrapper with matching columns layout */}
-            <div className="flex w-full flex-col lg:flex-row">
-              {/* sec-right (content columns) */}
-              <div className="flex-1 w-full flex flex-col lg:flex-row items-start pl-[40px] lg:pl-[114px]">
+            <div className="w-full pl-0 md:pl-[95px] lg:pl-[135px] xl:pl-[195px] md:ml-[-4px] lg:ml-[-10px] xl:ml-[-24px]">
+              <div className="w-full flex flex-col lg:flex-row items-start">
 
                 {/* Left Column: Interactive Form */}
-                <div className="w-full lg:w-[49%] flex flex-col text-left">
+                <div className="w-full lg:w-[45%] flex flex-col text-left">
                   {formSubmitted ? (
                     <div className="thank-you-contact-page bg-[#fcf5f5] border border-gray-100 p-8 rounded-xl text-left">
                       <h3 className="text-[#f27820] text-[28px] font-extrabold uppercase mb-4" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
@@ -427,14 +430,14 @@ export default function ContactUsPageClient() {
                 </div>
 
                 {/* Right Column: Guidelines */}
-                <div className="w-full lg:w-[54%] relative lg:left-[110px] flex flex-col gap-10 mt-12 lg:mt-0 text-left">
+                <div className="w-full lg:w-[50%] relative lg:left-[8%] flex flex-col gap-10 mt-12 lg:mt-0 text-left">
 
                   {/* Rule 1 */}
                   <div className="flex items-start mb-[50px]">
                     <div className="guideline-sec-left">
                       <span className="guideline-line-span"></span>
                     </div>
-                    <div className="flex-1 flex flex-col pr-[10px] lg:pr-[20px]">
+                    <div className="flex-1 flex flex-col pr-[10px] lg:pr-[40px]">
                       <b className="text-[22px] text-[#000000] font-bold mb-[15px] whitespace-nowrap" style={{ fontFamily: 'GTWalsheimPro-Bold' }}>
                         Put Forward Your Requirement
                       </b>
@@ -489,22 +492,20 @@ export default function ContactUsPageClient() {
                     </div>
                   </div>
 
-                </div>
-
               </div>
             </div>
-
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Section Two: Address Cards */}
         <section className="bg-[#fffbf8] py-16">
-          <div className="max-w-[1320px] mx-auto px-[20px] md:px-[50px]">
+          <div className="w-full max-w-[1200px] mx-auto px-5 md:pl-[65px] md:pr-[64px]">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
               {/* Card 1: India */}
               <div
-                className="group flex flex-col justify-between items-start h-[560px] p-9 bg-[#fcf5f5] hover:bg-[#f47820] hover:text-white transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none"
+                className="group flex flex-col justify-between items-start h-[580px] p-9 bg-[#fcf5f5] hover:bg-[#f47820] hover:text-white transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none max-w-[320px] w-full mr-auto relative -left-[45px]"
               >
                 <img
                   src="https://dd.mocup.in/assets/web/images/indian-flag.png"
@@ -552,7 +553,7 @@ export default function ContactUsPageClient() {
 
               {/* Card 2: Canada */}
               <div
-                className="group flex flex-col justify-between items-start h-[560px] p-9 bg-[#fcf5f5] hover:bg-[#418fce] hover:text-white transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none"
+                className="group flex flex-col justify-between items-start h-[580px] p-9 bg-[#fcf5f5] hover:bg-[#418fce] hover:text-white transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none max-w-[320px] w-full mr-auto relative -left-[1px]"
               >
                 <img
                   src="https://dd.mocup.in/assets/web/images/canada-flag.png"
@@ -595,7 +596,7 @@ export default function ContactUsPageClient() {
 
               {/* Card 3: US */}
               <div
-                className="group flex flex-col justify-between items-start h-[560px] p-9 bg-[#fcf5f5] hover:bg-[#fcf5f5] transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none"
+                className="group flex flex-col justify-between items-start h-[580px] p-9 bg-[#fcf5f5] hover:bg-[#fcf5f5] transition-all duration-[900ms] border-[5px] border-white rounded-[20px] shadow-sm select-none max-w-[330px] w-full ml-auto relative left-[36px]"
               >
                 <img
                   src="https://dd.mocup.in/assets/web/images/usa-icon-c.png"

@@ -20,7 +20,7 @@ export default function Clientele() {
             {/* Hanging Prefix Column */}
             <div className="w-[120px] md:w-[95px] lg:w-[135px] xl:w-[195px] flex items-center shrink-0">
               <span className="text-[22px] lg:text-[26px] font-bold leading-none tracking-tight text-[#F58331] inline-block md:w-[49px]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>06.</span>
-              <div className="block h-[1.5px] bg-[#111111]/40 w-[60px] ml-[7px] mr-[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
+              <div className="block h-[1.5px] bg-[#111111]/40 w-[60px] ml-[7px] mr[12px] md:mx-0 md:w-[50px] md:ml-0 lg:w-[80px] lg:ml-0 xl:w-[109px] xl:ml-0" />
             </div>
             
             {/* Content Column Start */}

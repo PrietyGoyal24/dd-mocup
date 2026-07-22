@@ -52,8 +52,8 @@ export default function DesignBuildPageClient() {
         </div>
 
         {/* Video & Banner Text Section */}
-        <div className="about-us-video w-full px-[20px] md:px-[50px] pb-0 bg-[#fffbf8]">
-          <div className="section-container w-full max-w-[1320px] mx-auto">
+        <div className="about-us-video w-full pb-0 bg-[#fffbf8]">
+          <div className="section-container w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px]">
             <div className="video-outer w-full">
               <div className="video-inner relative w-full overflow-hidden bg-black">
                 {/* Desktop Video background */}
@@ -115,8 +115,8 @@ export default function DesignBuildPageClient() {
 
         </div>
         {/* Let's talk description paragraph */}
-        <div className="w-full px-[20px] md:px-[50px] pb-12 bg-[#fffbf8]">
-          <div className="w-full max-w-[1320px] mx-auto text-left">
+        <div className="w-full pb-12 bg-[#fffbf8]">
+          <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px] text-left">
             <h2
               className="text-[#2a255e] uppercase"
               style={{
@@ -150,8 +150,8 @@ export default function DesignBuildPageClient() {
         </div>
 
         {/* Benefits Grid Section */}
-        <section className="w-full px-[20px] md:px-[50px] py-16 bg-[#fffbf8]">
-          <div className="w-full max-w-[1320px] mx-auto">
+        <section className="w-full py-16 bg-[#fffbf8]">
+          <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px]">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
               {benefits.map((b) => (

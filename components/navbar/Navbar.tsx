@@ -509,13 +509,12 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
         className={`fixed top-0 left-0 w-full z-40 ${theme === 'light' ? 'bg-[#fffbf8]' : 'bg-[var(--background)]'} transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'shadow-lg border-b border-black/5' : ''}`}
         style={{ padding: '0px' }}
       >
-        {/* Main Navbar (Always Compact Single-Row) */}
         <div className={`w-full pl-[40px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[74px]' : 'h-[74.6px]'}`}>
-
-          {/* Left/Middle Group: Navigation links, Support and Consultation button */}
+ 
+           {/* Left/Middle Group: Navigation links, Support and Consultation button */}
           <div className="pl-[25px] flex items-center h-full">
-            <div className="flex items-center gap-[25px] h-full">
-              {/* Hamburger Menu trigger (hidden on desktop) */}
+            <div className="flex items-center gap-[18px] xl:gap-[25px] h-full">
+               {/* Hamburger Menu trigger (hidden on desktop) */}
               <div className="flex lg:hidden items-center">
                 <button
                   onClick={() => setIsMobileMenuOpen(true)}
@@ -525,9 +524,9 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                   <span>MENU</span>
                 </button>
               </div>
-
+ 
               <ul
-                className={`desk-menu navbar px-0 hidden lg:flex items-center gap-[25px] h-full ${isScrolled ? '!hidden' : ''}`}
+                className={`desk-menu navbar px-0 hidden lg:flex items-center gap-[18px] xl:gap-[25px] h-full ${isScrolled ? '!hidden' : ''}`}
                 style={{
                   color: '#1A1A1A',
                   fontFamily: 'GTWalsheimPro-Bold',
@@ -541,7 +540,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                   return (
                     <li
                       key={link.label}
-                      className="h-full flex items-center"
+                      className="h-full flex items-center whitespace-nowrap"
                       onMouseEnter={() => handleMouseEnter(link.key)}
                       onMouseLeave={handleMouseLeave}
                     >
@@ -561,10 +560,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     </li>
                   );
                 })}
-
-                <li className="flex items-center gap-[25px] select-none h-full">
+ 
+                <li className="flex items-center gap-[18px] xl:gap-[25px] select-none h-full">
                   {/* support numbers with 24 hours support icon */}
-                  <div className={`flex items-center gap-2.5 h-[34px] ${theme === 'light' ? 'text-[#111111]' : 'text-white'}`}>
+                  <div className={`flex items-center gap-2.5 h-[34px] shrink-0 ${theme === 'light' ? 'text-[#111111]' : 'text-white'}`}>
                     <img
                       src="https://dd.mocup.in/assets/web/images/all/support-icon.svg"
                       alt="Support Icon"
@@ -572,7 +571,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                     />
                     <span className="whitespace-nowrap font-normal text-[14px]" style={{ fontFamily: "'GTWalsheimPro-Bold'" }}>+91 9873282812 / +1 4694410125</span>
                   </div>
-
+ 
                   {/* Orange consultation button */}
                   <button
                     onClick={(e) => {
@@ -581,7 +580,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
                         (window as any).cycleTheme(e.clientX, e.clientY);
                       }
                     }}
-                    className="bg-[#f58331] text-white w-auto h-[34px] rounded-[6px] uppercase cursor-pointer flex items-center justify-center whitespace-nowrap px-[12px] focus:outline-none focus-visible:outline-none font-bold text-[13px]"
+                    className="bg-[#f58331] text-white w-auto h-[34px] rounded-[6px] uppercase cursor-pointer flex items-center justify-center whitespace-nowrap px-[12px] focus:outline-none focus-visible:outline-none font-bold text-[13px] shrink-0"
                     style={{ fontFamily: "'GTWalsheimPro-Bold'" }}
                   >
                     FREE CONSULTATION
@@ -590,9 +589,9 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
               </ul>
             </div>
           </div>
-
+ 
           {/* Right Logo */}
-          <div className="flex items-center pl-6 lg:pr-[20px] select-none shrink-0">
+          <div className="flex items-center pl-[48px] lg:pr-[20px] select-none shrink-0">
             <a
               href="/"
               onClick={handleLogoClick}
