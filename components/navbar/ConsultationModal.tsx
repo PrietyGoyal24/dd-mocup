@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { X, Send, Check } from 'lucide-react';
+import { X, Send, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const TESTIMONIALS = [
   {
@@ -9,12 +9,6 @@ const TESTIMONIALS = [
     role: "Director - Digital Engineering",
     company: "Americana Group (Kuwait Food Co.)",
     text: "We approached Designdot with a clear vision to build a robust and future-ready platform that could seamlessly integrate with the busy lifestyle of our customers while uplifting their overall experience and giving us a competitive edge."
-  },
-  {
-    name: "Shashank Pokhriyal",
-    role: "CEO",
-    company: "AR Group",
-    text: "DesignDot is a group of highly professional people. They are highly recommended for all kinds of software and digital transformation design work."
   }
 ];
 
@@ -37,7 +31,7 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % TESTIMONIALS.length);
+      setActiveSlide((prev) => (prev + 1) % 3);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
@@ -57,149 +51,159 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
 
   return (
     <div className="fixed inset-0 z-30 flex items-center justify-center p-4 bg-black/10 animate-in fade-in duration-200 pointer-events-none">
-      <div className="relative w-full max-w-5xl flex flex-col gap-4 max-h-[95vh] pointer-events-auto mt-[80px]">
+      <div className="relative w-full max-w-[850px] flex flex-col gap-4 max-h-[95vh] pointer-events-auto">
         {/* Main Modal Box */}
-        <div className="bg-white text-slate-900 rounded-[12px] overflow-hidden shadow-2xl flex flex-col md:flex-row relative">
-          
+        <div className="bg-white text-slate-900 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] flex flex-col md:flex-row relative">
+
           {/* Close Button */}
           <button
             onClick={onClose}
             className="absolute top-4 right-4 z-20 p-2 text-slate-300 hover:text-slate-500 transition-colors cursor-pointer"
           >
-            <X size={20} strokeWidth={3} />
+            <X size={18} strokeWidth={2.5} />
           </button>
 
           {/* Left Section: Testimonials & Client info */}
-          <div className="w-full md:w-1/2 bg-[#fffaf5] p-8 md:p-12 flex flex-col justify-center select-none relative">
-            <h3 className="text-[22px] font-bold text-[#f27820] mb-3 font-walsheim">Leaving Already?</h3>
-            <p className="text-slate-900 text-[15px] font-bold mb-8 leading-snug max-w-[280px]">
+          <div className="w-full md:w-1/2 bg-[#fffaf5] px-6 pt-6 pb-4 md:px-8 md:pt-8 md:pb-6 flex flex-col justify-start select-none relative">
+            <h3 className="text-[20px] font-medium text-[#f27820] mb-3 font-walsheim">Leaving Already?</h3>
+            <p className="text-slate-900 text-[14px] font-bold mb-6 leading-snug max-w-[280px]">
               Hear from our clients and why 5000+ businesses trust Designdot
             </p>
 
             {/* Testimonial Card */}
-            <div className="relative bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center mt-4">
+            <div className="relative bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center mt-0">
               {/* Previous/Next Arrows */}
-              <button className="absolute left-[-16px] top-1/2 -translate-y-1/2 w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 hover:bg-slate-300 transition-colors cursor-pointer shadow-sm z-10">
-                <span className="text-lg leading-none font-bold">‹</span>
+              <button 
+                onClick={() => setActiveSlide((prev) => (prev - 1 + 3) % 3)}
+                className="absolute left-[-18px] top-1/2 -translate-y-1/2 w-[36px] h-[36px] bg-[#f0f1f3] rounded-full flex items-center justify-center text-[#495057] hover:bg-[#e2e4e7] transition-colors cursor-pointer shadow z-10">
+                <ChevronLeft size={20} strokeWidth={2.5} />
               </button>
-              <button className="absolute right-[-16px] top-1/2 -translate-y-1/2 w-8 h-8 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 hover:bg-slate-300 transition-colors cursor-pointer shadow-sm z-10">
-                <span className="text-lg leading-none font-bold">›</span>
+              <button 
+                onClick={() => setActiveSlide((prev) => (prev + 1) % 3)}
+                className="absolute right-[-18px] top-1/2 -translate-y-1/2 w-[36px] h-[36px] bg-[#f0f1f3] rounded-full flex items-center justify-center text-[#495057] hover:bg-[#e2e4e7] transition-colors cursor-pointer shadow z-10">
+                <ChevronRight size={20} strokeWidth={2.5} />
               </button>
 
-              <div className="relative w-full overflow-hidden flex flex-col items-center">
-                {TESTIMONIALS.map((testi, idx) => (
-                  <div
-                    key={testi.name}
-                    className={`transition-all duration-500 flex flex-col items-center w-full ${
-                      idx === activeSlide ? 'block' : 'hidden'
-                    }`}
-                  >
-                    <div className="w-12 h-12 mb-3 rounded-full overflow-hidden border border-slate-100">
-                      <img src="https://dd.mocup.in/assets/web/images/client/Neeraj-Tiwari.webp" alt={testi.name} className="w-full h-full object-cover" />
-                    </div>
-                    <h6 className="font-bold text-[16px] text-slate-900 mb-2">{testi.name}</h6>
-                    <div className="border border-slate-300 rounded-[20px] px-4 py-1.5 mb-5 inline-block">
-                      <span className="text-[11px] text-slate-500 italic block">{testi.role}</span>
-                      <span className="text-[11px] text-slate-500 italic block">{testi.company}</span>
-                    </div>
-                    <p className="font-semibold text-slate-800 text-[13px] leading-relaxed mb-2 px-4">
-                      “{testi.text}”
-                    </p>
-                  </div>
-                ))}
+              <div className="relative w-full overflow-hidden">
+                <div
+                  className="flex transition-transform duration-500 ease-in-out w-full"
+                  style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+                >
+                  {[0, 1, 2].map((idx) => {
+                    const testi = TESTIMONIALS[0];
+                    return (
+                      <div
+                        key={idx}
+                        className="w-full flex-shrink-0 flex flex-col items-center"
+                      >
+                        <div className="w-12 h-12 mb-3 rounded-full overflow-hidden border border-slate-100 flex items-center justify-center bg-white">
+                          <img src="https://dd.mocup.in/assets/web/images/client/Neeraj-Tiwari.webp" alt={testi.name} className="w-full h-full object-cover" />
+                        </div>
+                        <h6 className="font-bold text-[16px] text-slate-900 mb-2">{testi.name}</h6>
+                        <div className="border border-slate-300 rounded-[20px] px-4 py-1.5 mb-4 inline-block">
+                          <span className="text-[11px] text-slate-500 italic block leading-tight">{testi.role}</span>
+                          <span className="text-[11px] text-slate-500 italic block leading-tight">{testi.company}</span>
+                        </div>
+                        <p className="font-medium text-slate-800 text-[13px] leading-relaxed mb-2 px-2">
+                          “{testi.text}”
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
 
-        {/* Right Section: Form */}
-        <div className="w-full md:w-1/2 p-8 md:p-12 overflow-y-auto">
-          {isSubmitted ? (
-            <div className="h-full flex flex-col items-center justify-center py-12 text-center">
-              <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
-                <Check size={36} />
+          {/* Right Section: Form */}
+          <div className="w-full md:w-1/2 px-6 pt-6 pb-4 md:px-8 md:pt-8 md:pb-6 overflow-y-auto">
+            {isSubmitted ? (
+              <div className="h-full flex flex-col items-center justify-center py-12 text-center">
+                <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+                  <Check size={36} />
+                </div>
+                <h3 className="text-xl font-bold mb-1">Proposal Requested!</h3>
+                <p className="text-slate-500 text-sm">We will get back to you within 24 hours.</p>
               </div>
-              <h3 className="text-xl font-bold mb-1">Proposal Requested!</h3>
-              <p className="text-slate-500 text-sm">We will get back to you within 24 hours.</p>
-            </div>
-          ) : (
-            <>
-              <h3 className="text-[20px] font-bold mb-1 text-[#f27820] font-walsheim">
-                Tell Us What You Need,
-              </h3>
-              <p className="text-[20px] text-[#f27820] font-bold mb-8 font-walsheim">
-                And We'll Get Back With A Cost And<br/>Timeline Estimate
-              </p>
+            ) : (
+              <>
+                <h3 className="text-[20px] font-medium mb-1 text-[#f27820] font-walsheim">
+                  Tell Us What You Need,
+                </h3>
+                <p className="text-[20px] text-[#f27820] font-medium mb-6 font-walsheim leading-tight">
+                  And We'll Get Back With A Cost And<br />Timeline Estimate
+                </p>
 
-              <form onSubmit={handleSubmit} className="space-y-6 text-[14px]">
-                <div>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Full name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full border-b border-slate-300 focus:border-[#f27820] outline-none py-2 text-slate-900 transition-colors placeholder:text-slate-400"
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    required
-                    placeholder="E-Mail ID*"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full border-b border-slate-300 focus:border-[#f27820] outline-none py-2 text-slate-900 transition-colors placeholder:text-slate-400"
-                  />
-                </div>
-                <div>
-                  <textarea
-                    placeholder="Describe Your Project/Idea In Brief"
-                    rows={1}
-                    value={formData.idea}
-                    onChange={(e) => setFormData({ ...formData, idea: e.target.value })}
-                    className="w-full border-b border-slate-300 focus:border-[#f27820] outline-none py-2 text-slate-900 transition-colors resize-none placeholder:text-slate-400"
-                  />
-                </div>
-                <div className="flex gap-4">
-                  <select
-                    value={formData.prefix}
-                    onChange={(e) => setFormData({ ...formData, prefix: e.target.value })}
-                    className="border-b border-slate-300 focus:border-[#f27820] outline-none py-2 bg-transparent text-slate-700 w-20"
-                  >
-                    <option>+91</option>
-                    <option>+1</option>
-                    <option>+44</option>
-                  </select>
-                  <input
-                    type="tel"
-                    required
-                    placeholder="Contact Number*"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full border-b border-slate-300 focus:border-[#f27820] outline-none py-2 text-slate-900 transition-colors placeholder:text-slate-400"
-                  />
-                </div>
-                
-                <div className="flex items-center gap-6 pt-4">
-                  <div className="flex items-center gap-2">
-                    <span className="text-slate-800 font-bold text-[14px]">3 + 2 =</span>
+                <form onSubmit={handleSubmit} className="space-y-4 text-[14px]">
+                  <div>
                     <input
                       type="text"
                       required
-                      className="w-16 border-b border-slate-300 focus:border-[#f27820] outline-none py-1 text-center font-bold text-slate-900"
+                      placeholder="Full name"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className="w-full border-b border-slate-300 focus:border-[#f27820] outline-none py-2 text-slate-900 transition-colors placeholder:text-slate-400"
                     />
                   </div>
-                  <button
-                    type="submit"
-                    className="flex-1 bg-[#f27820] hover:bg-[#d56113] text-white py-3.5 rounded-[4px] font-bold text-[13px] tracking-wider cursor-pointer transition-colors"
-                  >
-                    SCHEDULE FREE CONSULTATION
-                  </button>
-                </div>
-              </form>
-            </>
-          )}
-        </div>
+                  <div>
+                    <input
+                      type="email"
+                      required
+                      placeholder="E-Mail ID*"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="w-full border-b border-slate-300 focus:border-[#f27820] outline-none py-2 text-slate-900 transition-colors placeholder:text-slate-400"
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      placeholder="Describe Your Project/Idea In Brief"
+                      rows={1}
+                      value={formData.idea}
+                      onChange={(e) => setFormData({ ...formData, idea: e.target.value })}
+                      className="w-full border-b border-slate-300 focus:border-[#f27820] outline-none py-2 text-slate-900 transition-colors resize-none placeholder:text-slate-400"
+                    />
+                  </div>
+                  <div className="flex gap-4">
+                    <select
+                      value={formData.prefix}
+                      onChange={(e) => setFormData({ ...formData, prefix: e.target.value })}
+                      className="border-b border-slate-300 focus:border-[#f27820] outline-none py-2 bg-transparent text-slate-700 w-20"
+                    >
+                      <option>+91</option>
+                      <option>+1</option>
+                      <option>+44</option>
+                    </select>
+                    <input
+                      type="tel"
+                      required
+                      placeholder="Contact Number*"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      className="w-full border-b border-slate-300 focus:border-[#f27820] outline-none py-2 text-slate-900 transition-colors placeholder:text-slate-400"
+                    />
+                  </div>
+
+                  <div className="flex items-center gap-6 pt-4">
+                    <div className="flex items-center gap-2">
+                      <span className="text-slate-800 font-bold text-[14px]">3 + 2 =</span>
+                      <input
+                        type="text"
+                        required
+                        className="w-16 border-b border-slate-300 focus:border-[#f27820] outline-none py-1 text-center font-bold text-slate-900"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="flex-1 bg-[#f27820] hover:bg-[#d56113] text-white py-3.5 rounded-[4px] font-bold text-[13px] tracking-wider cursor-pointer transition-colors"
+                    >
+                      SCHEDULE FREE CONSULTATION
+                    </button>
+                  </div>
+                </form>
+              </>
+            )}
+          </div>
         </div>
 
         {/* Bottom Banner */}

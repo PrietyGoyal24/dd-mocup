@@ -351,7 +351,7 @@ export default function ContactUsPageClient() {
                           name="projectBudget"
                           value={formData.projectBudget}
                           onChange={handleInputChange}
-                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 px-[15px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
                           style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                         >
                           <option value="">project budget...</option>
@@ -382,7 +382,7 @@ export default function ContactUsPageClient() {
                         <input
                           type="file"
                           name="file_data"
-                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[16px] text-gray-500 pt-[10px] px-[20px] focus:outline-none rounded-sm file:mr-3 file:py-[2px] file:px-2 file:border file:border-[#767676] file:bg-[#efefef] file:text-black file:rounded-[2px] file:cursor-pointer hover:file:bg-[#e5e5e5]"
+                          className="w-full border border-gray-300 bg-[#fcf5f5] h-[50px] text-[16px] text-gray-500 pt-[10px] px-[21px] focus:outline-none rounded-sm file:mr-3 file:py-[2px] file:px-2 file:border file:border-[#767676] file:bg-[#efefef] file:text-black file:rounded-[2px] file:cursor-pointer hover:file:bg-[#e5e5e5]"
                         />
                       </div>
 
@@ -406,7 +406,7 @@ export default function ContactUsPageClient() {
                           value={formData.captchaInput}
                           onChange={handleInputChange}
                           placeholder="enter security code → *"
-                          className="flex-1 border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 px-[15px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
+                          className="flex-1 border border-gray-300 bg-[#fcf5f5] h-[50px] text-[24px] font-light text-gray-500 px-[20px] focus:outline-none focus:border-[#f27820] transition-colors rounded-sm lowercase"
                           style={{ fontFamily: 'GTWalsheimPro-Regular' }}
                         />
                         <div className="flex items-center justify-center bg-[#f58331] text-white text-[24px] font-normal px-6 h-[50px] rounded-sm select-none">
