@@ -43,7 +43,7 @@ export default function Portfolio() {
       className="relative bg-[#191919] text-[#FFFFFF] overflow-hidden select-none w-full"
       style={{ fontFamily: "'GTWalsheimPro-Regular'" }}
     >
-      <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px] flex flex-col z-10 relative">
+      <div className="w-full px-5 md:pl-[65px] md:pr-[64px] flex flex-col z-10 relative">
         
         {/* Row 1: Heading & Controls */}
         <div className="section-heading slider-heading flex justify-between items-center w-full pt-[40px] lg:pt-[120px] lg:pb-[50px]">

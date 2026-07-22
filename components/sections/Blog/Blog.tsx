@@ -6,7 +6,7 @@ import { BLOG_POSTS } from '@/constants';
 export default function Blog() {
   return (
     <section className="relative py-24 bg-white text-slate-900 overflow-hidden select-none">
-      <div className="w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px] flex flex-col z-10 relative">
+      <div className="w-full px-5 md:pl-[65px] md:pr-[64px] flex flex-col z-10 relative">
 
          {/* Row 1: Index --- Heading */}
         <div className="flex items-center mb-[40px] lg:mb-[60px] w-full justify-between">
