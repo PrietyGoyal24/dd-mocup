@@ -191,7 +191,7 @@ export default function Footer() {
           </div>
 
           {/* Right Column: Write us Proposal Form */}
-          <div className="flex flex-col text-left font-sans md:mr-[4px] lg:mr-[10px] xl:mr-[6px]">
+          <div className="flex flex-col text-left font-sans md:mr-[4px] lg:mr-[10px] xl:mr-[6px] max-w-[608px] w-full ml-auto">
             <h3
               className="text-[22px] md:text-[26px] font-extrabold text-[#111111] mb-[48px] mt-0 md:mt-[4px]"
               style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
@@ -200,7 +200,7 @@ export default function Footer() {
             </h3>
 
             {isSubmitted ? (
-              <div className="bg-[#363266] p-[40px] rounded-[20px] text-center flex flex-col items-center justify-center min-h-[420px] shadow-lg">
+              <div className="bg-[#363266] p-[40px] rounded-[20px] text-center flex flex-col items-center justify-center h-[680px] shadow-lg w-full">
                 <div className="w-[56px] h-[56px] rounded-full bg-green-500/20 text-green-400 flex items-center justify-center mb-4">
                   <Check size={28} />
                 </div>
@@ -208,7 +208,7 @@ export default function Footer() {
                 <p className="text-white/70 text-[14px]" style={{ fontFamily: 'GTWalsheimPro-Regular' }}>Our team will get back to you shortly.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="bg-[#363266] p-[30px] rounded-[20px] shadow-xl flex flex-col gap-[28px] w-full">
+              <form onSubmit={handleSubmit} className="bg-[#363266] p-[30px] rounded-[20px] shadow-xl flex flex-col justify-between w-full h-[700px]">
 
                 {/* Full Name */}
                 <div className="flex flex-col border-b border-white/20 pb-[6px]">
