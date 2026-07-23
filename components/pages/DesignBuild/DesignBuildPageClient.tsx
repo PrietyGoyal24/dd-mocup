@@ -28,7 +28,7 @@ export default function DesignBuildPageClient() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-[#fffbf8] text-[#111111] overflow-x-hidden selection:bg-[#f27820] selection:text-white">
+    <div className="w-full min-h-screen bg-[#fffbf8] text-[#111111] overflow-x-hidden selection:bg-[#f27820] selection:text-white flex flex-col justify-between">
       {/* Navigation Header */}
       <Navbar theme="light" />
 
