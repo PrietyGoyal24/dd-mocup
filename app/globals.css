@@ -278,3 +278,12 @@ nextjs-portal,
   visibility: hidden !important;
   pointer-events: none !important;
 }
+
+/* Custom Mega Menu Overlay Alignment for Zoom Levels */
+.mega-menu-overlay {
+  padding-left: 65px;
+  padding-right: 73px;
+}
+.mega-menu-overlay > div {
+  max-width: none !important;
+}

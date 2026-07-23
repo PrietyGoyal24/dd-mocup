@@ -633,7 +633,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('expertise')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'expertise')}
-            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
+            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 mega-menu-overlay"
             style={{ top: isScrolled ? '74px' : '74.6px', background: 'transparent' }}
           >
             <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
@@ -785,7 +785,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('ai-ingenuity')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'ai-ingenuity')}
-            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
+            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 mega-menu-overlay"
             style={{ top: isScrolled ? '74px' : '74.6px', background: 'transparent' }}
           >
             <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
@@ -951,7 +951,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('technology')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'technology')}
-            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
+            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 mega-menu-overlay"
             style={{ top: isScrolled ? '74px' : '74.6px', background: 'transparent' }}
           >
             <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
@@ -1117,7 +1117,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
             onMouseEnter={() => handleMouseEnter('corporate')}
             onMouseLeave={handleMouseLeave}
             onMouseDown={(e) => handleMegaTabClick(e, 'corporate')}
-            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200"
+            className="fixed left-0 right-0 z-50 text-slate-800 animate-in fade-in slide-in-from-top-1 duration-200 mega-menu-overlay"
             style={{ top: isScrolled ? '74px' : '74.6px', background: 'transparent' }}
           >
             <div className="w-full max-w-[1900px] mx-auto bg-[#fffbf8] shadow-2xl rounded-b-[8px] overflow-hidden flex flex-col select-none text-left">
