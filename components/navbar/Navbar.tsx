@@ -419,17 +419,30 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
   const closeTimeout = useRef<NodeJS.Timeout | null>(null);
   const lastScrollY = useRef(0);
 
+  const [isAtTop, setIsAtTop] = useState(true);
+  const [isHomepage, setIsHomepage] = useState(true);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsHomepage(window.location.pathname === '/');
+    }
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const scrollDelta = currentScrollY - lastScrollY.current;
 
       if (currentScrollY <= 10) {
+        setIsAtTop(true);
         setIsScrolled(false);
-      } else if (scrollDelta > 5) {
-        setIsScrolled(true);
-      } else if (scrollDelta < -5) {
-        setIsScrolled(false);
+      } else {
+        setIsAtTop(false);
+        if (scrollDelta > 5) {
+          setIsScrolled(true);
+        } else if (scrollDelta < -5) {
+          setIsScrolled(false);
+        }
       }
 
       lastScrollY.current = currentScrollY;
@@ -506,7 +519,11 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-40 ${theme === 'light' ? 'bg-[#fffbf8]' : 'bg-[var(--background)]'} transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'shadow-lg border-b border-black/5' : ''}`}
+        className={`fixed top-0 left-0 w-full z-40 transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${
+          isHomepage && isAtTop
+            ? 'bg-transparent'
+            : (theme === 'light' ? 'bg-[#fffbf8] shadow-lg border-b border-black/5' : 'bg-[var(--background)] shadow-lg border-b border-black/5')
+        }`}
         style={{ padding: '0px' }}
       >
         <div className={`w-full pl-[40px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[74px]' : 'h-[74.6px]'}`}>
