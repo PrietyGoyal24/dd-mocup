@@ -138,7 +138,7 @@ export default function ContactUsPageClient() {
 
         {/* Video & Banner Text Section */}
         <div className="about-us-video w-full pb-0 bg-[#fffbf8]">
-          <div className="section-container w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[64px]">
+          <div className="section-container w-full max-w-[1840px] mx-auto px-5 md:pl-[65px] md:pr-[70px]">
             <div className="video-outer w-full">
               <div className="video-inner relative w-full overflow-hidden bg-black">
                 {/* Desktop Video background */}

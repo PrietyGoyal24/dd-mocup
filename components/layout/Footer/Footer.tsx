@@ -70,7 +70,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full overflow-hidden select-none bg-white text-[#111] pt-[80px] md:pt-[100px] pb-[40px] md:pb-[50px]">
       <div className="w-full px-5 md:pl-[65px] md:pr-[64px]">
-        <div className="grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-12 md:gap-8 lg:gap-[100px] items-start">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-12 md:gap-8 lg:gap-[100px] items-start">
 
           {/* Left Column: Let's build something awesome & details */}
           <div className="flex flex-col text-left justify-start w-full">
@@ -191,7 +191,7 @@ export default function Footer() {
           </div>
 
           {/* Right Column: Write us Proposal Form */}
-          <div className="flex flex-col text-left font-sans md:mr-[4px] lg:mr-[10px] xl:mr-[5px]">
+          <div className="flex flex-col text-left font-sans md:mr-[4px] lg:mr-[10px] xl:mr-[6px]">
             <h3
               className="text-[22px] md:text-[26px] font-extrabold text-[#111111] mb-[48px] mt-0 md:mt-[4px]"
               style={{ fontFamily: 'GTWalsheimPro-Bold', fontWeight: 900 }}
@@ -358,10 +358,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full px-5 pl-0 sm:pl-[140px] md:pl-[156px] lg:pl-[190px] xl:pl-[236px] pr-5 md:pr-[64px] md:mr-[4px] lg:mr-[10px] xl:mr-[5px] flex flex-col mt-[64px]">
+      <div className="w-full px-5 pl-0 sm:pl-[140px] md:pl-[156px] lg:pl-[190px] xl:pl-[236px] pr-5 md:pr-[70px] md:mr-[4px] lg:mr-[10px] xl:mr-[5px] flex flex-col mt-[64px]">
         {/* Top Divider Line */}
         <div className="w-full mb-[24px] relative flex items-center">
-          <div className="w-full h-[1.2px] bg-[#111111]" />
+          <div className="w-full h-[1.5px] bg-[#111111]" />
         </div>
 
         {/* Working Hours, Policies & Local Time Strip */}
