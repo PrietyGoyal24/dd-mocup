@@ -200,8 +200,8 @@ export default function SoftwareConsultingClient() {
 
         <main className="w-full pt-[96px] lg:pt-[120px]">
           {/* Hero Section */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pt-8 pb-6">
-            <div className="w-full max-w-[1720px] mx-auto">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[115px] pt-8 pb-6">
+            <div className="w-full">
               <h1
                 className="text-[#1a1a1a] uppercase mb-8 text-[32px] sm:text-[56px] md:text-[76px] lg:text-[90px] leading-[1.05] tracking-[1px] font-normal"
                 style={{
@@ -230,8 +230,8 @@ export default function SoftwareConsultingClient() {
           </div>
 
           {/* Hero Image */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pb-10">
-            <div className="w-full max-w-[1720px] mx-auto">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-10">
+            <div className="w-full">
               <div className="w-full overflow-hidden">
                 <img
                   src="https://dd.mocup.in/assets/web/images/services/services-web-des-dev.jpg"
@@ -246,8 +246,8 @@ export default function SoftwareConsultingClient() {
           </div>
 
           {/* Reinvent Your Business Intro */}
-          <div className="w-full px-6 md:px-12 lg:px-16  pb-8">
-            <div className="w-full max-w-[1720px] mx-auto">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-8">
+            <div className="w-full">
               <h2
                 className="text-[#1a1a1a] uppercase mb-6 text-[22px] sm:text-[26px] md:text-[24px] leading-[1] font-bold"
                 style={{
@@ -285,8 +285,8 @@ export default function SoftwareConsultingClient() {
           </div>
 
           {/* Six Cards Grid */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pb-12">
-            <div className="w-full max-w-[1720px] mx-auto">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+            <div className="w-full">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {cards.map((card, index) => (
                   <div
@@ -336,8 +336,8 @@ export default function SoftwareConsultingClient() {
           </div>
 
           {/* Diverse Technologies Section */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pb-16">
-            <div className="w-full max-w-[1720px] mx-auto pt-10">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-16">
+            <div className="w-full pt-10">
               <h2
                 className="text-[#555555] uppercase mb-8 leading-[1.2] text-[18px] sm:text-[22px] md:text-[24px]"
                 style={{
@@ -380,8 +380,8 @@ export default function SoftwareConsultingClient() {
           </div>
 
           {/* Strategic Roadmap Timeline */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pb-12">
-            <div className="w-full max-w-[1720px] mx-auto pt-10">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+            <div className="w-full pt-10">
               <h2
                 className="text-[#555555] uppercase mb-4 leading-[1.2] text-[20px] sm:text-[24px] md:text-[28px]"
                 style={{
@@ -463,8 +463,8 @@ export default function SoftwareConsultingClient() {
             </div>
           </div>
             {/* Industries We Serve */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pb-12">
-            <div className="w-full max-w-[1720px] mx-auto pt-10">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+            <div className="w-full pt-10">
               <h2
                 className="text-[#555555] uppercase mb-6 leading-[1.2] text-[18px] sm:text-[22px] md:text-[24px]"
                 style={{
@@ -507,8 +507,8 @@ export default function SoftwareConsultingClient() {
             </div>
           </div>
             {/* Differentiators Section */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pb-12">
-            <div className="w-full max-w-[1720px] mx-auto pt-10">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+            <div className="w-full pt-10">
               <h2
                 className="text-[#555555] uppercase mb-10 leading-[1.2] text-[24px] sm:text-[24px] md:text-[26px]"
                 style={{
@@ -554,8 +554,8 @@ export default function SoftwareConsultingClient() {
            </div>
 
             {/* One-Stop Hub Section */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pb-12">
-            <div className="w-full max-w-[1720px] mx-auto pt-10">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+            <div className="w-full pt-10">
               <h2
                 className="text-[#555555] uppercase mb-3 leading-[1.2] text-[18px] sm:text-[22px] md:text-[26px]"
                 style={{
@@ -606,8 +606,8 @@ export default function SoftwareConsultingClient() {
             </div>
           </div>
              {/* FAQs Section */}
-          <div className="w-full px-6 md:px-12 lg:px-16 pb-16">
-            <div className="w-full max-w-[1720px] mx-auto pt-10">
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-16">
+            <div className="w-full pt-10">
               <h2
                 className="text-[#555555] uppercase mb-8 leading-[1.2] text-[18px] sm:text-[22px] md:text-[24px]"
                 style={{

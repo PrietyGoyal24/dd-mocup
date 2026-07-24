@@ -572,7 +572,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
         }`}
         style={{ padding: '0px' }}
       >
-        <div className={`w-full px-6 md:px-12 lg:px-16 flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[74px]' : 'h-[74.6px]'}`}>
+        <div className={`w-full px-[65px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[74px]' : 'h-[74.6px]'}`}>
  
            {/* Left/Middle Group: Navigation links, Support and Consultation button */}
           <div className="flex items-center h-full">
