@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, ArrowRight, ChevronDown } from 'lucide-react';
 import ConsultationModal from './ConsultationModal';
 import { getServiceHref } from '@/constants/serviceData';
@@ -399,9 +400,53 @@ interface NavbarProps {
 }
 
 export default function Navbar({ theme = 'dark' }: NavbarProps) {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+ 
+   const isSubpageActive = (menuKey: string, currentPathName: string | null) => {
+    if (!currentPathName) return false;
+    const currentPath = currentPathName.endsWith('/') && currentPathName !== '/' ? currentPathName.slice(0, -1) : currentPathName;
+
+    if (menuKey === 'design-build') {
+      return currentPath === '/services/design-build';
+    }
+    if (menuKey === 'contact-us') {
+      return currentPath === '/contact-us';
+    }
+    if (menuKey === 'expertise') {
+      return Object.values(EXPERTISE_MENU.center.subServices).some((subServicesArray) =>
+        subServicesArray.some((servName) => {
+          const href = getServiceHref(servName);
+          return href && (href.endsWith('/') && href !== '/' ? href.slice(0, -1) : href) === currentPath;
+        })
+      );
+    }
+    if (menuKey === 'ai-ingenuity') {
+      return Object.values(AI_MENU.center.subServices).some((subServicesArray) =>
+        subServicesArray.some((servName) => {
+          const href = getServiceHref(servName);
+          return href && (href.endsWith('/') && href !== '/' ? href.slice(0, -1) : href) === currentPath;
+        })
+      );
+    }
+    if (menuKey === 'technology') {
+      return Object.values(TECH_MENU.center.subServices).some((subServicesArray) =>
+        subServicesArray.some((servName) => {
+          const href = getServiceHref(servName);
+          return href && (href.endsWith('/') && href !== '/' ? href.slice(0, -1) : href) === currentPath;
+        })
+      );
+    }
+    if (menuKey === 'corporate') {
+      return CORPORATE_MENU.columns.some((col) => {
+        const href = col.href;
+        return href && (href.endsWith('/') && href !== '/' ? href.slice(0, -1) : href) === currentPath;
+      });
+    }
+    return false;
+  };
 
   // Active mega menu hovered/selected
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
@@ -492,7 +537,8 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
   };
 
   const renderLinkLabel = (label: string, isScrolled: boolean, menuKey: string) => {
-    const isActive = hoveredMenu === menuKey || activeMenu === menuKey;
+    const isPathActive = isSubpageActive(menuKey, pathname);
+    const isActive = hoveredMenu === menuKey || activeMenu === menuKey || isPathActive;
     if (label.toLowerCase() === 'ai ingenuity') {
       return (
         <span className="relative flex items-center h-full focus:outline-none focus-visible:outline-none select-none">
@@ -526,10 +572,10 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
         }`}
         style={{ padding: '0px' }}
       >
-        <div className={`w-full pl-[40px] pr-[44px] flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[74px]' : 'h-[74.6px]'}`}>
+        <div className={`w-full px-6 md:px-12 lg:px-16 flex justify-between items-center relative transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${isScrolled ? 'h-[74px]' : 'h-[74.6px]'}`}>
  
            {/* Left/Middle Group: Navigation links, Support and Consultation button */}
-          <div className="pl-[25px] flex items-center h-full">
+          <div className="flex items-center h-full">
             <div className="flex items-center gap-[18px] xl:gap-[25px] h-full">
                {/* Hamburger Menu trigger (hidden on desktop) */}
               <div className="flex lg:hidden items-center">
@@ -608,7 +654,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
           </div>
  
           {/* Right Logo */}
-          <div className="flex items-center pl-[48px] lg:pr-[20px] select-none shrink-0">
+          <div className="flex items-center select-none shrink-0">
             <a
               href="/"
               onClick={handleLogoClick}
