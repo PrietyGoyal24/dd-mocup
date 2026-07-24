@@ -70,7 +70,7 @@ export const EXPERTISE_SUBMENUS: Record<string, { title: string; links: { label:
     {
       title: "ENGINEERING",
       links: [
-        { label: "Software Engineering & Consulting", href: "https://dd.mocup.in/services/software-engineering-consulting" },
+        { label: "Software Engineering & Consulting", href: "/services/software-engineering-consulting" },
         { label: "Enterprise Software Development", href: "https://dd.mocup.in/services/enterprise-software-development" },
         { label: "CRM Software Development", href: "https://dd.mocup.in/services/crm-software-development" },
         { label: "SAAS", href: "https://dd.mocup.in/services/saas" },

@@ -522,7 +522,7 @@ export default function Navbar({ theme = 'dark' }: NavbarProps) {
         className={`fixed top-0 left-0 w-full z-40 transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] ${
           isHomepage && isAtTop
             ? 'bg-transparent'
-            : (theme === 'light' ? 'bg-[#fffbf8] shadow-lg border-b border-black/5' : 'bg-[var(--background)] shadow-lg border-b border-black/5')
+            : (theme === 'light' ? 'bg-[#fffbf8]' : 'bg-[var(--background)]')
         }`}
         style={{ padding: '0px' }}
       >
