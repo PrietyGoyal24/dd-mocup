@@ -61,35 +61,50 @@ const EXPERTISE_MENU = {
         'AI In Software'
       ],
       'WEB & ECOMMERCE': [
-        'Custom Web Development',
-        'Shopify E-Commerce',
-        'Magento Solutions',
-        'WooCommerce Development',
-        'Headless Commerce',
-        'B2B E-Commerce Solutions'
+        'Web Portal Development',
+        'Ecommerce App Development',
+        'CRM For Ecommerce',
+        'BigCommerce Development',
+        'POS-Point Of Sales Application',
+        'Full Stack Development',
+        'UI UX Design',
+        'Frontend Development',
+        'Backend Development',
+        'MVP Development'
       ],
       'MOBILE APP': [
-        'iOS App Development',
+        'Mobile Apps Development',
         'Android App Development',
+        'IOS/IPadOS App Development',
+        'React Native App Development',
         'Flutter App Development',
-        'React Native Development',
-        'Kotlin App Development',
-        'Swift App Development'
+        'Progressive Web Apps ',
+        'Game Development',
+        'AI In All Mobile Apps'
       ],
       'CLOUD SERVICES': [
-        'AWS Solutions & DevOps',
-        'Azure Cloud Integration',
-        'Google Cloud Management',
-        'Cloud Migration & Consulting',
-        'Kubernetes Containerization',
-        'Cloud Security Audits'
+        'DevOps',
+        'Amazon Web Services',
+        'Azure Cloud Services',
+        'Google App Engine Services',
+        'Office 365',
+        'Cloud Migration & Modernization',
+        'Cloud Architecture Review',
+        'Cloud Consulting',
+        'Gen AI',
+        'Security & Compliance',
+        'Cybersecurity'
       ],
       'BRAND DEVELOPMENT': [
-        'Corporate Identity Design',
-        'Brand Guidelines',
-        'Logo Design Systems',
-        'Visual Asset Management',
-        'Rebranding Strategy'
+        'Corporate Brand Identity & Strategy',
+        'Signage Design',
+        'Product & Packaging Design',
+        'Brand Reimagination',
+        'Stationary Design',
+        'Photography',
+        'Campaign Design',
+        'Hoarding Design',
+        'Totem Design'
       ],
       'MEDIA ADVERTISING': [
         'Visual Identity',
@@ -209,29 +224,36 @@ const AI_MENU = {
         'AI In Software'
       ],
       'DATA ENGINEERING': [
-        'Data Pipelines (ETL)',
-        'Data Warehousing Solutions',
-        'Big Data Analytics',
-        'Real-time Stream Processing',
-        'Business Intelligence Dashboards'
+        'Data Analytics',
+        'Data Analysis',
+        'Data Warehouse',
+        'Data Migration',
+        'Data Cleaning',
+        'Data Visualization',
+        'Data Collection',
+        'Data Integration',
+        'Big Data',
+        'Business Intelligence',
+        'Data Science Consulting'
       ],
       'GENERATIVE AI': [
-        'LLM Fine-Tuning & Prompting',
-        'Retrieval Augmented Generation',
-        'AI Copilots & Chatbots',
-        'Multi-Agent System Design'
+        'AI Agent',
+        'LLM Powered Chatbots',
+        'LLM Observability',
+        'LLM Testing And Finetuning',
+        'GPT Integration'
       ],
       'DEVOPS': [
-        'CI/CD Pipelines & Testing',
-        'Infrastructure as Code (IaC)',
-        'Cloud-Native Integrations',
-        'SRE & Monitoring Services'
+        'DevOps Consulting',
+        'AIOps',
+        'DevOps Automation',
+        'DevOps Implementation',
+        'DevOps Containerization',
+        'DevOps Consulting',
+        'Site Reliability Engineering'
       ],
       'KUBERNETES': [
-        'Cluster Orchestration',
-        'Microservices Autoscaling',
-        'Helm Charts Deployment',
-        'Service Mesh Configuration'
+        'Kubernetes Consulting'
       ]
     }
   }
@@ -272,7 +294,7 @@ const TECH_MENU = {
     subServices: {
       'MOBILE': [
         'Flutter',
-        'iOS',
+        'IOS',
         'Android',
         'Swift',
         'React Native',
@@ -280,49 +302,65 @@ const TECH_MENU = {
         'Progressive App'
       ],
       'FRONTEND': [
-        'React.js Solutions',
-        'Next.js Apps',
-        'Vue.js Frontends',
-        'Angular Applications',
-        'TypeScript Implementation',
-        'Tailwind CSS Styling'
+        'React',
+        'Vue',
+        'Next.Js',
+        'Backbone.Js',
+        'JavaScript',
+        'Angular'
       ],
       'BACKEND': [
-        'Node.js REST Services',
-        'Python Django & FastAPI',
-        'Go (Golang) Microservices',
-        'Java Spring Boot Projects',
-        'PHP Laravel Backends'
+        'Node',
+        'Laravel',
+        'CodeIgniter',
+        'Python',
+        'Golang',
+        'Ruby On Rails',
+        'Java',
+        'PHP',
+        'Rust',
+        '.NET'
       ],
       'TRENDING': [
-        'Generative AI Agents',
-        'Rust Programming',
-        'WebAssembly Execution',
-        'Edge Computing Layers'
+        'Cloud',
+        'DevOps',
+        'Internet Of Things',
+        'Big Data & Analytics',
+        'Data Science',
+        'AI/ML',
+        'Tailwind CSS',
+        'Generative AI',
+        'Wearable App Development'
       ],
       'CLOUD SERVICES': [
-        'Multi-Cloud Orchestration',
-        'Cloud-Native Security',
-        'Serverless Architectures',
-        'Cost Optimization Audits'
+        'Cloud Services And Solution',
+        'Cloud Migration',
+        'Cloud Consulting',
+        'Cloud Integration',
+        'Cloud Support And Maintenance',
+        'Cloud Managed',
+        'Cloud Data',
+        'Cloud Native Application Development'
       ],
       'AWS SERVICES': [
-        'AWS EC2 & ECS Setup',
-        'AWS Lambda Serverless',
-        'AWS Aurora & DynamoDB',
-        'AWS IAM Security Auditing'
+        'AWS Consulting',
+        'AWS Migration',
+        'AWS Managed',
+        'AWS Integration',
+        'AWS Support And Maintenance'
       ],
       'AZURE': [
-        'Azure App Services',
-        'Azure SQL Database Management',
-        'Azure Kubernetes Services',
-        'Azure AD Identity Mapping'
+        'Azure Consulting',
+        'Azure Migration',
+        'Azure Support And Maintenance',
+        'Azure Managed',
+        'Azure Integration'
       ],
       'GOOGLE CLOUD': [
         'Google Cloud Consulting',
         'Google Cloud Migration',
         'Google Cloud Support and Maintenance',
-        'Google Cloud Managed Services',
+        'Google Cloud Managed',
         'Google Cloud Integration'
       ]
     }
