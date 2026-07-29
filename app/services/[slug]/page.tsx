@@ -38,6 +38,29 @@ import AzureCloudServiceClient from '@/components/pages/Services/AzureCloudServi
 import GoogleAppEngineClient from '@/components/pages/Services/GoogleAppEngineClient';
 import Office365Client from '@/components/pages/Services/Office365Client';
 import CloudMigrationClient from '@/components/pages/Services/CloudMigrationClient';
+import CloudArchitectureReviewClient from '@/components/pages/Services/CloudArchitectureReviewClient';
+import CloudConsultingClient from '@/components/pages/Services/CloudConsultingClient';
+import GenAIClient from '@/components/pages/Services/GenAIClient';
+import SecurityComplianceClient from '@/components/pages/Services/SecurityComplianceClient';
+import CybersecurityClient from '@/components/pages/Services/CybersecurityClient';
+import BrandStrategyClient from '@/components/pages/Services/BrandStrategyClient';
+import SignageDesignClient from '@/components/pages/Services/SignageDesignClient';
+import ProductDesignClient from '@/components/pages/Services/ProductDesignClient';
+import BrandReimaginationClient from '@/components/pages/Services/BrandReimaginationClient';
+import StationaryDesignClient from '@/components/pages/Services/StationaryDesignClient';
+import PhotographyClient from '@/components/pages/Services/PhotographyClient';
+import CampaignDesignClient from '@/components/pages/Services/CampaignDesignClient';
+import HoardingDesignClient from '@/components/pages/Services/HoardingDesignClient';
+import TotemDesignClient from '@/components/pages/Services/TotemDesignClient';
+import VisualIdentityClient from '@/components/pages/Services/VisualIdentityClient';
+import PublicRelationsClient from '@/components/pages/Services/PublicRelationsClient';
+import OutdoorAdvertisingClient from '@/components/pages/Services/OutdoorAdvertisingClient';
+import MediaPlanningBuyingClient from '@/components/pages/Services/MediaPlanningBuyingClient';
+import CorporateCommunicationClient from '@/components/pages/Services/CorporateCommunicationClient';
+import ContentStrategyClient from '@/components/pages/Services/ContentStrategyClient';
+import MarketResearchClient from '@/components/pages/Services/MarketResearchClient';
+import SketchStoryBuildingClient from '@/components/pages/Services/SketchStoryBuildingClient';
+import MotionDesignClient from '@/components/pages/Services/MotionDesignClient';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -241,6 +264,209 @@ export default async function ServicePage({ params }: PageProps) {
     slug === 'cloud-modernization'
   ) {
     return <CloudMigrationClient />;
+  }
+
+  if (
+    slug === 'cloud-architecture-review' ||
+    slug === 'cloud-architecture' ||
+    slug === 'architecture-review'
+  ) {
+    return <CloudArchitectureReviewClient />;
+  }
+
+  if (
+    slug === 'cloud-consulting' ||
+    slug === 'cloud-consulting-services'
+  ) {
+    return <CloudConsultingClient />;
+  }
+
+  if (
+    slug === 'gen-ai' ||
+    slug === 'generative-ai' ||
+    slug === 'gen-ai-services' ||
+    slug === 'generative-ai-solutions'
+  ) {
+    return <GenAIClient />;
+  }
+
+  if (
+    slug === 'security-compliance' ||
+    slug === 'security-and-compliance' ||
+    slug === 'security-compliance-services'
+  ) {
+    return <SecurityComplianceClient />;
+  }
+
+  if (
+    slug === 'cybersecurity' ||
+    slug === 'cyber-security' ||
+    slug === 'cybersecurity-solutions'
+  ) {
+    return <CybersecurityClient />;
+  }
+
+  if (
+    slug === 'brand-strategy' ||
+    slug === 'brand-strategy-identity' ||
+    slug === 'brand-strategy-and-identity' ||
+    slug === 'corporate-brand-identity-strategy' ||
+    slug === 'corporate-brand-identity-and-strategy' ||
+    slug === 'corporate-brand-identity' ||
+    slug === 'brand-development'
+  ) {
+    return <BrandStrategyClient />;
+  }
+
+  if (
+    slug === 'signage-design' ||
+    slug === 'signage-design-services' ||
+    slug === 'navigation-digital-signage' ||
+    slug === 'navigation-and-digital-signage' ||
+    slug === 'outdoor-signage' ||
+    slug === 'indoor-signage'
+  ) {
+    return <SignageDesignClient />;
+  }
+
+  if (
+    slug === 'product-design' ||
+    slug === 'product-design-services' ||
+    slug === 'industrial-product-design' ||
+    slug === 'product-and-packaging-design' ||
+    slug === 'product-and-packaging' ||
+    slug === 'packaging-and-sales-promotion' ||
+    slug === 'packaging-design' ||
+    slug === 'package-design'
+  ) {
+    return <ProductDesignClient />;
+  }
+
+  if (
+    slug === 'brand-reimagination' ||
+    slug === 'brand-re-imagination' ||
+    slug === 'brand-reimagination-services'
+  ) {
+    return <BrandReimaginationClient />;
+  }
+
+  if (
+    slug === 'stationary-design' ||
+    slug === 'stationery-design' ||
+    slug === 'print-design' ||
+    slug === 'stationary-print-design' ||
+    slug === 'stationery-print-design'
+  ) {
+    return <StationaryDesignClient />;
+  }
+
+  if (
+    slug === 'photography' ||
+    slug === 'photography-services' ||
+    slug === 'brand-photography'
+  ) {
+    return <PhotographyClient />;
+  }
+
+  if (
+    slug === 'campaign-design' ||
+    slug === 'campaign-design-services' ||
+    slug === 'ad-campaign-design'
+  ) {
+    return <CampaignDesignClient />;
+  }
+
+  if (
+    slug === 'hoarding-design' ||
+    slug === 'hoarding-design-services' ||
+    slug === 'billboard-design'
+  ) {
+    return <HoardingDesignClient />;
+  }
+
+  if (
+    slug === 'totem-design' ||
+    slug === 'totem-design-services' ||
+    slug === 'totem-signage'
+  ) {
+    return <TotemDesignClient />;
+  }
+
+  if (
+    slug === 'visual-identity' ||
+    slug === 'visual-identity-services' ||
+    slug === 'visual-brand-identity'
+  ) {
+    return <VisualIdentityClient />;
+  }
+
+  if (
+    slug === 'public-relations' ||
+    slug === 'public-relation' ||
+    slug === 'pr-services' ||
+    slug === 'public-relations-services'
+  ) {
+    return <PublicRelationsClient />;
+  }
+
+  if (
+    slug === 'outdoor-advertising' ||
+    slug === 'outdoor-advertising-services' ||
+    slug === 'outdoor-ads'
+  ) {
+    return <OutdoorAdvertisingClient />;
+  }
+
+  if (
+    slug === 'media-planning-and-buying' ||
+    slug === 'media-planning' ||
+    slug === 'media-buying' ||
+    slug === 'media-planning-buying'
+  ) {
+    return <MediaPlanningBuyingClient />;
+  }
+
+  if (
+    slug === 'corporate-communication' ||
+    slug === 'corporate-communications' ||
+    slug === 'corporate-communication-services'
+  ) {
+    return <CorporateCommunicationClient />;
+  }
+
+  if (
+    slug === 'content-strategy' ||
+    slug === 'content-management' ||
+    slug === 'content-management-system' ||
+    slug === 'cms'
+  ) {
+    return <ContentStrategyClient />;
+  }
+
+  if (
+    slug === 'market-research' ||
+    slug === 'market-research-services' ||
+    slug === 'market-research-and-consumer-study'
+  ) {
+    return <MarketResearchClient />;
+  }
+
+  if (
+    slug === 'sketch-story-building' ||
+    slug === 'sketch-and-story-building' ||
+    slug === 'storyboarding' ||
+    slug === 'illustration-sketch-design'
+  ) {
+    return <SketchStoryBuildingClient />;
+  }
+
+  if (
+    slug === 'motion-design' ||
+    slug === 'motion-design-services' ||
+    slug === 'motion-and-video-creation' ||
+    slug === 'video-creation'
+  ) {
+    return <MotionDesignClient />;
   }
 
   const service = SERVICE_BY_SLUG[slug];
