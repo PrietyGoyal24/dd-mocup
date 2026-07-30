@@ -18,7 +18,7 @@ const testimonialsData: TestimonialItem[] = [
     id: 'bn-sinha',
     name: 'B N Sinha',
     role: 'Director, AR Group',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
+    avatar: 'https://dd.mocup.in/assets/web/images/bn-sinha.jpg',
     rating: 5,
     content:
       'Creativity is often believed to be an inborn talent, and if the talent mixes up with astute professionalism it is bound to deliver wonders. Jyoti and his venture DesignDot does the same. He helped our firm with fresh designs for our logo, web site, etc. and they did an amazing job ... We really appreciated their creativity, their intelligence ability to work with our content. They developed fresh,design concept that is on par or better than any other firm in our field. DesignDot is a great company to work with! Very professional and prompt, highly recommended for all kinds of design work. Have done multiple jobs and all have come out perfect. I wish all the very best in all of their endeavours.',
@@ -43,7 +43,7 @@ const testimonialsData: TestimonialItem[] = [
     id: 'shashank-pokhriyal',
     name: 'Shashank Pokhriyal',
     role: 'CEO',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
+    avatar: 'https://dd.mocup.in/assets/web/images/Shashank.jpg',
     rating: 5,
     content:
       'DesignDot is a group of highly professional people. They are highly recommended.',
@@ -60,7 +60,7 @@ const testimonialsData: TestimonialItem[] = [
     id: 'kennette-burgess',
     name: 'Kennette Burgess',
     role: 'NCC LTD. Director, International Strategic Marketing & Business Development',
-    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80',
+    avatar: 'https://dd.mocup.in/assets/web/images/keneete.jpg',
     rating: 5,
     content:
       'Had the pleasure of working with DesignDot after my company hired him years ago to complete web development projects for my clients. He did wonderful work for my clients. Reasonably priced. Websites were beautiful and functional with CMS (content management systems) and other features like flash sites, flash banners, document libraries, etc. Would recommend them for your web development project.',
@@ -309,72 +309,185 @@ export default function TestimonialClient() {
             <div className="w-full h-[8px] bg-[#666666]"></div>
           </div>
 
-          {/* Testimonials 3-Column Grid */} 
+          {/* Testimonials 3-Column Masonry Grid */}
           <div className="w-full px-6 lg:px-[98px]">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-start">
-              {testimonialsData.map((item) => (
-                <div
-                  key={item.id}
-                  className="bg-white p-8 sm:p-10 shadow-sm border border-black/5 flex flex-col justify-between min-h-[280px] rounded-none hover:shadow-md transition-shadow duration-300"
-                >
-                  <div>
-                    {/* User Profile Header */}
-                    <div className="flex items-start gap-5 mb-5">
-                      <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 bg-[#e8e8e8] overflow-hidden rounded-none flex items-center justify-center">
-                        {item.avatar ? (
-                          <img
-                            src={item.avatar}
-                            alt={item.name}
-                            className="w-full h-full object-cover"
-                          />
-                        ) : (
-                          // Default avatar fallback
-                          <svg
-                            className="w-16 h-16 text-[#888888]"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-start">
+              {/* Column 1: B N Sinha & Kennette Burgess */}
+              <div className="flex flex-col gap-6 sm:gap-8">
+                {[testimonialsData[0], testimonialsData[5]].map((item) => (
+                  <div
+                    key={item.id}
+                    className="bg-white p-6 sm:p-8 border border-black/5 flex flex-col justify-between rounded-none"
+                  >
+                    <div>
+                      <div className="flex items-start gap-4 sm:gap-5 mb-4">
+                        <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 bg-[#d0d0d0] overflow-hidden rounded-none flex items-center justify-center">
+                          {item.avatar ? (
+                            <img
+                              src={item.avatar}
+                              alt={item.name}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <svg className="w-full h-full text-[#808080]" viewBox="0 0 100 100" fill="currentColor">
+                              <rect width="100" height="100" fill="#d0d0d0" />
+                              <circle cx="50" cy="40" r="20" fill="#808080" />
+                              <path d="M 20 88 C 20 65, 32 60, 50 60 C 68 60, 80 65, 80 88 Z" fill="#808080" />
+                            </svg>
+                          )}
+                        </div>
+
+                        <div className="flex flex-col justify-start pt-1">
+                          <h3
+                            className="text-[16px] sm:text-[18px] font-bold text-[#111111] leading-snug"
+                            style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'" }}
                           >
-                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                          </svg>
-                        )}
+                            {item.name}
+                          </h3>
+                          <p
+                            className="text-[13px] sm:text-[14px] text-[#444444] font-normal leading-tight mt-1"
+                            style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
+                          >
+                            {item.role}
+                          </p>
+                        </div>
                       </div>
 
-                      <div className="flex flex-col justify-center pt-1">
-                        <h3
-                          className="text-[17px] sm:text-[19px] font-bold text-[#111111] leading-snug"
-                          style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'" }}
-                        >
-                          {item.name}
-                        </h3>
-                        <p
-                          className="text-[13px] sm:text-[14px] text-[#666666] font-normal leading-tight mt-1"
-                          style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
-                        >
-                          {item.role}
-                        </p>
+                      <div className="flex items-center gap-1 text-[#f27820] text-[16px] mb-4">
+                        {Array.from({ length: item.rating }).map((_, i) => (
+                          <span key={i}>★</span>
+                        ))}
                       </div>
+
+                      <p
+                        className="text-[#333333] text-[14px] sm:text-[15px] font-normal leading-relaxed"
+                        style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
+                      >
+                        {item.content}
+                      </p>
                     </div>
-
-                    {/* Star Rating */}
-                    <div className="flex items-center gap-1 text-[#f27820] text-[18px] mb-5">
-
-                      {Array.from({ length: item.rating }).map((_, i) => (
-                        <span key={i}>★</span>
-                      ))}
-                    </div>
-
-                    {/* Testimonial Quote Paragraph */}
-                    <p
-                      className="text-[#333333] text-[14px] sm:text-[15px] font-normal leading-relaxed"
-                      style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
-                    >
-                      {item.content}
-                    </p>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+
+              {/* Column 2: Pratyush Prasan & Shashank Pokhriyal */}
+              <div className="flex flex-col gap-6 sm:gap-8">
+                {[testimonialsData[1], testimonialsData[3]].map((item) => (
+                  <div
+                    key={item.id}
+                    className="bg-white p-6 sm:p-8 border border-black/5 flex flex-col justify-between rounded-none"
+                  >
+                    <div>
+                      <div className="flex items-start gap-4 sm:gap-5 mb-4">
+                        <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 bg-[#d0d0d0] overflow-hidden rounded-none flex items-center justify-center">
+                          {item.avatar ? (
+                            <img
+                              src={item.avatar}
+                              alt={item.name}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <svg className="w-full h-full text-[#808080]" viewBox="0 0 100 100" fill="currentColor">
+                              <rect width="100" height="100" fill="#d0d0d0" />
+                              <circle cx="50" cy="40" r="20" fill="#808080" />
+                              <path d="M 20 88 C 20 65, 32 60, 50 60 C 68 60, 80 65, 80 88 Z" fill="#808080" />
+                            </svg>
+                          )}
+                        </div>
+
+                        <div className="flex flex-col justify-start pt-1">
+                          <h3
+                            className="text-[16px] sm:text-[18px] font-bold text-[#111111] leading-snug"
+                            style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'" }}
+                          >
+                            {item.name}
+                          </h3>
+                          <p
+                            className="text-[13px] sm:text-[14px] text-[#444444] font-normal leading-tight mt-1"
+                            style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
+                          >
+                            {item.role}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-1 text-[#f27820] text-[16px] mb-4">
+                        {Array.from({ length: item.rating }).map((_, i) => (
+                          <span key={i}>★</span>
+                        ))}
+                      </div>
+
+                      <p
+                        className="text-[#333333] text-[14px] sm:text-[15px] font-normal leading-relaxed"
+                        style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
+                      >
+                        {item.content}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Column 3: Mihir Dutta & DR.SATISH CHANDRA */}
+              <div className="flex flex-col gap-6 sm:gap-8">
+                {[testimonialsData[2], testimonialsData[4]].map((item) => (
+                  <div
+                    key={item.id}
+                    className="bg-white p-6 sm:p-8 border border-black/5 flex flex-col justify-between rounded-none"
+                  >
+                    <div>
+                      <div className="flex items-start gap-4 sm:gap-5 mb-4">
+                        <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 bg-[#d0d0d0] overflow-hidden rounded-none flex items-center justify-center">
+                          {item.avatar ? (
+                            <img
+                              src={item.avatar}
+                              alt={item.name}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <svg className="w-full h-full text-[#808080]" viewBox="0 0 100 100" fill="currentColor">
+                              <rect width="100" height="100" fill="#d0d0d0" />
+                              <circle cx="50" cy="40" r="20" fill="#808080" />
+                              <path d="M 20 88 C 20 65, 32 60, 50 60 C 68 60, 80 65, 80 88 Z" fill="#808080" />
+                            </svg>
+                          )}
+                        </div>
+
+                        <div className="flex flex-col justify-start pt-1">
+                          <h3
+                            className="text-[16px] sm:text-[18px] font-bold text-[#111111] leading-snug"
+                            style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'" }}
+                          >
+                            {item.name}
+                          </h3>
+                          <p
+                            className="text-[13px] sm:text-[14px] text-[#444444] font-normal leading-tight mt-1"
+                            style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
+                          >
+                            {item.role}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center text-[#f27820] text-[16px] mb-2">
+                        {Array.from({ length: item.rating }).map((_, i) => (
+                          <span key={i}>★</span>
+                        ))}
+                      </div>
+
+                      <p
+                        className="text-[#333333] text-[14px] sm:text-[15px] font-normal leading-relaxed"
+                        style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
+                      >
+                        {item.content}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
+
         </main>
       </div>
 
