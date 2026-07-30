@@ -147,25 +147,26 @@ export default function IndustriesClient() {
             </div>
           </div>
 
-          {/* Autoplay Video Section */}
-          <div className="w-full px-6 lg:px-[98px] pb-16">
-            <div className="relative w-full rounded-none overflow-hidden shadow-sm bg-black h-[240px] sm:h-[360px] lg:h-[480px]">
+          {/* Autoplay Video Section - Matching AboutUsClient Video Banner exact size */}
+          <div className="w-full px-4 sm:px-6 lg:pl-[98px] lg:pr-[98px] pb-16">
+            <div className="relative w-full overflow-hidden shadow-2xl bg-[#efefef] max-h-[820px]">
               <video
                 ref={videoRef}
-                className="w-full h-full object-cover"
+                id="bgvideo"
                 autoPlay
                 loop
                 muted
                 playsInline
+                className="w-full h-full min-h-[350px] sm:min-h-[500px] md:min-h-[650px] object-cover opacity-80"
               >
                 <source src="https://dd.mocup.in/assets/web/images/video/industries.mp4" type="video/mp4" />
                 <source src="https://dd.mocup.in/assets/web/images/video/industries.ogv" type="video/ogv" />
                 <source src="https://dd.mocup.in/assets/web/images/video/industries.webm" type="video/webm" />
                 Your browser does not support the video tag.
               </video>
-              <div className="absolute inset-0 bg-black/25 flex items-center justify-center p-6 text-center">
+              <div className="absolute inset-0 bg-black/25 flex items-center justify-left p-46 text-center pointer-events-none">
                 <h1
-                  className="text-white text-[44px] sm:text-[68px] lg:text-[90px] uppercase font-bold tracking-widest drop-shadow-md"
+                  className="text-white text-[44px] sm:text-[68px] lg:text-[75px] uppercase font-bold tracking-widest drop-shadow-md"
                   style={{ fontFamily: "'SocialGothic-Bold', 'GT-Walsheim-Pro'" }}
                 >
                   INDUSTRIES.
@@ -174,57 +175,59 @@ export default function IndustriesClient() {
             </div>
           </div>
 
+
           {/* Main Heading & 2-Column Grid */}
           <div className="w-full px-6 lg:px-[98px] py-8 sm:py-1 bg-[#fcf5f5]">
-            {/* Section Main Heading */}
+            {/* Section Main Heading with Letter Spacing */}
             <div className="mb-14">
               <h2
-                className="text-[28px] sm:text-[32px] lg:text-[35px] font-bold tracking-wide"
-                style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
+                className="text-[28px] sm:text-[32px] lg:text-[35px] font-bold tracking-[0.08em] uppercase"
+                style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'", letterSpacing: '0.10em' }}
               >
                 <span className="text-[#083169]">LETS BRING THE WORLD CLOSER </span>
                 <span className="text-[#f27820]">TOGETHER.</span>
               </h2>
             </div>
 
-            {/* 2-Column Industries Grid matching 3rd image from real website */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-10">
+            {/* 2-Column Industries Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-16">
               {industriesList.map((item) => (
-                <div key={item.id} className="flex flex-col">
-                  {/* Single Top Line */}
-                  <div className="w-full h-[1px] bg-[#727272] mb-10"></div>
-
-                  {/* Industry Card - Smooth White Hover Effect matching 3rd Image */}
-                  <div className="w-full group cursor-pointer bg-transparent hover:bg-white p-8 sm:p-16 hover:shadow-xl transition-all duration-500 ease-in-out flex items-center gap-6 sm:gap-10 min-h-[160px] sm:min-h-[160px]">
-                    <div className="w-16 h-16 sm:w-20 sm:h-50 shrink-0 flex items-center justify-center">
-                      <img
-                        src={item.icon}
-                        alt={item.title}
-                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                        onError={(e) => {
-                          const target = e.target as HTMLElement;
-                          target.style.display = 'none';
-                          if (target.parentElement) {
-                            target.parentElement.innerHTML = `<span class="text-4xl sm:text-5xl">${item.fallbackIcon}</span>`;
-                          }
-                        }}
-                      />
-                    </div>
-
-                    <h3
-                      className="text-[22px] sm:text-[30px] font-bold text-[#111111] group-hover:text-black transition-colors duration-500 leading-tight"
-                      style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'" }}
-                    >
-                      {item.title}
-                    </h3>
+                <a
+                  key={item.id}
+                  href="#"
+                  className="w-full h-[220px] sm:h-[340px] flex items-center justify-start px-6 sm:px-12 border-t border-b border-black/70 bg-transparent hover:bg-white hover:shadow-xl transition-all duration-300 rounded-none group cursor-pointer"
+                >
+                  <div className="w-16 h-16 sm:w-22 sm:h-22 shrink-0 flex items-center justify-center mr-6 sm:mr-10">
+                    <img
+                      src={item.icon}
+                      alt={item.title}
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                      onError={(e) => {
+                        const target = e.target as HTMLElement;
+                        target.style.display = 'none';
+                        if (target.parentElement) {
+                          target.parentElement.innerHTML = `<span class="text-4xl sm:text-5xl">${item.fallbackIcon}</span>`;
+                        }
+                      }}
+                    />
                   </div>
 
-                  {/* Single Bottom Line */}
-                  <div className="w-full h-[1px] bg-[#727272]+ mt-8"></div>
-                </div>
+                  <h3
+                    className="text-[22px] sm:text-[30px] font-bold text-[#111111] group-hover:text-black transition-colors duration-300 leading-tight"
+                    style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'" }}
+                  >
+                    {item.title}
+                  </h3>
+                </a>
               ))}
             </div>
+
+
+
+
+
           </div>
+
         </main>
       </div>
 
