@@ -394,35 +394,36 @@ const CORPORATE_MENU = {
     {
       title: 'ABOUT DESIGNDOT',
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-      href: '#'
+      href: '/about-us'
     },
     {
       title: 'INDUSTRIES',
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-      href: '#'
+      href: '/industries'
     },
     {
       title: 'INSIGHTS',
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-      href: '#'
+      href: '/insights'
     },
     {
       title: 'TESTIMONIALS',
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-      href: '#'
+      href: '/testimonials'
     },
     {
       title: 'PROJECTS',
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-      href: '#'
+      href: '/projects'
     },
     {
       title: 'Blog',
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-      href: '#'
+      href: '/blog'
     }
   ]
 };
+
 
 const NAVIGATION_LINKS = [
   { label: 'Expertise', key: 'expertise', hasMegaMenu: true },
