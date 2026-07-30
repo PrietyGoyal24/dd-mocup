@@ -7,6 +7,6 @@ export const metadata: Metadata = {
   robots: 'index, follow',
 };
 
-export default function EcommerceAliasPage() {
+export default function ECommercePage() {
   return <ECommerceApplicationClient />;
 }

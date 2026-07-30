@@ -4,58 +4,58 @@ import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/layout/Footer/Footer';
 
-export default function ECommerceApplicationClient() {
-  const expertiseCards = [
+export default function HRMApplicationClient() {
+  const keyFeaturesCards = [
     {
-      title: 'Custom Ecommerce Website',
-      desc: 'Build a unique, brand-aligned storefront that attracts, engages, and converts visitors into buyers.',
+      title: 'Employee Management',
+      desc: 'Maintain detailed employee records, hierarchy, documents, and lifecycle from onboarding to offboarding.',
     },
     {
-      title: 'Shopping Cart & Checkout',
-      desc: 'Design user-friendly carts and secure checkout systems with multiple payment options and fast performance.',
+      title: 'Attendance & Leave',
+      desc: 'Track employee attendance, holidays, leave applications, and auto-approve workflows.',
     },
     {
-      title: 'Multi-Vendor Marketplace',
-      desc: 'Develop powerful B2B or B2C marketplaces with vendor dashboards, commission control, and catalog management.',
+      title: 'Payroll & Compensation',
+      desc: 'Automate salary calculations, taxes, payslips, bonuses, and compliance with integrated payroll engines.',
     },
     {
-      title: 'Mobile Ecommerce Apps',
-      desc: 'Launch fast and intuitive ecommerce apps for Android and iOS to reach customers on the go.',
+      title: 'Recruitment & Hiring',
+      desc: 'Manage job postings, applications, interview rounds, and candidate tracking all in one place.',
     },
     {
-      title: 'Product & Inventory Management',
-      desc: 'Keep track of product SKUs, stock levels, suppliers, categories, and variant management from a centralized backend.',
+      title: 'Performance Evaluation',
+      desc: 'Track KPIs, run appraisals, gather 360-degree feedback, and manage goal settings and reviews.',
     },
     {
-      title: 'Secure Payment Gateway Integration',
-      desc: 'Integrate popular payment gateways such as Stripe, Razorpay, PayPal, and UPI with full PCI compliance.',
+      title: 'Employee Self-Service',
+      desc: 'Enable employees to apply for leave, download payslips, update info, and view announcements.',
     },
     {
-      title: 'Shipping & Tax Configuration',
-      desc: 'Configure multi-location shipping, real-time rates, and auto-tax calculations based on region and product types.',
+      title: 'Training & Development',
+      desc: 'Organize training programs, monitor participation, and track certifications for skills growth.',
     },
     {
-      title: 'Analytics & Reporting',
-      desc: 'Access powerful dashboards for order, traffic, sales, and customer behavior insights to optimize your store.',
+      title: 'Compliance & Audits',
+      desc: 'Stay compliant with labor laws and audits through alerts, documentation, and reports.',
     },
   ];
 
   const whyChoosePoints = [
-    'End-to-end custom ecommerce solutions',
-    'SEO-optimized and mobile-first design',
-    'Scalable architecture to grow with your business',
-    'Seamless integration with CRMs, ERPs, and third-party APIs',
-    'Lightning-fast performance and secure data handling',
-    'Dedicated support for upgrades, migration, and maintenance',
+    'Custom modules to suit your organizational policies and workflows',
+    'Cloud-based or on-premise HRM deployment options',
+    'Role-based access control for HR, managers, and employees',
+    'Integrated with payroll, finance, biometric, and ERP systems',
+    'Scalable architecture to grow with your organization',
+    'User-friendly interfaces with real-time dashboards and analytics',
   ];
 
-  const platformsWeWorkWith = [
-    'Shopify',
-    'WooCommerce',
-    'Magento',
-    'BigCommerce',
-    'Custom PHP / Laravel / Node.js',
-    'Headless CMS + React/Vue.js frontends',
+  const industriesWeServe = [
+    'Corporate Enterprises',
+    'Educational Institutions',
+    'Healthcare and Hospitals',
+    'Manufacturing & Logistics',
+    'IT & Tech Companies',
+    'Government and Public Sector',
   ];
 
   return (
@@ -74,7 +74,7 @@ export default function ECommerceApplicationClient() {
                 }}
               >
                 <span className="inline-block w-[8px] h-[8px] sm:w-[12px] sm:h-[12px] md:w-[14px] md:h-[14px] rounded-full bg-[#1a1a1a] mr-2.5 sm:mr-3.5 align-baseline"></span>
-                ECOMMERCE
+                HRM APPLICATION
               </h1>
               <p
                 className="text-[#1a1a1a] w-full text-justify text-[16px] md:text-[18px] leading-relaxed mb-6"
@@ -83,7 +83,7 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                Launch and scale your digital storefront with our tailor-made ecommerce solutions. Whether you&apos;re a startup, SME, or enterprise, we help you deliver seamless shopping experiences, secure payments, and efficient backend operations.
+                Our custom-built Human Resource Management (HRM) applications are tailored to simplify and automate all aspects of your workforce management—from onboarding to retirement. Empower your HR team with digital tools that improve efficiency, compliance, and employee experience.
               </p>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function ECommerceApplicationClient() {
             <div className="w-full overflow-hidden">
               <img
                 src="/assets/web/images/why-designdot.jpg"
-                alt="Ecommerce"
+                alt="HRM Application"
                 className="w-full h-[250px] md:h-[400px] lg:h-[500px] object-cover sticky top-[100px]"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/why-designdot.jpg';
@@ -102,7 +102,7 @@ export default function ECommerceApplicationClient() {
             </div>
           </div>
 
-          {/* OUR ECOMMERCE DEVELOPMENT EXPERTISE */}
+          {/* KEY FEATURES OF OUR HRM SOLUTIONS */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-14">
             <div className="w-full pt-2">
               <h2
@@ -112,11 +112,11 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                OUR ECOMMERCE DEVELOPMENT EXPERTISE
+                KEY FEATURES OF OUR HRM SOLUTIONS
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {expertiseCards.map((card, index) => (
+                {keyFeaturesCards.map((card, index) => (
                   <div
                     key={index}
                     className="group relative rounded-lg border border-[#e0d8d0] border-l-[4px] border-l-[#f27820] p-6 sm:p-8 flex flex-col justify-start bg-white text-slate-800 hover:bg-[#f27820] hover:text-white hover:border-[#f27820] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] transform hover:-translate-y-2.5 hover:shadow-2xl cursor-pointer overflow-hidden"
@@ -163,7 +163,7 @@ export default function ECommerceApplicationClient() {
             </div>
           </div>
 
-          {/* WHY CHOOSE US FOR ECOMMERCE DEVELOPMENT? */}
+          {/* WHY CHOOSE OUR HRM APPLICATION DEVELOPMENT? */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
             <div className="w-full">
               <h2
@@ -173,7 +173,7 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                WHY CHOOSE US FOR ECOMMERCE DEVELOPMENT?
+                WHY CHOOSE OUR HRM APPLICATION DEVELOPMENT?
               </h2>
 
               <ul className="space-y-2.5 ml-2">
@@ -194,7 +194,7 @@ export default function ECommerceApplicationClient() {
             </div>
           </div>
 
-          {/* PLATFORMS WE WORK WITH */}
+          {/* INDUSTRIES WE SERVE */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
             <div className="w-full">
               <h2
@@ -204,11 +204,11 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                PLATFORMS WE WORK WITH
+                INDUSTRIES WE SERVE
               </h2>
 
               <ul className="space-y-2.5 ml-2">
-                {platformsWeWorkWith.map((item, index) => (
+                {industriesWeServe.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
                     <span
@@ -225,7 +225,7 @@ export default function ECommerceApplicationClient() {
             </div>
           </div>
 
-          {/* LET'S BUILD YOUR IDEAL ONLINE STORE */}
+          {/* BUILD A SMARTER HR ECOSYSTEM TODAY */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-16">
             <div className="w-full">
               <h2
@@ -235,7 +235,7 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                LET&apos;S BUILD YOUR IDEAL ONLINE STORE
+                BUILD A SMARTER HR ECOSYSTEM TODAY
               </h2>
               <p
                 className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
@@ -243,7 +243,7 @@ export default function ECommerceApplicationClient() {
                   fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
                 }}
               >
-                Take your products online with a future-proof ecommerce platform. Contact us today to begin your digital commerce journey.
+                Ready to digitize your human resource operations? Let&apos;s work together to design and develop a feature-rich HRM application tailored specifically for your workforce.
               </p>
             </div>
           </div>

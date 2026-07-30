@@ -4,58 +4,51 @@ import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/layout/Footer/Footer';
 
-export default function ECommerceApplicationClient() {
-  const expertiseCards = [
+export default function DocumentManagementClient() {
+  const whyChooseCards = [
     {
-      title: 'Custom Ecommerce Website',
-      desc: 'Build a unique, brand-aligned storefront that attracts, engages, and converts visitors into buyers.',
+      title: 'Enhanced Security',
+      desc: 'Ensure document safety with encryption, access restrictions, and secure backups.',
     },
     {
-      title: 'Shopping Cart & Checkout',
-      desc: 'Design user-friendly carts and secure checkout systems with multiple payment options and fast performance.',
+      title: 'Improved Productivity',
+      desc: 'Quick search, filter, and access tools drastically reduce time spent finding files.',
     },
     {
-      title: 'Multi-Vendor Marketplace',
-      desc: 'Develop powerful B2B or B2C marketplaces with vendor dashboards, commission control, and catalog management.',
+      title: 'Compliance Ready',
+      desc: 'Stay aligned with industry regulations like GDPR, HIPAA, and ISO standards.',
     },
     {
-      title: 'Mobile Ecommerce Apps',
-      desc: 'Launch fast and intuitive ecommerce apps for Android and iOS to reach customers on the go.',
+      title: 'Workflow Automation',
+      desc: 'Set up automated document routing, approval chains, and notifications.',
     },
     {
-      title: 'Product & Inventory Management',
-      desc: 'Keep track of product SKUs, stock levels, suppliers, categories, and variant management from a centralized backend.',
+      title: 'Disaster Recovery',
+      desc: 'Recover documents easily with cloud backups and fail-safe protocols.',
     },
     {
-      title: 'Secure Payment Gateway Integration',
-      desc: 'Integrate popular payment gateways such as Stripe, Razorpay, PayPal, and UPI with full PCI compliance.',
-    },
-    {
-      title: 'Shipping & Tax Configuration',
-      desc: 'Configure multi-location shipping, real-time rates, and auto-tax calculations based on region and product types.',
-    },
-    {
-      title: 'Analytics & Reporting',
-      desc: 'Access powerful dashboards for order, traffic, sales, and customer behavior insights to optimize your store.',
+      title: 'Scalability',
+      desc: 'From small teams to large enterprises, our DMS grows with your needs.',
     },
   ];
 
-  const whyChoosePoints = [
-    'End-to-end custom ecommerce solutions',
-    'SEO-optimized and mobile-first design',
-    'Scalable architecture to grow with your business',
-    'Seamless integration with CRMs, ERPs, and third-party APIs',
-    'Lightning-fast performance and secure data handling',
-    'Dedicated support for upgrades, migration, and maintenance',
+  const keyFeatures = [
+    'Centralized Document Repository',
+    'Version Control & Audit Trail',
+    'Role-Based Access Management',
+    'Automated Workflows & Approvals',
+    'OCR & Document Indexing',
+    'Cloud or On-Premise Deployment',
+    'Real-Time Search & Retrieval',
+    'Secure File Sharing & Collaboration',
   ];
 
-  const platformsWeWorkWith = [
-    'Shopify',
-    'WooCommerce',
-    'Magento',
-    'BigCommerce',
-    'Custom PHP / Laravel / Node.js',
-    'Headless CMS + React/Vue.js frontends',
+  const industriesThatBenefit = [
+    'Legal & Compliance Firms',
+    'Healthcare & Life Sciences',
+    'Education Institutions',
+    'Real Estate & Construction',
+    'Finance & Insurance',
   ];
 
   return (
@@ -68,13 +61,13 @@ export default function ECommerceApplicationClient() {
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[115px] pt-8 pb-6">
             <div className="w-full">
               <h1
-                className="text-[#1a1a1a] uppercase mb-8 text-[36px] sm:text-[58px] md:text-[80px] lg:text-[96px] leading-[1.05] tracking-[1px] font-normal"
+                className="text-[#1a1a1a] uppercase mb-8 text-[32px] sm:text-[52px] md:text-[76px] lg:text-[90px] leading-[1.05] tracking-[1px] font-normal"
                 style={{
                   fontFamily: "'SocialGothic-Bold', 'GT-Walsheim-Pro'",
                 }}
               >
                 <span className="inline-block w-[8px] h-[8px] sm:w-[12px] sm:h-[12px] md:w-[14px] md:h-[14px] rounded-full bg-[#1a1a1a] mr-2.5 sm:mr-3.5 align-baseline"></span>
-                ECOMMERCE
+                DOCUMENT MANAGEMENT SOLUTIONS
               </h1>
               <p
                 className="text-[#1a1a1a] w-full text-justify text-[16px] md:text-[18px] leading-relaxed mb-6"
@@ -83,7 +76,7 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                Launch and scale your digital storefront with our tailor-made ecommerce solutions. Whether you&apos;re a startup, SME, or enterprise, we help you deliver seamless shopping experiences, secure payments, and efficient backend operations.
+                Our Document Management System (DMS) offers a centralized platform to securely store, organize, retrieve, and share digital documents. Designed for enterprises of all sizes, our DMS helps reduce paper usage, improve compliance, and streamline operations.
               </p>
             </div>
           </div>
@@ -93,7 +86,7 @@ export default function ECommerceApplicationClient() {
             <div className="w-full overflow-hidden">
               <img
                 src="/assets/web/images/why-designdot.jpg"
-                alt="Ecommerce"
+                alt="Document Management Solutions"
                 className="w-full h-[250px] md:h-[400px] lg:h-[500px] object-cover sticky top-[100px]"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/why-designdot.jpg';
@@ -102,7 +95,7 @@ export default function ECommerceApplicationClient() {
             </div>
           </div>
 
-          {/* OUR ECOMMERCE DEVELOPMENT EXPERTISE */}
+          {/* WHY CHOOSE OUR DMS? */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-14">
             <div className="w-full pt-2">
               <h2
@@ -112,11 +105,11 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                OUR ECOMMERCE DEVELOPMENT EXPERTISE
+                WHY CHOOSE OUR DMS?
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {expertiseCards.map((card, index) => (
+                {whyChooseCards.map((card, index) => (
                   <div
                     key={index}
                     className="group relative rounded-lg border border-[#e0d8d0] border-l-[4px] border-l-[#f27820] p-6 sm:p-8 flex flex-col justify-start bg-white text-slate-800 hover:bg-[#f27820] hover:text-white hover:border-[#f27820] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] transform hover:-translate-y-2.5 hover:shadow-2xl cursor-pointer overflow-hidden"
@@ -163,7 +156,7 @@ export default function ECommerceApplicationClient() {
             </div>
           </div>
 
-          {/* WHY CHOOSE US FOR ECOMMERCE DEVELOPMENT? */}
+          {/* KEY FEATURES OF OUR DOCUMENT MANAGEMENT SYSTEM */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
             <div className="w-full">
               <h2
@@ -173,11 +166,11 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                WHY CHOOSE US FOR ECOMMERCE DEVELOPMENT?
+                KEY FEATURES OF OUR DOCUMENT MANAGEMENT SYSTEM
               </h2>
 
               <ul className="space-y-2.5 ml-2">
-                {whyChoosePoints.map((point, index) => (
+                {keyFeatures.map((point, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
                     <span
@@ -194,7 +187,7 @@ export default function ECommerceApplicationClient() {
             </div>
           </div>
 
-          {/* PLATFORMS WE WORK WITH */}
+          {/* INDUSTRIES THAT BENEFIT */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
             <div className="w-full">
               <h2
@@ -204,11 +197,11 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                PLATFORMS WE WORK WITH
+                INDUSTRIES THAT BENEFIT
               </h2>
 
               <ul className="space-y-2.5 ml-2">
-                {platformsWeWorkWith.map((item, index) => (
+                {industriesThatBenefit.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
                     <span
@@ -225,7 +218,7 @@ export default function ECommerceApplicationClient() {
             </div>
           </div>
 
-          {/* LET'S BUILD YOUR IDEAL ONLINE STORE */}
+          {/* TRANSFORM THE WAY YOU MANAGE DOCUMENTS */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-16">
             <div className="w-full">
               <h2
@@ -235,7 +228,7 @@ export default function ECommerceApplicationClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                LET&apos;S BUILD YOUR IDEAL ONLINE STORE
+                TRANSFORM THE WAY YOU MANAGE DOCUMENTS
               </h2>
               <p
                 className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
@@ -243,7 +236,7 @@ export default function ECommerceApplicationClient() {
                   fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
                 }}
               >
-                Take your products online with a future-proof ecommerce platform. Contact us today to begin your digital commerce journey.
+                Eliminate paper clutter, increase information accuracy, and boost team efficiency with our smart document management solutions. Whether you&apos;re digitizing legacy documents or building a cloud-based workflow—our solution adapts to your goals.
               </p>
             </div>
           </div>

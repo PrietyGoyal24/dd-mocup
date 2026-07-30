@@ -102,6 +102,21 @@ import SupplyChainManagementClient from '@/components/pages/Services/SupplyChain
 import CRMApplicationClient from '@/components/pages/Services/CRMApplicationClient';
 import ECommerceApplicationClient from '@/components/pages/Services/ECommerceApplicationClient';
 import EnterpriseAssetManagementClient from '@/components/pages/Services/EnterpriseAssetManagementClient';
+import FleetManagementClient from '@/components/pages/Services/FleetManagementClient';
+import HRMApplicationClient from '@/components/pages/Services/HRMApplicationClient';
+import VendorManagementClient from '@/components/pages/Services/VendorManagementClient';
+import MobileApplicationSolutionClient from '@/components/pages/Services/MobileApplicationSolutionClient';
+import ProjectManagementClient from '@/components/pages/Services/ProjectManagementClient';
+import ERPDesigningSolutionClient from '@/components/pages/Services/ERPDesigningSolutionClient';
+import DocumentManagementClient from '@/components/pages/Services/DocumentManagementClient';
+import ELearningSolutionsClient from '@/components/pages/Services/ELearningSolutionsClient';
+
+
+
+
+
+
+
 
 
 
@@ -878,11 +893,13 @@ export default async function ServicePage({ params }: PageProps) {
   if (
     slug === 'ecommerce-application' ||
     slug === 'ecommerce' ||
+    slug === 'e-commerce' ||
     slug === 'e-commerce-application' ||
     slug === 'ecommerce-development'
   ) {
     return <ECommerceApplicationClient />;
   }
+
 
   if (
     slug === 'enterprise-asset-management' ||
@@ -891,6 +908,82 @@ export default async function ServicePage({ params }: PageProps) {
   ) {
     return <EnterpriseAssetManagementClient />;
   }
+
+  if (
+    slug === 'fleet-management' ||
+    slug === 'fleet' ||
+    slug === 'fleet-management-solutions'
+  ) {
+    return <FleetManagementClient />;
+  }
+
+  if (
+    slug === 'hrm-application' ||
+    slug === 'hrm' ||
+    slug === 'hrm-application-development'
+  ) {
+    return <HRMApplicationClient />;
+  }
+
+  if (
+    slug === 'vendor-management' ||
+    slug === 'vendor-management-solutions' ||
+    slug === 'vendor-management-system'
+  ) {
+    return <VendorManagementClient />;
+  }
+
+  if (
+    slug === 'mobile-application-solution' ||
+    slug === 'mobile-application-solutions' ||
+    slug === 'mobile-app-development' ||
+    slug === 'mobile-application-development'
+  ) {
+    return <MobileApplicationSolutionClient />;
+  }
+
+  if (
+    slug === 'project-management' ||
+    slug === 'project-management-solutions' ||
+    slug === 'project-management-system'
+  ) {
+    return <ProjectManagementClient />;
+  }
+
+  if (
+    slug === 'erp-designing-solution' ||
+    slug === 'erp-on-demand-designing-solution' ||
+    slug === 'erp-design-solution' ||
+    slug === 'erp-designing'
+  ) {
+    return <ERPDesigningSolutionClient />;
+  }
+
+  if (
+    slug === 'document-management' ||
+    slug === 'document-management-solutions' ||
+    slug === 'document-management-system' ||
+    slug === 'dms'
+  ) {
+    return <DocumentManagementClient />;
+  }
+
+  if (
+    slug === 'eLearning-solutions' ||
+    slug === 'e-learning-solutions' ||
+    slug === 'elearning-solutions' ||
+    slug === 'elearning' ||
+    slug === 'e-learning'
+  ) {
+    return <ELearningSolutionsClient />;
+  }
+
+
+
+
+
+
+
 
 
 

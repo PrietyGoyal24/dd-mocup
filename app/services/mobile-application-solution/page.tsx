@@ -7,6 +7,6 @@ export const metadata: Metadata = {
   robots: 'index, follow',
 };
 
-export default function MobileAppDevelopmentAliasPage() {
+export default function MobileApplicationSolutionPage() {
   return <MobileApplicationSolutionClient />;
 }
