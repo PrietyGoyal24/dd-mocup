@@ -4,58 +4,50 @@ import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/layout/Footer/Footer';
 
-export default function POSClient() {
-  const topFeaturesCards = [
+export default function EnterpriseAssetManagementClient() {
+  const benefitsCards = [
     {
-      title: 'Billing & Invoicing',
-      desc: 'Fast, accurate billing with options for receipts, tax handling, discounts, and multiple payment modes.',
+      title: 'Maximized Asset Utilization',
+      desc: 'Ensure higher returns by keeping assets in peak operational condition.',
     },
     {
-      title: 'Inventory Management',
-      desc: 'Track stock levels, manage reorders, get low stock alerts, and organize inventory across multiple locations.',
+      title: 'Reduced Maintenance Costs',
+      desc: 'Implement smart maintenance schedules to minimize unplanned downtime.',
     },
     {
-      title: 'Customer Management',
-      desc: 'Maintain customer data, purchase history, and offer loyalty programs or promotions.',
+      title: 'Real-Time Asset Visibility',
+      desc: 'Track asset locations, usage, and performance in real time with IoT integration.',
     },
     {
-      title: 'Multi-terminal Support',
-      desc: 'Manage multiple POS terminals within one store or across different branches with central control.',
+      title: 'Improved Regulatory Compliance',
+      desc: 'Stay compliant with industry standards through audit-ready records and alerts.',
     },
     {
-      title: 'Barcode Scanning',
-      desc: 'Seamless product scanning and code generation for quick checkout and inventory updates.',
+      title: 'Data-Driven Decisions',
+      desc: 'Gain insights through custom dashboards and reports for smarter asset planning.',
     },
     {
-      title: 'Sales Reporting',
-      desc: 'Real-time data insights into your sales, top products, trends, and employee performance.',
+      title: 'Centralized Management',
+      desc: 'Manage all enterprise assets across departments and locations in a single platform.',
     },
-    {
-      title: 'Online/Offline Sync',
-      desc: 'Continue processing sales even when internet is down—auto-syncs when connection resumes.',
-    },
-    {
-      title: 'Mobile POS',
-      desc: 'Enable transactions on tablets and mobile devices with touch-friendly interfaces and cloud sync.',
-    },
+  ];
+
+  const coreFeatures = [
+    'Asset Lifecycle Management',
+    'Preventive and Predictive Maintenance',
+    'Work Order Management',
+    'Asset Tracking with IoT & RFID',
+    'Compliance & Risk Management',
+    'Cost and Performance Analytics',
+    'Mobile and Cloud-based Access',
   ];
 
   const industriesWeServe = [
-    'Retail (Supermarkets, Boutiques, Electronics Stores)',
-    'Restaurants & Cafés',
-    'Salons & Spas',
-    'Pharmacies',
-    'Bookstores & Stationery',
-    'Multi-Chain Franchises',
-  ];
-
-  const whyChoosePoints = [
-    'Custom-built POS apps tailored to your business workflows',
-    'Cross-platform solutions for desktop, mobile, and web',
-    'Secure payment integrations (UPI, credit cards, wallets)',
-    'User-friendly interface for fast learning and easy adoption',
-    'Robust backend with admin controls and cloud support',
-    'End-to-end support—from development to deployment and maintenance',
+    'Manufacturing',
+    'Utilities & Energy',
+    'Healthcare',
+    'Transportation & Logistics',
+    'Government & Public Sector',
   ];
 
   return (
@@ -74,7 +66,7 @@ export default function POSClient() {
                 }}
               >
                 <span className="inline-block w-[8px] h-[8px] sm:w-[12px] sm:h-[12px] md:w-[14px] md:h-[14px] rounded-full bg-[#1a1a1a] mr-2.5 sm:mr-3.5 align-baseline"></span>
-                POINT OF SALE (POS) APPLICATION
+                ENTERPRISE ASSET MANAGEMENT (EAM)
               </h1>
               <p
                 className="text-[#1a1a1a] w-full text-justify text-[16px] md:text-[18px] leading-relaxed mb-6"
@@ -83,7 +75,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                Our POS solutions are designed to simplify your sales operations, enhance customer experience, and optimize inventory management. Whether you run a retail store, restaurant, or multi-chain business, we deliver secure, scalable, and easy-to-use POS applications tailored to your needs.
+                Empower your organization to manage physical assets efficiently with our advanced Enterprise Asset Management solutions. From acquisition to disposal, ensure every asset delivers maximum value with reduced downtime and optimized performance.
               </p>
             </div>
           </div>
@@ -93,7 +85,7 @@ export default function POSClient() {
             <div className="w-full overflow-hidden">
               <img
                 src="/assets/web/images/why-designdot.jpg"
-                alt="Point of Sale (POS) Application"
+                alt="Enterprise Asset Management (EAM)"
                 className="w-full h-[250px] md:h-[400px] lg:h-[500px] object-cover sticky top-[100px]"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/why-designdot.jpg';
@@ -102,7 +94,7 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* TOP FEATURES IN OUR POS APPLICATIONS */}
+          {/* BENEFITS OF OUR ENTERPRISE ASSET MANAGEMENT */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-14">
             <div className="w-full pt-2">
               <h2
@@ -112,11 +104,11 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                TOP FEATURES IN OUR POS APPLICATIONS
+                BENEFITS OF OUR ENTERPRISE ASSET MANAGEMENT
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {topFeaturesCards.map((card, index) => (
+                {benefitsCards.map((card, index) => (
                   <div
                     key={index}
                     className="group relative rounded-lg border border-[#e0d8d0] border-l-[4px] border-l-[#f27820] p-6 sm:p-8 flex flex-col justify-start bg-white text-slate-800 hover:bg-[#f27820] hover:text-white hover:border-[#f27820] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] transform hover:-translate-y-2.5 hover:shadow-2xl cursor-pointer overflow-hidden"
@@ -163,6 +155,37 @@ export default function POSClient() {
             </div>
           </div>
 
+          {/* CORE FEATURES OF OUR EAM SOLUTIONS */}
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+            <div className="w-full">
+              <h2
+                className="text-[#1a1a1a] uppercase mb-6 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
+                style={{
+                  fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'",
+                  letterSpacing: '0.5px',
+                }}
+              >
+                CORE FEATURES OF OUR EAM SOLUTIONS
+              </h2>
+
+              <ul className="space-y-2.5 ml-2">
+                {coreFeatures.map((point, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
+                    <span
+                      className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
+                      style={{
+                        fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
+                      }}
+                    >
+                      {point}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
           {/* INDUSTRIES WE SERVE */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
             <div className="w-full">
@@ -194,38 +217,7 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* WHY CHOOSE US FOR POS DEVELOPMENT? */}
-          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
-            <div className="w-full">
-              <h2
-                className="text-[#1a1a1a] uppercase mb-6 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
-                style={{
-                  fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'",
-                  letterSpacing: '0.5px',
-                }}
-              >
-                WHY CHOOSE US FOR POS DEVELOPMENT?
-              </h2>
-
-              <ul className="space-y-2.5 ml-2">
-                {whyChoosePoints.map((point, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
-                    <span
-                      className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
-                      style={{
-                        fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
-                      }}
-                    >
-                      {point}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* LET'S BUILD YOUR POS SOLUTION */}
+          {/* MODERNIZE YOUR ASSET MANAGEMENT STRATEGY */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-16">
             <div className="w-full">
               <h2
@@ -235,7 +227,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                LET&apos;S BUILD YOUR POS SOLUTION
+                MODERNIZE YOUR ASSET MANAGEMENT STRATEGY
               </h2>
               <p
                 className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
@@ -243,7 +235,7 @@ export default function POSClient() {
                   fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
                 }}
               >
-                Whether you need a simple billing system or a full-scale cloud-based POS platform, we can deliver it. Contact us today to explore how our POS development expertise can streamline your business operations.
+                Whether you need to improve asset uptime, extend equipment life, or ensure regulatory compliance, our EAM solutions deliver measurable outcomes. Let&apos;s build a future-ready asset management system tailored for your business needs.
               </p>
             </div>
           </div>

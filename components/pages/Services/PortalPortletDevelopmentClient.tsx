@@ -4,58 +4,60 @@ import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/layout/Footer/Footer';
 
-export default function POSClient() {
-  const topFeaturesCards = [
+export default function PortalPortletDevelopmentClient() {
+  const capabilitiesCards = [
     {
-      title: 'Billing & Invoicing',
-      desc: 'Fast, accurate billing with options for receipts, tax handling, discounts, and multiple payment modes.',
+      title: 'Custom Portal Development',
+      desc: 'Designing and developing portals from the ground up that align with your business processes and objectives.',
     },
     {
-      title: 'Inventory Management',
-      desc: 'Track stock levels, manage reorders, get low stock alerts, and organize inventory across multiple locations.',
+      title: 'Portlet Component Design',
+      desc: 'Building reusable and modular portlets to provide dynamic content and functionality within portal platforms.',
     },
     {
-      title: 'Customer Management',
-      desc: 'Maintain customer data, purchase history, and offer loyalty programs or promotions.',
+      title: 'Integration with Third-Party Systems',
+      desc: 'Seamless integration with ERP, CRM, CMS, and other enterprise tools through APIs and web services.',
     },
     {
-      title: 'Multi-terminal Support',
-      desc: 'Manage multiple POS terminals within one store or across different branches with central control.',
+      title: 'Liferay Portlet Development',
+      desc: 'Leveraging the Liferay platform to build enterprise-grade portlets using Java and standard portlet specifications.',
     },
     {
-      title: 'Barcode Scanning',
-      desc: 'Seamless product scanning and code generation for quick checkout and inventory updates.',
+      title: 'SharePoint Portal Development',
+      desc: 'Creating secure and collaborative intranet and extranet portals using Microsoft SharePoint.',
     },
     {
-      title: 'Sales Reporting',
-      desc: 'Real-time data insights into your sales, top products, trends, and employee performance.',
+      title: 'User Role & Access Management',
+      desc: 'Implementing granular control over access rights, roles, and user workflows within the portal environment.',
     },
-    {
-      title: 'Online/Offline Sync',
-      desc: 'Continue processing sales even when internet is down—auto-syncs when connection resumes.',
-    },
-    {
-      title: 'Mobile POS',
-      desc: 'Enable transactions on tablets and mobile devices with touch-friendly interfaces and cloud sync.',
-    },
+  ];
+
+  const keyBenefits = [
+    'Modular and Scalable Architecture',
+    'Enhanced User Experience (UX) and UI Design',
+    'Role-Based Personalization and Custom Dashboards',
+    'Mobile-Responsive Design',
+    'Multilingual and Multi-Tenant Support',
+    'Cross-Browser & Cross-Device Compatibility',
+    'Secure Authentication and Authorization',
+    'Analytics, Reporting, and Audit Logs',
   ];
 
   const industriesWeServe = [
-    'Retail (Supermarkets, Boutiques, Electronics Stores)',
-    'Restaurants & Cafés',
-    'Salons & Spas',
-    'Pharmacies',
-    'Bookstores & Stationery',
-    'Multi-Chain Franchises',
+    'Healthcare & Medical Portals',
+    'Banking & Financial Services',
+    'Education Portals & eLearning',
+    'Retail & eCommerce',
+    'Government & Public Services',
+    'Logistics & Transportation',
   ];
 
   const whyChoosePoints = [
-    'Custom-built POS apps tailored to your business workflows',
-    'Cross-platform solutions for desktop, mobile, and web',
-    'Secure payment integrations (UPI, credit cards, wallets)',
-    'User-friendly interface for fast learning and easy adoption',
-    'Robust backend with admin controls and cloud support',
-    'End-to-end support—from development to deployment and maintenance',
+    'Experienced Team in Java, .NET, PHP, Liferay, and SharePoint',
+    'Agile Development & Timely Delivery',
+    'Customizable and Future-Ready Architecture',
+    'Strong Focus on Performance & Security',
+    'Reliable Ongoing Support and Maintenance',
   ];
 
   return (
@@ -74,7 +76,7 @@ export default function POSClient() {
                 }}
               >
                 <span className="inline-block w-[8px] h-[8px] sm:w-[12px] sm:h-[12px] md:w-[14px] md:h-[14px] rounded-full bg-[#1a1a1a] mr-2.5 sm:mr-3.5 align-baseline"></span>
-                POINT OF SALE (POS) APPLICATION
+                PORTAL & PORTLET DEVELOPMENT SERVICES
               </h1>
               <p
                 className="text-[#1a1a1a] w-full text-justify text-[16px] md:text-[18px] leading-relaxed mb-6"
@@ -83,7 +85,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                Our POS solutions are designed to simplify your sales operations, enhance customer experience, and optimize inventory management. Whether you run a retail store, restaurant, or multi-chain business, we deliver secure, scalable, and easy-to-use POS applications tailored to your needs.
+                Our expert team provides full-cycle portal and portlet development services that enable enterprises to build scalable, customizable, and user-friendly solutions for various business needs. We specialize in integrating portlets within enterprise portals to deliver seamless experiences for users and administrators.
               </p>
             </div>
           </div>
@@ -93,7 +95,7 @@ export default function POSClient() {
             <div className="w-full overflow-hidden">
               <img
                 src="/assets/web/images/why-designdot.jpg"
-                alt="Point of Sale (POS) Application"
+                alt="Portal & Portlet Development Services"
                 className="w-full h-[250px] md:h-[400px] lg:h-[500px] object-cover sticky top-[100px]"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/why-designdot.jpg';
@@ -102,7 +104,7 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* TOP FEATURES IN OUR POS APPLICATIONS */}
+          {/* OUR PORTAL & PORTLET DEVELOPMENT CAPABILITIES */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-14">
             <div className="w-full pt-2">
               <h2
@@ -112,11 +114,11 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                TOP FEATURES IN OUR POS APPLICATIONS
+                OUR PORTAL & PORTLET DEVELOPMENT CAPABILITIES
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {topFeaturesCards.map((card, index) => (
+                {capabilitiesCards.map((card, index) => (
                   <div
                     key={index}
                     className="group relative rounded-lg border border-[#e0d8d0] border-l-[4px] border-l-[#f27820] p-6 sm:p-8 flex flex-col justify-start bg-white text-slate-800 hover:bg-[#f27820] hover:text-white hover:border-[#f27820] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] transform hover:-translate-y-2.5 hover:shadow-2xl cursor-pointer overflow-hidden"
@@ -163,6 +165,37 @@ export default function POSClient() {
             </div>
           </div>
 
+          {/* KEY BENEFITS OF OUR PORTAL/PORTLET SOLUTIONS */}
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+            <div className="w-full">
+              <h2
+                className="text-[#1a1a1a] uppercase mb-6 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
+                style={{
+                  fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'",
+                  letterSpacing: '0.5px',
+                }}
+              >
+                KEY BENEFITS OF OUR PORTAL/PORTLET SOLUTIONS
+              </h2>
+
+              <ul className="space-y-2.5 ml-2">
+                {keyBenefits.map((point, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
+                    <span
+                      className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
+                      style={{
+                        fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
+                      }}
+                    >
+                      {point}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
           {/* INDUSTRIES WE SERVE */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
             <div className="w-full">
@@ -194,7 +227,7 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* WHY CHOOSE US FOR POS DEVELOPMENT? */}
+          {/* WHY CHOOSE US? */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
             <div className="w-full">
               <h2
@@ -204,7 +237,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                WHY CHOOSE US FOR POS DEVELOPMENT?
+                WHY CHOOSE US?
               </h2>
 
               <ul className="space-y-2.5 ml-2">
@@ -225,7 +258,7 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* LET'S BUILD YOUR POS SOLUTION */}
+          {/* LET'S BUILD YOUR PORTAL TODAY */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-16">
             <div className="w-full">
               <h2
@@ -235,7 +268,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                LET&apos;S BUILD YOUR POS SOLUTION
+                LET&apos;S BUILD YOUR PORTAL TODAY
               </h2>
               <p
                 className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
@@ -243,7 +276,7 @@ export default function POSClient() {
                   fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
                 }}
               >
-                Whether you need a simple billing system or a full-scale cloud-based POS platform, we can deliver it. Contact us today to explore how our POS development expertise can streamline your business operations.
+                Whether you need a new portal from scratch or want to modernize an existing one with advanced portlets, we&apos;re here to help. Reach out to explore how we can turn your vision into a fully functional and secure enterprise portal.
               </p>
             </div>
           </div>

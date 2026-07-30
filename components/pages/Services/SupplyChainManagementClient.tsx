@@ -4,58 +4,50 @@ import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/layout/Footer/Footer';
 
-export default function POSClient() {
-  const topFeaturesCards = [
+export default function SupplyChainManagementClient() {
+  const scmServices = [
+    'Procurement Management',
+    'Inventory & Warehouse Management',
+    'Logistics & Distribution Optimization',
+    'Demand Planning & Forecasting',
+    'Real-Time Tracking Systems',
+    'Supplier Collaboration Platforms',
+  ];
+
+  const keyBenefitsCards = [
     {
-      title: 'Billing & Invoicing',
-      desc: 'Fast, accurate billing with options for receipts, tax handling, discounts, and multiple payment modes.',
+      title: 'Improved Visibility',
+      desc: 'Gain full transparency into supply chain operations with real-time data and reporting.',
     },
     {
-      title: 'Inventory Management',
-      desc: 'Track stock levels, manage reorders, get low stock alerts, and organize inventory across multiple locations.',
+      title: 'Cost Efficiency',
+      desc: 'Minimize excess inventory and reduce wastage with precise demand planning tools.',
     },
     {
-      title: 'Customer Management',
-      desc: 'Maintain customer data, purchase history, and offer loyalty programs or promotions.',
+      title: 'Faster Fulfillment',
+      desc: 'Streamline logistics and transportation workflows to speed up order delivery.',
     },
     {
-      title: 'Multi-terminal Support',
-      desc: 'Manage multiple POS terminals within one store or across different branches with central control.',
+      title: 'Risk Mitigation',
+      desc: 'Identify bottlenecks and plan proactively to handle disruptions effectively.',
     },
     {
-      title: 'Barcode Scanning',
-      desc: 'Seamless product scanning and code generation for quick checkout and inventory updates.',
+      title: 'Scalable Infrastructure',
+      desc: 'Support growing business needs with flexible and modular supply chain systems.',
     },
     {
-      title: 'Sales Reporting',
-      desc: 'Real-time data insights into your sales, top products, trends, and employee performance.',
-    },
-    {
-      title: 'Online/Offline Sync',
-      desc: 'Continue processing sales even when internet is down—auto-syncs when connection resumes.',
-    },
-    {
-      title: 'Mobile POS',
-      desc: 'Enable transactions on tablets and mobile devices with touch-friendly interfaces and cloud sync.',
+      title: 'Integrated Technologies',
+      desc: 'Use AI, IoT, and blockchain for smarter automation and secure supply chain processes.',
     },
   ];
 
   const industriesWeServe = [
-    'Retail (Supermarkets, Boutiques, Electronics Stores)',
-    'Restaurants & Cafés',
-    'Salons & Spas',
-    'Pharmacies',
-    'Bookstores & Stationery',
-    'Multi-Chain Franchises',
-  ];
-
-  const whyChoosePoints = [
-    'Custom-built POS apps tailored to your business workflows',
-    'Cross-platform solutions for desktop, mobile, and web',
-    'Secure payment integrations (UPI, credit cards, wallets)',
-    'User-friendly interface for fast learning and easy adoption',
-    'Robust backend with admin controls and cloud support',
-    'End-to-end support—from development to deployment and maintenance',
+    'Retail & E-commerce',
+    'Manufacturing',
+    'Automotive',
+    'Pharmaceutical',
+    'Food & Beverage',
+    'Logistics Providers',
   ];
 
   return (
@@ -74,7 +66,7 @@ export default function POSClient() {
                 }}
               >
                 <span className="inline-block w-[8px] h-[8px] sm:w-[12px] sm:h-[12px] md:w-[14px] md:h-[14px] rounded-full bg-[#1a1a1a] mr-2.5 sm:mr-3.5 align-baseline"></span>
-                POINT OF SALE (POS) APPLICATION
+                SUPPLY CHAIN MANAGEMENT
               </h1>
               <p
                 className="text-[#1a1a1a] w-full text-justify text-[16px] md:text-[18px] leading-relaxed mb-6"
@@ -83,7 +75,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                Our POS solutions are designed to simplify your sales operations, enhance customer experience, and optimize inventory management. Whether you run a retail store, restaurant, or multi-chain business, we deliver secure, scalable, and easy-to-use POS applications tailored to your needs.
+                We deliver smart and agile supply chain management (SCM) solutions to help businesses improve demand forecasting, reduce operational costs, and enhance overall supply chain visibility. From procurement to final delivery, we support every stage of your logistics and distribution network.
               </p>
             </div>
           </div>
@@ -93,7 +85,7 @@ export default function POSClient() {
             <div className="w-full overflow-hidden">
               <img
                 src="/assets/web/images/why-designdot.jpg"
-                alt="Point of Sale (POS) Application"
+                alt="Supply Chain Management"
                 className="w-full h-[250px] md:h-[400px] lg:h-[500px] object-cover sticky top-[100px]"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/why-designdot.jpg';
@@ -102,9 +94,40 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* TOP FEATURES IN OUR POS APPLICATIONS */}
-          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-14">
+          {/* OUR END-TO-END SCM SERVICES */}
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
             <div className="w-full pt-2">
+              <h2
+                className="text-[#1a1a1a] uppercase mb-6 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
+                style={{
+                  fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'",
+                  letterSpacing: '0.5px',
+                }}
+              >
+                OUR END-TO-END SCM SERVICES
+              </h2>
+
+              <ul className="space-y-2.5 ml-2">
+                {scmServices.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
+                    <span
+                      className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
+                      style={{
+                        fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
+                      }}
+                    >
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* KEY BENEFITS OF OUR SUPPLY CHAIN SOLUTIONS */}
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-14">
+            <div className="w-full">
               <h2
                 className="text-[#1a1a1a] uppercase mb-8 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
                 style={{
@@ -112,11 +135,11 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                TOP FEATURES IN OUR POS APPLICATIONS
+                KEY BENEFITS OF OUR SUPPLY CHAIN SOLUTIONS
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {topFeaturesCards.map((card, index) => (
+                {keyBenefitsCards.map((card, index) => (
                   <div
                     key={index}
                     className="group relative rounded-lg border border-[#e0d8d0] border-l-[4px] border-l-[#f27820] p-6 sm:p-8 flex flex-col justify-start bg-white text-slate-800 hover:bg-[#f27820] hover:text-white hover:border-[#f27820] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] transform hover:-translate-y-2.5 hover:shadow-2xl cursor-pointer overflow-hidden"
@@ -194,38 +217,7 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* WHY CHOOSE US FOR POS DEVELOPMENT? */}
-          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
-            <div className="w-full">
-              <h2
-                className="text-[#1a1a1a] uppercase mb-6 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
-                style={{
-                  fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'",
-                  letterSpacing: '0.5px',
-                }}
-              >
-                WHY CHOOSE US FOR POS DEVELOPMENT?
-              </h2>
-
-              <ul className="space-y-2.5 ml-2">
-                {whyChoosePoints.map((point, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
-                    <span
-                      className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
-                      style={{
-                        fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
-                      }}
-                    >
-                      {point}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* LET'S BUILD YOUR POS SOLUTION */}
+          {/* LET'S ELEVATE YOUR SUPPLY CHAIN */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-16">
             <div className="w-full">
               <h2
@@ -235,7 +227,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                LET&apos;S BUILD YOUR POS SOLUTION
+                LET&apos;S ELEVATE YOUR SUPPLY CHAIN
               </h2>
               <p
                 className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
@@ -243,7 +235,7 @@ export default function POSClient() {
                   fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
                 }}
               >
-                Whether you need a simple billing system or a full-scale cloud-based POS platform, we can deliver it. Contact us today to explore how our POS development expertise can streamline your business operations.
+                Our team is ready to help you design, implement, and manage an optimized supply chain that brings value to your business. Let&apos;s build a resilient, responsive, and high-performance SCM ecosystem together.
               </p>
             </div>
           </div>

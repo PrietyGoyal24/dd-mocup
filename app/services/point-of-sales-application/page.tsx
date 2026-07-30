@@ -2,9 +2,8 @@ import { Metadata } from 'next';
 import POSClient from '@/components/pages/Services/POSClient';
 
 export const metadata: Metadata = {
-  title: 'POS - Point of Sales Application Development | DesignDot',
-  description:
-    'Transform the way you sell with a powerful, intuitive, and fully integrated Point of Sales (POS) application from Designdot.',
+  title: 'POS Point Of Sales Application | Digital Transformation | DesignDot',
+  description: 'Transform the way you sell with a powerful, intuitive, and fully integrated Point of Sales (POS) application.',
   robots: 'index, follow',
 };
 

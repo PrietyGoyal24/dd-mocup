@@ -61,6 +61,80 @@ import ContentStrategyClient from '@/components/pages/Services/ContentStrategyCl
 import MarketResearchClient from '@/components/pages/Services/MarketResearchClient';
 import SketchStoryBuildingClient from '@/components/pages/Services/SketchStoryBuildingClient';
 import MotionDesignClient from '@/components/pages/Services/MotionDesignClient';
+import PaidAdvertisingClient from '@/components/pages/Services/PaidAdvertisingClient';
+import SearchEngineOptimizationClient from '@/components/pages/Services/SearchEngineOptimizationClient';
+import SpecializedECommerceSEOClient from '@/components/pages/Services/SpecializedECommerceSEOClient';
+import SocialMediaMarketingClient from '@/components/pages/Services/SocialMediaMarketingClient';
+import ContentMarketingClient from '@/components/pages/Services/ContentMarketingClient';
+import ConversionRateOptimizationClient from '@/components/pages/Services/ConversionRateOptimizationClient';
+import MobileAdvertisingClient from '@/components/pages/Services/MobileAdvertisingClient';
+import BrandManagementClient from '@/components/pages/Services/BrandManagementClient';
+import InfluencerMarketingClient from '@/components/pages/Services/InfluencerMarketingClient';
+import InternetAdvertisingClient from '@/components/pages/Services/InternetAdvertisingClient';
+import InternetOfThingsClient from '@/components/pages/Services/InternetOfThingsClient';
+import WearableAppDevelopmentClient from '@/components/pages/Services/WearableAppDevelopmentClient';
+import EnterpriseSolutionsClient from '@/components/pages/Services/EnterpriseSolutionsClient';
+import ITConsultingClient from '@/components/pages/Services/ITConsultingClient';
+import EnterpriseMobilityServicesClient from '@/components/pages/Services/EnterpriseMobilityServicesClient';
+import SoftwareConsultingClient from '@/components/pages/Services/SoftwareConsultingClient';
+import AIMarketplaceEngineClient from '@/components/pages/Services/AIMarketplaceEngineClient';
+import DigitalProductEngineeringClient from '@/components/pages/Services/DigitalProductEngineeringClient';
+import AIChatbotDevelopmentClient from '@/components/pages/Services/AIChatbotDevelopmentClient';
+import DAppsDevelopmentClient from '@/components/pages/Services/DAppsDevelopmentClient';
+import ARVRDevelopmentClient from '@/components/pages/Services/ARVRDevelopmentClient';
+import NFTMarketplaceClient from '@/components/pages/Services/NFTMarketplaceClient';
+import EncryptedVideoStreamingClient from '@/components/pages/Services/EncryptedVideoStreamingClient';
+import MetaverseClient from '@/components/pages/Services/MetaverseClient';
+import IBeaconAppDevelopmentClient from '@/components/pages/Services/IBeaconAppDevelopmentClient';
+import CryptocurrencyWalletClient from '@/components/pages/Services/CryptocurrencyWalletClient';
+import IWatchAppDevelopmentClient from '@/components/pages/Services/IWatchAppDevelopmentClient';
+import BlockchainApplicationClient from '@/components/pages/Services/BlockchainApplicationClient';
+import WarehouseManagementClient from '@/components/pages/Services/WarehouseManagementClient';
+import QualityAssuranceTestingClient from '@/components/pages/Services/QualityAssuranceTestingClient';
+import SupportClient from '@/components/pages/Services/SupportClient';
+import MarketingAndAdvertisingClient from '@/components/pages/Services/MarketingAndAdvertisingClient';
+import BusinessIntelligenceClient from '@/components/pages/Services/BusinessIntelligenceClient';
+import KioskSoftwareClient from '@/components/pages/Services/KioskSoftwareClient';
+import PortalPortletDevelopmentClient from '@/components/pages/Services/PortalPortletDevelopmentClient';
+import OperationsManagementClient from '@/components/pages/Services/OperationsManagementClient';
+import CMSDevelopmentClient from '@/components/pages/Services/CMSDevelopmentClient';
+import SupplyChainManagementClient from '@/components/pages/Services/SupplyChainManagementClient';
+import CRMApplicationClient from '@/components/pages/Services/CRMApplicationClient';
+import ECommerceApplicationClient from '@/components/pages/Services/ECommerceApplicationClient';
+import EnterpriseAssetManagementClient from '@/components/pages/Services/EnterpriseAssetManagementClient';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -155,10 +229,15 @@ export default async function ServicePage({ params }: PageProps) {
   if (
     slug === 'pos-point-of-sales-application' ||
     slug === 'point-of-sales-application' ||
-    slug === 'pos-point-of-sales'
+    slug === 'point-of-sales-application-solutions' ||
+    slug === 'point-of-sale-application' ||
+    slug === 'pos-point-of-sales' ||
+    slug === 'pos-application' ||
+    slug === 'pos'
   ) {
     return <POSClient />;
   }
+
 
   if (slug === 'full-stack-development') {
     return <FullStackClient />;
@@ -468,6 +547,382 @@ export default async function ServicePage({ params }: PageProps) {
   ) {
     return <MotionDesignClient />;
   }
+
+  if (
+    slug === 'paid-advertising' ||
+    slug === 'paid-advertising-services' ||
+    slug === 'ppc-advertising'
+  ) {
+    return <PaidAdvertisingClient />;
+  }
+
+  if (
+    slug === 'search-engine-optimization' ||
+    slug === 'search-engine-optimization-services' ||
+    slug === 'seo'
+  ) {
+    return <SearchEngineOptimizationClient />;
+  }
+
+  if (
+    slug === 'specialized-ecommerce-seo' ||
+    slug === 'specialized-ecommerce-seo-services' ||
+    slug === 'ecommerce-seo'
+  ) {
+    return <SpecializedECommerceSEOClient />;
+  }
+
+  if (
+    slug === 'social-media-marketing' ||
+    slug === 'social-media-marketing-services' ||
+    slug === 'smm'
+  ) {
+    return <SocialMediaMarketingClient />;
+  }
+
+  if (
+    slug === 'content-marketing' ||
+    slug === 'content-writing' ||
+    slug === 'content-marketing-services'
+  ) {
+    return <ContentMarketingClient />;
+  }
+
+  if (
+    slug === 'conversion-rate-optimization' ||
+    slug === 'conversion-rate-optimization-cro' ||
+    slug === 'cro'
+  ) {
+    return <ConversionRateOptimizationClient />;
+  }
+
+  if (
+    slug === 'mobile-advertising' ||
+    slug === 'mobile-advertising-services' ||
+    slug === 'mobile-marketing'
+  ) {
+    return <MobileAdvertisingClient />;
+  }
+
+  if (
+    slug === 'brand-management' ||
+    slug === 'brand-management-services'
+  ) {
+    return <BrandManagementClient />;
+  }
+
+  if (
+    slug === 'influencer-marketing' ||
+    slug === 'influencer-marketing-services'
+  ) {
+    return <InfluencerMarketingClient />;
+  }
+
+  if (
+    slug === 'internet-advertising' ||
+    slug === 'internet-advertising-services' ||
+    slug === 'online-advertising'
+  ) {
+    return <InternetAdvertisingClient />;
+  }
+
+  if (
+    slug === 'internet-of-things' ||
+    slug === 'iot' ||
+    slug === 'iot-solutions'
+  ) {
+    return <InternetOfThingsClient />;
+  }
+
+  if (
+    slug === 'wearable-app-development' ||
+    slug === 'wearable-app-solutions' ||
+    slug === 'wearable-apps'
+  ) {
+    return <WearableAppDevelopmentClient />;
+  }
+
+  if (
+    slug === 'enterprise-solutions' ||
+    slug === 'enterprise-software-solutions'
+  ) {
+    return <EnterpriseSolutionsClient />;
+  }
+
+  if (
+    slug === 'it-consulting' ||
+    slug === 'it-consulting-services'
+  ) {
+    return <ITConsultingClient />;
+  }
+
+  if (
+    slug === 'enterprise-mobility-services' ||
+    slug === 'enterprise-mobility'
+  ) {
+    return <EnterpriseMobilityServicesClient />;
+  }
+
+  if (
+    slug === 'software-consulting' ||
+    slug === 'software-consulting-services'
+  ) {
+    return <SoftwareConsultingClient />;
+  }
+
+  if (
+    slug === 'ai-marketplace-engine' ||
+    slug === 'ai-marketplace'
+  ) {
+    return <AIMarketplaceEngineClient />;
+  }
+
+  if (
+    slug === 'digital-product-engineering' ||
+    slug === 'product-engineering'
+  ) {
+    return <DigitalProductEngineeringClient />;
+  }
+
+  if (
+    slug === 'ai-chatbot-development' ||
+    slug === 'ai-chatbot' ||
+    slug === 'chatbot-development'
+  ) {
+    return <AIChatbotDevelopmentClient />;
+  }
+
+  if (
+    slug === 'dapps-development' ||
+    slug === 'dapp-development' ||
+    slug === 'dapps'
+  ) {
+    return <DAppsDevelopmentClient />;
+  }
+
+  if (
+    slug === 'ar-vr-development' ||
+    slug === 'ar-vr' ||
+    slug === 'ar-vr-development-services'
+  ) {
+    return <ARVRDevelopmentClient />;
+  }
+
+  if (
+    slug === 'nft-marketplace' ||
+    slug === 'NFT-marketplace' ||
+    slug === 'nft-marketplace-development'
+  ) {
+    return <NFTMarketplaceClient />;
+  }
+
+  if (
+    slug === 'encrypted-video-streaming' ||
+    slug === 'video-streaming' ||
+    slug === 'encrypted-video-streaming-services'
+  ) {
+    return <EncryptedVideoStreamingClient />;
+  }
+
+  if (
+    slug === 'metaverse' ||
+    slug === 'metaverse-development' ||
+    slug === 'metaverse-solutions'
+  ) {
+    return <MetaverseClient />;
+  }
+
+  if (
+    slug === 'ibeacon-app-development' ||
+    slug === 'ibeacon-app' ||
+    slug === 'ibeacon'
+  ) {
+    return <IBeaconAppDevelopmentClient />;
+  }
+
+  if (
+    slug === 'cryptocurrency-wallet' ||
+    slug === 'cryptocurrency-wallet-development' ||
+    slug === 'crypto-wallet'
+  ) {
+    return <CryptocurrencyWalletClient />;
+  }
+
+  if (
+    slug === 'iot-development' ||
+    slug === 'internet-of-things' ||
+    slug === 'iot'
+  ) {
+    return <InternetOfThingsClient />;
+  }
+
+  if (
+    slug === 'point-of-sales-application' ||
+    slug === 'point-of-sale-application' ||
+    slug === 'pos-application' ||
+    slug === 'pos'
+  ) {
+    return <POSClient />;
+  }
+
+  if (
+    slug === 'iwatch-app-development' ||
+    slug === 'iwatch-app' ||
+    slug === 'iwatch'
+  ) {
+    return <IWatchAppDevelopmentClient />;
+  }
+
+  if (
+    slug === 'blockchain-application-development' ||
+    slug === 'blockchain-application' ||
+    slug === 'blockchain'
+  ) {
+    return <BlockchainApplicationClient />;
+  }
+
+  if (
+    slug === 'warehouse-management-system' ||
+    slug === 'warehouse-management' ||
+    slug === 'wms'
+  ) {
+    return <WarehouseManagementClient />;
+  }
+
+  if (
+    slug === 'quality-assurance-testing' ||
+    slug === 'quality-assurance' ||
+    slug === 'qa-testing' ||
+    slug === 'qa'
+  ) {
+    return <QualityAssuranceTestingClient />;
+  }
+
+  if (
+    slug === 'support' ||
+    slug === 'it-support' ||
+    slug === 'maintenance-and-support' ||
+    slug === 'software-support'
+  ) {
+    return <SupportClient />;
+  }
+
+  if (
+    slug === 'marketing-and-advertising' ||
+    slug === 'marketing-advertising' ||
+    slug === 'marketing-and-advertising-services'
+  ) {
+    return <MarketingAndAdvertisingClient />;
+  }
+
+  if (
+    slug === 'business-intelligence' ||
+    slug === 'business-intelligence-services' ||
+    slug === 'bi' ||
+    slug === 'bi-services'
+  ) {
+    return <BusinessIntelligenceClient />;
+  }
+
+  if (
+    slug === 'kiosk-software' ||
+    slug === 'kiosk-development' ||
+    slug === 'kiosk'
+  ) {
+    return <KioskSoftwareClient />;
+  }
+
+  if (
+    slug === 'portal-portlet-development' ||
+    slug === 'portal-development' ||
+    slug === 'portlet-development' ||
+    slug === 'portal-and-portlet-development'
+  ) {
+    return <PortalPortletDevelopmentClient />;
+  }
+
+  if (
+    slug === 'operations-management' ||
+    slug === 'operations-management-solutions' ||
+    slug === 'operations'
+  ) {
+    return <OperationsManagementClient />;
+  }
+
+  if (
+    slug === 'cms' ||
+    slug === 'cms-development' ||
+    slug === 'cms-development-services'
+  ) {
+    return <CMSDevelopmentClient />;
+  }
+
+  if (
+    slug === 'supply-chain-management' ||
+    slug === 'supply-chain' ||
+    slug === 'scm' ||
+    slug === 'supply-chain-management-solutions'
+  ) {
+    return <SupplyChainManagementClient />;
+  }
+
+  if (
+    slug === 'crm-application' ||
+    slug === 'crm' ||
+    slug === 'crm-application-development' ||
+    slug === 'crm-application-development-services'
+  ) {
+    return <CRMApplicationClient />;
+  }
+
+  if (
+    slug === 'ecommerce-application' ||
+    slug === 'ecommerce' ||
+    slug === 'e-commerce-application' ||
+    slug === 'ecommerce-development'
+  ) {
+    return <ECommerceApplicationClient />;
+  }
+
+  if (
+    slug === 'enterprise-asset-management' ||
+    slug === 'eam' ||
+    slug === 'enterprise-asset-management-solutions'
+  ) {
+    return <EnterpriseAssetManagementClient />;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   const service = SERVICE_BY_SLUG[slug];
 

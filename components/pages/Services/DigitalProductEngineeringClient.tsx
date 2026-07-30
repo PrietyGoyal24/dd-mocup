@@ -4,58 +4,49 @@ import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/layout/Footer/Footer';
 
-export default function POSClient() {
-  const topFeaturesCards = [
+export default function DigitalProductEngineeringClient() {
+  const offerItems = [
     {
-      title: 'Billing & Invoicing',
-      desc: 'Fast, accurate billing with options for receipts, tax handling, discounts, and multiple payment modes.',
+      num: '1.',
+      title: 'Product Strategy & Ideation',
+      desc: 'We collaborate with you to define a clear product roadmap aligned with business goals, user needs, and market demand.',
     },
     {
-      title: 'Inventory Management',
-      desc: 'Track stock levels, manage reorders, get low stock alerts, and organize inventory across multiple locations.',
+      num: '2.',
+      title: 'Experience Design (UX/UI)',
+      desc: 'Craft engaging digital experiences through intuitive interfaces and user-centered design practices.',
     },
     {
-      title: 'Customer Management',
-      desc: 'Maintain customer data, purchase history, and offer loyalty programs or promotions.',
+      num: '3.',
+      title: 'Agile Product Development',
+      desc: 'Build scalable, secure, and high-performance digital products using modern technologies and agile methodologies.',
     },
     {
-      title: 'Multi-terminal Support',
-      desc: 'Manage multiple POS terminals within one store or across different branches with central control.',
+      num: '4.',
+      title: 'MVP Development',
+      desc: 'Launch quickly with a Minimum Viable Product to validate your concept and iterate based on real user feedback.',
     },
     {
-      title: 'Barcode Scanning',
-      desc: 'Seamless product scanning and code generation for quick checkout and inventory updates.',
-    },
-    {
-      title: 'Sales Reporting',
-      desc: 'Real-time data insights into your sales, top products, trends, and employee performance.',
-    },
-    {
-      title: 'Online/Offline Sync',
-      desc: 'Continue processing sales even when internet is down—auto-syncs when connection resumes.',
-    },
-    {
-      title: 'Mobile POS',
-      desc: 'Enable transactions on tablets and mobile devices with touch-friendly interfaces and cloud sync.',
+      num: '5.',
+      title: 'Product Modernization',
+      desc: 'Re-engineer legacy products with new technologies, improved architecture, and enhanced user experience.',
     },
   ];
 
-  const industriesWeServe = [
-    'Retail (Supermarkets, Boutiques, Electronics Stores)',
-    'Restaurants & Cafés',
-    'Salons & Spas',
-    'Pharmacies',
-    'Bookstores & Stationery',
-    'Multi-Chain Franchises',
+  const industriesServed = [
+    'Fintech & Banking',
+    'Healthcare & Life Sciences',
+    'Retail & eCommerce',
+    'Education & eLearning',
+    'Logistics & Transportation',
   ];
 
   const whyChoosePoints = [
-    'Custom-built POS apps tailored to your business workflows',
-    'Cross-platform solutions for desktop, mobile, and web',
-    'Secure payment integrations (UPI, credit cards, wallets)',
-    'User-friendly interface for fast learning and easy adoption',
-    'Robust backend with admin controls and cloud support',
-    'End-to-end support—from development to deployment and maintenance',
+    'End-to-end product lifecycle management',
+    'Cross-functional expert teams',
+    'Rapid prototyping & time-to-market',
+    'Cloud-native, mobile-first solutions',
+    'Continuous product innovation & support',
   ];
 
   return (
@@ -74,7 +65,7 @@ export default function POSClient() {
                 }}
               >
                 <span className="inline-block w-[8px] h-[8px] sm:w-[12px] sm:h-[12px] md:w-[14px] md:h-[14px] rounded-full bg-[#1a1a1a] mr-2.5 sm:mr-3.5 align-baseline"></span>
-                POINT OF SALE (POS) APPLICATION
+                DIGITAL PRODUCT ENGINEERING
               </h1>
               <p
                 className="text-[#1a1a1a] w-full text-justify text-[16px] md:text-[18px] leading-relaxed mb-6"
@@ -83,7 +74,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                Our POS solutions are designed to simplify your sales operations, enhance customer experience, and optimize inventory management. Whether you run a retail store, restaurant, or multi-chain business, we deliver secure, scalable, and easy-to-use POS applications tailored to your needs.
+                We empower businesses to conceptualize, build, and scale cutting-edge digital products. From ideation and prototyping to development and continuous enhancement, our Digital Product Engineering services are designed to bring your vision to life.
               </p>
             </div>
           </div>
@@ -93,7 +84,7 @@ export default function POSClient() {
             <div className="w-full overflow-hidden">
               <img
                 src="/assets/web/images/why-designdot.jpg"
-                alt="Point of Sale (POS) Application"
+                alt="Digital Product Engineering"
                 className="w-full h-[250px] md:h-[400px] lg:h-[500px] object-cover sticky top-[100px]"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = '/why-designdot.jpg';
@@ -102,8 +93,8 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* TOP FEATURES IN OUR POS APPLICATIONS */}
-          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-14">
+          {/* OUR DIGITAL PRODUCT ENGINEERING SERVICES INCLUDE: */}
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-10">
             <div className="w-full pt-2">
               <h2
                 className="text-[#1a1a1a] uppercase mb-8 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
@@ -112,50 +103,27 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                TOP FEATURES IN OUR POS APPLICATIONS
+                OUR DIGITAL PRODUCT ENGINEERING SERVICES INCLUDE:
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {topFeaturesCards.map((card, index) => (
-                  <div
-                    key={index}
-                    className="group relative rounded-lg border border-[#e0d8d0] border-l-[4px] border-l-[#f27820] p-6 sm:p-8 flex flex-col justify-start bg-white text-slate-800 hover:bg-[#f27820] hover:text-white hover:border-[#f27820] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] transform hover:-translate-y-2.5 hover:shadow-2xl cursor-pointer overflow-hidden"
-                  >
-                    <div className="mb-5">
-                      <div className="w-[52px] h-[52px] rounded-lg flex items-center justify-center bg-[#fcf3ec] text-[#f27820] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:bg-white group-hover:text-[#f27820]">
-                        <svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="3.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="w-[28px] h-[28px]"
-                        >
-                          <circle cx="12" cy="12" r="10" />
-                          <polyline points="8.5 12 11 14.5 15.5 10" />
-                        </svg>
-                      </div>
-                    </div>
+              <div className="space-y-6">
+                {offerItems.map((item, index) => (
+                  <div key={index} className="space-y-1">
                     <h3
-                      className="mb-3 text-[18px] md:text-[20px] font-bold"
+                      className="text-[#1a1a1a] text-[16px] md:text-[18px] font-bold"
                       style={{
-                        fontFamily: "'GTWalsheimPro-Bold'",
-                        letterSpacing: '0.2px',
+                        fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'",
                       }}
                     >
-                      {card.title}
+                      {item.num} {item.title}
                     </h3>
                     <p
-                      className="text-[#1a1a1a] group-hover:text-white/95 transition-colors duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]"
+                      className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
                       style={{
-                        fontFamily: "'GTWalsheimPro-Regular'",
-                        fontSize: '16px',
-                        lineHeight: '24px',
-                        fontWeight: 400,
+                        fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
                       }}
                     >
-                      {card.desc}
+                      {item.desc}
                     </p>
                   </div>
                 ))}
@@ -163,8 +131,8 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* INDUSTRIES WE SERVE */}
-          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+          {/* INDUSTRIES WE SERVE: */}
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-10">
             <div className="w-full">
               <h2
                 className="text-[#1a1a1a] uppercase mb-6 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
@@ -173,11 +141,11 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                INDUSTRIES WE SERVE
+                INDUSTRIES WE SERVE:
               </h2>
 
               <ul className="space-y-2.5 ml-2">
-                {industriesWeServe.map((item, index) => (
+                {industriesServed.map((point, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-[#1a1a1a] mr-3 font-bold text-[16px] leading-relaxed">•</span>
                     <span
@@ -186,7 +154,7 @@ export default function POSClient() {
                         fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
                       }}
                     >
-                      {item}
+                      {point}
                     </span>
                   </li>
                 ))}
@@ -194,8 +162,8 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* WHY CHOOSE US FOR POS DEVELOPMENT? */}
-          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-12">
+          {/* WHY CHOOSE US? */}
+          <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-10">
             <div className="w-full">
               <h2
                 className="text-[#1a1a1a] uppercase mb-6 text-[20px] sm:text-[22px] md:text-[24px] font-bold"
@@ -204,7 +172,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                WHY CHOOSE US FOR POS DEVELOPMENT?
+                WHY CHOOSE US?
               </h2>
 
               <ul className="space-y-2.5 ml-2">
@@ -225,7 +193,7 @@ export default function POSClient() {
             </div>
           </div>
 
-          {/* LET'S BUILD YOUR POS SOLUTION */}
+          {/* LET'S BUILD YOUR NEXT BIG PRODUCT */}
           <div className="w-full px-6 lg:pl-[104px] lg:pr-[111px] pb-16">
             <div className="w-full">
               <h2
@@ -235,7 +203,7 @@ export default function POSClient() {
                   letterSpacing: '0.5px',
                 }}
               >
-                LET&apos;S BUILD YOUR POS SOLUTION
+                LET&apos;S BUILD YOUR NEXT BIG PRODUCT
               </h2>
               <p
                 className="text-[#1a1a1a] text-[15px] md:text-[16px] leading-relaxed"
@@ -243,7 +211,7 @@ export default function POSClient() {
                   fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'",
                 }}
               >
-                Whether you need a simple billing system or a full-scale cloud-based POS platform, we can deliver it. Contact us today to explore how our POS development expertise can streamline your business operations.
+                Whether you&apos;re a startup with a disruptive idea or an enterprise transforming digitally, we help engineer impactful digital products that deliver real business outcomes.
               </p>
             </div>
           </div>
