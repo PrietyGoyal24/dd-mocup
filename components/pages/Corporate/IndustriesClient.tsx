@@ -166,18 +166,22 @@ export default function IndustriesClient() {
               </video>
               <div className="absolute inset-0 bg-black/25 flex items-center justify-left p-46 text-center pointer-events-none">
                 <h1
-                  className="text-white text-[44px] sm:text-[68px] lg:text-[75px] uppercase font-bold tracking-widest drop-shadow-md"
+                  className="text-white text-[44px] sm:text-[68px] lg:text-[75px] uppercase font-bold tracking-wider drop-shadow-md inline-block"
                   style={{ fontFamily: "'SocialGothic-Bold', 'GT-Walsheim-Pro'" }}
                 >
-                  INDUSTRIES.
+                  INDUSTRIES
+                  <span className="inline-block w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 rounded-full bg-white ml-1 sm:ml-3 align-baseline"></span>
                 </h1>
               </div>
+
+
             </div>
           </div>
 
 
           {/* Main Heading & 2-Column Grid */}
-          <div className="w-full px-6 lg:px-[98px] py-8 sm:py-1 bg-[#fcf5f5]">
+          <div className="w-full px-6 lg:px-[98px] pt-8 sm:pt-1 pb-28 sm:pb-36 bg-[#fcf5f5]">
+
             {/* Section Main Heading with Letter Spacing */}
             <div className="mb-14">
               <h2
