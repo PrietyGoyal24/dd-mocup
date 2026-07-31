@@ -509,9 +509,9 @@ export default function CareerClient() {
                 </div>
 
                 {/* Row 6: Security Code & Submit Button */}
-                <div className="pt-4 flex flex-col gap-6">
-                  <div className="max-w-md flex items-center gap-3">
-                    <div className="flex-1 relative">
+                <div className="pt-4 flex flex-col gap-8">
+                  <div className="w-full flex items-center gap-4">
+                    <div className="flex-1 relative border-b border-[#f27820]">
                       <input
                         type="text"
                         name="securityCodeInput"
@@ -519,8 +519,7 @@ export default function CareerClient() {
                         placeholder="Enter Security Code → *"
                         value={resumeFormData.securityCodeInput}
                         onChange={handleResumeInputChange}
-                        className={`w-full bg-transparent border-b ${securityError ? 'border-red-600' : 'border-[#f27820]'
-                          } py-3 text-[16px] text-[#111111] placeholder:text-[#888888] focus:outline-none`}
+                        className="w-full bg-transparent py-3 text-[16px] text-[#111111] placeholder:text-[#888888] focus:outline-none"
                       />
                       {securityError && (
                         <span className="absolute left-0 -bottom-6 text-[12px] text-red-600 font-semibold">
@@ -532,7 +531,7 @@ export default function CareerClient() {
                     <div
                       onClick={generateRandomCode}
                       title="Click to generate new security code"
-                      className="bg-[#f27820] hover:bg-[#d96716] text-white font-bold text-[22px] px-6 py-2 tracking-widest cursor-pointer select-none shrink-0 transition-colors"
+                      className="bg-[#f27820] hover:bg-[#d96716] text-white font-bold text-[20px] px-6 py-2 tracking-widest cursor-pointer select-none shrink-0 transition-colors"
                       style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'" }}
                     >
                       {generatedCode}
