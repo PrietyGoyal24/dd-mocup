@@ -418,7 +418,7 @@ export default function AboutUsClient() {
           {/* Section Four: OUR PROCESS */}
           <div className="w-full bg-white py-20 pl-0 pr-6 lg:pl-0 lg:pr-[98px]">
             <div className="flex flex-col lg:flex-row items-stretch">
-              {/* Left Banner Image Container with top-aligned OUR PROCESS matching Step 1 */}
+              {/* Left Banner Image Container */}
               <div className="sec-left-banner relative w-full lg:w-[950px] shrink-0 min-h-[600px] lg:min-h-[1950px]">
                 <img
                   src="https://dd.mocup.in/assets/web/images/about-4-banner.jpg"
@@ -436,7 +436,8 @@ export default function AboutUsClient() {
                 </div>
               </div>
 
-              {/* Right Steps timeline Section - Segmented Vertical Line Pattern matching Real Website (2nd image) */}
+              {/* Right Steps Timeline Section */}
+
               <div className="sec-right flex-1 pl-6 lg:pl-[50px] pt-0">
                 <div className="flex flex-col">
                   {processSteps.map((step, idx) => (

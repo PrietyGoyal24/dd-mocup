@@ -136,18 +136,19 @@ export default function IndustriesClient() {
   return (
     <div className="w-full min-h-screen bg-[#fcf5f5] text-[#111111] overflow-x-hidden selection:bg-[#f27820] selection:text-white flex flex-col justify-between">
       <div>
-        {/* Pass theme="light" for white navbar matching 4th image from real website */}
+        {/* Light theme Navbar */}
         <Navbar theme="light" />
 
         <main className="pt-40 sm:pt-48">
-          {/* Top Title Pill - Matching Header background color & navy badge */}
+          {/* Page Title Header Badge */}
           <div className="w-full bg-[#fcf5f5] px-6 lg:px-[98px] pt-8 pb-14 text-center">
             <div className="inline-block bg-[#083169] text-white text-[15px] sm:text-[28px] font-bold px-2 py-1 uppercase tracking-wider">
               INDUSTRIES.
             </div>
           </div>
 
-          {/* Autoplay Video Section - Matching AboutUsClient Video Banner exact size */}
+          {/* Autoplay Video Banner Section */}
+
           <div className="w-full px-4 sm:px-6 lg:pl-[98px] lg:pr-[98px] pb-16">
             <div className="relative w-full overflow-hidden shadow-2xl bg-[#efefef] max-h-[820px]">
               <video
