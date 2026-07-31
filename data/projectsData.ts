@@ -18,12 +18,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Ecommerce Portal | UI UX Design | Html 5 | CSS3 | Javascript | Hosting | AMC | Hospital Application",
     "image": "/images/projects/1725251565_drbrownslab-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/drbrownslab"
   },
   {
@@ -34,12 +36,11 @@ export const projectsData: ProjectItem[] = [
     "description": "UI UX | Project architecture, CMS, Database driven",
     "image": "/images/projects/1725252567_nmaclab-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/northshore-medical-laboratory"
   },
   {
@@ -50,12 +51,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Design Consultancy | Illustration | CMS | Php Codeigniter | Database | Image Creation",
     "image": "/images/projects/1725253748_maven-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/maven-magnet"
   },
   {
@@ -66,12 +69,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Branding | Research | Bespoke Designer | Website Design | Statinary Design | Digital Media Marketing Management",
     "image": "/images/projects/1725254897_mode-next-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/modenext"
   },
   {
@@ -82,12 +86,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Website, Brand Strategy, Visualisation",
     "image": "/images/projects/1725255780_platobath-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/plato-bath"
   },
   {
@@ -98,12 +102,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Research | Digital Audit | UX Strategy | UI Design",
     "image": "/images/projects/1725257877_mgtwell-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/mgtwell-consulting-services"
   },
   {
@@ -114,12 +119,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Web Portal | UI UX Design | Html 5 | CSS3 | Javascript | Hosting | AMC | Cloud Application",
     "image": "/images/projects/1725259411_icomos-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/icomos-india"
   },
   {
@@ -130,12 +136,13 @@ export const projectsData: ProjectItem[] = [
     "description": "UI UX Design | Html 5 | CSS3 | Javascript | Portfolio Web Site",
     "image": "/images/projects/1725261973_sbose-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/sbose"
   },
   {
@@ -146,12 +153,15 @@ export const projectsData: ProjectItem[] = [
     "description": "Research | Digital Audit | UX Strategy | UI Design",
     "image": "/images/projects/1725262654_arled-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/arled"
   },
   {
@@ -162,12 +172,13 @@ export const projectsData: ProjectItem[] = [
     "description": "UI UX Design | Html 5 | CSS3 | Javascript | Portfolio Web Site",
     "image": "/images/projects/1725264104_srijan-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/srijan-sanrakshan"
   },
   {
@@ -178,12 +189,11 @@ export const projectsData: ProjectItem[] = [
     "description": "UI UX Design | Codeignitor | CSS3 | Javascript | Ecommerce",
     "image": "/images/projects/1725264465_ihh-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/india-cultural-heritage-center"
   },
   {
@@ -194,12 +204,14 @@ export const projectsData: ProjectItem[] = [
     "description": "UI UX Design | Html 5 | CSS3 | Javascript | Realestate web portal | brand development | Logo Development | graphic Design",
     "image": "/images/projects/1725265113_propcheck-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/propcheck"
   },
   {
@@ -210,12 +222,15 @@ export const projectsData: ProjectItem[] = [
     "description": "UI UX Design | Html 5 | CSS3 | Javascript | web portal | brand development | graphic Design",
     "image": "/images/projects/1725265803_festiveofplace-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/festival-of-places"
   },
   {
@@ -226,12 +241,12 @@ export const projectsData: ProjectItem[] = [
     "description": "UI UX Design | Html 5 | CSS3 | Javascript | Portfolio Web Site",
     "image": "/images/projects/1725266813_northstarhomes-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/north-star-homes"
   },
   {
@@ -242,12 +257,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Consultancy | Digital Media | Design | Creativity",
     "image": "/images/projects/1725267194_propright-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "advertising",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/propright"
   },
   {
@@ -258,12 +275,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Research | Digital Audit | UX Strategy | UI Design",
     "image": "/images/projects/1725271222_aeiforia-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/aeiforia-architects"
   },
   {
@@ -274,12 +292,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Brand Strategy | Visualisation",
     "image": "/images/projects/1725271680_beston-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/beston-international-united-schools"
   },
   {
@@ -290,12 +307,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Website Design Development | Maintenance & Support",
     "image": "/images/projects/1725272323_cinevidya-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/cinevidya-wow-opc-"
   },
   {
@@ -306,12 +323,9 @@ export const projectsData: ProjectItem[] = [
     "description": "Responsive Website | Web Hosting | AMC / Support | Web Promotion | Customize CMS",
     "image": "/images/projects/1725272763_ata-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild"
+      ],
     "link": "https://dd.mocup.in/projects/aishwarya-tipnis-architects"
   },
   {
@@ -322,12 +336,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Maintenance and Support",
     "image": "/images/projects/1725273281_bose-brothers-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/bose-brothers-architects"
   },
   {
@@ -338,12 +353,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Web Site Design",
     "image": "/images/projects/1725273671_hlx-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/helix-healthcare-architecture"
   },
   {
@@ -354,12 +371,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Web | Brand Strategy | Advertising | DesignBuild",
     "image": "/images/projects/1725276435_amayaa-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/the-amayaa"
   },
   {
@@ -370,12 +388,11 @@ export const projectsData: ProjectItem[] = [
     "description": "DesignBuild",
     "image": "/images/projects/1725277324_amaya-interior1-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/hotel-the-amayaa"
   },
   {
@@ -386,12 +403,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Bed Room Stationary",
     "image": "/images/projects/1725277873_amayaa-bedroom-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/amaya-bedroom"
   },
   {
@@ -402,12 +420,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Food & Beverage",
     "image": "/images/projects/1725278996_amayaa-4-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/amaya-food"
   },
   {
@@ -418,12 +435,12 @@ export const projectsData: ProjectItem[] = [
     "description": "UI Design | UX Design | Mobile Applicaton",
     "image": "/images/projects/1725280874_hudooku-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/hudooku"
   },
   {
@@ -434,12 +451,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Healthcare Website Design | Brand Strategy | Signage Design | Outdoor Advertising | Exhibition",
     "image": "/images/projects/1725281847_ibs-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/ibs-hospital"
   },
   {
@@ -450,12 +469,13 @@ export const projectsData: ProjectItem[] = [
     "description": "DesignBuild",
     "image": "/images/projects/1725342011_ibs-2-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/ibs-designbuild"
   },
   {
@@ -466,12 +486,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Advertising",
     "image": "/images/projects/1725343071_ibs-3-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "advertising",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/ibs-advertising"
   },
   {
@@ -482,12 +501,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Signage | DesignBuild",
     "image": "/images/projects/1725343715_dlf-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/dlf---emperio"
   },
   {
@@ -498,12 +518,12 @@ export const projectsData: ProjectItem[] = [
     "description": "UI / UX design",
     "image": "/images/projects/1725345796_1scan-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/1-scan"
   },
   {
@@ -514,12 +534,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Video Creation | Visualisation",
     "image": "/images/projects/1725346677_apollo-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/apollo-hospital"
   },
   {
@@ -530,12 +551,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Mobile App UI / UX Design",
     "image": "/images/projects/1725347795_gd-goenka-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/gd-goenka-lapetite"
   },
   {
@@ -546,12 +569,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Mobile App UI / UX Design",
     "image": "/images/projects/1725348387_mall-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/mall-app"
   },
   {
@@ -562,12 +585,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Website Design Development | Brand Strategy | Signage | Stationary Design | Corporate Profile",
     "image": "/images/projects/1725349096_ekshakti-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/ekshakti"
   },
   {
@@ -578,12 +603,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Website Design Development | Mobile App",
     "image": "/images/projects/1725351596_archade-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/archade-foundation"
   },
   {
@@ -594,12 +621,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Mobile App",
     "image": "/images/projects/1725352134_rebuild-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/archade-rebuild"
   },
   {
@@ -610,12 +636,10 @@ export const projectsData: ProjectItem[] = [
     "description": "Retail | Bath Fittings",
     "image": "/images/projects/1725352939_omco-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/omco"
   },
   {
@@ -626,12 +650,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Brand Strategy | Totem Design | Signages",
     "image": "/images/projects/1725353274_rivatas-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/hotel-rivatas"
   },
   {
@@ -642,12 +666,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Website",
     "image": "/images/projects/1725353651_stthomas-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/stthomas-school"
   },
   {
@@ -658,12 +682,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Branding | Statinary Design",
     "image": "/images/projects/1725357715_brahmashakti-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/bhramhashakti-school"
   },
   {
@@ -674,12 +700,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Branding | Statinary Design",
     "image": "/images/projects/1725358220_glue-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/glue-design"
   },
   {
@@ -690,12 +718,8 @@ export const projectsData: ProjectItem[] = [
     "description": "Website",
     "image": "/images/projects/1725358632_alvis-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web"
+      ],
     "link": "https://dd.mocup.in/projects/alvis-healthcare"
   },
   {
@@ -706,12 +730,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Cloud Application",
     "image": "/images/projects/1725359050_nmac-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/nmac"
   },
   {
@@ -722,12 +746,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Designbuild",
     "image": "/images/projects/1725360162_dr-kalan-clinic-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/dr-kalan-clinic"
   },
   {
@@ -738,12 +764,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Digital Media Marketing",
     "image": "/images/projects/1725361688_fortis-ivf-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "advertising",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/fortis-bloom-ivf"
   },
   {
@@ -754,12 +779,9 @@ export const projectsData: ProjectItem[] = [
     "description": "Web Portal",
     "image": "/images/projects/1725362098_chatpata-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app"
+      ],
     "link": "https://dd.mocup.in/projects/chatpata-bong"
   },
   {
@@ -770,12 +792,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Web Portal",
     "image": "/images/projects/1725363079_craftshopee-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/craftshoppee"
   },
   {
@@ -786,12 +810,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Web site",
     "image": "/images/projects/1725365078_urban-village-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "event",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/urban-village"
   },
   {
@@ -802,12 +826,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Exhibition",
     "image": "/images/projects/1725365484_alsorg-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/alsorg"
   },
   {
@@ -818,12 +842,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Signage Design",
     "image": "/images/projects/1725365794_kotak-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/kotak-bank"
   },
   {
@@ -834,12 +857,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Story Boarding",
     "image": "/images/projects/1725367898_i-discovery-sketch-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/idiscoveri"
   },
   {
@@ -850,12 +874,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Exhibition",
     "image": "/images/projects/1725368461_hardwyn-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "event",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/hardwyn"
   },
   {
@@ -866,12 +889,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Exhibition",
     "image": "/images/projects/1725423407_dulux-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "advertising",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/dulux"
   },
   {
@@ -882,12 +906,10 @@ export const projectsData: ProjectItem[] = [
     "description": "Events",
     "image": "/images/projects/1725423793_dulux-color-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "event"
+      ],
     "link": "https://dd.mocup.in/projects/dulux-event"
   },
   {
@@ -898,12 +920,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Event Design",
     "image": "/images/projects/1725425502_cinema-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/cinema-northeast"
   },
   {
@@ -914,12 +937,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Brand Strategy | Brochure Design | Flyer",
     "image": "/images/projects/1725425834_24avenue-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/24avenue"
   },
   {
@@ -930,12 +955,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Window | Brand Strategy | Brochure Design | Flyer",
     "image": "/images/projects/1725426343_nimz-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/nimz"
   },
   {
@@ -946,12 +971,9 @@ export const projectsData: ProjectItem[] = [
     "description": "Event | Exhibiton",
     "image": "/images/projects/1725427376_windows-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "event"
+      ],
     "link": "https://dd.mocup.in/projects/window-magic"
   },
   {
@@ -962,12 +984,15 @@ export const projectsData: ProjectItem[] = [
     "description": "Event | Exhibiton",
     "image": "/images/projects/1725427764_kupple-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "advertising",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/kupple"
   },
   {
@@ -978,12 +1003,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Event | Exhibiton",
     "image": "/images/projects/1725428157_parko-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "event",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/parko"
   },
   {
@@ -994,12 +1018,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Event | Exhibiton",
     "image": "/images/projects/1725428513_tango-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/tango-talkies"
   },
   {
@@ -1010,12 +1034,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Data Analytic",
     "image": "/images/projects/1725429700_elsevior-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "event"
+      ],
     "link": "https://dd.mocup.in/projects/elsevier"
   },
   {
@@ -1026,12 +1049,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Web | Branding",
     "image": "/images/projects/1725430503_barrio-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/barrio"
   },
   {
@@ -1042,12 +1064,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Web",
     "image": "/images/projects/1725431658_rima-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/rima-chibb"
   },
   {
@@ -1058,12 +1079,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Web | Branding | Advertising",
     "image": "/images/projects/1725432577_samadhan-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/samadhan-social-welfare-society"
   },
   {
@@ -1074,12 +1096,9 @@ export const projectsData: ProjectItem[] = [
     "description": "Exhibition",
     "image": "/images/projects/1725433188_ge-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "event"
+      ],
     "link": "https://dd.mocup.in/projects/ge"
   },
   {
@@ -1090,12 +1109,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Product Design",
     "image": "/images/projects/1725433820_water-purify-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/water-purify"
   },
   {
@@ -1106,12 +1125,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Exhibition Stall Design",
     "image": "/images/projects/1725434142_giobani-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/giovani"
   },
   {
@@ -1122,12 +1143,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Website Design Development | Hosting | Maintenance",
     "image": "/images/projects/1725435361_abhiyan-trackers-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/abhiyan-trackers"
   },
   {
@@ -1138,12 +1160,10 @@ export const projectsData: ProjectItem[] = [
     "description": "Web | Branding | App UI",
     "image": "/images/projects/1725436178_stone-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding"
+      ],
     "link": "https://dd.mocup.in/projects/stonestreet"
   },
   {
@@ -1154,12 +1174,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Outdoor Adertising | Branding | Trifold | Logo | Stationary | Brochure",
     "image": "/images/projects/1725436704_samadhan-cyber-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/samadhan-cyberheight"
   },
   {
@@ -1170,12 +1191,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Website Design Development | Branding | Prospecture | Alumni",
     "image": "/images/projects/1725437998_science-college-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/science-college"
   },
   {
@@ -1186,12 +1209,11 @@ export const projectsData: ProjectItem[] = [
     "description": "DesignBuild",
     "image": "/images/projects/1725438664_barista-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/barista-lavzaa"
   },
   {
@@ -1202,12 +1224,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Branding",
     "image": "/images/projects/1725443445_richmond-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "designbuild"
+      ],
     "link": "https://dd.mocup.in/projects/richmond"
   },
   {
@@ -1218,12 +1239,12 @@ export const projectsData: ProjectItem[] = [
     "description": "DesignBuild | Interior | Turnkey projects",
     "image": "/images/projects/1725443772_harry-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/haryys-"
   },
   {
@@ -1234,12 +1255,14 @@ export const projectsData: ProjectItem[] = [
     "description": "DesignBuild",
     "image": "/images/projects/1725444234_imagination-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/imagenation-"
   },
   {
@@ -1250,12 +1273,12 @@ export const projectsData: ProjectItem[] = [
     "description": "DesignBuild | Interior | Turnkey",
     "image": "/images/projects/1725444687_japanese-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/japanese-restaurant"
   },
   {
@@ -1266,12 +1289,9 @@ export const projectsData: ProjectItem[] = [
     "description": "Event | Exhibition Stall",
     "image": "/images/projects/1725446148_kohler-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "event"
+      ],
     "link": "https://dd.mocup.in/projects/kohler"
   },
   {
@@ -1282,12 +1302,13 @@ export const projectsData: ProjectItem[] = [
     "description": "DesignBuild | Interior Design | Trunkey Project",
     "image": "/images/projects/1725449515_vanya-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/vanya"
   },
   {
@@ -1298,12 +1319,14 @@ export const projectsData: ProjectItem[] = [
     "description": "DesignBuild, Interior Design, Trunkey Project",
     "image": "/images/projects/1725449754_delhi-police-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/delhi-police"
   },
   {
@@ -1314,12 +1337,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Product Design",
     "image": "/images/projects/1725450187_bamboo-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/bamboo"
   },
   {
@@ -1330,12 +1352,9 @@ export const projectsData: ProjectItem[] = [
     "description": "Branding",
     "image": "/images/projects/1725450733_imperial-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding"
+      ],
     "link": "https://dd.mocup.in/projects/imperial-chalets"
   },
   {
@@ -1346,12 +1365,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Product Design",
     "image": "/images/projects/1725451535_mouthwash-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "event",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/mouthwash"
   },
   {
@@ -1362,12 +1383,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Web",
     "image": "/images/projects/1725454269_ssa-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/sabyasachi-sen-associate"
   },
   {
@@ -1378,12 +1399,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Website Design Devleopment, Hosting, Maintenance",
     "image": "/images/projects/1725510020_dr-cvanandabose-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/dr-cv-ananda-bose"
   },
   {
@@ -1394,12 +1414,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Event, Exhibition Stall",
     "image": "/images/projects/1725510334_magic-bus-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "event"
+      ],
     "link": "https://dd.mocup.in/projects/magic-bus"
   },
   {
@@ -1410,12 +1429,12 @@ export const projectsData: ProjectItem[] = [
     "description": "Website Design Development, Maintenance & Support, Branding",
     "image": "/images/projects/1725511336_charms-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/charms"
   },
   {
@@ -1426,12 +1445,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Web Portal Design Development | Promotional design",
     "image": "/images/projects/1725511592_done-by-none-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/done-by-none"
   },
   {
@@ -1442,12 +1463,14 @@ export const projectsData: ProjectItem[] = [
     "description": "Animated Corporatet Profile | Visual Communication | Brand Strategy",
     "image": "/images/projects/1725511813_flamez-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/flamez"
   },
   {
@@ -1458,12 +1481,10 @@ export const projectsData: ProjectItem[] = [
     "description": "Animated Corporatet Profile | Visual Communication | Brand Strategy",
     "image": "/images/projects/1725512071_scale-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "event"
+      ],
     "link": "https://dd.mocup.in/projects/scale"
   },
   {
@@ -1474,12 +1495,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Animated Corporatet Profile | Visual Communication | Brand Strategy",
     "image": "/images/projects/1725512382_rareearth-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/rareearth"
   },
   {
@@ -1490,12 +1510,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Design Build | Interior",
     "image": "/images/projects/1725512845_ultrasound-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "designbuild",
+            "projectdesign",
+            "project design",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/ultrasound"
   },
   {
@@ -1506,12 +1527,10 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Promotion",
     "image": "/images/projects/1725513881_skdas-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/skdas"
   },
   {
@@ -1522,12 +1541,10 @@ export const projectsData: ProjectItem[] = [
     "description": "Website | Maintenance",
     "image": "/images/projects/1725514162_sketstudio-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "app",
+            "designbuild"
+      ],
     "link": "https://dd.mocup.in/projects/skets"
   },
   {
@@ -1538,12 +1555,13 @@ export const projectsData: ProjectItem[] = [
     "description": "Office Interior",
     "image": "/images/projects/1725514399_random-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "advertising",
+            "designbuild",
+            "projectdesign",
+            "project design"
+      ],
     "link": "https://dd.mocup.in/projects/random-house"
   },
   {
@@ -1554,12 +1572,11 @@ export const projectsData: ProjectItem[] = [
     "description": "Webiste | Branding | Promotion",
     "image": "/images/projects/1725514774_idcube-t.jpg",
     "categories": [
-      "web",
-      "story",
-      "board",
-      "storyboard",
-      "story board"
-    ],
+            "web",
+            "branding",
+            "storyboard",
+            "story board"
+      ],
     "link": "https://dd.mocup.in/projects/idcube"
   }
 ];

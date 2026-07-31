@@ -19,6 +19,11 @@ const FILTER_CATEGORIES = [
   { id: 'storyboard', label: 'story board' },
 ];
 
+const parseDescriptionTags = (desc: string) => {
+  if (!desc) return [];
+  return desc.split(/[|,]/).map(t => t.trim()).filter(Boolean);
+};
+
 export default function ProjectsClient() {
   const [activeFilter, setActiveFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -31,13 +36,22 @@ export default function ProjectsClient() {
       if (activeFilter === 'all') {
         matchesCategory = true;
       } else if (activeFilter === 'designbuild') {
-        matchesCategory = project.categories.some(c => c.includes('designbuild') || c.includes('design build'));
+        matchesCategory =
+          project.categories.some(c => c.includes('designbuild') || c.includes('design build')) ||
+          project.description.toLowerCase().includes('design') ||
+          project.categoryTag.toLowerCase().includes('design');
       } else if (activeFilter === 'projectdesign') {
-        matchesCategory = project.categories.some(c => c.includes('projectdesign') || c.includes('project design') || c.includes('design'));
+        matchesCategory =
+          project.categories.some(c => c.includes('projectdesign') || c.includes('project design')) ||
+          project.description.toLowerCase().includes('design');
       } else if (activeFilter === 'storyboard') {
-        matchesCategory = project.categories.some(c => c.includes('storyboard') || c.includes('story board') || c.includes('story') || c.includes('board'));
+        matchesCategory = project.categories.some(c => c.includes('storyboard') || c.includes('story board'));
       } else {
-        matchesCategory = project.categories.includes(activeFilter);
+        matchesCategory =
+          project.categories.includes(activeFilter) ||
+          project.description.toLowerCase().includes(activeFilter) ||
+          project.categoryTag.toLowerCase().includes(activeFilter) ||
+          project.type.toLowerCase().includes(activeFilter);
       }
 
       // Search Query Filter
@@ -164,82 +178,89 @@ export default function ProjectsClient() {
                   </div>
                 </div>
 
-                {/* Projects Counter Bar */}
-                <div className="mb-6 flex items-center justify-between text-xs text-[#666666] font-medium">
-                  <span>
-                    Showing <strong className="text-[#111111]">{filteredProjects.length}</strong> projects
-                  </span>
-                  {activeFilter !== 'all' && (
+                {/* Reset Filter Button if active */}
+                {activeFilter !== 'all' && (
+                  <div className="mb-6 flex items-center justify-end">
                     <button
                       onClick={() => handleFilterChange('all')}
-                      className="text-[#f27820] hover:underline cursor-pointer font-bold"
+                      className="text-[13px] text-[#f27820] hover:underline cursor-pointer font-bold"
                     >
                       Reset Filter
                     </button>
-                  )}
-                </div>
+                  </div>
+                )}
 
-                {/* Projects Card Grid (Sharp Corners, Badges Removed, No Bottom Line) */}
+                {/* Projects Card Grid (Sharp Corners, Compact Height, Uniform Design) */}
                 {filteredProjects.length > 0 ? (
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-stretch">
-                    {filteredProjects.map((project) => (
-                      <div
-                        key={project.id}
-                        className="group bg-white rounded-none border border-black/5 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col justify-between"
-                      >
-                        <div>
-                          {/* Image Container */}
-                          <div className="relative aspect-[16/10] sm:aspect-[4/3] w-full overflow-hidden bg-[#f4f4f4] rounded-none">
-                            <Image
-                              src={project.image}
-                              alt={project.title}
-                              fill
-                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                              className="object-cover group-hover:scale-105 transition-transform duration-500"
-                              unoptimized
-                            />
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+                    {filteredProjects.map((project) => {
+                      const tags = parseDescriptionTags(project.description);
+
+                      return (
+                        <div
+                          key={project.id}
+                          className="group bg-white rounded-none border border-black/10 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col justify-between"
+                        >
+                          <div>
+                            {/* Image Container (Widescreen 16:9 for Compact Card Height) */}
+                            <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#f4f4f4] rounded-none">
+                              <Image
+                                src={project.image}
+                                alt={project.title}
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                unoptimized
+                              />
+                            </div>
+
+                            {/* Card Content Body */}
+                            <div className="p-5">
+                              <h3
+                                className="text-[18px] sm:text-[19px] font-extrabold text-[#111111] uppercase tracking-wide leading-tight mb-2.5 group-hover:text-[#f27820] transition-colors duration-300"
+                                style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro', sans-serif" }}
+                              >
+                                {project.title}
+                              </h3>
+
+                              {/* Light Orange Tag Pills */}
+                              <div className="flex flex-wrap gap-1.5 mt-2.5">
+                                {tags.map((tag, tIdx) => (
+                                  <span
+                                    key={tIdx}
+                                    className="text-[11.5px] font-medium bg-[#fff7ed] text-[#ea580c] px-2.5 py-0.8 rounded-md border border-[#ffedd5] hover:bg-[#f27820] hover:text-white hover:border-[#f27820] hover:scale-105 transition-all duration-300"
+                                    style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro', sans-serif" }}
+                                  >
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
                           </div>
 
-                          {/* Card Content Body */}
-                          <div className="p-6 sm:p-7">
-                            <h3
-                              className="text-[19px] sm:text-[21px] font-bold text-[#111111] uppercase leading-tight mb-2 group-hover:text-[#f27820] transition-colors"
+                          {/* Footer Action Link */}
+                          <div className="px-5 pb-4.5 pt-2 flex items-center justify-between border-t border-gray-100">
+                            <a
+                              href={project.link || '#'}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 text-[13.5px] font-bold text-[#f27820] hover:text-[#d96716] transition-colors group/link"
                               style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro', sans-serif" }}
                             >
-                              {project.title}
-                            </h3>
-
-                            <p
-                              className="text-[13px] sm:text-[14px] text-[#666666] leading-relaxed line-clamp-3 mt-3"
-                              style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro', sans-serif" }}
-                            >
-                              {project.description}
-                            </p>
+                              Experience Now
+                              <svg
+                                className="w-4 h-4 transform group-hover/link:translate-x-1.5 transition-transform duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                              </svg>
+                            </a>
                           </div>
                         </div>
-
-                        {/* Card Footer Action Link */}
-                        <div className="px-6 sm:px-7 pb-6 pt-2 border-t border-gray-100 flex items-center justify-between">
-                          <a
-                            href={project.link || '#'}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 text-[14px] font-bold text-[#f27820] hover:text-[#d96716] transition-colors group/link"
-                            style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro', sans-serif" }}
-                          >
-                            Experience Now
-                            <svg
-                              className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 ) : (
                   <div className="py-16 text-center bg-white border border-black/5 p-8 rounded-none">
