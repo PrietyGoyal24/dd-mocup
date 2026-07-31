@@ -252,7 +252,7 @@ export default function CareerClient() {
               {/* Right Content Column: Title, Subtitle, Description, AND Cards Grid starting at exact same left alignment */}
               <div className="flex-1">
                 <h2
-                  className="text-[32px] sm:text-[44px] font-bold text-[#111111] uppercase tracking-tight leading-none mb-6"
+                  className="text-[32px] sm:text-[34px] font-bold text-[#111111] uppercase tracking-tight leading-none mb-10"
                   style={{ fontFamily: "'GTWalsheimPro-Bold', 'GT-Walsheim-Pro'" }}
                 >
                   JOB POSITIONS.
@@ -266,7 +266,7 @@ export default function CareerClient() {
                 </p>
 
                 <p
-                  className="text-[#333333] text-[15px] sm:text-[17px] font-normal leading-relaxed max-w-[1050px] mb-12 sm:mb-16"
+                  className="text-[#333333] text-[15px] sm:text-[19px] font-normal leading-relaxed w-full max-w-full mb-12 sm:mb-16"
                   style={{ fontFamily: "'GTWalsheimPro-Regular', 'GT-Walsheim-Pro'" }}
                 >
                   Check. Want to work with the latest technologies and most talented people around you? Bingo. Want to benefit from flexible salary benefits? Working at DesignDot means joining a group of people obsessed with making things—making things that inspire new ways of thinking, bring about real change, & make people’s lives just a little bit easier. It’s not bullshit. It’s a code. Our way of life. It’s been in our DNA since 2005.
